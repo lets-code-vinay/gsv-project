@@ -121,6 +121,7 @@ const MainNavBar = ({
 
           {/* To open icons */}
           <>
+            23{" "}
             <IconButton
               className={`${classes.sectionMobile} sectionMobile`}
               aria-label="show more"
@@ -130,7 +131,6 @@ const MainNavBar = ({
             >
               <MoreIcon className={`${classes.mobile3Dots} mobile3Dots`} />
             </IconButton>
-
             <MobileNavBar
               isMobileNavbarOpened={isMobileNavbarOpened}
               onCloseMobileMenu={handleMobileMenuClose}
