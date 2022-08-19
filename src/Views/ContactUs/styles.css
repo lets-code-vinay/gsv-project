@@ -1,0 +1,14 @@
+.heading {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  color: #000000;
+  border-bottom: 4px solid #1e4471;
+  width: 90%;
+}
+
+.subtitle {
+  margin: 5% 0;
+}

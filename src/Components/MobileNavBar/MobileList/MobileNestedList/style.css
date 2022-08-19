@@ -1,0 +1,7 @@
+.MuiListItemText-primary {
+  font-weight: 500;
+}
+
+.nest-text .MuiListItemText-primary {
+  font-weight: 400;
+}

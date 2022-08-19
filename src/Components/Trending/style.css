@@ -1,0 +1,408 @@
+.containerTrending {
+  height: 100vh;
+}
+
+.container-div {
+  width: 100%;
+  height: 75%;
+  margin-top: 4%;
+}
+
+#controlled-tabs {
+  margin-top: 4%;
+}
+.content {
+  position: relative;
+}
+.content .trendingTitle {
+  color: #000;
+}
+
+.trendingSubTitle,
+.trendingSubTitleForce {
+  color: #000;
+  text-indent: 50px;
+  overflow: overlay;
+}
+
+.learn-link {
+  text-decoration: none;
+  bottom: -20%;
+  position: absolute;
+}
+
+.learn-button {
+  color: #1e4471;
+  border-bottom: 2px solid #1e4471;
+  cursor: pointer;
+  margin-top: 5%;
+  text-decoration: none;
+  width: fit-content;
+}
+
+/* 320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV */
+@media screen and (min-width: 279px) and (max-width: 480px) {
+  .tabsClass {
+    width: 100% !important;
+    margin: auto !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: center !important;
+    text-align: start;
+    padding-left: 0px;
+  }
+  .tabContainer {
+    width: 80% !important;
+    margin: auto !important;
+  }
+  .tabButton {
+    font-size: 0.6rem !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+    height: 32px !important;
+    text-align: start !important;
+    font-weight: 700 !important;
+  }
+  .tabMatter > .trendingImageGrid {
+    width: 170px !important;
+    height: 200px !important;
+    border-radius: 50px 0 50px 0;
+    border: 1px solid #0d274d !important;
+    padding: 9% 1% 0% 26%;
+    margin: 4% auto;
+  }
+  .trendingImage {
+    width: 150px !important;
+    height: 150px !important;
+  }
+  .trendingTitle {
+    font-size: 2.2rem !important;
+    margin: 5px 0px 6% 0px;
+    font-weight: 300;
+  }
+  .trendingSubTitle,
+  .trendingSubTitleForce {
+    font-size: 0.5rem;
+    margin-top: 10px;
+  }
+  .learn-button {
+    font-size: 0.5rem;
+  }
+
+  .trendingLogo {
+    margin: 2% 20% !important;
+  }
+  .borderBottomClass {
+    margin-top: 5px !important;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 760px) {
+  .tabsClass {
+    margin: auto !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: center !important;
+    text-align: start;
+  }
+  .tabContainer {
+    width: 90% !important;
+    margin: auto !important;
+  }
+  .tabButton {
+    font-size: 1rem;
+    min-width: 100% !important;
+    max-width: 100% !important;
+    height: 32px !important;
+    text-align: start !important;
+    font-weight: 700 !important;
+  }
+  .borderBottomClass {
+    margin-top: 5px !important;
+  }
+  .trendingImageGrid {
+    width: 170px !important;
+    border-radius: 50px 0 50px 0;
+    border: 1px solid #0d274d !important;
+    padding: 6% 2% 0% 3%;
+  }
+  .trendingImage {
+    min-width: 300px !important;
+    max-width: 325px !important;
+
+    min-height: 325px !important;
+    max-height: 350px !important;
+  }
+  .trendingTitle {
+    font-size: 1.2rem;
+    margin: 5px 0px 6% 6%;
+    font-weight: 300;
+    width: 80%;
+  }
+  .trendingSubTitle,
+  .trendingSubTitleForce {
+    margin-top: 10px !important;
+    width: 80%;
+    margin-left: 6% !important;
+    font-size: 1.2rem !important;
+  }
+  .learn-button {
+    font-size: 1.2rem;
+  }
+
+  .trendingLogo {
+    margin: 2% 2% !important;
+  }
+}
+
+/* Managing width of trending tabs */
+@media screen and (min-width: 761px) and (max-width: 960px) {
+  .tabsClass {
+    float: right;
+    width: 58% !important;
+    margin: auto !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: center !important;
+    text-align: start;
+  }
+}
+
+/* Managing width of trending tabs */
+@media screen and (min-width: 961px) and (max-width: 1024px) {
+  .tabsClass {
+    float: right;
+    width: 70% !important;
+    margin: auto !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: center !important;
+    text-align: start;
+  }
+}
+
+@media screen and (min-width: 761px) and (max-width: 1024px) {
+  .tabContainer {
+    width: 90% !important;
+    margin: auto !important;
+  }
+  .tabButton {
+    font-size: 1rem !important;
+    min-width: 80px !important;
+    max-width: 252px;
+    height: 32px !important;
+    text-align: start !important;
+    font-weight: 700 !important;
+  }
+  .trendingImageGrid {
+    width: 200px !important;
+    height: 200px !important;
+    padding: 5% 0% 10% 0%;
+  }
+  .trendingImage {
+    min-width: 300px !important;
+    max-width: 325px !important;
+
+    min-height: 325px !important;
+    max-height: 350px !important;
+
+    margin-top: -15%;
+  }
+  .content .trendingTitle {
+    font-size: 3.5rem !important;
+    margin: 5px 0px 6% 0px;
+    font-weight: 400 !important;
+  }
+  .trendingSubTitle,
+  .trendingSubTitleForce {
+    font-size: 1.2rem !important;
+    margin-top: 10px;
+  }
+  .learn-button {
+    font-size: 1.2rem;
+  }
+  .trendingLogo {
+    margin: 2% 8% !important;
+  }
+
+  .trendingText {
+    font-weight: 400 !important;
+  }
+  .hr {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1281px) {
+  .tabsClass {
+    float: right;
+    width: 67% !important;
+    margin: auto !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: start !important;
+    text-align: start;
+  }
+  .tabContainer {
+    width: 90% !important;
+    margin: auto !important;
+  }
+  .tabButton {
+    font-size: 1rem !important;
+    min-width: 80px !important;
+    max-width: 252px;
+    height: 32px !important;
+    text-align: start !important;
+  }
+  .trendingImageGrid {
+    width: 150px !important;
+    height: 150px !important;
+    padding: 0% 5% 0% 8%;
+  }
+  .trendingImage {
+    min-width: 100% !important;
+    max-width: 115% !important;
+    min-height: 280px !important;
+    max-height: 310px !important;
+  }
+  .content {
+    width: 80%;
+  }
+  .content .trendingTitle {
+    font-size: 2.5rem !important;
+    margin: 5px 0px 6% 0px;
+    font-weight: 400 !important;
+  }
+  .trendingSubTitle,
+  .trendingSubTitleForce {
+    font-size: 1rem !important;
+    margin-top: 10px;
+  }
+  .learn-button {
+    font-size: 1.2rem;
+  }
+  .trendingLogo {
+    margin: 2% 8%;
+  }
+
+  .trendingText {
+    font-weight: 400 !important;
+  }
+  .hr {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1282px) and (max-width: 1919px) {
+  .tabsClass {
+    float: right;
+    width: 65% !important;
+    margin: auto !important;
+    display: flex;
+    justify-content: space-between;
+  }
+  .tabContainer {
+    width: 90% !important;
+    margin: auto !important;
+  }
+  .tabButton {
+    font-size: 1.2rem !important;
+    min-width: 80px !important;
+    max-width: 252px;
+    height: 32px !important;
+    text-align: start;
+    font-weight: 400;
+  }
+
+  .trendingLogo {
+    margin: 0 0% 0% 45%;
+  }
+  .hr {
+    height: 2px;
+    background-color: #0d274d;
+  }
+
+  .trendingText {
+    font-weight: 500 !important;
+    color: #0d274d;
+  }
+  .trendingImageGrid {
+    width: 100%;
+  }
+  .trendingImage {
+    min-width: 325px !important;
+    max-width: 350px !important;
+
+    min-height: 350px !important;
+    max-height: 375px !important;
+  }
+
+  .content .trendingTitle {
+    font-size: 4rem;
+    margin: 5px 0px 6% 0px;
+    font-weight: 400;
+  }
+
+  .trendingSubTitle,
+  .trendingSubTitleForce,
+  .learn-button {
+    font-size: 1.3rem !important;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .tabsClass {
+    float: right;
+    width: 65% !important;
+    margin: auto !important;
+    display: flex;
+    justify-content: space-between;
+  }
+  .tabContainer {
+    width: 90% !important;
+    margin: auto !important;
+  }
+  .tabButton {
+    font-size: 1.5rem !important;
+    min-width: 120px !important;
+    max-width: 325px;
+    height: 32px !important;
+    text-align: start;
+  }
+
+  .trendingLogo {
+    margin: 0 0% 0% 45%;
+  }
+  .hr {
+    height: 2px;
+    background-color: #0d274d;
+  }
+
+  .trendingText {
+    font-weight: 500 !important;
+    color: #0d274d;
+  }
+  .trendingImage {
+    min-width: 325px !important;
+    max-width: 350px !important;
+
+    min-height: 350px !important;
+    max-height: 375px !important;
+  }
+
+  .content .trendingTitle {
+    font-size: 3.5rem;
+    margin: 5px 0px 6% 0px;
+    font-weight: 400;
+  }
+
+  .trendingSubTitle,
+  .trendingSubTitleForce,
+  .learn-button {
+    font-size: 1.4rem !important;
+  }
+}

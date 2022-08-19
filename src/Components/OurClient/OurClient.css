@@ -1,0 +1,172 @@
+.ourClientHading {
+  text-align: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 51px;
+  line-height: 60px;
+  color: rgba(0, 0, 0, 0.6);
+  padding: 3%;
+}
+.imageArray2 {
+  margin-top: 5%;
+}
+.topContainer .slick-next {
+  cursor: pointer;
+  position: absolute;
+  right: 3%;
+  position: absolute;
+  top: 40%;
+}
+.topContainer .slick-prev {
+  cursor: pointer;
+  left: 3%;
+  position: absolute;
+  top: 40%;
+  z-index: 99;
+}
+
+.imageStyle {
+  margin-top: 25%;
+}
+
+.allCustomer {
+  cursor: pointer;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 29px;
+  text-align: center;
+  text-decoration-line: underline;
+  color: #0d274d;
+  margin-top: 6.5%;
+}
+.upto420 {
+  margin-left: 2%;
+}
+@media screen and(max-width: 550px) {
+  /* .topContainer .firstimage {
+    margin-left: 20%;
+  } */
+}
+
+/* 320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV */
+@media screen and (min-width: 279px) and (max-width: 480px) {
+  .hr {
+    margin-bottom: 10px;
+    width: 90% !important;
+    margin: 2% !important;
+  }
+  .imageBlock .imageToResponsive {
+    width: 135px !important;
+    height: 50px !important;
+  }
+
+  .imageBlock .bottomImage {
+    margin: 20% auto 0 !important;
+  }
+
+  .ourClientsTitle .ourClientsIcon,
+  .ourClientsTitle .ourClientsText {
+    font-size: 1.5rem;
+    margin-top: 0;
+  }
+
+  .imageToResponsive {
+    width: 90%;
+    margin: 5% auto !important;
+  }
+  .slick-slider svg.slick-arrow.slick-prev {
+    left: 0;
+  }
+
+  .topContainer .slick-next {
+    right: 0 !important;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 760px) {
+  .hr {
+    margin-bottom: 10px;
+  }
+
+  .imageToResponsive {
+    width: 8rem !important;
+    height: 3rem !important;
+    margin: 5% auto !important;
+  }
+  .imageBlock .bottomImage {
+    margin: 25% auto 0 !important;
+  }
+
+  .slick-slider svg.slick-arrow.slick-prev {
+    left: 0;
+    top: 40% !important;
+  }
+
+  .topContainer .slick-next {
+    right: 0 !important;
+    top: 40% !important;
+  }
+}
+@media screen and (min-width: 761px) and (max-width: 1024px) {
+  .topContainer .hr {
+    margin: auto;
+    margin-bottom: 10px;
+    width: 90%;
+  }
+
+  .ourClientsTitle {
+    margin-left: 15%;
+  }
+  .imageToResponsive {
+    width: 8rem !important;
+    height: 3rem !important;
+    margin: 5% auto !important;
+  }
+  .imageBlock .bottomImage {
+    margin: 28% auto 0 !important;
+  }
+
+  .slick-slider svg.slick-arrow.slick-prev {
+    left: 0;
+    top: 35%;
+  }
+
+  .topContainer .slick-next {
+    right: 0 !important;
+    top: 35% !important;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1281px) {
+  .hr {
+    margin-bottom: 10px;
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1282px) and (max-width: 1919px) {
+  .hr {
+    margin: 0 auto 10px;
+    width: 90%;
+    height: 2px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .topContainer .hr {
+    height: 2px;
+    background-color: #0d274d;
+    width: 90% !important;
+    margin: 2% auto;
+  }
+  .ourClientsTitle {
+    margin-left: 16%;
+  }
+}

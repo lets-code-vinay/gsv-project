@@ -1,0 +1,12 @@
+.menu-list-image {
+  width: 100%;
+}
+
+.mobile-list-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-list {
+  font-weight: 500 !important;
+}

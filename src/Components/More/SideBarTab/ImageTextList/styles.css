@@ -1,0 +1,33 @@
+.title-block {
+  margin-top: 2%;
+}
+.ImageTextList {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  color: #000000;
+  border-bottom: 4px solid #1e4471;
+  width: 32%;
+  margin-bottom: 2%;
+}
+
+.textColorRed {
+  color: rgb(219, 21, 21);
+}
+.backTextColor {
+  background-color: #fff1ee;
+  width: fit-content;
+  padding: 0 2%;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2%;
+}
+
+.displayFlex {
+  margin-top: 2%;
+}

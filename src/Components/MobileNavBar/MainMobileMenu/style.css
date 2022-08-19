@@ -1,0 +1,191 @@
+.main-mobile-menu,
+.MuiDrawer-paperAnchorLeft {
+  left: 0;
+  right: auto;
+  position: relative;
+}
+
+.mobile-menu-top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 3% 5%;
+  border-bottom: 1px solid rgb(159, 145, 145);
+}
+
+.mobile-menu-logo {
+  width: 10%;
+}
+
+.mobile-menu-container {
+  /* padding: 3% 10% 8%; */
+  margin-top: 3%;
+  border-bottom: 1px solid rgb(159, 145, 145);
+}
+
+.mobile-menu-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 2% 0%;
+  padding: 1% 10%;
+  cursor: pointer;
+}
+
+.mobile-menu-list:hover {
+  cursor: pointer;
+
+  background-color: rgba(128, 128, 128, 0.571);
+}
+
+.close-icon,
+.mobile-menu-icon,
+.mobile-menu-logo {
+  transition: 5s ease-in-out;
+  cursor: pointer;
+}
+
+.close-icon:hover {
+  transform: rotate(15deg);
+  cursor: pointer;
+}
+
+.mobile-menu-text {
+  font-size: 1.5rem;
+  font-weight: 500;
+  width: 100%;
+}
+.mobile-menu-arrow-icon {
+  border-radius: 0 !important;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.main-mobile-menu .mobile-menu-button {
+  width: 25%;
+  background-color: #21314b !important;
+  color: white;
+  height: 3rem;
+  font-size: 1rem;
+  border-radius: 100px;
+  left: 40%;
+  position: absolute;
+  bottom: 1%;
+}
+
+/* 320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV */
+@media screen and (min-width: 279px) and (max-width: 480px) {
+  .main-mobile-menu,
+  .MuiDrawer-paperAnchorLeft {
+    left: 0;
+    right: auto;
+    width: 100% !important;
+  }
+
+  .mobile-menu-logo {
+    width: 15%;
+  }
+
+  .mobile-menu-text {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  .mobile-menu-arrow-icon {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  .main-mobile-menu .mobile-menu-button {
+    min-width: 35%;
+    max-width: 41%;
+    height: 3rem;
+    font-size: 1rem;
+    left: 40%;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 760px) {
+  .main-mobile-menu,
+  .MuiDrawer-paperAnchorLeft {
+    left: 0;
+    right: auto;
+    width: 100% !important;
+  }
+
+  .mobile-menu-logo {
+    width: 15%;
+  }
+
+  .mobile-menu-text {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  .mobile-menu-arrow-icon {
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+  .main-mobile-menu .mobile-menu-button {
+    min-width: 30%;
+    max-width: 35%;
+    height: 3rem;
+    font-size: 1rem;
+    left: 40%;
+  }
+}
+
+@media screen and (min-width: 761px) and (max-width: 1024px) {
+  .main-mobile-menu,
+  .MuiDrawer-paperAnchorLeft {
+    left: 0;
+    right: auto;
+    min-width: 740px !important;
+    max-width: 760px !important;
+  }
+
+  .mobile-menu-logo {
+    width: 15%;
+  }
+
+  .main-mobile-menu .mobile-menu-top-bar .mobile-menu-icon {
+    font-size: 2rem;
+  }
+
+  .mobile-menu-text {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  .mobile-menu-arrow-icon {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  .main-mobile-menu .mobile-menu-button {
+    width: 25%;
+    height: 3rem;
+    font-size: 1rem;
+    left: 40%;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .main-mobile-menu,
+  .MuiDrawer-paperAnchorLeft {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1919px) {
+  .main-mobile-menu,
+  .MuiDrawer-paperAnchorLeft {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .main-mobile-menu,
+  .MuiDrawer-paperAnchorLeft {
+    display: none !important;
+  }
+}

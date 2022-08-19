@@ -1,0 +1,205 @@
+.containerClass {
+  padding-right: 8%;
+  position: relative;
+}
+.containerClass .slick-next {
+  position: absolute;
+  right: 41%;
+  top: 26%;
+  cursor: pointer;
+}
+.containerClass .slick-prev {
+  position: absolute;
+  left: 41%;
+  z-index: 99;
+  cursor: pointer;
+}
+.sliderPadding {
+  padding: 1% 0;
+  width: 100%;
+  margin: auto;
+}
+
+.styleSecondSlide.blockDisplay {
+  display: none;
+}
+.testimonialDomainClients svg.slick-arrow.slick-prev {
+  left: 3%;
+  top: 45%;
+  border-radius: 50%;
+  box-shadow: 0px 0px 2px rgb(10 10 10 / 50%);
+}
+.testimonialDomainClients svg.slick-arrow.slick-next {
+  right: 1%;
+  top: 45%;
+  border-radius: 50%;
+  box-shadow: 0px 0px 2px rgb(10 10 10 / 50%);
+}
+h3 {
+  margin: auto;
+  width: fit-content;
+}
+
+/* 320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV */
+@media screen and (min-width: 229px) and (max-width: 480px) {
+  .testimonialLogo .trendingTitle,
+  h4.MuiTypography-root.makeStyles-testimonialTitle-64.testimonialTitle.MuiTypography-h4 {
+    font-weight: 700 !important;
+    font-size: 1.1rem !important;
+    margin: 18px -6px !important;
+  }
+
+  .testimonialIcon {
+    font-size: 2rem;
+  }
+
+  .hr {
+    margin-bottom: 2px;
+  }
+
+  .clientTitle {
+    font-weight: 500;
+    margin-top: 5%;
+  }
+  svg.slick-arrow.slick-next {
+    right: 15%;
+    top: 35%;
+  }
+
+  svg.slick-arrow.slick-prev {
+    left: 15%;
+    z-index: 99;
+    top: 35%;
+  }
+  .clientCard,
+  .MuiBox-root.MuiBox-root-270.makeStyles-clientGrid-67.clientGrid {
+    margin: 1rem auto;
+  }
+
+  .clientCard .testimonialCardMatter {
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+  .clientCard .testimonialCardUser {
+    font-size: 0.7rem;
+    font-weight: 400;
+  }
+  .clientCard .testimonialImage {
+    margin: 9% auto;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 760px) {
+  .clientGrid .makeStyles-clientCard-68 {
+    width: 80%;
+    margin: auto 16%;
+    padding: 1rem 1rem;
+    box-shadow: 0 0 14px 0px rgb(10 10 10 / 20%);
+    border-radius: 1rem;
+  }
+  svg.slick-arrow.slick-next {
+    right: 31%;
+    top: 14%;
+  }
+
+  svg.slick-arrow.slick-prev {
+    left: 31%;
+    z-index: 99;
+  }
+
+  .testimonialDomainClients svg.slick-arrow.slick-prev {
+    left: 1%;
+  }
+  .testimonialDomainClients svg.slick-arrow.slick-next {
+    right: -1%;
+  }
+}
+
+@media screen and (min-width: 761px) and (max-width: 1024px) {
+  .testimonialLogo .trendingTitle,
+  h4.MuiTypography-root.makeStyles-testimonialTitle-64.testimonialTitle.MuiTypography-h4 {
+    font-size: 2rem !important;
+    margin: 10px 0px !important;
+    font-weight: 700 !important;
+  }
+
+  .testimonialLogo {
+    width: 80%;
+    margin: 2% auto !important;
+  }
+  .testimonialIcon {
+    font-size: 50px !important;
+  }
+
+  .hr {
+    margin-bottom: 10px;
+    background-color: #002446;
+  }
+
+  .clientGrid .makeStyles-clientCard-68 {
+    width: 80%;
+    margin: auto 16%;
+    padding: 1rem 1rem;
+    box-shadow: 0 0 14px 0px rgb(10 10 10 / 20%);
+    border-radius: 1rem;
+  }
+  svg.slick-arrow.slick-next {
+    position: absolute;
+    right: 33%;
+    top: 14%;
+    cursor: pointer;
+  }
+
+  svg.slick-arrow.slick-prev {
+    position: absolute;
+    left: 33%;
+    z-index: 99;
+    cursor: pointer;
+  }
+
+  .testimonialDomainClients svg.slick-arrow.slick-prev {
+    left: 1%;
+  }
+  .testimonialDomainClients svg.slick-arrow.slick-next {
+    right: -1%;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1281px) {
+  .trendingTitle {
+    font-size: 1.5rem !important;
+    margin: 5px 0px;
+    font-weight: 700 !important;
+  }
+
+  .testimonialLogo {
+    margin: 2% 35% !important;
+  }
+  .testimonialIcon {
+    font-size: 50px !important;
+  }
+
+  .hr {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .testimonialLogo {
+    margin: 0 0% 0% 45%;
+  }
+  .hr {
+    height: 2px;
+    background-color: #0d274d;
+  }
+
+  .testimonialDomainClients svg.slick-arrow.slick-prev {
+    left: 5%;
+  }
+  .testimonialDomainClients svg.slick-arrow.slick-next {
+    right: -1%;
+  }
+}

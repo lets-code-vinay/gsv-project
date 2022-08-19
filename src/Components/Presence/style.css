@@ -1,0 +1,10 @@
+.mapTitle {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  color: white;
+  border-bottom: 4px solid white;
+  width: 40%;
+}

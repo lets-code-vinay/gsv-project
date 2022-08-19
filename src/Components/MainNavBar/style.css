@@ -1,0 +1,280 @@
+.Navbar .appBar {
+  background: rgba(30, 68, 113, 0.3);
+  display: flex;
+  justify-content: space-around;
+}
+
+.sectionDesktop {
+  margin-left: 10px;
+}
+.sectionDesktopMenus {
+  padding: 0;
+}
+
+.display {
+  display: flex;
+  justify-content: space-evenly;
+}
+.nav-bar-grow {
+  flex-grow: 2;
+}
+
+.nav-bar-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/* 320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV */
+@media screen and (min-width: 279px) and (max-width: 479px) {
+  .sectionDesktop {
+    display: none;
+  }
+  .Navbar .appBar .appBarChild {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    padding: 1%;
+  }
+  .nav-bar-grow {
+    flex-grow: 1;
+  }
+  .nav-bar-icons .search {
+    height: 1rem;
+    width: 1rem;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  .nav-bar-icons .profile {
+    height: 1rem;
+    width: 1rem;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+  .nav-bar-icons .globe {
+    height: 1rem;
+    width: 1rem;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  .sectionMobile {
+    margin: 0;
+  }
+  .logo-1 {
+    height: 20px;
+    width: 85%;
+    margin-top: 1px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .sectionDesktop {
+    display: none;
+  }
+  .nav-bar-icons .search {
+    height: 1.35rem;
+    width: 1.35rem;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  .nav-bar-icons .profile {
+    height: 1.35rem;
+    width: 1.35rem;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  .nav-bar-icons .globe {
+    height: 1.35rem;
+    width: 1.35rem;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  .logo-1 {
+    height: 30px;
+    width: 80%;
+    margin-top: 1px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  /* .sectionMobile {
+    display: flex !important;
+  } */
+  .sectionDesktop {
+    display: none !important;
+  }
+  .Navbar .appBar .appBarChild {
+    display: flex;
+    justify-content: space-between;
+    min-height: 70px;
+    max-height: 80px;
+  }
+  .nav-bar-icons .search {
+    height: 24px;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+  .nav-bar-icons .profile {
+    height: 24px;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+  .nav-bar-icons .globe {
+    height: 24px;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+  .logo-1 {
+    height: 24px;
+    width: 70%;
+    margin-top: 1px;
+  }
+
+  .navbar_text {
+    font-size: 22px;
+  }
+  .display {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .sectionMobile {
+    display: none !important;
+  }
+  .sectionDesktop {
+    display: flex !important;
+  }
+  .Navbar .appBar .appBarChild {
+    min-height: 80px;
+    max-height: 90px;
+  }
+
+  .nav-bar-icons .search {
+    height: 1.35rem;
+    width: 1.35rem;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  .nav-bar-icons .profile {
+    height: 1.35rem;
+    width: 1.35rem;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  .nav-bar-icons .globe {
+    height: 1.35rem;
+    width: 1.35rem;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  .logo-1 {
+    height: 30px;
+    width: 20%;
+    margin-top: 1px;
+  }
+
+  .sectionDesktopMenus .navbar_text {
+    font-size: 22px;
+  }
+  .display {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1919px) {
+  .sectionMobile {
+    display: none !important;
+  }
+  .sectionDesktop {
+    display: flex !important;
+  }
+  .Navbar .appBar .appBarChild {
+    min-height: 90px;
+    max-height: 100px;
+  }
+
+  .nav-bar-icons .search {
+    height: 36px;
+    width: 36px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  .nav-bar-icons .profile {
+    height: 36px;
+    width: 36px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  .nav-bar-icons .globe {
+    height: 36px;
+    width: 36px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  .logo-1 {
+    height: 35px;
+    width: 20%;
+    margin-top: 1px;
+  }
+
+  .sectionDesktopMenus .navbar_text {
+    font-size: 22px;
+  }
+  .display {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .sectionMobile {
+    display: none !important;
+  }
+  .sectionDesktop {
+    display: flex !important;
+  }
+
+  .Navbar .appBar .appBarChild {
+    min-height: 90px;
+    max-height: 100px;
+  }
+
+  .nav-bar-icons .search {
+    height: 36px;
+    width: 36px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  .nav-bar-icons .profile {
+    height: 36px;
+    width: 36px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  .nav-bar-icons .globe {
+    height: 36px;
+    width: 36px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  .logo-1 {
+    height: 50px;
+    width: 24%;
+    margin-top: 2px;
+  }
+
+  .sectionDesktopMenus .navbar_text {
+    font-size: 24px;
+  }
+  .display {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}

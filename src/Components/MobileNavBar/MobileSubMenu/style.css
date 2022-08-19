@@ -1,0 +1,47 @@
+.mobile-sub-menu-drawer .mobile-sub-menu-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 6% 10%;
+  border-bottom: 1px solid rgb(159, 145, 145);
+  width: 90%;
+  margin: 0 auto;
+}
+
+.mobile-sub-menu-drawer .mobile-sub-menu-container .mobile-sub-menu-title {
+  margin-left: 10px;
+}
+
+/* 320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV */
+@media screen and (min-width: 279px) and (max-width: 480px) {
+  .mobile-sub-menu-drawer .mobile-sub-menu-container .mobile-sub-menu-title {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 760px) {
+  .mobile-sub-menu-drawer .mobile-sub-menu-container .mobile-sub-menu-title {
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+}
+
+@media screen and (min-width: 761px) and (max-width: 1024px) {
+  .mobile-sub-menu-drawer .mobile-sub-menu-container .mobile-sub-menu-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1919px) {
+}
+
+@media screen and (min-width: 1920px) {
+}

@@ -1,0 +1,57 @@
+.FooterBottom {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0d2d7d;
+}
+
+/* 320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV */
+@media screen and (min-width: 279px) and (max-width: 480px) {
+  .footerBody {
+    width: 90% !important;
+  }
+  #grid {
+    padding: 10px;
+  }
+  #grid .footerLogo {
+    width: 120px;
+    margin-top: 5%;
+  }
+  .menuListTitle {
+    font-size: 1.2rem !important;
+    width: 80%;
+    margin: 20px 0;
+    font-weight: 600;
+  }
+  .menuListText {
+    font-size: 0.8rem !important;
+  }
+  .menuListTextContact {
+    font-size: 0.8rem !important;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 760px) {
+  #grid .footerLogo {
+    width: 150px;
+    margin-top: 20%;
+  }
+}
+@media screen and (min-width: 761px) and (max-width: 1024px) {
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1919px) {
+}
+
+@media screen and (min-width: 1920px) {
+}

@@ -1,0 +1,9 @@
+.MuiLinearProgress-root.MuiLinearProgress-colorPrimary.MuiLinearProgress-determinate {
+  background-color: white;
+  cursor: pointer;
+}
+
+.MuiLinearProgress-bar1Determinate {
+  background-color: #0d274d !important;
+  cursor: pointer;
+}

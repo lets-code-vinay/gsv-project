@@ -1,0 +1,578 @@
+/* Wire image style------------------- */
+.wireImage {
+  display: block;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+  transform: translateX(0) scale(1.2);
+  transition: all 0.4s linear;
+}
+.overlay {
+  width: 100%;
+  flex-basis: 50%;
+  width: 100%;
+  flex-grow: 1;
+  overflow: hidden;
+  position: relative;
+  flex-wrap: wrap;
+  height: 100%;
+  border-radius: 15px;
+}
+.cardTopHeading {
+  position: absolute;
+  top: 0;
+  color: white;
+  padding: 9px 0px 0px 20px;
+}
+.cardText {
+  position: absolute;
+  bottom: 0;
+  transition: 0.3s linear;
+  color: white;
+  font-size: 25px;
+  font-weight: 500;
+  padding: 15px;
+}
+.overlay:hover .cardTextDiv h4 {
+  transform: translateY(-80px);
+  color: white;
+}
+.cardTextDiv p {
+  position: absolute;
+  bottom: 0;
+  opacity: 0;
+  color: white;
+  padding: 15px;
+}
+.overlay:hover .overlayImg img {
+  opacity: 0.3;
+  background-color: rgba(10, 3, 70, 0.9);
+}
+.overlay:hover .overlayImg {
+  background-color: rgba(10, 3, 70, 0.9);
+  opacity: 1;
+  transition: 0.4s ease-in-out;
+}
+.overlay:hover .headingMainDiv .cardTextDiv .paragraph p {
+  opacity: 1;
+  color: white;
+  font-size: 15px;
+  font-weight: 400;
+  animation: animateParaText 1s alternate;
+}
+@keyframes animateParaText {
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.imgInnerContent:hover {
+  opacity: 1;
+}
+.overlayImg {
+  display: block;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.darkOverlay:hover {
+  background: rgba(13, 39, 77, 0.9);
+}
+
+.overlayImgClass:hover {
+  transform: translateX(-30px) scale(1.2);
+  transition: all 0.4s linear;
+}
+.overlayImgClass {
+  width: 100%;
+  transform: translateX(0) scale(1.2);
+  transition: all 0.4s linear;
+}
+.cardContent .overlay .overlayImg {
+  object-fit: cover;
+  transition: 0.4s linear;
+}
+.cardContent .overlay:hover .overlayImg::before {
+  width: 15vw;
+}
+
+.cardContent .overlay .overlayImg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: multiply;
+  transition: 0.5s;
+}
+.cardContent .overlay .overlayImg {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: multiply;
+  transition: 0.5s;
+  opacity: 1;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(249, 243, 243, 0) 26%,
+    rgba(22, 20, 20, 0.27) 78%,
+    #000 95%,
+    #000 95%
+  );
+}
+.cardContent .overlay:hover .imgInnerContent {
+  position: absolute;
+  transition-delay: 0.3s;
+  transition: all 0.5s linear;
+  flex-direction: column;
+  opacity: 1;
+  animation: animatePara 1s;
+}
+.cardContent .overlay .imgInnerContent p {
+  text-transform: uppercase;
+  font-size: 20px;
+  opacity: 0;
+}
+.cardContent .overlay:hover .imgInnerContent p {
+  transition-delay: 0.2s;
+  color: white;
+  opacity: 1;
+  position: absolute;
+  top: -115px;
+  width: 18vw;
+  transition: 0.4s linear;
+  padding-left: 10px;
+}
+@keyframes animatePara {
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+.commonCardStyle {
+  font-weight: 400;
+  color: white;
+  font-size: 25px;
+  transition: 0.8s;
+}
+
+.column_first {
+  background: #0d274d;
+  border-radius: 15px 0px 0px 15px;
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+.image_wire {
+  height: 100%;
+  width: 100%;
+}
+.card_header {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #ffffff;
+  padding: 24px 0 35px 44px;
+}
+.card_heading {
+  font-family: "Roboto";
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  padding-left: 6%;
+  line-height: 35px;
+  margin: 22% 0% 0%;
+  color: #ffffff;
+}
+.card_text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  padding: 5% 14% 0px 5.5%;
+  color: #ffffff;
+}
+.wireGridClass {
+  overflow: hidden;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.hoverEffect {
+  width: 100%;
+  transform: translateX(0) scale(1.2);
+  transition: all 0.4s linear;
+}
+.hoverEffect:hover {
+  transform: translateX(-30px) scale(1.2);
+  cursor: pointer;
+}
+@keyframes animate {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(-10px);
+  }
+}
+
+.display {
+  display: flex;
+}
+.card-background {
+  background-repeat: no-repeat;
+}
+.cardBody {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.technologiesPage .cardMenu {
+  box-shadow: 0 0 0 0;
+}
+.cardGrid .cardContent:last-child {
+  padding: 7px;
+}
+.cardGrid .cardContent {
+  border-radius: 15px;
+  margin-top: 20px;
+  height: 35vh;
+  width: 25.5vw;
+}
+.technologiesPage .boxBelow {
+  margin-top: 35px;
+  height: 50px;
+  background: #0d274d;
+  border-radius: 30px;
+}
+/* --------------left software img style--------- */
+.softwareImageOverlay .divImgClass {
+  opacity: 1;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(249, 243, 243, 0) 26%,
+    rgba(22, 20, 20, 0.27) 78%,
+    #000 95%,
+    #000 95%
+  );
+}
+.softwareImageOverlay:hover .divImgClass img {
+  opacity: 0.3;
+}
+.softwareImageOverlay:hover .divImgClass {
+  background-color: rgba(10, 3, 70, 0.9);
+  opacity: 1;
+  transition: 0.4s ease-in-out;
+}
+.technologiesPage .softwareImageOverlay {
+  padding: 0 20px 0 0;
+}
+.cardTextHeading {
+  position: absolute;
+  bottom: 35px;
+  transition: 0.3s linear;
+  color: white;
+  font-size: 25px;
+  font-weight: 500;
+  padding-left: 15px;
+}
+.softwareImageOverlay:hover .cardDiv h4 {
+  transform: translateY(-50px);
+  color: white;
+}
+.cardDiv p {
+  position: absolute;
+  bottom: 25px;
+  opacity: 0;
+  color: white;
+}
+.softwareImageOverlay:hover .cardDiv .paraText p {
+  opacity: 1 !important;
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  padding-bottom: 20px;
+  padding-left: 15px;
+  animation: animateParaText 1s alternate;
+}
+.divImgClass {
+  display: block;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.technologiesPage .marginTop {
+  margin-top: 45px;
+}
+.bck1 {
+  position: relative;
+}
+.imageLeft {
+  height: 78vh;
+}
+.text {
+  position: absolute;
+  top: 28px;
+  left: 4%;
+  color: white;
+}
+
+.imgTagSoftware:hover {
+  transform: translateX(-30px) scale(1.2);
+}
+.imgTagSoftware {
+  width: 100%;
+  transform: translateX(0) scale(1.2);
+  transition: all 0.4s linear;
+}
+
+/* ------------right security img style-------- */
+.securityOverlay .divImgClassSecurity {
+  opacity: 1;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(249, 243, 243, 0) 26%,
+    rgba(22, 20, 20, 0.27) 78%,
+    #000 95%,
+    #000 95%
+  );
+}
+.securityOverlay:hover .divImgClassSecurity img {
+  opacity: 0.3;
+}
+.securityOverlay:hover .divImgClassSecurity {
+  background-color: rgba(10, 3, 70, 0.9);
+  opacity: 1;
+  transition: 0.4s ease-in-out;
+}
+.technologiesPage .securityOverlay {
+  padding: 0 0 0 0;
+}
+.npm {
+  position: absolute;
+  top: 28px;
+  left: 4%;
+  color: white;
+}
+.cardTextHeadingSecurity {
+  position: absolute;
+  bottom: 40px;
+  transition: 0.3s linear;
+  color: white;
+  font-size: 25px;
+  font-weight: 500;
+  padding-left: 15px;
+}
+.marginTop .bck2 {
+  position: relative;
+}
+.imgTagSecurity:hover {
+  transform: translateX(-30px) scale(1.2);
+}
+.imgTagSecurity {
+  width: 100%;
+  height: 77vh;
+  transform: translateX(0) scale(1.2);
+  transition: all 0.4s linear;
+}
+.cardDivSecurity {
+  position: absolute;
+  bottom: 35px;
+  overflow: hidden;
+}
+.securityOverlay:hover .headingMainDivSoftware h4 {
+  transform: translateY(-80px);
+  color: white;
+}
+.paraTextSecurity p {
+  opacity: 0;
+}
+.securityOverlay:hover .cardDivSecurity .paraTextSecurity p {
+  opacity: 1 !important;
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  padding-bottom: 20px;
+  padding-left: 15px;
+  animation: animateParaText 1s alternate;
+}
+.imageRight {
+  height: 77vh;
+  width: 100%;
+}
+.textSecurity {
+  position: absolute;
+  top: 0;
+  padding: 20px;
+  color: white;
+  font-family: "Roboto";
+}
+.divImgClassSecurity {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 15px;
+}
+.divSecurity {
+  overflow: hidden;
+  border-radius: 15px;
+}
+.divSecurity {
+  display: block;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 77vh;
+}
+.securityImgTag {
+  width: 100%;
+  height: 100%;
+  transform: translateX(0) scale(1.2);
+  transition: all 0.4s linear;
+}
+.securityImgTag:hover {
+  height: 100%;
+  transform: translateX(-30px) scale(1.2);
+}
+.securityImgTagHover {
+  height: 100%;
+  transform: translateX(-30px) scale(1.2);
+}
+.topHeadingSecurity {
+  position: absolute;
+  top: 28px;
+  left: 4%;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #ffffff;
+  width: 96%;
+  border-radius: 15px;
+  transition: all 0.4s ease;
+}
+
+.topHeading:hover {
+  height: 77vh;
+  width: 96%;
+  border-radius: 15px;
+}
+.rightImgGradient {
+  position: absolute;
+  bottom: 0;
+  transition: background 0.6s ease-in-out;
+  padding-right: 20px;
+}
+.heading3 {
+  position: absolute;
+  bottom: 109px;
+}
+.paraDiv {
+  max-height: 0;
+  height: 100%;
+  margin: 0;
+  transition: all 0.4s ease-in-out;
+  transform: translateX(-100%);
+  opacity: 0;
+}
+.paraDiv:focus {
+  max-height: 100px;
+  margin-bottom: 0.9375em;
+  opacity: 1;
+  transform: translateX(-100%);
+}
+/* 320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV */
+
+@media screen and (min-width: 279px) and (max-width: 480px) {
+  .hr {
+    margin-bottom: 10px;
+    width: 90% !important;
+    margin: 2% !important;
+  }
+  .imageToResponsive {
+    width: 50%;
+    margin-left: 2%;
+  }
+
+  .ourClientsTitle .ourClientsIcon,
+  .ourClientsTitle .ourClientsText {
+    font-size: 1.5rem;
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 760px) {
+  .hr {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 761px) and (max-width: 1024px) {
+  .hr {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1281px) {
+  .hr {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .topContainer .hr {
+    height: 2px;
+    background-color: #0d274d;
+    width: 90% !important;
+    margin: 2% auto;
+  }
+  .ourClientsTitle {
+    margin-left: 16%;
+  }
+
+  .technologiesTitle .technologiesText {
+    font-weight: 800;
+  }
+  .grid1 {
+    width: 80%;
+    margin: auto;
+  }
+}
