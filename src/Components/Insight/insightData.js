@@ -1,9 +1,5 @@
-import {
-  Typography,
-  MenuList,
-} from "@material-ui/core";
-import './styles.css';
-
+import { Typography, MenuList } from "@material-ui/core";
+import "./styles.css";
 
 /**
  * Default Service Blog
@@ -13,154 +9,203 @@ export const DEFAULT_SERVICES = {
   label: `Our Services`,
   value: 10,
   color: "#002446",
-  button_text: 'Know More',
+  button_text: "Know More",
   text_color: "white",
-  info: (<>
-    <Typography
-      variant={"body1"}
-      className={` pieInfoList`}
-    >
-      We provide Best in class services  belongs to all IT technologies If you’re searching for talented tech minds who are dedicated to their work, we are a perfect fit. We are a dynamic software development company based in USA.
-    </Typography>
-  </>)
+  info: (
+    <>
+      <Typography variant={"body1"} className={` pieInfoList`}>
+        We provide Best in class services belongs to all IT technologies If
+        you’re searching for talented tech minds who are dedicated to their
+        work, we are a perfect fit. We are a dynamic software development
+        company based in USA.
+      </Typography>
+    </>
+  ),
 };
 
 /**
-    * Insight Services
-    */
+ * Insight Services
+ */
 export const INSIGHT_DATA = {
-  NETWORK: {
-    id: "NETWORK",
-    // label: `Network (Wired & Wireless)`, // old label
-    label: `Network`,
+  PROFESSIONAL_SERVICES: {
+    id: "PROFESSIONAL_SERVICES",
+    label: `Professional Services`,
     value: 10,
     color: "#002446",
     button_text: "Know More",
     text_color: "white",
-    info: (<>
-      <Typography
-        variant={"body1"}
-        className={` pieInfoList`}
-      >
-        Since the network is core to any Enterprise or Internet service provider business, utmost importance is given to network planning, design, and engineering functions. The key drivers for this function are
-        <MenuList className={` pieInfoMenu`}>•	optimum utilisation of network resources,</MenuList>
-        <MenuList className={` pieInfoMenu`}>•	alignment of network strategy to business strategy,</MenuList>
-        <MenuList className={` pieInfoMenu`}>•	OPEX and CAPEX efficiency, and</MenuList>
-        <MenuList className={` pieInfoMenu`}>•	technology readiness for competitive products and services.</MenuList>
-        GSV supports engineering across wired and wireless technology domains supporting multiple equipment and platforms. Our network engineering function comprises Planning, Design, and Implementation services based on understanding an Enterprise or Service provider's network requirements.
-      </Typography>
-    </>)
+    info: (
+      <>
+        <Typography variant={"body1"} className={` pieInfoList`}>
+          Professional Services is the conductor you need to orchestrate the
+          successful completion of your highest priorities. It takes vision,
+          leadership, and execution to deliver world-class digital
+          transformation even with the best people in the correct positions.
+          <br />
+          <br />
+          Accelerate and de-risk your technology transformations with leading
+          expertise. Quickly go from ideas to outcomes while maximizing the
+          value of your IT investment. Optimize for today’s challenges in
+          complex environments as we help you to validate, deploy, integrate,
+          and drive the adoption of the latest technologies. Put your plan into
+          action today.
+        </Typography>
+      </>
+    ),
   },
 
-  CYBERSECURITY: {
-    id: "CYBERSECURITY",
-    label: "Cybersecurity",
+  MANAGED_SERVICES: {
+    id: "MANAGED_SERVICES",
+    label: "Managed Services",
     value: 10,
     color: "#46b6e6",
-    button_text: 'Know More',
+    button_text: "Know More",
     text_color: "white",
-    info: (<>
-      <Typography
-        variant={"body1"}
-        className={` pieInfoList`}
-      >
-        Wherever your business goes, whomever it works with, you need cybersecurity that covers it all. Network threats are a reality; you cannot protect your business by just doing a formality. It would be best if you had a lot of experience and expertise in dealing with threats & vulnerabilities; this is where we make ourselves count.
-        We create cybersecurity solutions tailored to your specific business needs. We defend against cyberattacks with proactive, focused, industry-relevant threat intelligence to give you the confidence from knowing your business is secure.
-      </Typography>
-    </>)
+    info: (
+      <>
+        <Typography variant={"body1"} className={` pieInfoList`}>
+          Building a relationship with a trusted managed service provider (MSP)
+          can make a difference in your ability to compete and innovate. Whether
+          looking for a fully outsourced MSP solution or a consulting partner to
+          guide your in-house team, GSV develops a plan to simplify and
+          strengthen your approach to cloud, cybersecurity, governance, risk
+          management, and compliance (GRC).
+          <br />
+          <br />
+          GSV also delivers complete cloud infrastructure and application
+          migration services—from design and implementation to management and
+          24/7 support. With an eye on consulting, security and compliance,
+          we’ll help you stay one step ahead, no matter where you are on your
+          cloud adoption journey.
+        </Typography>
+      </>
+    ),
   },
 
-  DATA_CENTER: {
-    id: "DATA_CENTER",
-    // label: "Data Center Virtualization", // old label
-    label: "Data Center",
+  DEVOPS: {
+    id: "DEVOPS",
+    label: "DevOps & DevSecOps Services ",
     value: 10,
     color: "#3c454a",
-    button_text: 'Know More',
+    button_text: "Know More",
     text_color: "white",
-    info: (<>
-      <Typography
-        variant={"body1"}
-        className={` pieInfoList`}
-      >
-        GSV Systems Data Centers deployment specialists are experts in logistics, procurement, quality control, scheduling and best safety practices. We customize our deployment services size, scope and specifics to your preferences.
-        For example:
-        <MenuList className={` pieInfoMenu`} >•	We'll happily take on an entire data centre migration and deployment or handle part of the project. </MenuList>
-        <MenuList className={` pieInfoMenu`} >•	Based on your specifications, we can utilize your chosen vendors or provide recommendations from our ecosystem of best-of-breed partners.  </MenuList>
-        <MenuList className={` pieInfoMenu`} >•	You can choose from flexible billing options, including an open-book, cost-plus model.  </MenuList>
-      </Typography >
-    </>)
+    info: (
+      <>
+        <Typography variant={"body1"} className={` pieInfoList`}>
+          Application delivery has shifted from large-scale, project-based
+          implementations to continuous evolution. DevOps makes this possible by
+          bringing business, development and operation teams together and
+          applying automated processes to streamline IT.
+          <br />
+          <br />
+          We automate your cloud infrastructure and procedures while ensuring
+          continuous delivery and integration to get your product to the market
+          quickly. Our industry-leading DevOps services and market-validated
+          DevOps best practices bring a feature-rich product to the market in a
+          lower time frame and cost.
+        </Typography>
+      </>
+    ),
   },
-  COLLABORATION: {
-    id: "COLLABORATION",
-    label: "Collaboration",
+  ADVISORY_CONSULTANCY: {
+    id: "ADVISORY_CONSULTANCY",
+    label: "Advisory & Consultancy Services",
     value: 10,
     color: "#41d946",
-    button_text: 'Know More',
+    button_text: "Know More",
     text_color: "white",
-    info: (<>
-      <Typography
-        variant={"body1"}
-        className={` pieInfoList`}
-      >
-        Our end-to-end UC solutions help modernize your communication environment, starting with a consulting assessment. From there, we can help you maximize investments in Cisco & Microsoft platforms – ensuring successful sharing, no matter where or
-        when your employees work. You can learn about leveraging mobility, presence and contact capabilities to offer employees anytime, anywhere, any device access to UCC applications needed for their day-to-day duties.<br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; If you’re ready to modernize communications, we can help. Our experts work with you to devise an apt strategy and roadmap aligned to your business objectives by seamlessly integrating all your contacts and collaboration platforms into one unified solution.
-      </Typography >
-    </>)
+    info: (
+      <>
+        <Typography variant={"body1"} className={` pieInfoList`}>
+          Our clients operate in some of the world's most complex, technically
+          demanding and fast-paced industries. They rely on us for consulting
+          and advisory services that bring clarity, set the correct agenda and
+          ultimately deliver results.
+          <br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Our industry-renowned experts
+          thoroughly assess your IT environment and business processes to carve
+          an IT strategy capable of executing your business needs and furthering
+          your company's vision. Even if you are looking for a custom solution
+          for a one-off project or a temporary need, we will provide unlimited
+          resources to upgrade your IT world. 
+        </Typography>
+      </>
+    ),
   },
-  CLOUD_COMP: {
-    id: "CLOUD_COMP",
-    label: "Cloud & Computing",
+  STAFF_AUGMENTATION: {
+    id: "STAFF_AUGMENTATION",
+    label: "Staff Augmentation Services ",
     value: 10,
     color: "#9d0402",
-    button_text: 'Know More',
+    button_text: "Know More",
     text_color: "white",
 
-    info: (<>
-      <Typography
-        variant={"body1"}
-        className={` pieInfoList`}
-      >
-        GSV helps organizations transform their IT environment with cost-effective Cloud services. Our team of experts delivers cutting-edge Cloud computing consulting services that help companies boost their productivity to new heights.
-        <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Our Cloud managed services enable organizations to reduce their overheads and improve productivity, lowering costs and reducing time-to-market.
-        <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We assist customers with our on-demand enterprise Cloud solutions, tools, and applications such as servers, storage, databases, networking, software, and apps.
-      </Typography >
-    </>)
+    info: (
+      <>
+        <Typography variant={"body1"} className={` pieInfoList`}>
+          As your implementation evolves over time, you’ll periodically
+          encounter a situation where you’ve defined a strategic project but
+          don’t have all of the staff resources available to execute the
+          project. As most IT teams are managing multiple projects as a standard
+          practice, it can be very easy to miss a critical opportunity simply
+          because of a lack of workforce. Leverage our IT staff augmentation
+          services to access certified IT professionals, including skilled
+          Network Architects, Cloud Architects, DevOps Engineers, Business
+          Analysts, Scrum Masters, and QA specialists. We can help you scale up
+          on demand with the right pool of talented individuals without
+          stretching your budget.
+        </Typography>
+      </>
+    ),
   },
-  IOT: {
-    id: "IOT",
-    label: "Internet of Things",
+  TRANSFORMATION_SERVICES: {
+    id: "TRANSFORMATION_SERVICES",
+    label: "Transformation Services ",
     value: 10,
     color: "#cfd4db",
-    button_text: 'Know More',
+    button_text: "Know More",
     text_color: "white",
-    info: (<>
-      <Typography
-        variant={"body1"}
-        className={` pieInfoList`}
-      >
-        Experts at GSV help industrial companies improve with collecting and analyzing data. IoT solutions provide data that can be utilized by Enterprise Resource Planning (ERP), Manufacturing Execution Systems (MES), and Supplier Relationship Management
-        (SRM) systems to discover previously unknown data and trends that can be evaluated to create more efficient operations.
-      </Typography >
-    </>)
+    info: (
+      <>
+        <Typography variant={"body1"} className={` pieInfoList`}>
+          Business demands keep changing, so your infrastructure must do more to
+          stay ahead of the competitive curve. Today's customers want seamless,
+          intuitive, personalized experiences while using products and services.
+          <br />
+          <br />
+          The digital era is forcing companies like yours to transform through
+          technology to stay relevant. Your business must be always-on, and your
+          infrastructure must predict change before it happens to act fast and
+          put a smile on users' faces. GSV is helping you prepare for the
+          digital era with infrastructure services transforming enterprises'
+          faces.
+        </Typography>
+      </>
+    ),
   },
 
   NOC: {
     id: "NOC",
-    label: "NOC/SOC",
+    label: "NOC/SOC Services",
     value: 10,
     color: "#2b5879",
-    button_text: 'Know More',
+    button_text: "Know More",
     text_color: "white",
-    info: (<>
-      <Typography
-        variant={"body1"}
-        className={` pieInfoList`}
-      >
-        Managed NOC & SOC are outsourced services designed to help organisations of all sizes improve their ability to detect and respond to bottlenecks and threats at a fraction of the price of building a SOC in-house.
-        <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Our ISO 27001:2013 certified SOC consists of security analysts, engineers, threat researchers and incident responders who work as a virtual extension of our customers’ in-house teams, managing and monitoring the latest detection technologies to hunt for and eliminate threats in their infancy, 24/7/365.
-      </Typography >
-    </>)
+    info: (
+      <>
+        <Typography variant={"body1"} className={` pieInfoList`}>
+          Accelerate Growth and Increase Profitability with NOC Services.
+          Managed NOC & SOC are outsourced services designed to help
+          organisations of all sizes improve their ability to detect and respond
+          to bottlenecks and threats at a fraction of the price of building a
+          SOC in-house. <br />
+          <br /> Our ISO 27001:2013 certified SOC consists of security analysts,
+          engineers, threat researchers and incident responders who work as a
+          virtual extension of our customers’ in-house teams, managing and
+          monitoring the latest detection technologies to hunt for and eliminate
+          threats in their infancy, 24/7/365
+        </Typography>
+      </>
+    ),
   },
 };

@@ -36,7 +36,12 @@ const MobileSubMenu = ({
 
       {Object.values(mobileSubMenus).map(({ label, menus }, index) => {
         return (
-          <MobileList menuIndex={index} title={label} mobileSubMenus={menus} />
+          <MobileList
+            key={index}
+            menuIndex={index}
+            title={label}
+            mobileSubMenus={menus}
+          />
         );
       })}
     </Drawer>
