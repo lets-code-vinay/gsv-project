@@ -146,7 +146,7 @@ const Footer = () => {
               variant={"h6"}
               className={`${classes.menuListTitleHeadOffice} menuListTitleHeadOffice`}
             >
-              Head Office -
+              Head Office:
             </Typography>
 
             <Typography
@@ -209,167 +209,67 @@ const Footer = () => {
               </a>
             </Box>
           </Grid>
-          <Grid item xs={12} sm={6} md={4} lg={3} id="grid">
-            <Typography
-              variant={"h5"}
-              className={`${classes.menuListTitle} menuListTitle`}
-            >
-              Contact Us
-            </Typography>
-            <Typography
-              variant={"body1"}
-              className={`${classes.menuListTextContact} menuListTextContact`}
-            >
-              Block #24, Set No. 549, Sector-3 New Shimla, Shimla, Himachal
-              Pradesh 171009
-            </Typography>
-            <br />
-            {/* <Typography
-              variant={"body1"}
-              className={`${classes.menuListTextContact} menuListTextContact`}
-            >
-              Mobile: 9818958822
-            </Typography>
-            <Typography
-              variant={"body1"}
-              className={`${classes.menuListTextContact} menuListTextContact`}
-            >
-              Phone: +91 - 124 4278999
-            </Typography>
-            <Typography
-              variant={"body1"}
-              className={`${classes.menuListTextContact} menuListTextContact`}
-            >
-              Email: sales@asianglobalsolutions.in
-            </Typography>
-
-            <Box className={`${classes.socialMedia} socialMedia`}>
-              <a
-                href="/contact-us"
-                className={`${classes.socialIcon} socialIcon`}
+          <Grid container style={{ marginTop: "2%" }}>
+            <Grid item xs={12} sm={6} md={4} lg={3} id="grid">
+              <Typography
+                variant={"h5"}
+                className={`${classes.menuListTitle} menuListTitle`}
               >
-                <RiFacebookBoxFill />
-              </a>
-              <a
-                href="/contact-us"
-                className={`${classes.socialIcon} socialIcon`}
+                Himachal Pradesh
+              </Typography>
+              <Typography
+                variant={"body1"}
+                className={`${classes.menuListTextContact} menuListTextContact`}
               >
-                <FaTwitterSquare />
-              </a>
-              <a
-                href="/contact-us"
-                className={`${classes.socialIcon} socialIcon`}
+                Block #24, Set No. 549, Sector-3 New Shimla, Shimla, Himachal
+                Pradesh 171009
+              </Typography>
+              <br />
+            </Grid>
+            <Grid item xs={12} sm={6} md={4} lg={3} id="grid">
+              <Typography
+                variant={"h5"}
+                className={`${classes.menuListTitle} menuListTitle`}
               >
-                <FaInstagram />
-              </a>
-              <a
-                href="/contact-us"
-                className={`${classes.socialIcon} socialIcon`}
+                Jharkhand
+              </Typography>
+              <Typography
+                variant={"body1"}
+                className={`${classes.menuListTextContact} menuListTextContact`}
               >
-                <FaLinkedin />
-              </a>
-              <a
-                href="/contact-us"
-                className={`${classes.socialIcon} socialIcon`}
+                199/A, Mandaliya Nagar, Panchwati Garden Lane, Bariatu, Ranchi,
+                Jharkhand 834009
+              </Typography>
+              <br />
+            </Grid>
+            <Grid item xs={12} sm={6} md={4} lg={3} id="grid">
+              <Typography
+                variant={"h5"}
+                className={`${classes.menuListTitle} menuListTitle`}
               >
-                <FiYoutube />
-              </a>
-            </Box> */}
-          </Grid>
-          <Grid item xs={12} sm={6} md={4} lg={3} id="grid">
-            <Typography
-              variant={"h5"}
-              className={`${classes.menuListTitle} menuListTitle`}
-            >
-              Contact Us
-            </Typography>
-            <Typography
-              variant={"body1"}
-              className={`${classes.menuListTextContact} menuListTextContact`}
-            >
-              199/A, Mandaliya Nagar, Panchwati Garden Lane, Bariatu, Ranchi,
-              Jharkhand 834009
-            </Typography>
-            <br />
-            {/* <Typography
-              variant={"body1"}
-              className={`${classes.menuListTextContact} menuListTextContact`}
-            >
-              Mobile: 9818958822
-            </Typography>
-            <Typography
-              variant={"body1"}
-              className={`${classes.menuListTextContact} menuListTextContact`}
-            >
-              Phone: +91 - 124 4278999
-            </Typography>
-            <Typography
-              variant={"body1"}
-              className={`${classes.menuListTextContact} menuListTextContact`}
-            >
-              Email: sales@asianglobalsolutions.in
-            </Typography>
-
-            <Box className={`${classes.socialMedia} socialMedia`}>
-              <a
-                href="/contact-us"
-                className={`${classes.socialIcon} socialIcon`}
+                USA
+              </Typography>
+              <Typography
+                variant={"body1"}
+                className={`${classes.menuListTextContact} menuListTextContact`}
               >
-                <RiFacebookBoxFill />
-              </a>
-              <a
-                href="/contact-us"
-                className={`${classes.socialIcon} socialIcon`}
+                Liberty Court, Piscataway, New Jersey, 08854, USA
+              </Typography>
+            </Grid>
+            <Grid item xs={12} sm={6} md={4} lg={3} id="grid">
+              <Typography
+                variant={"h5"}
+                className={`${classes.menuListTitle} menuListTitle`}
               >
-                <FaTwitterSquare />
-              </a>
-              <a
-                href="/contact-us"
-                className={`${classes.socialIcon} socialIcon`}
+                Europe
+              </Typography>
+              <Typography
+                variant={"body1"}
+                className={`${classes.menuListTextContact} menuListTextContact`}
               >
-                <FaInstagram />
-              </a>
-              <a
-                href="/contact-us"
-                className={`${classes.socialIcon} socialIcon`}
-              >
-                <FaLinkedin />
-              </a>
-              <a
-                href="/contact-us"
-                className={`${classes.socialIcon} socialIcon`}
-              >
-                <FiYoutube />
-              </a>
-            </Box> */}
-          </Grid>
-          <Grid item xs={12} sm={6} md={4} lg={3} id="grid">
-            <Typography
-              variant={"h5"}
-              className={`${classes.menuListTitle} menuListTitle`}
-            >
-              Contact Us
-            </Typography>
-            <Typography
-              variant={"body1"}
-              className={`${classes.menuListTextContact} menuListTextContact`}
-            >
-              Liberty Court, Piscataway, New Jersey, USA 08854
-            </Typography>
-          </Grid>
-          <Grid item xs={12} sm={6} md={4} lg={3} id="grid">
-            <Typography
-              variant={"h5"}
-              className={`${classes.menuListTitle} menuListTitle`}
-            >
-              Contact Us
-            </Typography>
-            <Typography
-              variant={"body1"}
-              className={`${classes.menuListTextContact} menuListTextContact`}
-            >
-              Vredenoord, 1852 WL Heiloo, The Neatherlands
-            </Typography>
+                Vredenoord, 1852 WL Heiloo, The Netherlands
+              </Typography>
+            </Grid>
           </Grid>
         </Grid>
       </Box>
