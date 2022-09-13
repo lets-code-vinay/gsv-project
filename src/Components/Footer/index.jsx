@@ -143,6 +143,13 @@ const Footer = () => {
               Contact Us
             </Typography>
             <Typography
+              variant={"h6"}
+              className={`${classes.menuListTitleHeadOffice} menuListTitleHeadOffice`}
+            >
+              Head Office:
+            </Typography>
+
+            <Typography
               variant={"body1"}
               className={`${classes.menuListTextContact} menuListTextContact`}
             >
@@ -154,19 +161,19 @@ const Footer = () => {
               variant={"body1"}
               className={`${classes.menuListTextContact} menuListTextContact`}
             >
-              Mobile: 9818958822
+              Mobile: +91 7065-478-478
             </Typography>
             <Typography
               variant={"body1"}
               className={`${classes.menuListTextContact} menuListTextContact`}
             >
-              Phone: +91 - 124 4278999
+              Phone: +1-646-350-8962(USA)
             </Typography>
             <Typography
               variant={"body1"}
               className={`${classes.menuListTextContact} menuListTextContact`}
             >
-              Email: sales@asianglobalsolutions.in
+              Email: info@gsvsystems.com
             </Typography>
 
             <Box className={`${classes.socialMedia} socialMedia`}>
@@ -202,6 +209,68 @@ const Footer = () => {
               </a>
             </Box>
           </Grid>
+          <Grid container style={{ marginTop: "2%" }}>
+            <Grid item xs={12} sm={6} md={4} lg={3} id="grid">
+              <Typography
+                variant={"h5"}
+                className={`${classes.menuListTitle} menuListTitle`}
+              >
+                Himachal Pradesh
+              </Typography>
+              <Typography
+                variant={"body1"}
+                className={`${classes.menuListTextContact} menuListTextContact`}
+              >
+                Block #24, Set No. 549, Sector-3 New Shimla, Shimla, Himachal
+                Pradesh 171009
+              </Typography>
+              <br />
+            </Grid>
+            <Grid item xs={12} sm={6} md={4} lg={3} id="grid">
+              <Typography
+                variant={"h5"}
+                className={`${classes.menuListTitle} menuListTitle`}
+              >
+                Jharkhand
+              </Typography>
+              <Typography
+                variant={"body1"}
+                className={`${classes.menuListTextContact} menuListTextContact`}
+              >
+                199/A, Mandaliya Nagar, Panchwati Garden Lane, Bariatu, Ranchi,
+                Jharkhand 834009
+              </Typography>
+              <br />
+            </Grid>
+            <Grid item xs={12} sm={6} md={4} lg={3} id="grid">
+              <Typography
+                variant={"h5"}
+                className={`${classes.menuListTitle} menuListTitle`}
+              >
+                USA
+              </Typography>
+              <Typography
+                variant={"body1"}
+                className={`${classes.menuListTextContact} menuListTextContact`}
+              >
+                Liberty Court, Piscataway, New Jersey, 08854, USA
+              </Typography>
+            </Grid>
+            <Grid item xs={12} sm={6} md={4} lg={3} id="grid">
+              <Typography
+                variant={"h5"}
+                className={`${classes.menuListTitle} menuListTitle`}
+              >
+                Europe
+              </Typography>
+              <Typography
+                variant={"body1"}
+                className={`${classes.menuListTextContact} menuListTextContact`}
+              >
+                Vredenoord, 1852 WL Heiloo, The Netherlands
+              </Typography>
+            </Grid>
+          </Grid>
         </Grid>
       </Box>
       <FooterBottom />
@@ -230,6 +299,14 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: "10px",
     fontWeight: "600",
   },
+  menuListTitleHeadOffice: {
+    fontSize: "1rem",
+    color: THEME_COLOR.color_5,
+    width: "80%",
+    marginBottom: "10px",
+    fontWeight: "600",
+  },
+
   menuList: {
     display: "flex",
     justifyContent: "start",

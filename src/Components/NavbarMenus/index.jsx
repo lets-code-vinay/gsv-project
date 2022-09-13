@@ -206,12 +206,13 @@ const useStyles = makeStyles((theme) => ({
   },
 
   imageSubMenu: {
-    objectFit: "cover",
+    objectFit: "fill",
     objectPosition: "20% 10%" /* try 20px 10px */,
   },
 
   imageBlock: {
     overflow: "hidden",
+    height: "100%",
   },
   //--------information bar-------------
   menuInformationBar: {

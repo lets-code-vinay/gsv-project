@@ -1,5 +1,5 @@
 import React, { memo, useState } from "react";
-import { shape, string } from "prop-types";
+import { number, shape, string } from "prop-types";
 import {
   Typography,
   Accordion,
@@ -10,6 +10,7 @@ import { Add as AddIcon, Remove as RemoveIcon } from "@material-ui/icons";
 
 import "./style.css";
 import MobileNestedList from "./MobileNestedList";
+import { oneOfType } from "prop-types";
 
 const MobileList = ({ title, mobileSubMenus, menuIndex }) => {
   const [isExpanded, setExpand] = useState(false);
@@ -63,7 +64,7 @@ const MobileList = ({ title, mobileSubMenus, menuIndex }) => {
 MobileList.propTypes = {
   title: string,
   mobileSubMenus: shape({}),
-  menuIndex: string,
+  menuIndex: oneOfType([string, number]),
 };
 
 /**
@@ -72,7 +73,7 @@ MobileList.propTypes = {
 MobileList.defaultProps = {
   title: "",
   mobileSubMenus: {},
-  menuIndex: "",
+  menuIndex: "" || 0,
 };
 
 export default memo(MobileList);
