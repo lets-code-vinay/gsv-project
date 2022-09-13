@@ -12,7 +12,7 @@ import {
 import "./style.css";
 
 import Software_Define_Grid from "../../Assets/Images/Software_Define_grid.png";
-import Security_Img from "../../Assets//Images/security.png";
+import Security_Img from "../../Assets/Images/security.png";
 import technologyWireImage from "../../Assets/Images/technology-wire.png";
 import { cardBox } from "../../Configs/Technologies";
 

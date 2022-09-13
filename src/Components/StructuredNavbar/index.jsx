@@ -1,4 +1,4 @@
-import React, { useState, memo, useMemo } from "react";
+import React, { useState, memo, useMemo, useEffect, useRef } from "react";
 
 import SubNavBar from "../SubNavBar";
 import MainNavBar from "../MainNavBar";
@@ -13,6 +13,20 @@ const StructuredNavbar = () => {
   const [navMenus, setNavMenus] = useState({});
 
   const isActiveMemo = useMemo(() => isActive, [isActive]);
+
+  const nodeRef = useRef(null);
+
+  const handleClickOutside = (event) => {
+    if (nodeRef.current && !nodeRef.current.contains(event.target)) {
+      return setSubNavbarOpen(false);
+    }
+  };
+  useEffect(() => {
+    document.addEventListener("click", handleClickOutside, true);
+    return () => {
+      document.removeEventListener("click", handleClickOutside, true);
+    };
+  });
 
   /**
    * @description Opening and passing data to submenus
@@ -50,9 +64,9 @@ const StructuredNavbar = () => {
    *
    * @param {Boolean} closeSubNavbar
    */
-  const closeSubNavbar = (closeSubNavbar) => {
-    setSubNavbarOpen(closeSubNavbar);
-  };
+  // const closeSubNavbar = (closeSubNavbar) => {
+  //   setSubNavbarOpen(closeSubNavbar);
+  // };
 
   return (
     <>
@@ -64,6 +78,7 @@ const StructuredNavbar = () => {
         onNavMenus={setNavMenus}
         isSubSectionOpen={isSubNavbarOpened}
         isMoreOpen={isMoreOpen}
+        nodeRef={nodeRef}
       />
 
       {/* ---- Sub nav bar --- */}
@@ -73,7 +88,9 @@ const StructuredNavbar = () => {
           isSubNavbarOpened={isSubNavbarOpened}
           onNavMenus={handleNavMenus}
           navMenus={navMenus.menus}
-          onCloseSubNavbar={closeSubNavbar}
+          setSubNavbarOpen={setSubNavbarOpen}
+          nodeRef={nodeRef}
+          // onCloseSubNavbar={closeSubNavbar}
         />
       )}
 

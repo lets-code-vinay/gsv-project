@@ -1,13 +1,16 @@
 import { THEME_COLOR } from "../Theme";
-import NETWORK_IMAGE from "../../Assets/Images/Menu-images/network-1.jpg";
+import NETWORK_IMAGE from "../../Assets/Images/Menu-images/network1.jpg";
 import LAN_ICON from "../../Assets/Icons/lan.svg";
 import WAN_ICON from "../../Assets/Icons/wan.svg";
 import WAM_ICON from "../../Assets/Icons/wireless.svg";
 import MISC_ICON from "../../Assets/Icons/misc.svg";
 import POPULAR_ICON from "../../Assets/Icons/popular.svg";
 
-import SECURITY_MAIN_IMAGE from "../../Assets/Images/Menu-images/security.jpg";
-import DATA_CENTER_SECURITY_IMAGE from "../../Assets/Images/Menu-images/data-center-security.jpg";
+import CLOUD_IMAGE from "../../Assets/Images/Menu-images/cloud.jpg";
+import IOT_IMAGE from "../../Assets/Images/Menu-images/IOt.jpg";
+import SECURITY_MAIN_IMAGE from "../../Assets/Images/Menu-images/security1.jpg";
+import COLLABORATION from "../../Assets/Images/Menu-images/collaboration.jpg";
+import DATA_CENTER_SECURITY_IMAGE from "../../Assets/Images/Menu-images/datacenter.jpg";
 
 import MOBILE_SECURITY_IMAGE from "../../Assets/Images/Menu-images/mobile-cyber-security.png";
 import MOBILE_DATA_SECURITY_IMAGE from "../../Assets/Images/Menu-images/mobile-data-security.jpg";
@@ -852,9 +855,9 @@ export const NAVBAR_MENUS = {
         label: "COLLABORATION AND PRODUCTIVITY",
         value: "COLLABORATION",
         menus: {
-          image: SECURITY_MAIN_IMAGE,
+          image: COLLABORATION,
           mobile_image: MOBILE_SECURITY_IMAGE,
-          title: "SECURITY",
+          title: "COLLABORATION",
           color: THEME_COLOR.security_red,
           subtitle: `Security-Implement enterprise-class connectivity for wired and wireless. Multi-vendor technology and hardware's Satellite, deployment, monitoring and support`,
           menus: {
@@ -1017,12 +1020,12 @@ export const NAVBAR_MENUS = {
        * SERVICE_PROVIDER
        */
       SERVICE_PROVIDER: {
-        label: "SERVICE_PROVIDER",
+        label: "SERVICE PROVIDER",
         value: "SERVICE_PROVIDER",
         menus: {
           image: SECURITY_MAIN_IMAGE,
           mobile_image: MOBILE_SECURITY_IMAGE,
-          title: "SECURITY",
+          title: "SERVICE PROVIDER",
           color: THEME_COLOR.security_red,
           subtitle: `Security-Implement enterprise-class connectivity for wired and wireless. Multi-vendor technology and hardware's Satellite, deployment, monitoring and support`,
           menus: {
@@ -1188,9 +1191,9 @@ export const NAVBAR_MENUS = {
         label: "CLOUD AND COMPUTING ",
         value: "CAC",
         menus: {
-          image: SECURITY_MAIN_IMAGE,
+          image: CLOUD_IMAGE,
           mobile_image: MOBILE_SECURITY_IMAGE,
-          title: "SECURITY",
+          title: "CLOUD AND COMPUTING",
           color: THEME_COLOR.security_red,
           subtitle: `Security-Implement enterprise-class connectivity for wired and wireless. Multi-vendor technology and hardware's Satellite, deployment, monitoring and support`,
           menus: {
@@ -1315,9 +1318,9 @@ export const NAVBAR_MENUS = {
         label: "INTERNET OF THINGS (IoT) ",
         value: "IOT",
         menus: {
-          image: SECURITY_MAIN_IMAGE,
+          image: IOT_IMAGE,
           mobile_image: MOBILE_SECURITY_IMAGE,
-          title: "SECURITY",
+          title: "IOT",
           color: THEME_COLOR.security_red,
           subtitle: `Security-Implement enterprise-class connectivity for wired and wireless. Multi-vendor technology and hardware's Satellite, deployment, monitoring and support`,
           menus: {
@@ -1331,9 +1334,9 @@ export const NAVBAR_MENUS = {
               mobile_image: "",
               menus: {
                 INDUSTRIAL_NETWORKING: {
-                  label: "Industiral Networking",
+                  label: "Industrial Networking",
                   value: "INDUSTRIAL_NETWORKING",
-                  path: "/IoT/Industiral-Networking",
+                  path: "/IoT/Industrial-Networking",
                 },
                 IRS: {
                   label: "Industrial Routes & Switches",
@@ -1341,9 +1344,9 @@ export const NAVBAR_MENUS = {
                   path: "/IoT/Industrial-Routes-Switches",
                 },
                 IDS: {
-                  label: "Indutrial Data Security`",
+                  label: "Industrial Data Security`",
                   value: "IDS",
-                  path: "/IoT/Indutrial-Data-Security`",
+                  path: "/IoT/Industrial-Data-Security`",
                 },
                 IWAP: {
                   label: "Industrial Wireless Access Points",
@@ -2207,7 +2210,7 @@ export const NAVBAR_MENUS = {
         menus: {
           image: SECURITY_MAIN_IMAGE,
           mobile_image: MOBILE_SECURITY_IMAGE,
-          title: "SECURITY",
+          title: "COLLABORATION",
           color: THEME_COLOR.security_red,
           subtitle: `Security-Implement enterprise-class connectivity for wired and wireless. Multi-vendor technology and hardware's Satellite, deployment, monitoring and support`,
           menus: {
@@ -2473,7 +2476,7 @@ export const NAVBAR_MENUS = {
         menus: {
           image: SECURITY_MAIN_IMAGE,
           mobile_image: MOBILE_SECURITY_IMAGE,
-          title: "SECURITY",
+          title: "SERVICE PROVIDER",
           color: THEME_COLOR.security_red,
           subtitle: `Security-Implement enterprise-class connectivity for wired and wireless. Multi-vendor technology and hardware's Satellite, deployment, monitoring and support`,
           menus: {

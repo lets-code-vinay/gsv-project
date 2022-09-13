@@ -143,6 +143,13 @@ const Footer = () => {
               Contact Us
             </Typography>
             <Typography
+              variant={"h6"}
+              className={`${classes.menuListTitleHeadOffice} menuListTitleHeadOffice`}
+            >
+              Head Office -
+            </Typography>
+
+            <Typography
               variant={"body1"}
               className={`${classes.menuListTextContact} menuListTextContact`}
             >
@@ -151,6 +158,73 @@ const Footer = () => {
             </Typography>
             <br />
             <Typography
+              variant={"body1"}
+              className={`${classes.menuListTextContact} menuListTextContact`}
+            >
+              Mobile: +91 7065-478-478
+            </Typography>
+            <Typography
+              variant={"body1"}
+              className={`${classes.menuListTextContact} menuListTextContact`}
+            >
+              Phone: +1-646-350-8962(USA)
+            </Typography>
+            <Typography
+              variant={"body1"}
+              className={`${classes.menuListTextContact} menuListTextContact`}
+            >
+              Email: info@gsvsystems.com
+            </Typography>
+
+            <Box className={`${classes.socialMedia} socialMedia`}>
+              <a
+                href="/contact-us"
+                className={`${classes.socialIcon} socialIcon`}
+              >
+                <RiFacebookBoxFill />
+              </a>
+              <a
+                href="/contact-us"
+                className={`${classes.socialIcon} socialIcon`}
+              >
+                <FaTwitterSquare />
+              </a>
+              <a
+                href="/contact-us"
+                className={`${classes.socialIcon} socialIcon`}
+              >
+                <FaInstagram />
+              </a>
+              <a
+                href="/contact-us"
+                className={`${classes.socialIcon} socialIcon`}
+              >
+                <FaLinkedin />
+              </a>
+              <a
+                href="/contact-us"
+                className={`${classes.socialIcon} socialIcon`}
+              >
+                <FiYoutube />
+              </a>
+            </Box>
+          </Grid>
+          <Grid item xs={12} sm={6} md={4} lg={3} id="grid">
+            <Typography
+              variant={"h5"}
+              className={`${classes.menuListTitle} menuListTitle`}
+            >
+              Contact Us
+            </Typography>
+            <Typography
+              variant={"body1"}
+              className={`${classes.menuListTextContact} menuListTextContact`}
+            >
+              Block #24, Set No. 549, Sector-3 New Shimla, Shimla, Himachal
+              Pradesh 171009
+            </Typography>
+            <br />
+            {/* <Typography
               variant={"body1"}
               className={`${classes.menuListTextContact} menuListTextContact`}
             >
@@ -200,7 +274,102 @@ const Footer = () => {
               >
                 <FiYoutube />
               </a>
-            </Box>
+            </Box> */}
+          </Grid>
+          <Grid item xs={12} sm={6} md={4} lg={3} id="grid">
+            <Typography
+              variant={"h5"}
+              className={`${classes.menuListTitle} menuListTitle`}
+            >
+              Contact Us
+            </Typography>
+            <Typography
+              variant={"body1"}
+              className={`${classes.menuListTextContact} menuListTextContact`}
+            >
+              199/A, Mandaliya Nagar, Panchwati Garden Lane, Bariatu, Ranchi,
+              Jharkhand 834009
+            </Typography>
+            <br />
+            {/* <Typography
+              variant={"body1"}
+              className={`${classes.menuListTextContact} menuListTextContact`}
+            >
+              Mobile: 9818958822
+            </Typography>
+            <Typography
+              variant={"body1"}
+              className={`${classes.menuListTextContact} menuListTextContact`}
+            >
+              Phone: +91 - 124 4278999
+            </Typography>
+            <Typography
+              variant={"body1"}
+              className={`${classes.menuListTextContact} menuListTextContact`}
+            >
+              Email: sales@asianglobalsolutions.in
+            </Typography>
+
+            <Box className={`${classes.socialMedia} socialMedia`}>
+              <a
+                href="/contact-us"
+                className={`${classes.socialIcon} socialIcon`}
+              >
+                <RiFacebookBoxFill />
+              </a>
+              <a
+                href="/contact-us"
+                className={`${classes.socialIcon} socialIcon`}
+              >
+                <FaTwitterSquare />
+              </a>
+              <a
+                href="/contact-us"
+                className={`${classes.socialIcon} socialIcon`}
+              >
+                <FaInstagram />
+              </a>
+              <a
+                href="/contact-us"
+                className={`${classes.socialIcon} socialIcon`}
+              >
+                <FaLinkedin />
+              </a>
+              <a
+                href="/contact-us"
+                className={`${classes.socialIcon} socialIcon`}
+              >
+                <FiYoutube />
+              </a>
+            </Box> */}
+          </Grid>
+          <Grid item xs={12} sm={6} md={4} lg={3} id="grid">
+            <Typography
+              variant={"h5"}
+              className={`${classes.menuListTitle} menuListTitle`}
+            >
+              Contact Us
+            </Typography>
+            <Typography
+              variant={"body1"}
+              className={`${classes.menuListTextContact} menuListTextContact`}
+            >
+              Liberty Court, Piscataway, New Jersey, USA 08854
+            </Typography>
+          </Grid>
+          <Grid item xs={12} sm={6} md={4} lg={3} id="grid">
+            <Typography
+              variant={"h5"}
+              className={`${classes.menuListTitle} menuListTitle`}
+            >
+              Contact Us
+            </Typography>
+            <Typography
+              variant={"body1"}
+              className={`${classes.menuListTextContact} menuListTextContact`}
+            >
+              Vredenoord, 1852 WL Heiloo, The Neatherlands
+            </Typography>
           </Grid>
         </Grid>
       </Box>
@@ -230,6 +399,14 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: "10px",
     fontWeight: "600",
   },
+  menuListTitleHeadOffice: {
+    fontSize: "1rem",
+    color: THEME_COLOR.color_5,
+    width: "80%",
+    marginBottom: "10px",
+    fontWeight: "600",
+  },
+
   menuList: {
     display: "flex",
     justifyContent: "start",

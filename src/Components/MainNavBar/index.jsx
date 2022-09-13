@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { bool, func } from "prop-types";
 
@@ -29,6 +29,7 @@ const MainNavBar = ({
   onNavMenus,
   isSubSectionOpen,
   isMoreOpen,
+  nodeRef,
 }) => {
   const classes = useStyles();
   const navigate = useNavigate();
@@ -66,7 +67,7 @@ const MainNavBar = ({
 
   // --- Desktop Section ---
   return (
-    <div className={`${classes.Navbar} Navbar`} id="home">
+    <div className={`${classes.Navbar} Navbar`} id="home" nodeRef={nodeRef}>
       <AppBar
         position="static"
         className={`${classes.grow} appBar`}
@@ -121,7 +122,6 @@ const MainNavBar = ({
 
           {/* To open icons */}
           <>
-            23{" "}
             <IconButton
               className={`${classes.sectionMobile} sectionMobile`}
               aria-label="show more"

@@ -1,4 +1,4 @@
-import React, { useState, memo } from "react";
+import React, { useState, memo, useEffect, useRef } from "react";
 import { object } from "prop-types";
 import {
   Box,
@@ -22,8 +22,10 @@ const SubNavBar = ({
   subNavMenus = {},
   onNavMenus,
   isSubNavbarOpened = false,
+  setSubNavbarOpen,
   navMenus,
   onCloseSubNavbar,
+  nodeRef,
 }) => {
   const classes = useStyles();
 
@@ -45,13 +47,17 @@ const SubNavBar = ({
   /**
    * @description Closing sub Nav bar and menus by calling CB
    */
-  const handleClose = (_) => {
-    onCloseSubNavbar(false);
-  };
+  // const handleClose = (_) => {
+  //   onCloseSubNavbar(true);
+  // };
 
   return (
-    <ClickAwayListener onClickAway={handleClose}>
-      <Box className={`${classes.headBar}  headBar`}>
+    <ClickAwayListener
+      mouseEvent="onMouseDown"
+      touchEvent="onTouchStart"
+      // onClickAway={handleClose}
+    >
+      <Box className={`${classes.headBar}  headBar`} ref={nodeRef}>
         {(!subNavMenus.isMore || isSubNavbarOpened) && (
           <Box
             sx={{ borderBottom: 1, borderColor: "divider" }}
