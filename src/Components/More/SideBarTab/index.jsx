@@ -76,12 +76,12 @@ const SideBar = (props) => {
                     <Box
                       className={`${classes.menuListing} commonClass menuListing`}
                       key={index}
+                      onMouseEnter={onShowArrow(value, menu)}
+                      onMouseLeave={onHideArrow(value, menu)}
+                      onClick={onClickOption(menu)}
                     >
                       <Typography
                         variant={"body"}
-                        onMouseEnter={onShowArrow(value, menu)}
-                        onMouseLeave={onHideArrow(value, menu)}
-                        onClick={onClickOption(menu)}
                         className={`${classes.sideBarOptions} sideBarOptions border-0 backgroundColorWhite`}
                       >
                         {label}
@@ -169,7 +169,8 @@ const useStyles = makeStyles((theme) => ({
   menuListing: {
     display: "flex",
     flexDirection: "row",
-    justifyContent: "flex-start",
+    justifyContent: "space-between",
+    cursor: "pointer",
   },
 
   sideBarOptions: {

@@ -134,7 +134,7 @@ export default Testimonials;
  */
 const useStyles = makeStyles((theme) => ({
   testimonials: {
-    padding: "2% 4%",
+    padding: "8% 4%",
   },
   testimonialLogo: {
     display: "flex",

@@ -15,7 +15,6 @@ const Insight = () => {
   const classes = useStyles();
   const [insightDetail, setInsightDetail] = useState();
 
-
   /**
    * @description update values in right grid from selection
    *
@@ -47,7 +46,6 @@ const Insight = () => {
               data={INSIGHT_DATA}
               fetchInsightDetails={getInsightDetail}
             />
-
           </Grid>
 
           <Grid item xs={12} sm={12} md={5} lg={6}>
@@ -88,14 +86,14 @@ export default Insight;
 const useStyles = makeStyles((theme) => ({
   piePaper: {
     width: "80%",
-    margin: "3% auto",
-    borderRadius: "50px"
+    margin: "10% auto",
+    borderRadius: "50px",
   },
   pieGrid: {},
 
   pieBox: {
     width: "100%",
-    margin: '1% 0 2% 0',
+    margin: "1% 0 2% 0",
   },
   pieDetail: {
     width: "80%",

@@ -12,6 +12,10 @@
   width: 32%;
   margin-bottom: 2%;
 }
+.title-block .ImageTextListSubtitle {
+  font-size: 1.2rem;
+  text-indent: 2rem;
+}
 
 .textColorRed {
   color: rgb(219, 21, 21);
