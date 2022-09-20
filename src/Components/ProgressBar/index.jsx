@@ -13,7 +13,7 @@ export const ProgressBar = ({ activeSlide, index, onChangeSlide }) => {
           return 0;
         }
 
-        return oldProgress + 10;
+        return oldProgress + 20;
       });
     }, 1000);
 
