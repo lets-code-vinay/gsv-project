@@ -297,7 +297,7 @@
   }
 }
 
-@media screen and (min-width: 1282px) and (max-width: 1919px) {
+@media screen and (min-width: 1282px) and (max-width: 1920px) {
   .tabsClass {
     float: right;
     width: 65% !important;
@@ -354,7 +354,7 @@
   }
 }
 
-@media screen and (min-width: 1920px) and (max-width: 2560px) {
+@media screen and (min-width: 1921px) and (max-width: 2560px) {
   .containerTrending {
     padding: 10% 6% !important;
   }
@@ -390,11 +390,11 @@
     color: #0d274d;
   }
   .trendingImage {
-    min-width: 460px !important;
-    max-width: 460px !important;
+    min-width: 460px;
+    max-width: 460px;
 
-    min-height: 460px !important;
-    max-height: 500px !important;
+    min-height: 460px;
+    max-height: 500px;
   }
 
   .content .trendingTitle {
@@ -406,7 +406,7 @@
   .trendingSubTitle,
   .trendingSubTitleForce,
   .learn-button {
-    font-size: 1.8rem !important;
+    font-size: 1.8rem;
   }
 }
 
