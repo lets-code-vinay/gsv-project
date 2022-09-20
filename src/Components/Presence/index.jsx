@@ -67,6 +67,7 @@ const useStyles = makeStyles((theme) => ({
     color: "white",
     position: "relative",
     paddingTop: "4%",
+    height: "100vh",
   },
   mainGrid: {},
   gridLeft: {

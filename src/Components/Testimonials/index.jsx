@@ -51,7 +51,9 @@ const Testimonials = () => {
             ({ value = "", label = "" }, index) => {
               return (
                 <Box key={`${value}-${index}`}>
-                  <h3 className="clientTitle">{label}</h3>
+                  <Typography variant="h6" className="clientTitle">
+                    {label}
+                  </Typography>
                 </Box>
               );
             }
@@ -161,7 +163,7 @@ const useStyles = makeStyles((theme) => ({
   },
   clientCard: {
     width: "70%",
-    margin: "auto 18%",
+    margin: "auto 22%",
     borderRadius: "1rem ",
     boxShadow: "0 0 14px 0px rgb(10 10 10 / 20%)",
     padding: "1rem 2rem",

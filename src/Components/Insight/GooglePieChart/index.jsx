@@ -129,6 +129,7 @@ const PieChart = ({ fetchInsightDetails }) => {
           chartType="PieChart"
           width="100%"
           height="500px"
+          className="pie-chart-height"
           data={insightData}
           options={options}
           chartEvents={[

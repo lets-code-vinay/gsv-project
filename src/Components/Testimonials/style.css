@@ -15,7 +15,7 @@
   cursor: pointer;
 }
 .sliderPadding {
-  padding: 1% 0;
+  padding: 1% 0 1% 8%;
   width: 100%;
   margin: auto;
 }
@@ -64,6 +64,7 @@ h3 {
   .clientTitle {
     font-weight: 500;
     margin-top: 5%;
+    font-size: 1.5rem !important;
   }
   svg.slick-arrow.slick-next {
     right: 15%;

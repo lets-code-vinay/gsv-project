@@ -11,6 +11,7 @@
   position: absolute;
   z-index: 10;
   border-top: 2px solid #1e4471;
+  height: 85vh;
 }
 
 /* 320px — 480px: Mobile devices
@@ -29,7 +30,7 @@
 /* 
   --current laptop size--- 
 */
-@media screen and (min-width: 760px) and (max-width: 1023px) {
+@media screen and (min-width: 760px) and (max-width: 1024px) {
   .imageSubMenu {
     background-size: cover;
     height: 82vh;
@@ -53,6 +54,7 @@
   }
 
   .subMenu1 {
+    height: 82vh;
   }
 
   .menuBlock div div {
@@ -77,8 +79,8 @@
   .mainMenuLink > .mainMenuText,
   .popularLink > .popularText {
     font-size: 0.6rem;
-    line-height: 1.2rem;
     width: 95%;
+    font-weight: 300;
   }
 
   .popularBlock {
@@ -112,6 +114,7 @@
   }
 
   .subMenu1 {
+    height: 82vh;
   }
 
   .menuBlock div div {
@@ -136,8 +139,6 @@
   .mainMenuLink > .mainMenuText,
   .popularLink > .popularText {
     font-size: 1rem;
-    line-height: 2rem;
-    /* letter-spacing: 1.5px; */
     width: 100%;
   }
 
@@ -147,15 +148,23 @@
 }
 
 @media screen and (min-width: 1280px) and (max-width: 1919px) {
+  .imageBlock .get-in-touch {
+    position: absolute;
+    left: 12%;
+    bottom: 10% !important;
+    color: white;
+    border-radius: 35px;
+    padding: 2px 1rem;
+  }
   .imageSubMenu {
     background-size: cover;
     width: 100%;
-    height: calc(82vh + 10px);
+    height: 100%;
   }
 
   .imageBlock .menuInformationBar {
     width: 33%;
-    bottom: 12%;
+    bottom: 18%;
     position: absolute;
   }
   .menuInformationBar .menuInformationMSGContainer {
@@ -172,6 +181,7 @@
   }
 
   .subMenu1 {
+    height: 90vh;
   }
 
   .menuBlock div div {
@@ -196,8 +206,8 @@
 
   .mainMenuLink > .mainMenuText,
   .popularLink > .popularText {
-    font-size: 1rem;
-    line-height: 1.5rem;
+    font-size: 0.8rem;
+    line-height: 1.8rem;
     width: 95%;
   }
 
@@ -206,7 +216,7 @@
   }
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1920px) and (max-width: 2560px) {
   .informationBar {
     width: 110%;
     height: 39%;
@@ -214,6 +224,7 @@
     bottom: 10%;
   }
   .root .subMenu1 {
+    height: 85vh !important;
   }
 
   .imageSubMenu {
@@ -224,7 +235,7 @@
 
   .imageBlock .menuInformationBar {
     width: 33%;
-    bottom: 12%;
+    bottom: 18%;
     position: absolute;
   }
   .menuInformationBar .menuInformationMSGContainer {
@@ -256,12 +267,12 @@
   .MenuTitleContainerBox > .MenuTitleContainer > .mainMenuTitle,
   .popularTitleContainer > .popularTitle {
     width: 90%;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .mainMenuLink > .mainMenuText,
   .popularLink > .popularText {
-    font-size: 1.5rem;
+    font-size: 1rem;
     line-height: 2rem;
     width: 95%;
   }
@@ -269,4 +280,56 @@
   .popularBlock {
     padding: 6% 3% 0 3%;
   }
+
+  .imageBlock .get-in-touch {
+    position: absolute;
+    left: 12%;
+    bottom: 10% !important;
+    color: white;
+    border-radius: 35px;
+    padding: 2px 1rem;
+  }
+}
+
+@media screen and (min-width: 2560px) and(max-width:3840px) {
+  .mainMenuLink > .mainMenuText,
+  .popularLink > .popularText {
+    font-size: 1.5rem;
+    line-height: 3rem;
+    width: 95%;
+  }
+  .MenuTitleContainerBox > .MenuTitleContainer > .mainMenuTitle,
+  .popularTitleContainer > .popularTitle {
+    width: 90%;
+    font-size: 2rem;
+  }
+  .imageBlock .menuInformationBar {
+    width: 33%;
+    bottom: 18%;
+    position: absolute;
+  }
+  .imageBlock .get-in-touch {
+    position: absolute;
+    left: 12%;
+    bottom: 10% !important;
+    color: white;
+    border-radius: 35px;
+    padding: 2px 1rem;
+  }
+  .imageSubMenu {
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 3840px) and (max-width: 7680px) {
+  .imageSubMenu {
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media screen and(min-width: 7680px) {
 }

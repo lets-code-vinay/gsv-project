@@ -3,6 +3,7 @@
 .container {
   width: 100%;
   height: 100vh;
+  padding: 8% 10%;
 }
 
 .insightTooltip {
@@ -56,8 +57,98 @@
 @media screen and (min-width: 1024px) and (max-width: 1281px) {
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1281px) and (max-width: 1920px) {
   .MuiBox-root.MuiBox-root-46.makeStyles-pieDetail-41.pieDetail {
     margin: 15% auto 8%;
+  }
+
+  .pieDetail {
+    margin-top: 10%;
+  }
+  .pieInfo .pieInfoList {
+    font-size: 1rem !important;
+  }
+  .pieTitle {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 1920px) and (max-width: 2560px) {
+  .MuiBox-root.MuiBox-root-46.makeStyles-pieDetail-41.pieDetail {
+    margin: 15% auto 8%;
+  }
+
+  .piePaper {
+    height: 816px !important;
+    padding-top: 4%;
+    margin-top: 5%;
+  }
+  .pie {
+    top: 10%;
+  }
+  .pieDetail {
+    margin-top: 10%;
+  }
+  .pieInfo .pieInfoList {
+    font-size: 1.5rem !important;
+  }
+  .pieTitle {
+    font-size: 3rem;
+  }
+}
+@media screen and (min-width: 2560px) and(max-width:3840px) {
+  .MuiBox-root.MuiBox-root-46.makeStyles-pieDetail-41.pieDetail {
+    margin: 15% auto 8%;
+  }
+
+  .piePaper {
+    height: 816px !important;
+    padding-top: 4%;
+    margin-top: 5%;
+  }
+  .pie {
+    top: 10%;
+  }
+  .pieDetail {
+    margin-top: 10%;
+  }
+  .pieInfo .pieInfoList {
+    font-size: 1.7rem !important;
+  }
+  .pieTitle {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: 3840px) and (max-width: 7680px) {
+  .MuiBox-root.MuiBox-root-46.makeStyles-pieDetail-41.pieDetail {
+    margin: 15% auto 8%;
+  }
+
+  .piePaper {
+    height: 816px !important;
+    padding-top: 4%;
+    margin-top: 5%;
+  }
+  .pie {
+    top: 10%;
+  }
+  .pieDetail {
+    margin-top: 10%;
+  }
+  .piePaper {
+    height: 650px !important;
+  }
+  .pie {
+    top: 10%;
+  }
+  .pieDetail {
+    margin-top: 10%;
+  }
+  .pieInfo .pieInfoList {
+    font-size: 2rem !important;
+  }
+  .pieTitle {
+    font-size: 4rem;
   }
 }

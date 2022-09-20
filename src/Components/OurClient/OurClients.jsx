@@ -224,8 +224,7 @@ export default OurClients;
 
 const useStyles = makeStyles((theme) => ({
   topContainer: {
-    width: "80%",
-    margin: "10% auto 0%",
+    backgroundColor: "#F8FBFF",
   },
   hr: {
     width: "100%",

@@ -354,7 +354,10 @@
   }
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1920px) and (max-width: 2560px) {
+  .containerTrending {
+    padding: 10% 6% !important;
+  }
   .tabsClass {
     float: right;
     width: 65% !important;
@@ -367,10 +370,10 @@
     margin: auto !important;
   }
   .tabButton {
-    font-size: 1.5rem !important;
+    font-size: 1.8rem !important;
     min-width: 120px !important;
     max-width: 325px;
-    height: 32px !important;
+    height: 35px !important;
     text-align: start;
   }
 
@@ -387,11 +390,11 @@
     color: #0d274d;
   }
   .trendingImage {
-    min-width: 325px !important;
-    max-width: 350px !important;
+    min-width: 460px !important;
+    max-width: 460px !important;
 
-    min-height: 350px !important;
-    max-height: 375px !important;
+    min-height: 460px !important;
+    max-height: 500px !important;
   }
 
   .content .trendingTitle {
@@ -403,6 +406,174 @@
   .trendingSubTitle,
   .trendingSubTitleForce,
   .learn-button {
-    font-size: 1.4rem !important;
+    font-size: 1.8rem !important;
+  }
+}
+
+@media screen and (min-width: 2560px) and (max-width: 3840px) {
+  .containerTrending {
+    padding: 10% 6% !important;
+  }
+  .tabsClass {
+    float: right;
+    width: 65% !important;
+    margin: auto !important;
+    display: flex;
+    justify-content: space-between;
+  }
+  .tabContainer {
+    width: 90% !important;
+    margin: auto !important;
+  }
+  .tabButton {
+    font-size: 1.8rem !important;
+    min-width: 160px !important;
+    max-width: 380px;
+    height: 35px !important;
+    text-align: start;
+  }
+
+  .trendingLogo {
+    margin: 0 0% 0% 45%;
+  }
+  .hr {
+    height: 2px;
+    background-color: #0d274d;
+  }
+
+  .trendingText {
+    font-weight: 500 !important;
+    color: #0d274d;
+  }
+
+  .trendingImage {
+    min-width: 460px !important;
+    max-width: 460px !important;
+
+    min-height: 460px !important;
+    max-height: 500px !important;
+  }
+
+  .content .trendingTitle {
+    font-size: 3.5rem;
+    margin: 5px 0px 6% 0px;
+    font-weight: 400;
+  }
+
+  .trendingSubTitle,
+  .trendingSubTitleForce,
+  .learn-button {
+    font-size: 1.8rem !important;
+  }
+}
+
+@media screen and (min-width: 3840px) and (max-width: 7680px) {
+  .containerTrending {
+    padding: 10% 6% !important;
+  }
+  .tabsClass {
+    float: right;
+    width: 65% !important;
+    margin: auto !important;
+    display: flex;
+    justify-content: space-between;
+  }
+  .tabContainer {
+    width: 90% !important;
+    margin: auto !important;
+  }
+
+  .tabButton {
+    font-size: 2rem !important;
+    min-width: 180px !important;
+    max-width: 400px;
+    height: 37px !important;
+    text-align: start;
+  }
+
+  .trendingLogo {
+    margin: 0 0% 0% 45%;
+  }
+  .hr {
+    height: 2px;
+    background-color: #0d274d;
+  }
+
+  .trendingText {
+    font-weight: 500 !important;
+    color: #0d274d;
+  }
+  .trendingImage {
+    min-width: 460px !important;
+    max-width: 460px !important;
+
+    min-height: 460px !important;
+    max-height: 500px !important;
+  }
+  .content .trendingTitle {
+    font-size: 3.5rem;
+    margin: 5px 0px 6% 0px;
+    font-weight: 400;
+  }
+
+  .trendingSubTitle,
+  .trendingSubTitleForce,
+  .learn-button {
+    font-size: 2rem !important;
+  }
+}
+
+@media screen and (min-width: 7680px) {
+  .containerTrending {
+    padding: 10% 6% !important;
+  }
+  .tabsClass {
+    float: right;
+    width: 65% !important;
+    margin: auto !important;
+    display: flex;
+    justify-content: space-between;
+  }
+  .tabContainer {
+    width: 90% !important;
+    margin: auto !important;
+  }
+  .tabButton {
+    font-size: 2.2rem !important;
+    min-width: 200px !important;
+    max-width: 200px;
+    height: 40px !important;
+    text-align: start;
+  }
+
+  .trendingLogo {
+    margin: 0 0% 0% 45%;
+  }
+  .hr {
+    height: 2px;
+    background-color: #0d274d;
+  }
+
+  .trendingText {
+    font-weight: 500 !important;
+    color: #0d274d;
+  }
+  .trendingImage {
+    min-width: 460px !important;
+    max-width: 460px !important;
+
+    min-height: 460px !important;
+    max-height: 500px !important;
+  }
+  .content .trendingTitle {
+    font-size: 3.5rem;
+    margin: 5px 0px 6% 0px;
+    font-weight: 400;
+  }
+
+  .trendingSubTitle,
+  .trendingSubTitleForce,
+  .learn-button {
+    font-size: 2rem !important;
   }
 }

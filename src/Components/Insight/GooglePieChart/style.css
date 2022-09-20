@@ -100,6 +100,9 @@ svg {
 1025px — 1200px: Desktops, large screens
 1201px and more —  Extra large screens, TV */
 @media screen and (min-width: 279px) and (max-width: 480px) {
+  .pie-chart-height {
+    height: 500px !important;
+  }
   .logoInside {
     min-width: 18% !important;
     max-width: 30% !important;
@@ -195,6 +198,9 @@ svg {
 }
 
 @media screen and (min-width: 480px) and (max-width: 760px) {
+  .pie-chart-height {
+    height: 500px !important;
+  }
   .logoInside {
     min-width: 16% !important;
     max-width: 18% !important;
@@ -296,6 +302,9 @@ svg {
     top: 45% !important;
     left: 43% !important;
   }
+  .pie-chart-height {
+    height: 500px !important;
+  }
   .pie .insight-text {
     position: absolute;
     font-size: 1rem;
@@ -394,6 +403,9 @@ svg {
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1280px) {
+  .pie-chart-height {
+    height: 500px !important;
+  }
   .logoInside {
     min-width: 16% !important;
     max-width: 18% !important;
@@ -503,6 +515,9 @@ svg {
     top: 45% !important;
     left: 43% !important;
   }
+  .pie-chart-height {
+    height: 500px !important;
+  }
   .pie .insight-text {
     position: absolute;
     font-size: 1rem;
@@ -532,32 +547,32 @@ svg {
 
   .pie .insight-text-5 {
     top: 36%;
-    left: 13%;
-    min-width: 18%;
-    max-width: 21%;
+    left: 12%;
+    min-width: 23%;
+    max-width: 28%;
     word-break: break-word;
   }
 
   .pie .button-5 {
     top: 48%;
-    left: 16%;
+    left: 14%;
   }
 
   .pie .insight-text-4 {
     top: 59%;
-    left: 19%;
+    left: 18%;
     width: 24%;
     text-align: center;
   }
   .pie .button-4 {
     top: 76%;
-    left: 23%;
+    left: 20%;
   }
 
   .pie .insight-text-3 {
     top: 71%;
     left: 42.5%;
-    width: 18%;
+    width: 20%;
   }
   .pie .button-3 {
     top: 88%;
@@ -567,7 +582,7 @@ svg {
   .pie .insight-text-2 {
     top: 60%;
     left: 63%;
-    width: 16%;
+    width: 20%;
   }
   .pie .button-2 {
     top: 77%;
@@ -596,6 +611,9 @@ svg {
 }
 
 @media screen and (min-width: 1510px) and (max-width: 1920px) {
+  .pie-chart-height {
+    height: 500px !important;
+  }
   .logoInside {
     min-width: 16% !important;
     max-width: 18% !important;
@@ -631,7 +649,7 @@ svg {
   .pie .insight-text-5 {
     top: 34% !important;
     left: 20% !important;
-    max-width: 16%;
+    max-width: 18%;
     word-break: break-all;
   }
 
@@ -692,7 +710,10 @@ svg {
   }
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1920px) and (max-width: 2560px) {
+  .pie-chart-height {
+    /* height: 650px !important; */
+  }
   .logoInside {
     min-width: 16% !important;
     max-width: 18% !important;
@@ -728,14 +749,14 @@ svg {
   }
 
   .pie .insight-text-5 {
-    top: 35%;
-    left: 30%;
-    width: 12%;
+    top: 35% !important;
+    left: 24% !important;
+    width: 15%;
   }
 
   .pie .button-5 {
     top: 47%;
-    left: 30%;
+    left: 24% !important;
   }
 
   .pie .insight-text-4 {
@@ -751,7 +772,7 @@ svg {
 
   .pie .insight-text-3 {
     top: 73%;
-    left: 46.5%;
+    left: 45%;
     width: 16%;
   }
   .pie .button-3 {
@@ -761,22 +782,120 @@ svg {
 
   .pie .insight-text-2 {
     top: 60%;
-    left: 58%;
+    left: 61% !important;
     width: 16%;
   }
   .pie .button-2 {
     top: 77%;
-    left: 59%;
+    left: 62%;
   }
 
   .pie .insight-text-1 {
     top: 34%;
-    left: 63%;
+    left: 66% !important;
     width: 14%;
   }
   .pie .button-1 {
     top: 47%;
-    left: 63%;
+    left: 66% !important;
+  }
+
+  .pie .insight-text-0 {
+    top: 13%;
+    left: 54%;
+    width: 16%;
+  }
+  .pie .button-0 {
+    top: 25%;
+    left: 53.5%;
+  }
+}
+
+@media screen and (min-width: 2560px) and(max-width:3840px) {
+  .logoInside {
+    min-width: 16% !important;
+    max-width: 18% !important;
+    top: 45% !important;
+    left: 41.3% !important;
+  }
+  .pie .insight-text {
+    position: absolute;
+    font-size: 1rem;
+    padding: 6px 10px;
+    font-weight: 500;
+  }
+  .pie .button {
+    position: absolute;
+    font-size: 0.6rem;
+    padding: 6px 10px;
+    border-radius: 2rem !important;
+    border: 1px double white !important;
+    color: white !important;
+  }
+
+  .pie .insight-text-6 {
+    top: 14%;
+    left: 37%;
+    width: 14%;
+    text-align: center;
+  }
+
+  .pie .button-6 {
+    top: 25%;
+    left: 40%;
+    width: 8% !important;
+  }
+
+  .pie .insight-text-5 {
+    top: 35% !important;
+    left: 24% !important;
+    width: 15%;
+  }
+
+  .pie .button-5 {
+    top: 47%;
+    left: 24% !important;
+  }
+
+  .pie .insight-text-4 {
+    top: 60%;
+    left: 31%;
+    width: 15%;
+    text-align: center;
+  }
+  .pie .button-4 {
+    top: 77%;
+    left: 34%;
+  }
+
+  .pie .insight-text-3 {
+    top: 73%;
+    left: 45%;
+    width: 16%;
+  }
+  .pie .button-3 {
+    top: 89%;
+    left: 46%;
+  }
+
+  .pie .insight-text-2 {
+    top: 60%;
+    left: 61% !important;
+    width: 16%;
+  }
+  .pie .button-2 {
+    top: 77%;
+    left: 62%;
+  }
+
+  .pie .insight-text-1 {
+    top: 34%;
+    left: 66% !important;
+    width: 14%;
+  }
+  .pie .button-1 {
+    top: 47%;
+    left: 66% !important;
   }
 
   .pie .insight-text-0 {

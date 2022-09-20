@@ -85,8 +85,6 @@ export default Insight;
 
 const useStyles = makeStyles((theme) => ({
   piePaper: {
-    width: "80%",
-    margin: "10% auto",
     borderRadius: "50px",
   },
   pieGrid: {},

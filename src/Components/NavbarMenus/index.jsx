@@ -202,7 +202,6 @@ const useStyles = makeStyles((theme) => ({
   subMenu1: {
     position: "absolute",
     zIndex: "10",
-    height: "82vh",
   },
 
   imageSubMenu: {
@@ -246,21 +245,22 @@ const useStyles = makeStyles((theme) => ({
     width: "80%",
   },
   mainMenuTitle: {
-    color: THEME_COLOR.main_color,
     fontWeight: "500",
   },
   mainMenuLink: {
     textDecoration: "none",
+    color: "black",
   },
 
   mainMenuText: {
     textDecoration: "none",
     margin: "1% 0",
     width: "90%",
-    color: THEME_COLOR.main_color,
+    fontWeight: 400,
+    letterSpacing: "0",
 
     "&:hover": {
-      color: THEME_COLOR.color_5,
+      color: THEME_COLOR.main_color,
       letterSpacing: "0",
     },
   },
@@ -278,7 +278,6 @@ const useStyles = makeStyles((theme) => ({
     width: "40%",
   },
   popularTitle: {
-    color: THEME_COLOR.main_color,
     fontWeight: "500",
   },
 
@@ -290,10 +289,11 @@ const useStyles = makeStyles((theme) => ({
     textDecoration: "none",
     margin: "1% 0",
     width: "80%",
+    fontWeight: 400,
+    color: "black",
 
-    color: THEME_COLOR.main_color,
     "&:hover": {
-      color: THEME_COLOR.color_5,
+      color: THEME_COLOR.main_color,
       letterSpacing: "0",
     },
   },
