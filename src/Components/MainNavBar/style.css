@@ -248,7 +248,7 @@
   }
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1920px) and (max-width: 2559px) {
   .sectionMobile {
     display: none !important;
   }
@@ -257,8 +257,8 @@
   }
 
   .Navbar .appBar .appBarChild {
-    min-height: 95px;
-    max-height: 100px;
+    min-height: 98px;
+    max-height: 105px;
   }
 
   .nav-bar-icons .search {
@@ -294,7 +294,7 @@
   }
 }
 
-@media screen and (min-width: 2620px) and (max-width: 3020px) {
+@media screen and (min-width: 2560px) and (max-width: 3020px) {
   .sectionMobile {
     display: none !important;
   }
@@ -305,6 +305,14 @@
   .Navbar .appBar .appBarChild {
     min-height: 110px;
     max-height: 130px;
+  }
+  .logo-1 {
+    height: 70px;
+    width: 25%;
+    margin-top: 2px;
+  }
+  .sectionDesktopMenus .navbar_text {
+    font-size: 2rem;
   }
 }
 

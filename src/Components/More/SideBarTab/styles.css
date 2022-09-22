@@ -125,7 +125,7 @@
   }
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1920px) and (max-width: 2559px) {
   .MuiGrid-root.MuiGrid-container.MuiGrid-spacing-xs-2.MuiGrid-item {
     top: 5.5rem;
   }
@@ -142,5 +142,12 @@
   }
   span.MuiButton-label {
     justify-content: start;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .more {
+    top: 7%;
+    height: 93vh;
   }
 }

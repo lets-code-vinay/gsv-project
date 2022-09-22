@@ -133,12 +133,12 @@
   .MenuTitleContainerBox > .MenuTitleContainer > .mainMenuTitle,
   .popularTitleContainer > .popularTitle {
     width: 90%;
-    font-size: 1.8rem;
+    font-size: 1.2rem;
   }
 
   .mainMenuLink > .mainMenuText,
   .popularLink > .popularText {
-    font-size: 1rem;
+    font-size: 0.9rem;
     width: 100%;
   }
 
@@ -216,7 +216,7 @@
   }
 }
 
-@media screen and (min-width: 1920px) and (max-width: 2560px) {
+@media screen and (min-width: 1920px) and (max-width: 2559px) {
   .informationBar {
     width: 110%;
     height: 39%;
@@ -292,6 +292,10 @@
 }
 
 @media screen and (min-width: 2560px) and(max-width:3840px) {
+  .root .subMenu1 {
+    height: 88vh !important;
+  }
+
   .mainMenuLink > .mainMenuText,
   .popularLink > .popularText {
     font-size: 1.5rem;
@@ -316,11 +320,17 @@
     border-radius: 35px;
     padding: 2px 1rem;
   }
-  .imageSubMenu {
+  .menuImage.imageBlock.imageSubMenu {
     background-size: cover;
-    width: 100%;
-    height: 100%;
+    /* width: 100%;
+    height: 88vh !important; */
+    width: 100% !important;
+    height: 88vh !important;
   }
+  /* .menuImage,
+  .MuiGrid-root.undefined.menuImage.MuiGrid-item.MuiGrid-grid-md-3.MuiGrid-grid-lg-3 {
+    height: 88vh !important;
+  } */
 }
 
 @media screen and (min-width: 3840px) and (max-width: 7680px) {

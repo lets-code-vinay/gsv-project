@@ -141,16 +141,24 @@ h3 {
   }
 
   .clientGrid .makeStyles-clientCard-68 {
-    width: 80%;
+    /* width: 80%;
     margin: auto 16%;
     padding: 1rem 1rem;
     box-shadow: 0 0 14px 0px rgb(10 10 10 / 20%);
-    border-radius: 1rem;
+    border-radius: 1rem; */
+
+    width: 77% !important;
+    margin: auto 13% !important;
+    padding: 1rem 1.5rem !important;
+    box-shadow: 0 0 14px 0px rgb(10 10 10 / 20%) !important;
+    border-radius: 1rem !important;
+    max-height: 400px !important;
+    min-height: 420px !important;
   }
   svg.slick-arrow.slick-next {
     position: absolute;
-    right: 33%;
-    top: 14%;
+    right: 30%;
+    top: 24%;
     cursor: pointer;
   }
 
@@ -202,5 +210,16 @@ h3 {
   }
   .testimonialDomainClients svg.slick-arrow.slick-next {
     right: -1%;
+  }
+}
+
+@media screen and (min-width: 1921px) and (max-width: 2560px) {
+  .testimonials {
+    height: 100vh;
+  }
+  .testimonialLogo .trendingTitle,
+  h4.MuiTypography-root.makeStyles-testimonialTitle-64.testimonialTitle.MuiTypography-h4,
+  .makeStyles-testimonialTitle-132 {
+    font-size: 3rem !important;
   }
 }

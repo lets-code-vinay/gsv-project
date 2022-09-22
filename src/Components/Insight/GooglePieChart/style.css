@@ -619,6 +619,11 @@ svg {
     max-width: 18% !important;
     top: 45% !important;
     left: 42% !important;
+
+    min-width: 14% !important;
+    max-width: 15% !important;
+    top: 46% !important;
+    left: 43.3% !important;
   }
   .pie .insight-text {
     position: absolute;
@@ -715,10 +720,10 @@ svg {
     /* height: 650px !important; */
   }
   .logoInside {
-    min-width: 16% !important;
-    max-width: 18% !important;
-    top: 45% !important;
-    left: 41.3% !important;
+    min-width: 14% !important;
+    max-width: 15% !important;
+    top: 46% !important;
+    left: 43.3% !important;
   }
   .pie .insight-text {
     position: absolute;

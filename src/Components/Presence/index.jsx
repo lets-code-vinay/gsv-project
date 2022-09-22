@@ -1,5 +1,5 @@
 import * as React from "react";
-
+import "./style.css";
 import { Box, Typography, makeStyles, Grid } from "@material-ui/core";
 
 // TODO: use it or remove it when required
@@ -45,7 +45,7 @@ export default function OurPresence() {
               <Typography variant={"h2"} className="our-presence-title">
                 Worldwide Presence
               </Typography>
-              <Typography variant={"body1"}>
+              <Typography variant={"body1"} className="our-presence-text">
                 We provide Best in class services belongs to all IT technologies
                 If you’re searching for talented tech minds who are dedicated to
                 their work, we are a perfect fit. We are a dynamic

@@ -115,7 +115,10 @@
   }
 }
 @media screen and (min-width: 761px) and (max-width: 1024px) {
-  .topContainer .hr {
+  .container.topContainer {
+    padding: 17% 10% 10%;
+  }
+  .container.topContainer .hr {
     margin: auto;
     margin-bottom: 10px;
     width: 90%;
@@ -134,8 +137,8 @@
   }
 
   .slick-slider svg.slick-arrow.slick-prev {
-    left: 0;
-    top: 35%;
+    left: 43%;
+    top: 25%;
   }
 
   .topContainer .slick-next {
@@ -151,7 +154,7 @@
   }
 }
 
-@media screen and (min-width: 1282px) and (max-width: 1919px) {
+@media screen and (min-width: 1282px) and (max-width: 1920px) {
   .hr {
     margin: 0 auto 10px;
     width: 90%;
@@ -159,7 +162,10 @@
   }
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1920px) and (max-width: 2560px) {
+  .container {
+    padding: 12% 10% !important;
+  }
   .topContainer .hr {
     height: 2px;
     background-color: #0d274d;

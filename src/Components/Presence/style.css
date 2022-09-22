@@ -13,3 +13,12 @@
   font-size: 4rem;
   width: 50%;
 }
+
+@media screen and (min-width: 1921px) and (max-width: 2560px) {
+  .our-presence-title {
+    font-size: 5rem !important;
+  }
+  .our-presence-text {
+    font-size: 1.2rem !important;
+  }
+}

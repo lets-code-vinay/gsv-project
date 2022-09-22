@@ -5,6 +5,7 @@ import {
   INFINITY_SLIDER_CONTENTS,
   INFINITY_SLIDER_CONTENTS_BOTTOM,
 } from "../../Configs/InfinitySlider";
+import "./style.css";
 
 const InfinitySliderContainer = () => {
   const classes = useStyles();

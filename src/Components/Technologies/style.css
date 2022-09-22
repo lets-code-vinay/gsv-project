@@ -551,13 +551,13 @@
   }
 }
 
-@media screen and (min-width: 1025px) and (max-width: 1281px) {
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
   .hr {
     margin-bottom: 10px;
   }
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1280px) and (max-width: 1920px) {
   .topContainer .hr {
     height: 2px;
     background-color: #0d274d;
@@ -570,6 +570,30 @@
 
   .technologiesTitle .technologiesText {
     font-weight: 500;
+  }
+  .grid1 {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 1921px) and (max-width: 2560px) {
+  .topContainer .hr {
+    height: 2px;
+    background-color: #0d274d;
+    width: 90% !important;
+    margin: 2% auto;
+  }
+  .ourClientsTitle {
+    margin-left: 16%;
+  }
+
+  .technologiesTitle .technologiesText {
+    font-weight: 500;
+    font-size: 3rem !important;
+  }
+  .technologiesSubtitle {
+    font-size: 1.5rem !important;
   }
   .grid1 {
     width: 80%;
