@@ -71,6 +71,7 @@ const Trending = () => {
                 <Tab key={`${trending}-${index}`} style={{ padding: 0 }}>
                   <Button
                     boxor="outline-primary"
+                    disableRipple={true}
                     className={`${classes.tabButton} tabButton`}
                     id="tabButton"
                     onClick={handleTabClick}
@@ -185,13 +186,15 @@ const useStyles = makeStyles((theme) => ({
   tabButton: {
     color: `#000`,
     width: "100%",
+    backgroundColor: "transparent ",
 
     "&:hover": {
       boxShadow: "none",
+      backgroundColor: "transparent ",
     },
     "&:active": {
       boxShadow: "none",
-      backgroundColor: `${THEME_COLOR.color_3} !important`,
+      backgroundColor: "transparent ",
     },
   },
 

@@ -71,8 +71,8 @@
     margin: 20% auto 0 !important;
   }
 
-  .ourClientsTitle .ourClientsIcon,
-  .ourClientsTitle .ourClientsText {
+  .clientsTitle .ourClientsIcon,
+  .clientsTitle .ourClientsText {
     font-size: 1.5rem;
     margin-top: 0;
   }
@@ -124,7 +124,7 @@
     width: 90%;
   }
 
-  .ourClientsTitle {
+  .clientsTitle {
     margin-left: 15%;
   }
   .imageToResponsive {
@@ -155,16 +155,18 @@
 }
 
 @media screen and (min-width: 1282px) and (max-width: 1920px) {
+  .topContainer {
+    height: 100vh;
+    padding: 21vh 10% !important;
+  }
   .hr {
     margin: 0 auto 10px;
     width: 90%;
     height: 2px;
   }
-}
-
-@media screen and (min-width: 1920px) and (max-width: 2560px) {
-  .container {
-    padding: 12% 10% !important;
+  .clientsTitle .ourClientsText {
+    font-size: 4rem;
+    margin-top: 0;
   }
   .topContainer .hr {
     height: 2px;
@@ -172,7 +174,29 @@
     width: 90% !important;
     margin: 2% auto;
   }
-  .ourClientsTitle {
-    margin-left: 16%;
+}
+
+@media screen and (min-width: 1921px) and (max-width: 2560px) {
+  .container {
+    padding: 6% 10% !important;
+  }
+  .topContainer .hr {
+    height: 2px;
+    background-color: #0d274d;
+    width: 90% !important;
+    margin: 2% auto;
+  }
+  .clientsTitle {
+    /* margin-left: 16%; */
+  }
+
+  .clientsTitle .ourClientsText {
+    font-size: 5rem;
+    margin-top: 0;
+  }
+  .imageToResponsive {
+    width: 67% !important;
+    height: 176px !important;
+    margin: 12% auto !important;
   }
 }

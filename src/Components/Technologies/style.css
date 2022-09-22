@@ -575,9 +575,17 @@
     width: 80%;
     margin: auto;
   }
+  .ourClientsTitle .ourClientsIcon,
+  .ourClientsTitle .ourClientsText {
+    font-size: 5rem !important;
+    margin-top: 0;
+  }
 }
 
 @media screen and (min-width: 1921px) and (max-width: 2560px) {
+  ..topContainer {
+    height: 100vh;
+  }
   .topContainer .hr {
     height: 2px;
     background-color: #0d274d;
@@ -585,7 +593,12 @@
     margin: 2% auto;
   }
   .ourClientsTitle {
-    margin-left: 16%;
+    /* margin-left: 16%; */
+  }
+  .ourClientsTitle .ourClientsIcon,
+  .ourClientsTitle .ourClientsText {
+    font-size: 5rem;
+    margin-top: 0;
   }
 
   .technologiesTitle .technologiesText {

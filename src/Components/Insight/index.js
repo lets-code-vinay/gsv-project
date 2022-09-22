@@ -31,7 +31,7 @@ const Insight = () => {
   } = insightDetail || DEFAULT_SERVICES;
 
   return (
-    <main className="container">
+    <main className="container-services">
       <Paper elevation={24} className={`${classes.piePaper} piePaper`}>
         <Grid container className={`${classes.pieGrid} pieGrid`}>
           <Grid

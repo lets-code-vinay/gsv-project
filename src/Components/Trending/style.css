@@ -1,5 +1,7 @@
 .containerTrending {
   height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
 .container-div {
@@ -360,7 +362,7 @@
     margin-top: 0% !important;
   }
   .containerTrending {
-    padding: 10% 6% !important;
+    /* padding: 10% 6% !important; */
   }
   .tabsClass {
     float: right;
@@ -416,7 +418,7 @@
 
 @media screen and (min-width: 2560px) and (max-width: 3840px) {
   .containerTrending {
-    padding: 10% 6% !important;
+    /* padding: 10% 6% !important; */
   }
   .tabsClass {
     float: right;
@@ -444,10 +446,15 @@
     height: 2px;
     background-color: #0d274d;
   }
+  .trendingIcon {
+    font-size: 6rem !important;
+    margin-top: 0 !important;
+  }
 
   .trendingText {
     font-weight: 500 !important;
     color: #0d274d;
+    font-size: 4rem !important;
   }
 
   .trendingImage {
@@ -459,7 +466,7 @@
   }
 
   .content .trendingTitle {
-    font-size: 3.5rem;
+    font-size: 5rem;
     margin: 5px 0px 6% 0px;
     font-weight: 400;
   }
@@ -473,7 +480,7 @@
 
 @media screen and (min-width: 3840px) and (max-width: 7680px) {
   .containerTrending {
-    padding: 10% 6% !important;
+    /* padding: 10% 6% !important; */
   }
   .tabsClass {
     float: right;
@@ -506,6 +513,7 @@
   .trendingText {
     font-weight: 500 !important;
     color: #0d274d;
+    font-size: 5rem !important;
   }
   .trendingImage {
     min-width: 460px !important;
@@ -515,7 +523,7 @@
     max-height: 500px !important;
   }
   .content .trendingTitle {
-    font-size: 3.5rem;
+    font-size: 5rem;
     margin: 5px 0px 6% 0px;
     font-weight: 400;
   }
@@ -529,7 +537,7 @@
 
 @media screen and (min-width: 7680px) {
   .containerTrending {
-    padding: 10% 6% !important;
+    /* padding: 10% 6% !important; */
   }
   .tabsClass {
     float: right;
@@ -559,6 +567,7 @@
   }
 
   .trendingText {
+    font-size: 6rem !important;
     font-weight: 500 !important;
     color: #0d274d;
   }
@@ -570,7 +579,7 @@
     max-height: 500px !important;
   }
   .content .trendingTitle {
-    font-size: 3.5rem;
+    font-size: 6rem;
     margin: 5px 0px 6% 0px;
     font-weight: 400;
   }

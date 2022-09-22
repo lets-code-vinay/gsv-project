@@ -136,12 +136,15 @@ export default Testimonials;
  */
 const useStyles = makeStyles((theme) => ({
   testimonials: {
-    padding: "8% 4%",
+    // padding: "8% 4%",
+    display: "flex",
+    flexDirection: "column",
+    // justifyContent: "center",
   },
   testimonialLogo: {
     display: "flex",
     flexDirection: "row",
-    margin: "4% 0 1%  0%",
+    // margin: "0% 0 0%  0%",
     fontWeight: "800",
     color: "#0d274d",
   },
@@ -166,7 +169,7 @@ const useStyles = makeStyles((theme) => ({
     width: "70%",
     margin: "auto 22%",
     borderRadius: "1rem ",
-    boxShadow: "0 0 14px 0px rgb(10 10 10 / 20%)",
+    boxShadow: "0 0 2rem 1.5rem rgb(10 10 10 / 12%)",
     padding: "1rem 2rem",
   },
   arrowRightClient: {

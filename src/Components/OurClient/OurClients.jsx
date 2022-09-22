@@ -83,7 +83,7 @@ const OurClients = () => {
 
   return (
     <Box className={`${classes.topContainer} container topContainer`}>
-      <Box className={`${classes.ourClientsTitle} ourClientsTitle`}>
+      <Box className={`${classes.clientsTitle} clientsTitle`}>
         <Typography
           variant="h4"
           className={`${classes.ourClientsText} ourClientsText `}
@@ -237,7 +237,7 @@ const useStyles = makeStyles((theme) => ({
     margin: "0 auto",
   },
 
-  ourClientsTitle: {
+  clientsTitle: {
     display: "flex",
     flexDirection: "row",
     padding: "2% 0 0 0",

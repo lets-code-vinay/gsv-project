@@ -60,7 +60,7 @@ export const TRENDING_CONFIGS = Object.freeze({
   NETWORK_AUTOMATION: {
     label: "NETWORK AUTOMATION ",
     value: "NETWORK_AUTOMATION ",
-    title: "What Is NETWORK AUTOMATION ?",
+    title: "What is Network Automation?",
     subtitle: `
       Network automation is planning, deploying, configuring, orchestrating, and assuring networks and services using the software. Network automation is increasingly required to manage modern, dynamic network complexities and orchestrate services efficiently and effectively. The end goal of network automation is to create" zero-touch" or autonomous networks.   
       At GSV, we use Network Automation to help our customers to improve efficiency, reduce human error and lower operating expenses (Opex).

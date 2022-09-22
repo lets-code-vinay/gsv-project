@@ -4,6 +4,7 @@ svg {
 
 .pie {
   position: relative;
+  z-index: 99;
 }
 
 .pie .logoInside {
@@ -653,14 +654,14 @@ svg {
 
   .pie .insight-text-5 {
     top: 34% !important;
-    left: 20% !important;
-    max-width: 18%;
+    left: 23% !important;
+    max-width: 15%;
     word-break: break-all;
   }
 
   .pie .button-5 {
     top: 47% !important;
-    left: 20% !important;
+    left: 23% !important;
   }
 
   .pie .insight-text-4 {
@@ -715,9 +716,13 @@ svg {
   }
 }
 
-@media screen and (min-width: 1920px) and (max-width: 2560px) {
+@media screen and (min-width: 1921px) and (max-width: 2559px) {
   .pie-chart-height {
-    /* height: 650px !important; */
+    height: 700px !important;
+  }
+
+  div#reactgooglegraph-1 {
+    height: 700px !important;
   }
   .logoInside {
     min-width: 14% !important;
@@ -816,16 +821,28 @@ svg {
   }
 }
 
-@media screen and (min-width: 2560px) and(max-width:3840px) {
+@media screen and (min-width: 2560px) and (max-width: 3840px) {
+  .pie-chart-height {
+    height: 700px !important;
+  }
+
+  div#reactgooglegraph-1 {
+    height: 700px !important;
+  }
   .logoInside {
     min-width: 16% !important;
     max-width: 18% !important;
-    top: 45% !important;
-    left: 41.3% !important;
+    top: 62% !important;
+    left: 42.3% !important;
+  }
+
+  .pie .button {
+    font-size: 0.8rem !important;
+    padding: 0.7rem 1rem !important;
   }
   .pie .insight-text {
     position: absolute;
-    font-size: 1rem;
+    font-size: 1.4rem;
     padding: 6px 10px;
     font-weight: 500;
   }
@@ -839,77 +856,78 @@ svg {
   }
 
   .pie .insight-text-6 {
-    top: 14%;
-    left: 37%;
+    top: 17%;
+    left: 35%;
     width: 14%;
     text-align: center;
   }
 
   .pie .button-6 {
-    top: 25%;
-    left: 40%;
-    width: 8% !important;
+    top: 34%;
+    left: 37%;
+    width: 12% !important;
   }
 
   .pie .insight-text-5 {
-    top: 35% !important;
-    left: 24% !important;
+    top: 50% !important;
+    left: 23% !important;
     width: 15%;
+    word-break: break-word;
   }
 
   .pie .button-5 {
-    top: 47%;
+    top: 66%;
     left: 24% !important;
   }
 
   .pie .insight-text-4 {
-    top: 60%;
-    left: 31%;
-    width: 15%;
+    top: 89%;
+    left: 22%;
+    width: 22%;
     text-align: center;
   }
   .pie .button-4 {
-    top: 77%;
-    left: 34%;
+    top: 106%;
+    left: 27%;
   }
 
   .pie .insight-text-3 {
-    top: 73%;
+    top: 100%;
     left: 45%;
-    width: 16%;
+    width: 13%;
   }
   .pie .button-3 {
-    top: 89%;
+    top: 122%;
     left: 46%;
   }
 
   .pie .insight-text-2 {
-    top: 60%;
+    top: 84%;
     left: 61% !important;
     width: 16%;
   }
   .pie .button-2 {
-    top: 77%;
+    top: 107%;
     left: 62%;
   }
 
   .pie .insight-text-1 {
-    top: 34%;
+    top: 49%;
     left: 66% !important;
     width: 14%;
   }
   .pie .button-1 {
-    top: 47%;
+    top: 66%;
     left: 66% !important;
   }
 
   .pie .insight-text-0 {
-    top: 13%;
+    top: 18%;
     left: 54%;
     width: 16%;
   }
   .pie .button-0 {
-    top: 25%;
+    top: 35%;
     left: 53.5%;
   }
 }
