@@ -9,6 +9,7 @@ export const ProgressBar = ({ activeSlide, index, onChangeSlide }) => {
   React.useEffect(() => {
     const timer = setInterval(() => {
       setProgress((oldProgress) => {
+        console.log("oldProgress", oldProgress);
         if (oldProgress === 100) {
           return 0;
         }
@@ -18,6 +19,7 @@ export const ProgressBar = ({ activeSlide, index, onChangeSlide }) => {
     }, 1000);
 
     return () => {
+      setProgress(0);
       clearInterval(timer);
     };
   }, []);
@@ -41,6 +43,7 @@ export const ProgressBar = ({ activeSlide, index, onChangeSlide }) => {
    * @returns {Function} Callback function #onChangeSlide
    */
   const onProgressClicked = (index) => () => {
+    setProgress(0);
     onChangeSlide(index);
   };
 

@@ -56,7 +56,7 @@ const MainSlider = () => {
           swipeScrollTolerance={10}
           useKeyboardArrows={true}
           transitionTime="1000"
-          interval="6000"
+          interval="5900"
           showStatus={false}
           showIndicators={false}
         >

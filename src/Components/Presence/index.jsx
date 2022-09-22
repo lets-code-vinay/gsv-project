@@ -42,7 +42,9 @@ export default function OurPresence() {
             className={`${classes.gridLeft} gridLeft`}
           >
             <Box className={`${classes.leftSideWorld} leftSideWorld`}>
-              <Typography variant={"h2"}>Worldwide Presence</Typography>
+              <Typography variant={"h2"} className="our-presence-title">
+                Worldwide Presence
+              </Typography>
               <Typography variant={"body1"}>
                 We provide Best in class services belongs to all IT technologies
                 If you’re searching for talented tech minds who are dedicated to
@@ -80,7 +82,7 @@ const useStyles = makeStyles((theme) => ({
   },
   leftSideWorld: {
     width: "80%",
-    marginLeft: "15%",
+    marginLeft: "20%",
   },
 
   wave1white: {

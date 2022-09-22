@@ -165,7 +165,7 @@ const useStyles = makeStyles((theme) => ({
   },
 
   trendingIcon: {
-    marginTop: "-1%",
+    marginTop: "-0.5%",
   },
 
   tabsClass: {

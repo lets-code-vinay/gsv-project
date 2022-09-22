@@ -33,7 +33,7 @@ const Testimonials = () => {
           What our customers are saying
         </Typography>
       </Box>
-      <hr className={`${classes.hr} hr`} />
+      {/* <hr className={`${classes.hr} hr`} /> */}
 
       <Box className="container-fluid containerClass">
         <Slider
@@ -141,13 +141,14 @@ const useStyles = makeStyles((theme) => ({
   testimonialLogo: {
     display: "flex",
     flexDirection: "row",
-    margin: "4% 0 1%  11%",
+    margin: "4% 0 1%  0%",
     fontWeight: "800",
     color: "#0d274d",
   },
 
   testimonialTitle: {
-    marginTop: "0.5rem",
+    width: "fit-content",
+    margin: "0.5rem auto",
   },
   hr: {
     margin: "1% auto 3%",

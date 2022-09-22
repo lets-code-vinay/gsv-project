@@ -91,7 +91,7 @@ const OurClients = () => {
           Our Clients
         </Typography>
       </Box>
-      <hr className={`${classes.hr} hr`} />
+      {/* <hr className={`${classes.hr} hr`} /> */}
 
       <Slider
         className={`${classes.clientSlider} clientSlider`}
@@ -233,6 +233,8 @@ const useStyles = makeStyles((theme) => ({
   ourClientsText: {
     color: "#0d274d",
     fontWeight: "500",
+    width: "fit-content",
+    margin: "0 auto",
   },
 
   ourClientsTitle: {

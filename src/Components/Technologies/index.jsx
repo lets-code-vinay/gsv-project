@@ -166,18 +166,21 @@ const useStyles = makeStyles((theme) => ({
   technologiesTitle: {
     display: "flex",
     flexDirection: "row",
-    // margin: "0 0 0 7%",
-    padding: "3% 0",
+    padding: "1% 0",
     color: "#0d274d",
     alignItems: "center",
-    width: "70%",
+    width: "fit-content",
     margin: "auto",
   },
   technologiesSubtitle: {
-    margin: " 2% 7% 3.5%",
+    // margin: " 2% 7% 3.5%",
+    fontSize: "1rem",
+    width: "fit-content",
+    margin: "0 auto",
+    padding: "1% 0 4%",
   },
 
   technologiesText: {
-    fontWeight: "800",
+    fontWeight: "600",
   },
 }));
