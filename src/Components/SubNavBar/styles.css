@@ -181,7 +181,7 @@
   }
 
   .sub_navbar_text span {
-    font-size: 18px;
+    font-size: 1.4rem !important;
     min-width: 70%;
     max-width: 90%;
   }

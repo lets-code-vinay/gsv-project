@@ -303,8 +303,8 @@
   }
 
   .Navbar .appBar .appBarChild {
-    min-height: 110px;
-    max-height: 130px;
+    min-height: 7.1rem;
+    max-height: 8rem;
   }
   .logo-1 {
     height: 70px;

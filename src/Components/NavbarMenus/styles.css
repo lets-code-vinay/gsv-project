@@ -245,7 +245,7 @@
   }
 
   .menuInformationBar .menuInformationBarTitle {
-    font-size: 2.7rem;
+    font-size: 3rem;
   }
   .menuInformationMSGContainer > .menuInformationMSG {
     font-size: 1.2rem;
@@ -291,7 +291,7 @@
   }
 }
 
-@media screen and (min-width: 2560px) and(max-width:3840px) {
+@media screen and (min-width: 2560px) and (max-width: 3840px) {
   .root .subMenu1 {
     height: 88vh !important;
   }
@@ -312,18 +312,24 @@
     bottom: 18%;
     position: absolute;
   }
+  .menuInformationMSGContainer {
+    border-radius: 0 10rem 10rem 0 !important;
+  }
+
+  .menuInformationMSG {
+    font-size: 1.5rem !important;
+  }
   .imageBlock .get-in-touch {
     position: absolute;
-    left: 12%;
-    bottom: 10% !important;
+    left: 10%;
+    bottom: 7% !important;
     color: white;
-    border-radius: 35px;
-    padding: 2px 1rem;
+    border-radius: 6rem;
+    padding: 1rem 5rem;
+    font-size: 1.5rem;
   }
-  .menuImage.imageBlock.imageSubMenu {
+  .menuImage .imageBlock .imageSubMenu {
     background-size: cover;
-    /* width: 100%;
-    height: 88vh !important; */
     width: 100% !important;
     height: 88vh !important;
   }
@@ -331,6 +337,13 @@
   .MuiGrid-root.undefined.menuImage.MuiGrid-item.MuiGrid-grid-md-3.MuiGrid-grid-lg-3 {
     height: 88vh !important;
   } */
+  .menuInformationBar .menuInformationBarTitle {
+    font-size: 5rem;
+  }
+  .MuiGrid-root.MuiGrid-item.MuiGrid-grid-xs-12.MuiGrid-grid-sm-12.MuiGrid-grid-md-4.MuiGrid-grid-lg-4 {
+    background-color: rgb(243, 245, 248);
+    padding: 3% 6%;
+  }
 }
 
 @media screen and (min-width: 3840px) and (max-width: 7680px) {
