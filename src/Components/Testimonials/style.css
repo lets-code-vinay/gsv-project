@@ -256,66 +256,8 @@ h3 {
 
   .testimonialTitle {
     width: fit-content;
-    /* margin: 3rem auto !important; */
   }
 }
-/* 
-@media screen and (min-width: 1920px) {
-  .testimonialLogo {
-    margin: 5% auto 2%;
-  }
-  .testimonials {
-    height: 100vh;
-  }
-  .testimonialLogo .trendingTitle,
-  h4.MuiTypography-root.makeStyles-testimonialTitle-64.testimonialTitle.MuiTypography-h4,
-  .makeStyles-testimonialTitle-132 {
-    font-size: 4rem !important;
-  }
-
-  .clientCard {
-    height: 32rem;
-  }
-
-  .clientCard .testimonialCardMatter {
-    font-size: 1.4rem !important;
-    font-weight: 500;
-    margin: 10% 0% 13% 0 !important;
-  }
-  .testimonialCardUser {
-    font-size: 1.2rem !important;
-    text-indent: 10% !important;
-  }
-
-  .clientGrid .testimonialImage {
-    width: 50%;
-    margin: 10% auto;
-  }
-
-  .clientTitle {
-    font-weight: 400;
-    margin-top: 8%;
-    font-size: 1.6rem !important;
-  }
-
-  .containerClass .slick-prev {
-    top: 15%;
-    left: 42%;
-  }
-  .containerClass .slick-next {
-    top: 15%;
-    right: 43.5%;
-  }
-
-  .sliderPadding {
-    padding: 0% 0 1.5% 5%;
-  }
-
-  .testimonialTitle {
-    width: fit-content;
-  }
-} 
-*/
 
 @media screen and (min-width: 1921px) and (max-width: 2560px) {
   .testimonialLogo {
@@ -370,6 +312,5 @@ h3 {
 
   .testimonialTitle {
     width: fit-content;
-    /* margin: 3rem auto !important; */
   }
 }

@@ -361,9 +361,7 @@
     height: 75%;
     margin-top: 0% !important;
   }
-  .containerTrending {
-    /* padding: 10% 6% !important; */
-  }
+
   .tabsClass {
     float: right;
     width: 65% !important;
@@ -417,9 +415,6 @@
 }
 
 @media screen and (min-width: 2560px) and (max-width: 3840px) {
-  .containerTrending {
-    /* padding: 10% 6% !important; */
-  }
   .tabsClass {
     float: right;
     width: 65% !important;
@@ -479,9 +474,6 @@
 }
 
 @media screen and (min-width: 3840px) and (max-width: 7680px) {
-  .containerTrending {
-    /* padding: 10% 6% !important; */
-  }
   .tabsClass {
     float: right;
     width: 65% !important;
@@ -536,9 +528,6 @@
 }
 
 @media screen and (min-width: 7680px) {
-  .containerTrending {
-    /* padding: 10% 6% !important; */
-  }
   .tabsClass {
     float: right;
     width: 65% !important;

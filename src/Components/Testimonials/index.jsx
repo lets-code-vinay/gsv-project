@@ -136,15 +136,12 @@ export default Testimonials;
  */
 const useStyles = makeStyles((theme) => ({
   testimonials: {
-    // padding: "8% 4%",
     display: "flex",
     flexDirection: "column",
-    // justifyContent: "center",
   },
   testimonialLogo: {
     display: "flex",
     flexDirection: "row",
-    // margin: "0% 0 0%  0%",
     fontWeight: "800",
     color: "#0d274d",
   },
