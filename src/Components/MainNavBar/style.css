@@ -1,3 +1,6 @@
+.Navbar {
+  z-index: 999;
+}
 .Navbar .appBar {
   background: rgba(30, 68, 113, 0.3);
   display: flex;

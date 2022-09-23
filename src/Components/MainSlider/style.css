@@ -12,7 +12,7 @@
     color: #ffffff;
     padding: 3% 4%;
     text-shadow: 2px 2px black;
-    font-size: 1.5rem;
+    font-size: 1.5rem !important;
     width: 75%;
     bottom: 45%;
   }
@@ -20,7 +20,7 @@
     width: 95%;
     height: 60px;
     position: absolute;
-    bottom: 2%;
+    bottom: 13%;
   }
   .informationBar .informationMsgContainer {
     width: 100%;
@@ -31,13 +31,13 @@
   }
   .informationMsgContainer .informationMSG {
     color: #ffffff !important;
-    padding: 1% 2%;
-    font-size: 0.5rem;
     opacity: 1;
+    padding: 2% 5% 2% 2%;
+    font-size: 0.7rem;
   }
 
   .progressBars {
-    width: 78%;
+    width: 100%;
     bottom: 38%;
     margin: 0 5%;
   }

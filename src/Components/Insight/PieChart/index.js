@@ -27,7 +27,7 @@ const PieChart = ({ data = {}, fetchInsightDetails }) => {
    * @param {Object} node
    * @param {Object} event
    */
-  const handleMouseLeave = (_, __) => { };
+  const handleMouseLeave = (_, __) => {};
 
   /**
    * @description Getting value of current slice on click

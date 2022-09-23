@@ -66,3 +66,5 @@ export const email_validation = "";
 // Pixel C	                1800 x 2560	900 x 1280
 // Samsung Galaxy Tab 10	800 x 1280	800 x 1280
 // Chromebook Pixel	        2560 x 1700	1280 x 850
+
+// https://www.binvisions.com/articles/tablet-smartphone-resolutions-screen-size-list/

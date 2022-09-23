@@ -101,87 +101,94 @@ svg {
 1025px — 1200px: Desktops, large screens
 1201px and more —  Extra large screens, TV */
 @media screen and (min-width: 279px) and (max-width: 480px) {
+  .pie,
   .pie-chart-height {
-    height: 500px !important;
+    height: 300px !important;
   }
+
   .logoInside {
     min-width: 18% !important;
     max-width: 30% !important;
-    top: 47% !important;
+    top: 44% !important;
     left: 36% !important;
   }
   .pie .insight-text {
     position: absolute;
     font-size: 0.6rem;
     padding: 6px 10px;
-    font-weight: 500;
+    font-weight: 400;
+    width: 28%;
   }
   .pie .button {
     position: absolute;
-    font-size: 0.5rem;
-    padding: 3px 8px;
+    font-size: 0.45rem;
     border-radius: 2rem !important;
     border: 1px double white !important;
     color: white !important;
+    width: 20% !important;
+    padding: 1px 1px;
+    height: 1.2rem !important;
   }
 
   .pie .insight-text-6 {
-    top: 30%;
     left: 26%;
   }
 
   .pie .button-6 {
-    top: 34%;
-    left: 25%;
+    top: 27%;
+    left: 28%;
   }
 
   .pie .insight-text-5 {
-    top: 40%;
-    left: 12%;
-    min-width: 16%;
-    max-width: 22%;
+    top: 36%;
+    left: 7%;
+    min-width: 18%;
+    max-width: 26%;
+    word-break: break-word;
   }
 
   .pie .button-5 {
     top: 48%;
-    left: 10%;
+    left: 9%;
   }
 
   .pie .insight-text-4 {
-    top: 56%;
-    left: 15%;
+    top: 58%;
+    left: 12%;
     min-width: 18%;
     max-width: 21%;
     text-align: center;
   }
   .pie .button-4 {
-    top: 64% !important;
-    left: 15% !important;
-    min-width: 18%;
-    max-width: 24%;
+    top: 75%;
+    left: 15%;
+    min-width: 16%;
+    max-width: 22%;
   }
 
   .pie .insight-text-3 {
-    top: 68%;
-    left: 38%;
+    top: 70%;
+    left: 39.5%;
+    word-break: break-word;
+    width: 26%;
   }
   .pie .button-3 {
-    top: 72%;
-    left: 42%;
+    top: 87%;
+    left: 39%;
   }
 
   .pie .insight-text-2 {
-    top: 58%;
-    left: 63%;
+    top: 57.5%;
+    left: 64%;
   }
   .pie .button-2 {
-    top: 63%;
+    top: 74.5%;
     left: 66%;
   }
 
   .pie .insight-text-1 {
-    top: 43%;
-    left: 68%;
+    top: 35%;
+    left: 71%;
   }
   .pie .button-1 {
     top: 48%;
@@ -189,12 +196,19 @@ svg {
   }
 
   .pie .insight-text-0 {
-    top: 30%;
-    left: 56%;
+    top: 14%;
+    left: 54%;
   }
   .pie .button-0 {
-    top: 34%;
-    left: 54%;
+    top: 26%;
+    left: 53%;
+  }
+  .pieDetail .pieInfo .pieInfoList {
+    font-size: 0.9rem;
+  }
+
+  .pieDetail .pieButton {
+    margin: 7% auto 6%;
   }
 }
 
