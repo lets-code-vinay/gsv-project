@@ -23,7 +23,7 @@ export const NAVBAR_MENUS = {
     isMore: false,
     menus: {
       NETWORKING: {
-        label: "NETWORK WIRED AND WIRELESS",
+        label: "NETWORKING",
         value: "NETWORKING",
         menus: {
           image: NETWORK_IMAGE,
@@ -55,7 +55,7 @@ export const NAVBAR_MENUS = {
                   path: "/lan/switching",
                 },
                 SDN: {
-                  label: "Software Denied Networking",
+                  label: "Software Defied Networking",
                   value: "SDN",
                   path: "/lan/software-denied-networking",
                 },
@@ -118,7 +118,7 @@ export const NAVBAR_MENUS = {
               mobile_image: "",
               menus: {
                 WI_FI_6: {
-                  label: "Wi-Fi-6",
+                  label: "Wi-Fi 6",
                   value: "WI_FI_6",
                   path: "/wireless-and-mobility/wi-fi-6",
                 },
@@ -240,7 +240,7 @@ export const NAVBAR_MENUS = {
                 },
                 // -- Cisco  Enterprise NSV Infrastructure
                 CENIS: {
-                  label: "Cisco Enterprise NSV Infrastructure",
+                  label: "Cisco Enterprise NSV Infrastructure-Software",
                   value: "CENIS",
                   path: "/Cisco-Enterprise-NSV-Infrastructure",
                 },
@@ -252,7 +252,7 @@ export const NAVBAR_MENUS = {
                 },
                 // -- Cisco Velo Cloud
                 VWVC: {
-                  label: "VmWare VeloCloud",
+                  label: "VMware VeloCloud",
                   value: "VWVC",
                   path: "/vmware-velo-cloud",
                 },
@@ -276,6 +276,16 @@ export const NAVBAR_MENUS = {
                 },
               },
             },
+
+            MANY_MORE: {
+              label: "Many More...",
+              value: "MANY_MORE",
+              shaded: false,
+              icon: MISC_ICON,
+              image: MISC_ICON,
+              mobile_image: "",
+              menus: {},
+            },
           },
         },
       },
@@ -284,7 +294,7 @@ export const NAVBAR_MENUS = {
        * Security and cyber Security
        */
       SECURITY: {
-        label: "SECURITY AND CYBERSECURITY",
+        label: "SECURITY",
         value: "SECURITY",
         menus: {
           image: SECURITY_MAIN_IMAGE,
@@ -363,7 +373,7 @@ export const NAVBAR_MENUS = {
               mobile_image: "",
               menus: {
                 VCISCOS: {
-                  label: "Virtual CISCO Services",
+                  label: "Virtual CISO Services",
                   value: "VCISCOS",
                   path: "/cybersecurity/virtual-cisco-services",
                 },
@@ -551,7 +561,7 @@ export const NAVBAR_MENUS = {
        * DATA CENTER
        */
       DATA_CENTER: {
-        label: "DATA CENTER AND VISUALIZATION",
+        label: "DATA CENTER",
         value: "DATA_CENTER",
         color: THEME_COLOR.data_green,
         menus: {
@@ -576,9 +586,9 @@ export const NAVBAR_MENUS = {
                   path: "/data-center/assurance-insight",
                 },
                 HCI: {
-                  label: "Hyper Coverged infrastructure",
+                  label: "Hyper Converged infrastructure",
                   value: "HCI",
-                  path: "/data-center/Hyper-Coverged-infrastructure",
+                  path: "/data-center/Hyper-Converged-infrastructure",
                 },
                 WO: {
                   label: "Worklaod Optimization",
@@ -852,7 +862,7 @@ export const NAVBAR_MENUS = {
        * COLLABORATION
        */
       COLLABORATION: {
-        label: "COLLABORATION AND PRODUCTIVITY",
+        label: "COLLABORATION",
         value: "COLLABORATION",
         menus: {
           image: COLLABORATION,
@@ -1016,179 +1026,180 @@ export const NAVBAR_MENUS = {
         },
       },
 
-      /**
-       * SERVICE_PROVIDER
-       */
-      SERVICE_PROVIDER: {
-        label: "SERVICE PROVIDER",
-        value: "SERVICE_PROVIDER",
-        menus: {
-          image: SECURITY_MAIN_IMAGE,
-          mobile_image: MOBILE_SECURITY_IMAGE,
-          title: "SERVICE PROVIDER",
-          color: THEME_COLOR.security_red,
-          subtitle: `Security-Implement enterprise-class connectivity for wired and wireless. Multi-vendor technology and hardware's Satellite, deployment, monitoring and support`,
-          menus: {
-            // --SECURITY --
-            COLLAB_WITHOUT_TITLE: {
-              label: "",
-              value: "COLLAB_WITHOUT_TITLE",
-              shaded: false,
-              icon: LAN_ICON,
-              image: LAN_ICON,
-              mobile_image: "",
-              menus: {
-                CONFERENCING: {
-                  label: "Conferencing",
-                  value: "CONFERENCING",
-                  path: "/collaboration/Conferencing",
-                },
-                CONTACT_CENTER: {
-                  label: "Contact Center",
-                  value: "CONTACT_CENTER",
-                  path: "/collaboration/Contact-Center",
-                },
-                CC: {
-                  label: "Cloud Calling",
-                  value: "CC",
-                  path: "/collaboration/Cloud-Calling",
-                },
-                OPCC: {
-                  label: "On-Premise Call Control",
-                  value: "OPCC",
-                  path: "/collaboration/On-Premise-Call-Control",
-                },
-                WORK_STREAM_COLLAB: {
-                  label: "Workstream Collabrotion",
-                  value: "WORK_STREAM_COLLAB",
-                  path: "/collaboration/Workstream Collabrotion",
-                },
-                CaM: {
-                  label: "Calling-&-Messaging",
-                  value: "CaM",
-                  path: "/collaboration/Calling-Messaging",
-                },
-                VDO: {
-                  label: "Video",
-                  value: "VDO",
-                  path: "/collaboration/Video",
-                },
-                WEBEX_TEAMS: {
-                  label: "Webex Teams",
-                  value: "WEBEX_TEAMS",
-                  path: "/collaboration/Webex-Teams",
-                },
-                MICROSOFT_TEAMS: {
-                  label: "Microsoft Teams",
-                  value: "MICROSOFT_TEAMS",
-                  path: "/collaboration/Microsoft-Teams",
-                },
-                OFFICE_365: {
-                  label: "Office 365",
-                  value: "OFFICE_365",
-                  path: "/collaboration/Office-365",
-                },
-                ZOOM: {
-                  label: "Zoom Meetings",
-                  value: "ZOOM",
-                  path: "/collaboration/Zoom-Meetings",
-                },
-              },
-            },
+      // Not required at this moment
+      // /**
+      //  * SERVICE_PROVIDER
+      //  */
+      // SERVICE_PROVIDER: {
+      //   label: "SERVICE PROVIDER",
+      //   value: "SERVICE_PROVIDER",
+      //   menus: {
+      //     image: SECURITY_MAIN_IMAGE,
+      //     mobile_image: MOBILE_SECURITY_IMAGE,
+      //     title: "SERVICE PROVIDER",
+      //     color: THEME_COLOR.security_red,
+      //     subtitle: `Security-Implement enterprise-class connectivity for wired and wireless. Multi-vendor technology and hardware's Satellite, deployment, monitoring and support`,
+      //     menus: {
+      //       // --SECURITY --
+      //       COLLAB_WITHOUT_TITLE: {
+      //         label: "",
+      //         value: "COLLAB_WITHOUT_TITLE",
+      //         shaded: false,
+      //         icon: LAN_ICON,
+      //         image: LAN_ICON,
+      //         mobile_image: "",
+      //         menus: {
+      //           CONFERENCING: {
+      //             label: "Conferencing",
+      //             value: "CONFERENCING",
+      //             path: "/collaboration/Conferencing",
+      //           },
+      //           CONTACT_CENTER: {
+      //             label: "Contact Center",
+      //             value: "CONTACT_CENTER",
+      //             path: "/collaboration/Contact-Center",
+      //           },
+      //           CC: {
+      //             label: "Cloud Calling",
+      //             value: "CC",
+      //             path: "/collaboration/Cloud-Calling",
+      //           },
+      //           OPCC: {
+      //             label: "On-Premise Call Control",
+      //             value: "OPCC",
+      //             path: "/collaboration/On-Premise-Call-Control",
+      //           },
+      //           WORK_STREAM_COLLAB: {
+      //             label: "Workstream Collabrotion",
+      //             value: "WORK_STREAM_COLLAB",
+      //             path: "/collaboration/Workstream Collabrotion",
+      //           },
+      //           CaM: {
+      //             label: "Calling-&-Messaging",
+      //             value: "CaM",
+      //             path: "/collaboration/Calling-Messaging",
+      //           },
+      //           VDO: {
+      //             label: "Video",
+      //             value: "VDO",
+      //             path: "/collaboration/Video",
+      //           },
+      //           WEBEX_TEAMS: {
+      //             label: "Webex Teams",
+      //             value: "WEBEX_TEAMS",
+      //             path: "/collaboration/Webex-Teams",
+      //           },
+      //           MICROSOFT_TEAMS: {
+      //             label: "Microsoft Teams",
+      //             value: "MICROSOFT_TEAMS",
+      //             path: "/collaboration/Microsoft-Teams",
+      //           },
+      //           OFFICE_365: {
+      //             label: "Office 365",
+      //             value: "OFFICE_365",
+      //             path: "/collaboration/Office-365",
+      //           },
+      //           ZOOM: {
+      //             label: "Zoom Meetings",
+      //             value: "ZOOM",
+      //             path: "/collaboration/Zoom-Meetings",
+      //           },
+      //         },
+      //       },
 
-            MISCELLANEOUS: {
-              label: "Miscellaneous",
-              value: "MISCELLANEOUS",
-              shaded: false,
-              icon: MISC_ICON,
-              image: MISC_ICON,
-              mobile_image: "",
-              menus: {
-                PS: {
-                  label: "Professional Services",
-                  value: "PS",
-                  path: "/miscellaneous/Professional-Services",
-                },
-                MS: {
-                  label: "Managed Services",
-                  value: "MS",
-                  path: "/miscellaneous/Managed-Services",
-                },
-                SS: {
-                  label: "Support Services",
-                  value: "SS",
-                  path: "/miscellaneous/Support-Services",
-                },
-                LS: {
-                  label: "Learning Services",
-                  value: "LS",
-                  path: "/miscellaneous/Learning-Services",
-                },
-              },
-            },
+      //       MISCELLANEOUS: {
+      //         label: "Miscellaneous",
+      //         value: "MISCELLANEOUS",
+      //         shaded: false,
+      //         icon: MISC_ICON,
+      //         image: MISC_ICON,
+      //         mobile_image: "",
+      //         menus: {
+      //           PS: {
+      //             label: "Professional Services",
+      //             value: "PS",
+      //             path: "/miscellaneous/Professional-Services",
+      //           },
+      //           MS: {
+      //             label: "Managed Services",
+      //             value: "MS",
+      //             path: "/miscellaneous/Managed-Services",
+      //           },
+      //           SS: {
+      //             label: "Support Services",
+      //             value: "SS",
+      //             path: "/miscellaneous/Support-Services",
+      //           },
+      //           LS: {
+      //             label: "Learning Services",
+      //             value: "LS",
+      //             path: "/miscellaneous/Learning-Services",
+      //           },
+      //         },
+      //       },
 
-            // -- Popular ---
-            POPULAR: {
-              label: "POPULAR",
-              value: "POPULAR",
-              shaded: true,
-              icon: POPULAR_ICON,
-              image: POPULAR_ICON,
-              mobile_image: "",
-              menus: {
-                // -- Desk Camera
-                DESK_CAMERA: {
-                  label: "Desk Camera",
-                  value: "DESK_CAMERA",
-                  path: "/Desk-Camera",
-                },
-                // -- Noise Cancellation Mic
-                NCM: {
-                  label: "Noise Cancellation Mic",
-                  value: "NCM",
-                  path: "/Noise-Cancellation-Mic",
-                },
-                // -- Webex Cloud Connected UC
-                WCCU: {
-                  label: "Webex Cloud Connected UC",
-                  value: "WCCU",
-                  path: "/Webex-Cloud-Connected-UC",
-                },
-                // -- Webex Desk Pro
-                WDP: {
-                  label: "Webex Desk Pro",
-                  value: "WDP",
-                  path: "/Webex-Desk-Pro",
-                },
-                // -- Webex Room Panorama
-                WRP: {
-                  label: "Webex Room Panorama",
-                  value: "WRP",
-                  path: "/Webex-Room-Panorama",
-                },
-                // -- Webex Contatc Center Enterprise
-                WCCE: {
-                  label: "Webex Contatc Center Enterprise",
-                  value: "WCCE",
-                  path: "/Webex-Contatc-Center-Enterprise",
-                },
-                // -- Skype for Business
-                SFB: {
-                  label: "Skype for Business",
-                  value: "SFB",
-                  path: "/Skype-for-Business",
-                },
-              },
-            },
-          },
-        },
-      },
+      //       // -- Popular ---
+      //       POPULAR: {
+      //         label: "POPULAR",
+      //         value: "POPULAR",
+      //         shaded: true,
+      //         icon: POPULAR_ICON,
+      //         image: POPULAR_ICON,
+      //         mobile_image: "",
+      //         menus: {
+      //           // -- Desk Camera
+      //           DESK_CAMERA: {
+      //             label: "Desk Camera",
+      //             value: "DESK_CAMERA",
+      //             path: "/Desk-Camera",
+      //           },
+      //           // -- Noise Cancellation Mic
+      //           NCM: {
+      //             label: "Noise Cancellation Mic",
+      //             value: "NCM",
+      //             path: "/Noise-Cancellation-Mic",
+      //           },
+      //           // -- Webex Cloud Connected UC
+      //           WCCU: {
+      //             label: "Webex Cloud Connected UC",
+      //             value: "WCCU",
+      //             path: "/Webex-Cloud-Connected-UC",
+      //           },
+      //           // -- Webex Desk Pro
+      //           WDP: {
+      //             label: "Webex Desk Pro",
+      //             value: "WDP",
+      //             path: "/Webex-Desk-Pro",
+      //           },
+      //           // -- Webex Room Panorama
+      //           WRP: {
+      //             label: "Webex Room Panorama",
+      //             value: "WRP",
+      //             path: "/Webex-Room-Panorama",
+      //           },
+      //           // -- Webex Contatc Center Enterprise
+      //           WCCE: {
+      //             label: "Webex Contatc Center Enterprise",
+      //             value: "WCCE",
+      //             path: "/Webex-Contatc-Center-Enterprise",
+      //           },
+      //           // -- Skype for Business
+      //           SFB: {
+      //             label: "Skype for Business",
+      //             value: "SFB",
+      //             path: "/Skype-for-Business",
+      //           },
+      //         },
+      //       },
+      //     },
+      //   },
+      // },
 
       /**
        * CLOUD AND COMPUTING
        */
       CAC: {
-        label: "CLOUD AND COMPUTING ",
+        label: "CLOUD & COMPUTING ",
         value: "CAC",
         menus: {
           image: CLOUD_IMAGE,

@@ -111,7 +111,7 @@
 
 @media screen and (min-width: 1024px) and (max-width: 1280px) {
   .MuiGrid-root.MuiGrid-container.MuiGrid-spacing-xs-2.MuiGrid-item {
-    top: 3.7rem;
+    top: 4rem;
   }
 }
 

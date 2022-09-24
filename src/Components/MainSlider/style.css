@@ -25,21 +25,21 @@
 @media screen and (max-width: 480px) {
   .sliderInformationBarTitle {
     color: #ffffff;
-    padding: 3% 4%;
+    padding: 3% 0% 0 6%;
     text-shadow: 2px 2px black;
     font-size: 2rem !important;
     width: 80%;
-    top: 17%;
+    top: 40%;
   }
   .infoBlock .informationBar {
     width: 95%;
     height: 60px;
     position: absolute;
-    top: 54%;
+    top: 80%;
   }
   .informationBar .informationMsgContainer {
     width: 100%;
-    height: fit-content;
+    height: 8vh;
     color: #ffffff;
     text-shadow: 1px 1px solid black;
     border-radius: 0 100px 100px 0;
@@ -54,7 +54,7 @@
   .progressBars {
     width: 95%;
     margin: 0 5%;
-    top: 48%;
+    top: 75%;
   }
 }
 

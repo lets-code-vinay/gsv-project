@@ -40,11 +40,11 @@ const MobileList = ({ title, mobileSubMenus, menuIndex }) => {
         </AccordionSummary>
         <AccordionDetails className="mobile-list-details">
           {/* TODO: menu Images for mobile nav-bar size 1110 * 476 */}
-          <img
+          {/* <img
             src={mobileSubMenus.mobile_image}
             alt={mobileSubMenus.label}
             className="menu-list-image"
-          />
+          /> */}
 
           <MobileNestedList
             menuIndex={menuIndex}

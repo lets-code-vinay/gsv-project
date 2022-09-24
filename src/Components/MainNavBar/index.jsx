@@ -122,6 +122,7 @@ const MainNavBar = ({
               })}
             </div>
           </Box>
+          <Box className="nav-bar-grow"></Box>
           <Box className="nav-bar-icons">
             <BiSearchAlt2 className="search" />
             <BiUser className="profile" />
@@ -189,7 +190,7 @@ const useStyles = makeStyles((theme) => ({
   },
 
   menuButton: {
-    marginLeft: "14%",
+    // marginLeft: "14%",
   },
   login_button: {
     fontSize: "1.3rem",

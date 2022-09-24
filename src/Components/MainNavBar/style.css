@@ -19,11 +19,15 @@
   display: flex;
   justify-content: space-evenly;
 }
+.nav-bar-grow {
+  flex-grow: 2;
+}
 
 .nav-bar-icons {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  padding-right: 3%;
 }
 
 /* 320px — 480px: Mobile devices
@@ -35,11 +39,27 @@
   .sectionDesktop {
     display: none;
   }
+  .sectionMobile {
+    margin: 0;
+    padding: 0 !important;
+  }
   .Navbar .appBar .appBarChild {
     display: flex;
     justify-content: space-between;
     padding: 0;
     padding: 1%;
+  }
+  .appBarChild .sectionMobile {
+    margin: 0 0 0 4%;
+    padding: 0;
+  }
+  .nav-bar-grow {
+    /* flex-grow: 1; */
+    display: none;
+  }
+
+  .display {
+    margin-left: 12%;
   }
 
   .nav-bar-icons .search {
@@ -211,6 +231,7 @@
   .Navbar .appBar {
     height: 10vh;
   }
+
   .Navbar .appBar .appBarChild {
     min-height: 90px;
     max-height: 100px;

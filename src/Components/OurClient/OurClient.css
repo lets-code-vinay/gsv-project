@@ -56,15 +56,20 @@
 769px — 1024px: Small screens, laptops
 1025px — 1200px: Desktops, large screens
 1201px and more —  Extra large screens, TV */
-@media screen and (min-width: 279px) and (max-width: 480px) {
-  .hr {
-    margin-bottom: 10px;
-    width: 90% !important;
-    margin: 2% !important;
+@media screen and (max-width: 480px) {
+  .topContainer {
+    height: 100vh;
+  }
+  .topContainer .clientsTitle {
+    padding: 15vh 0 5vh;
+  }
+
+  .topContainer .clientsTitle .ourClientsText {
+    font-size: 3rem;
   }
   .imageBlock .imageToResponsive {
-    width: 135px !important;
-    height: 50px !important;
+    width: 10rem !important;
+    height: 5rem !important;
   }
 
   .imageBlock .bottomImage {
@@ -77,16 +82,14 @@
     margin-top: 0;
   }
 
-  .imageToResponsive {
-    width: 90%;
-    margin: 5% auto !important;
-  }
   .slick-slider svg.slick-arrow.slick-prev {
     left: 0;
+    top: 42%;
   }
 
-  .topContainer .slick-next {
+  .topContainer svg.slick-arrow.slick-next {
     right: 0 !important;
+    top: 42% !important;
   }
 }
 
@@ -169,7 +172,7 @@
     height: 2px;
   }
   .clientsTitle .ourClientsText {
-    font-size: 4rem;
+    font-size: 3rem;
     margin-top: 0;
   }
   .topContainer .hr {
