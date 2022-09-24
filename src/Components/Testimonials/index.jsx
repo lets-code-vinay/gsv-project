@@ -43,8 +43,8 @@ const Testimonials = () => {
           slidesToShow={5}
           slidesToScroll={1}
           centerMode={true}
-          nextArrow={<ChevronRight className="rightArrow" />}
-          prevArrow={<ChevronLeft className="leftArrow" />}
+          nextArrow={<ChevronRight className="rightArrow rightArrow-1 " />}
+          prevArrow={<ChevronLeft className="leftArrow leftArrow-1" />}
           responsive={responsive_slider}
         >
           {Object.values(TESTIMONIAL_CARD_DATA).map(
