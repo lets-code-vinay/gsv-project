@@ -1,9 +1,9 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { bool, func } from "prop-types";
 
 import { makeStyles } from "@material-ui/core/styles";
-import { MoreVert as MoreIcon } from "@material-ui/icons";
+import { Menu as MenuIcon } from "@material-ui/icons";
 import { BiUser, BiSearchAlt2, BiGlobe } from "react-icons/bi";
 import {
   AppBar,
@@ -78,6 +78,15 @@ const MainNavBar = ({
         }}
       >
         <Toolbar className={`${classes.appBarChild} appBarChild`}>
+          <IconButton
+            className={`${classes.sectionMobile} sectionMobile`}
+            aria-label="show more"
+            aria-haspopup="true"
+            onClick={handleMobileMenuOpen}
+            color="inherit"
+          >
+            <MenuIcon className={`${classes.hamburgerIcon} hamburgerIcon`} />
+          </IconButton>
           <Box
             edge="start"
             className={`${classes.menuButton} display`}
@@ -113,7 +122,6 @@ const MainNavBar = ({
               })}
             </div>
           </Box>
-          <Box className="nav-bar-grow"></Box>
           <Box className="nav-bar-icons">
             <BiSearchAlt2 className="search" />
             <BiUser className="profile" />
@@ -121,21 +129,10 @@ const MainNavBar = ({
           </Box>
 
           {/* To open icons */}
-          <>
-            <IconButton
-              className={`${classes.sectionMobile} sectionMobile`}
-              aria-label="show more"
-              aria-haspopup="true"
-              onClick={handleMobileMenuOpen}
-              color="inherit"
-            >
-              <MoreIcon className={`${classes.mobile3Dots} mobile3Dots`} />
-            </IconButton>
-            <MobileNavBar
-              isMobileNavbarOpened={isMobileNavbarOpened}
-              onCloseMobileMenu={handleMobileMenuClose}
-            />
-          </>
+          <MobileNavBar
+            isMobileNavbarOpened={isMobileNavbarOpened}
+            onCloseMobileMenu={handleMobileMenuClose}
+          />
         </Toolbar>
       </AppBar>
     </div>
@@ -192,7 +189,7 @@ const useStyles = makeStyles((theme) => ({
   },
 
   menuButton: {
-    marginRight: theme.spacing(2),
+    marginLeft: "14%",
   },
   login_button: {
     fontSize: "1.3rem",
@@ -209,21 +206,8 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: "600",
   },
 
-  // sectionDesktop: {
-  //   display: "none",
-  //   [theme.breakpoints.up("md")]: {
-  //     display: "flex",
-  //   },
-  // },
-
-  // sectionMobile: {
-  //   display: "flex",
-  //   [theme.breakpoints.up("md")]: {
-  //     display: "none",
-  //   },
-  // },
-
-  mobile3Dots: {
+  hamburgerIcon: {
     color: "#ffffff",
+    marginLeft: "2%",
   },
 }));

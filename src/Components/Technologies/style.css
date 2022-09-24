@@ -248,11 +248,7 @@
 .card-background {
   background-repeat: no-repeat;
 }
-.cardBody {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
+
 .technologiesPage .cardMenu {
   box-shadow: 0 0 0 0;
 }
@@ -522,21 +518,140 @@
 1025px — 1200px: Desktops, large screens
 1201px and more —  Extra large screens, TV */
 
-@media screen and (min-width: 279px) and (max-width: 480px) {
+@media screen and (max-width: 480px) {
+  .technologiesPage .marginTop {
+    margin-top: 1rem;
+  }
+  .technologiesPage {
+    width: 100% !important;
+  }
+  .technologies-container {
+    width: 80%;
+    margin: auto;
+  }
   .hr {
     margin-bottom: 10px;
     width: 90% !important;
     margin: 2% !important;
   }
-  .imageToResponsive {
-    width: 50%;
-    margin-left: 2%;
+  .technologiesSubtitle {
+    word-break: break-all;
   }
 
+  .wireGridClass {
+    overflow: hidden;
+    border-radius: 0 0 15px 15px !important;
+  }
+  .column_first {
+    border-radius: 15px 15px 0px 0px;
+  }
+
+  .card_header {
+    font-size: 1.2rem;
+    padding: 18px 0 11px 0px;
+  }
+  .card_heading {
+    font-size: 1.5rem;
+    margin: 14% 0% 0%;
+  }
+  .card_text {
+    font-size: 1rem;
+  }
   .ourClientsTitle .ourClientsIcon,
   .ourClientsTitle .ourClientsText {
     font-size: 1.5rem;
     margin-top: 0;
+  }
+  .cardGrid .cardContent {
+    border-radius: 15px;
+    margin-top: 0px;
+    height: 20vh;
+    width: 100%;
+  }
+  .cardText {
+    bottom: 7px;
+    transition: 0.3s linear;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 6px;
+  }
+  .overlay:hover .cardTextDiv h4 {
+    transform: translateY(-50px);
+  }
+  .cardTextDiv p {
+    padding: 0.5rem;
+    bottom: 0.4rem;
+    font-size: 0.7rem !important;
+
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-break: break-all;
+    height: 65px;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+  }
+
+  .text,
+  .textSecurity {
+    font-size: 0.8rem;
+    font-weight: 400;
+    top: 28px;
+    left: 4%;
+    padding: 0;
+  }
+
+  .technologiesPage .softwareImageOverlay {
+    padding: 0;
+  }
+  .technologiesPage .cardMenu {
+    border-radius: 15px;
+  }
+  .imgTagSoftware {
+    height: inherit;
+  }
+  .MuiCardContent-root:last-child {
+    padding: 0 !important ;
+  }
+  .imageLeft {
+    height: 40vh;
+  }
+  .softwareImageOverlay:hover .cardDiv h4 {
+    transform: translateY(-2.5rem);
+    color: white;
+  }
+  .softwareImageOverlay:hover .cardDiv .paraText p {
+    font-size: 1rem;
+  }
+  .cardTextHeading {
+    bottom: 41px;
+    font-size: 1.4rem;
+  }
+  .cardMenu {
+    margin-bottom: 5%;
+  }
+  .imgTagSecurity {
+    height: 40vh;
+  }
+
+  .technologiesPage .boxBelow {
+    margin-top: 0.5rem;
+    height: 1.5rem;
+  }
+
+  /* -=---Map ---=- */
+  .leftSideWorld {
+    margin: auto !important;
+  }
+  .leftSideWorld .our-presence-title {
+    width: 100%;
+    font-size: 2.5rem;
+  }
+  .leftSideWorld .our-presence-text {
+    width: 100%;
+    font-size: 0.8rem;
+    font-weight: 300;
   }
 }
 

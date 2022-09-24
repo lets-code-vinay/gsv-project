@@ -7,20 +7,20 @@
 769px — 1024px: Small screens, laptops
 1025px — 1200px: Desktops, large screens
 1201px and more —  Extra large screens, TV */
-@media screen and (min-width: 279px) and (max-width: 479px) {
+@media screen and (max-width: 480px) {
   .sliderInformationBarTitle {
     color: #ffffff;
     padding: 3% 4%;
     text-shadow: 2px 2px black;
-    font-size: 1.5rem !important;
-    width: 75%;
-    bottom: 45%;
+    font-size: 2rem !important;
+    width: 80%;
+    top: 17%;
   }
   .infoBlock .informationBar {
     width: 95%;
     height: 60px;
     position: absolute;
-    bottom: 13%;
+    top: 54%;
   }
   .informationBar .informationMsgContainer {
     width: 100%;
@@ -37,9 +37,9 @@
   }
 
   .progressBars {
-    width: 100%;
-    bottom: 38%;
+    width: 95%;
     margin: 0 5%;
+    top: 48%;
   }
 }
 
