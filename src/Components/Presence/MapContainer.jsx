@@ -62,12 +62,10 @@ export default function MapContainer({ isMapTitleEnable = false, title = "" }) {
           value={value}
           onChange={handleChange}
           aria-label="basic tabs example"
-          className="continents-tabs"
         >
           {Object.values(CONTINENTS).map(({ name = "" }, index) => {
             return (
               <Tab
-                className="continents-tab"
                 label={name}
                 {...a11yProps(index)}
                 key={`${name}-${index}`}

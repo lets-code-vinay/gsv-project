@@ -2,6 +2,7 @@ export const ASIA_ROTATION = [-85, -20, 0];
 export const AFRICA_ROTATION = [-20, 0, 0];
 export const SOUTH_AMERICA_ROTATION = [58, 30, 0];
 
+
 export const SOUTH_AMERICA = [
   {
     markerOffset: -30,
@@ -37,34 +38,18 @@ export const AFRICA = [
 
 export const CONTINENTS = {
   SOUTH_AMERICA: {
-    name: "Latin America",
+    name: 'Latin America',
     region: "Americas",
-    rotation: SOUTH_AMERICA_ROTATION,
-    continent: SOUTH_AMERICA,
-  },
-  NORTH_AMERICA: {
-    name: "North America",
-    region: "Africa",
-    rotation: AFRICA_ROTATION,
-    continent: AFRICA,
+    rotation: SOUTH_AMERICA_ROTATION, continent: SOUTH_AMERICA
   },
   ASIA: {
-    name: "Asia",
+    name: 'Asia',
     region: "Asia",
-    rotation: ASIA_ROTATION,
-    continent: ASIA,
+    rotation: ASIA_ROTATION, continent: ASIA
   },
   AFRICA: {
-    name: "Africa",
+    name: 'Africa',
     region: "Africa",
-    rotation: AFRICA_ROTATION,
-    continent: AFRICA,
-  },
-
-  OCEANIA: {
-    name: "Oceania",
-    region: "Africa",
-    rotation: AFRICA_ROTATION,
-    continent: AFRICA,
-  },
-};
+    rotation: AFRICA_ROTATION, continent: AFRICA
+  }
+}
