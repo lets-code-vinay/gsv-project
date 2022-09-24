@@ -2,6 +2,21 @@
   height: 100vh !important;
 }
 
+.informationMsgContainer .informationMSG {
+  color: #ffffff !important;
+  opacity: 1;
+  padding-right: 5% !important;
+
+  text-overflow: ellipsis;
+  overflow: hidden;
+  word-break: break-all;
+  height: 20vh;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+}
+
 /* 320px — 480px: Mobile devices
 481px — 768px: iPads, Tablets
 769px — 1024px: Small screens, laptops
@@ -10,17 +25,17 @@
 @media screen and (max-width: 480px) {
   .sliderInformationBarTitle {
     color: #ffffff;
-    padding: 3% 0% 0 6%;
+    padding: 3% 4%;
     text-shadow: 2px 2px black;
     font-size: 2rem !important;
     width: 80%;
-    top: 40%;
+    top: 17%;
   }
   .infoBlock .informationBar {
     width: 95%;
     height: 60px;
     position: absolute;
-    top: 80%;
+    top: 54%;
   }
   .informationBar .informationMsgContainer {
     width: 100%;
@@ -39,7 +54,7 @@
   .progressBars {
     width: 95%;
     margin: 0 5%;
-    top: 75%;
+    top: 48%;
   }
 }
 

@@ -147,14 +147,18 @@
   }
 }
 
-@media screen and (min-width: 1025px) and (max-width: 1281px) {
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .topContainer {
+    height: 100vh;
+    padding: 21vh 10% !important;
+  }
   .hr {
     margin-bottom: 10px;
     width: 50%;
   }
 }
 
-@media screen and (min-width: 1282px) and (max-width: 1920px) {
+@media screen and (min-width: 1281px) and (max-width: 1920px) {
   .topContainer {
     height: 100vh;
     padding: 21vh 10% !important;
@@ -165,7 +169,7 @@
     height: 2px;
   }
   .clientsTitle .ourClientsText {
-    font-size: 3rem;
+    font-size: 4rem;
     margin-top: 0;
   }
   .topContainer .hr {

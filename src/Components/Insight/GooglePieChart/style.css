@@ -525,10 +525,10 @@ svg {
 
 @media screen and (min-width: 1280px) and (max-width: 1510px) {
   .logoInside {
-    min-width: 16% !important;
-    max-width: 18% !important;
-    top: 45% !important;
-    left: 43% !important;
+    min-width: 18% !important;
+    max-width: 23% !important;
+    top: 46% !important;
+    left: 40% !important;
   }
   .pie-chart-height {
     height: 500px !important;
