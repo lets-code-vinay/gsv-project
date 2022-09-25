@@ -591,9 +591,9 @@ export const NAVBAR_MENUS = {
                   path: "/data-center/Hyper-Converged-infrastructure",
                 },
                 WO: {
-                  label: "Worklaod Optimization",
+                  label: "Workload Optimization",
                   value: "WO",
-                  path: "/data-center/Worklaod-Optimization",
+                  path: "/data-center/Workload-Optimization",
                 },
                 IAAS: {
                   label: "IaaS",
@@ -606,14 +606,14 @@ export const NAVBAR_MENUS = {
                   path: "/data-center/Application-Performance-Monitoring",
                 },
                 DS: {
-                  label: "Data-Storage",
+                  label: "Data Storage",
                   value: "DS",
                   path: "/data-center/Data-Storage",
                 },
                 DCM: {
-                  label: "Data Center Moderenization",
+                  label: "Data Center Modernization",
                   value: "DCM",
-                  path: "/data-center/Data-Center-Moderenization",
+                  path: "/data-center/Data-Center-Modernization",
                 },
                 TA: {
                   label: "Telemetry & Analytics",
@@ -699,7 +699,7 @@ export const NAVBAR_MENUS = {
                   path: "/miscellaneous/Build-Apps-Microservices",
                 },
                 MBaaS: {
-                  label: "Managed-Backup-as-a-Service",
+                  label: "Managed Backup as a Service",
                   value: "MBaaS",
                   path: "/miscellaneous/Managed-Backup-as-a-Service",
                 },
@@ -773,11 +773,11 @@ export const NAVBAR_MENUS = {
                   value: "CISCO_APPDYNAMICS",
                   path: "/Cisco-AppDynamics",
                 },
-                // --Cisco Secure Networking
+                // --Cisco Secure Workload
                 CSN: {
-                  label: "Cisco Secure Networking",
+                  label: "Cisco Secure Workload",
                   value: "CSN",
-                  path: "/Cisco-Secure-Networking",
+                  path: "/Cisco-Secure-Workload",
                 },
                 // --Arista Cloud Networking
                 ACN: {
@@ -906,7 +906,7 @@ export const NAVBAR_MENUS = {
                   path: "/collaboration/Workstream Collabrotion",
                 },
                 CaM: {
-                  label: "Calling-&-Messaging",
+                  label: "Calling & Messaging",
                   value: "CaM",
                   path: "/collaboration/Calling-Messaging",
                 },
@@ -1217,24 +1217,29 @@ export const NAVBAR_MENUS = {
               mobile_image: "",
               menus: {
                 CLOUD_CONSULTING: {
-                  label: "Cloud-Consulting",
+                  label: "Cloud Consulting",
                   value: "CLOUD_CONSULTING",
                   path: "/cloud-and-computing/Cloud-Consulting",
                 },
                 CLOUD_ENGINEERING: {
-                  label: "Cloud-Engineering",
+                  label: "Cloud Engineering",
                   value: "CLOUD_ENGINEERING",
                   path: "/cloud-and-computing/Cloud-Engineering",
                 },
                 CLOUD_OPTIMIZATION: {
-                  label: "Cloud-Optimization",
+                  label: "Cloud Optimization",
                   value: "CLOUD_OPTIMIZATION",
                   path: "/cloud-and-computing/Cloud-Optimization",
                 },
                 AWS_CM: {
                   label: "AWS Cloud Migration",
                   value: "AWS_CM",
-                  path: "/cloud-and-computing/AWS Cloud Migration",
+                  path: "/cloud-and-computing/AWS-Cloud-Migration",
+                },
+                AZURE_CM: {
+                  label: "Azure Cloud Migration",
+                  value: "AZURE_CM",
+                  path: "/cloud-and-computing/Azure-Cloud-Migration",
                 },
               },
             },
@@ -1267,8 +1272,13 @@ export const NAVBAR_MENUS = {
                   path: "/cloud-and-computing/Data-Migration ",
                 },
                 EC: {
-                  label: "Hybrid Cloud Management",
+                  label: "Edge Computing",
                   value: "EC",
+                  path: "/cloud-and-computing/Edge-Computing ",
+                },
+                HCM: {
+                  label: "Hybrid Cloud Management",
+                  value: "HCM",
                   path: "/cloud-and-computing/Hybrid-Cloud-Management ",
                 },
                 SAAS: {
@@ -1308,8 +1318,13 @@ export const NAVBAR_MENUS = {
                   path: "/cloud-and-computing/Data-Migration ",
                 },
                 EC: {
-                  label: "Hybrid Cloud Management",
+                  label: "Edge Computing",
                   value: "EC",
+                  path: "/cloud-and-computing/Edge-Computing ",
+                },
+                HCM: {
+                  label: "Hybrid Cloud Management",
+                  value: "HCM",
                   path: "/cloud-and-computing/Hybrid-Cloud-Management ",
                 },
                 SAAS: {
@@ -1337,7 +1352,7 @@ export const NAVBAR_MENUS = {
           menus: {
             // --SECURITY --
             IOT1: {
-              label: "Internet of Things",
+              label: "",
               value: "IOT1",
               shaded: false,
               icon: LAN_ICON,
@@ -1365,7 +1380,7 @@ export const NAVBAR_MENUS = {
                   path: "/IoT/Industrial Wireless Access Points",
                 },
                 IC: {
-                  label: "Industrial-Connectivity",
+                  label: "Industrial Connectivity",
                   value: "IC",
                   path: "/IoT/Industrial-Connectivity",
                 },

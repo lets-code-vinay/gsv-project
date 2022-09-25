@@ -291,6 +291,9 @@ h3 {
 }
 
 @media screen and (min-width: 1281px) and (max-width: 1920px) {
+  .testimonialDomainClientsSection {
+    width: 95%;
+  }
   .testimonialLogo {
     margin: 5% auto 2%;
   }
@@ -337,6 +340,10 @@ h3 {
     right: 40%;
   }
 
+  .testimonialDomainClients svg.slick-arrow.slick-next {
+    right: -2%;
+  }
+
   .sliderPadding {
     padding: 0% 0 1.5% 2%;
   }
@@ -349,6 +356,9 @@ h3 {
 }
 
 @media screen and (min-width: 1921px) and (max-width: 2560px) {
+  .testimonialDomainClientsSection {
+    width: 95%;
+  }
   .testimonialLogo {
     margin: 5% 0 1% 0%;
   }

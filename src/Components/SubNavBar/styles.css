@@ -120,7 +120,7 @@
 }
 @media screen and (min-width: 1920px) and (max-width: 2559px) {
   .headBar {
-    top: 9%;
+    top: 10%;
     min-height: 80px;
   }
 
@@ -134,8 +134,8 @@
   }
 
   .sub_navbar_text {
-    min-width: 10% !important;
-    max-width: 14% !important;
+    min-width: 12% !important;
+    max-width: 16% !important;
     padding: 5px;
     min-height: 70px !important;
     max-height: 80px !important;

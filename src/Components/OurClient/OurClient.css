@@ -83,12 +83,12 @@
   }
 
   .slick-slider svg.slick-arrow.slick-prev {
-    left: 0;
+    left: 5%;
     top: 42%;
   }
 
   .topContainer svg.slick-arrow.slick-next {
-    right: 0 !important;
+    right: 5%;
     top: 42% !important;
   }
 }
