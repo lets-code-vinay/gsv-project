@@ -177,6 +177,7 @@ const PieChart = ({ fetchInsightDetails }) => {
                   }}
                   onMouseEnter={handleTextMouseEnter(index)}
                   onMouseLeave={handleTextMouseLeave(index)}
+                  onMouseOver={handleTextMouseEnter(index)}
                 >
                   {label}
                 </Typography>

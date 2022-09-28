@@ -14,6 +14,11 @@
   height: 85vh;
 }
 
+.menuBlock div div {
+  align-items: center;
+  width: 75%;
+}
+
 /* 320px — 480px: Mobile devices
   481px — 768px: iPads, Tablets
   769px — 1024px: Small screens, laptops
@@ -55,11 +60,6 @@
 
   .subMenu1 {
     height: 82vh;
-  }
-
-  .menuBlock div div {
-    align-items: end;
-    width: 67%;
   }
 
   .MenuTitleContainerBox {
@@ -115,11 +115,6 @@
 
   .subMenu1 {
     height: 82vh;
-  }
-
-  .menuBlock div div {
-    align-items: end;
-    width: 67%;
   }
 
   .MenuTitleContainerBox {
@@ -184,11 +179,6 @@
     height: 90vh;
   }
 
-  .menuBlock div div {
-    align-items: end;
-    width: 67%;
-  }
-
   .MenuTitleContainerBox {
     margin: 4% 0;
   }
@@ -249,11 +239,6 @@
   }
   .menuInformationMSGContainer > .menuInformationMSG {
     font-size: 1.2rem;
-  }
-
-  .menuBlock div div {
-    align-items: end;
-    width: 67%;
   }
 
   .MenuTitleContainerBox {

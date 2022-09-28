@@ -9,7 +9,6 @@ export const ProgressBar = ({ activeSlide, index, onChangeSlide }) => {
   React.useEffect(() => {
     const timer = setInterval(() => {
       setProgress((oldProgress) => {
-        console.log("oldProgress", oldProgress);
         if (oldProgress === 100) {
           return 0;
         }

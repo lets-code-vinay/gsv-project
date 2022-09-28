@@ -91,7 +91,7 @@
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (min-width: 481px) and (max-width: 767px) {
   .sectionDesktop {
     display: none;
   }
@@ -133,15 +133,22 @@
   .sectionMobile {
     display: flex !important;
     padding: 0 !important;
+    font-size: 2rem;
   }
   .sectionDesktop {
     display: none !important;
   }
+  .Navbar {
+    height: 5rem;
+  }
   .Navbar .appBar .appBarChild {
     display: flex;
     justify-content: space-between;
-    min-height: 50px;
-    max-height: 70px;
+    min-height: 5rem;
+    max-height: 8rem;
+  }
+  .sectionMobile.hamburgerIcon {
+    font-size: 2rem;
   }
   .nav-bar-icons .search {
     height: 24px;
@@ -162,7 +169,7 @@
     font-size: 1.2rem;
   }
   .logo-1 {
-    height: 24px;
+    height: 2.5rem;
     width: 70%;
     margin-top: 1px;
   }
@@ -171,8 +178,10 @@
     font-size: 22px;
   }
   .display {
-    display: flex;
-    justify-content: space-evenly;
+    margin-left: 12%;
+  }
+  .nav-bar-grow {
+    display: none;
   }
 }
 

@@ -236,7 +236,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: "#ffffff",
     width: "100%",
     height: "100%",
-    padding: "3% 3% 0 10%",
+    padding: "3% 3% 0 3%",
   },
   MenuTitleContainer: {
     display: "flex",
