@@ -8,12 +8,17 @@ import { func } from "prop-types";
 const MobileMenuTopBar = ({ onCloseMobileMenu }) => {
   return (
     <Box className="mobile-menu-top-bar">
+      <SearchIcon
+        className="mobile-menu-icon"
+        disabled="true"
+        disableFocusRipple="true"
+        disableRipple="true"
+      />
+      <img src={BlueLogo} alt="Logo in blue" className="mobile-menu-logo" />
       <CloseIcon
         className="mobile-menu-icon close-icon"
         onClick={onCloseMobileMenu}
       />
-      <img src={BlueLogo} alt="Logo in blue" className="mobile-menu-logo" />
-      <SearchIcon className="mobile-menu-icon" />
     </Box>
   );
 };
