@@ -15,14 +15,19 @@
   cursor: pointer;
   position: absolute;
   right: 3%;
-  position: absolute;
   top: 40%;
+  background-position: top 40% right 3%;
+  background-position-x: 40%;
+  background-position-y: -3%;
 }
 .topContainer .slick-prev {
   cursor: pointer;
-  left: 3%;
   position: absolute;
+  left: 3%;
   top: 40%;
+  background-position: top 40% left 3%;
+  background-position-x: 40%;
+  background-position-y: 3%;
   z-index: 99;
 }
 
@@ -85,11 +90,17 @@
   .slick-slider svg.slick-arrow.slick-prev {
     left: 5%;
     top: 42%;
+    background-position: top 42% left 5%;
+    background-position-x: 42%;
+    background-position-y: 5%;
   }
 
   .topContainer svg.slick-arrow.slick-next {
     right: 5%;
     top: 42% !important;
+    background-position: top 42% right 3% !important;
+    background-position-x: 42% !important;
+    background-position-y: -3% !important;
   }
 }
 
@@ -110,11 +121,17 @@
   .slick-slider svg.slick-arrow.slick-prev {
     left: 0;
     top: 40% !important;
+    background-position: top 40% left 0% !important;
+    background-position-x: 40% !important;
+    background-position-y: 0% !important;
   }
 
   .topContainer .slick-next {
     right: 0 !important;
     top: 40% !important;
+    background-position: top 40% right 0% !important;
+    background-position-x: 40% !important;
+    /* background-position-y: 3% !important; */
   }
 }
 @media screen and (min-width: 761px) and (max-width: 1024px) {
@@ -142,11 +159,17 @@
   .slick-slider svg.slick-arrow.slick-prev {
     left: 43%;
     top: 25%;
+    background-position: top 25% left 43%;
+    background-position-x: 25%;
+    background-position-y: 43%;
   }
 
   .topContainer .slick-next {
     right: 0 !important;
     top: 35% !important;
+    background-position: top 35% right 0%;
+    background-position-x: 35%;
+    /* background-position-y: 3%; */
   }
 }
 

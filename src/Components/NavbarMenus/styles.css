@@ -2,6 +2,9 @@
   position: absolute;
   left: 12%;
   bottom: 5%;
+  background-position: bottom 5% left 12%;
+  background-position-x: -5%;
+  background-position-y: 0%;
   color: white;
   border-radius: 35px;
   padding: 2px 1rem;
@@ -44,6 +47,9 @@
   .imageBlock .menuInformationBar {
     width: 33%;
     bottom: 12%;
+    background-position: bottom 12% left 0%;
+    background-position-x: 12%;
+    background-position-y: 0%;
     position: absolute;
   }
   .menuInformationMSGContainer {
@@ -98,6 +104,9 @@
   .imageBlock .menuInformationBar {
     width: 33%;
     bottom: 12%;
+    background-position: bottom 12% left 0%;
+    background-position-x: -12%;
+    background-position-y: 0%;
     position: absolute;
   }
   .menuInformationBar .menuInformationMSGContainer {
@@ -147,6 +156,10 @@
     position: absolute;
     left: 12%;
     bottom: 10% !important;
+    background-position: bottom 10% left 12%;
+    background-position-x: -10%;
+    background-position-y: 12%;
+
     color: white;
     border-radius: 35px;
     padding: 2px 1rem;
@@ -160,6 +173,9 @@
   .imageBlock .menuInformationBar {
     width: 33%;
     bottom: 18%;
+    background-position: bottom 18% left 0%;
+    background-position-x: -18%;
+    background-position-y: 0%;
     position: absolute;
   }
   .menuInformationBar .menuInformationMSGContainer {
@@ -212,6 +228,9 @@
     height: 39%;
     position: absolute;
     bottom: 10%;
+    background-position: bottom 10% left 0%;
+    background-position-x: -10%;
+    background-position-y: 0%;
   }
   .root .subMenu1 {
     height: 85vh !important;
@@ -226,6 +245,9 @@
   .imageBlock .menuInformationBar {
     width: 33%;
     bottom: 18%;
+    background-position: bottom 18% left 0%;
+    background-position-x: -18%;
+    background-position-y: 0%;
     position: absolute;
   }
   .menuInformationBar .menuInformationMSGContainer {
@@ -270,6 +292,9 @@
     position: absolute;
     left: 12%;
     bottom: 10% !important;
+    background-position: bottom 10% left 12%;
+    background-position-x: -10%;
+    background-position-y: 12%;
     color: white;
     border-radius: 35px;
     padding: 2px 1rem;
@@ -295,6 +320,9 @@
   .imageBlock .menuInformationBar {
     width: 33%;
     bottom: 18%;
+    background-position: bottom 18% left 0%;
+    background-position-x: -18%;
+    background-position-y: 0%;
     position: absolute;
   }
   .menuInformationMSGContainer {
@@ -308,6 +336,9 @@
     position: absolute;
     left: 10%;
     bottom: 7% !important;
+    background-position: bottom 7% left 10%;
+    background-position-x: -7%;
+    background-position-y: 10%;
     color: white;
     border-radius: 6rem;
     padding: 1rem 5rem;

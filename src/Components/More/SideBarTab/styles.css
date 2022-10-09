@@ -63,6 +63,9 @@
   }
   .MuiGrid-root.MuiGrid-container.MuiGrid-spacing-xs-2.MuiGrid-item {
     top: 4.2rem !important;
+    background-position: top 4.2rem left 0%;
+    background-position-x: 4.2rem !important;
+    background-position-y: 0%;
   }
 }
 
@@ -86,12 +89,18 @@
   }
   .MuiGrid-root.MuiGrid-container.MuiGrid-spacing-xs-2.MuiGrid-item {
     top: 4.2rem !important;
+    background-position: top 4.2rem left 0%;
+    background-position-x: 4.2rem;
+    background-position-y: 0%;
   }
 }
 
 @media screen and (min-width: 770px) and (max-width: 1023px) {
   .MuiGrid-root.MuiGrid-container.MuiGrid-spacing-xs-2.MuiGrid-item {
     top: 4.2rem !important;
+    background-position: top 4.2rem left 0%;
+    background-position-x: 4.2rem;
+    background-position-y: 0%;
   }
   /* TODO: Make responsive */
   .sideBarMenus {
@@ -112,6 +121,9 @@
 @media screen and (min-width: 1024px) and (max-width: 1280px) {
   .MuiGrid-root.MuiGrid-container.MuiGrid-spacing-xs-2.MuiGrid-item {
     top: 4rem;
+    background-position: top 4rem left 0%;
+    background-position-x: 4rem;
+    background-position-y: 0%;
   }
 }
 
@@ -119,6 +131,9 @@
   .MuiGrid-root.MuiGrid-container.MuiGrid-spacing-xs-2.MuiGrid-item {
     top: 5.1rem;
     left: 0;
+    background-position: top 5.1rem left 0%;
+    background-position-x: 5.1rem;
+    background-position-y: 0%;
   }
   button.MuiButtonBase-root.MuiButton-root.makeStyles-sideBarOptions-338.sideBarOptions.border-0.backgroundColorWhite {
     width: 100%;
@@ -128,6 +143,9 @@
 @media screen and (min-width: 1920px) and (max-width: 2559px) {
   .MuiGrid-root.MuiGrid-container.MuiGrid-spacing-xs-2.MuiGrid-item {
     top: 5.5rem;
+    background-position: top 5.5rem left 0%;
+    background-position-x: 5.5rem;
+    background-position-y: 0%;
   }
   .sideBarOptions {
     padding: 6px 0px;
@@ -148,6 +166,9 @@
 @media screen and (min-width: 2560px) {
   .more {
     top: 7%;
+    background-position: top 7% left 0%;
+    background-position-x: 7%;
+    background-position-y: 0%;
     height: 93vh;
   }
 }

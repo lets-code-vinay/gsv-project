@@ -9,7 +9,7 @@
   overflow: hidden;
   width: 100%;
   transform: translateX(0) scale(1.2);
-    -webkit-transform: translateX(0) scale(1.2);
+  -webkit-transform: translateX(0) scale(1.2);
   transition: all 0.4s linear;
 }
 .overlay {
@@ -40,7 +40,7 @@
 }
 .overlay:hover .cardTextDiv h4 {
   transform: translateY(-80px);
-    -webkit-transform: translateY(-80px);
+  -webkit-transform: translateY(-80px);
   color: white;
 }
 .cardTextDiv p {
@@ -69,16 +69,18 @@
 @keyframes animateParaText {
   0% {
     transform: translateX(-100%);
-      -webkit-transform: translateX(-100%);}
+    -webkit-transform: translateX(-100%);
+  }
 
   50% {
     transform: translateX(0);
-      -webkit-transform: translateX(0);}
+    -webkit-transform: translateX(0);
+  }
 
   100% {
     transform: translateX(0);
-      -webkit-transform: translateX(0);}
-
+    -webkit-transform: translateX(0);
+  }
 }
 
 .imgInnerContent:hover {
@@ -97,13 +99,13 @@
 
 .overlayImgClass:hover {
   transform: translateX(-30px) scale(1.2);
-    -webkit-transform: translateX(-30px) scale(1.2);
+  -webkit-transform: translateX(-30px) scale(1.2);
   transition: all 0.4s linear;
 }
 .overlayImgClass {
   width: 100%;
   transform: translateX(0) scale(1.2);
-    -webkit-transform: translateX(0) scale(1.2);
+  -webkit-transform: translateX(0) scale(1.2);
   transition: all 0.4s linear;
 }
 .cardContent .overlay .overlayImg {
@@ -152,8 +154,8 @@
 }
 .cardContent .overlay .imgInnerContent p {
   text-transform: uppercase;
-    -webkit-text-transform: uppercase;font-
-  size: 20px;
+  -webkit-text-transform: uppercase;
+  font-size: 20px;
   opacity: 0;
 }
 .cardContent .overlay:hover .imgInnerContent p {
@@ -169,16 +171,18 @@
 @keyframes animatePara {
   0% {
     transform: translateX(-100%);
-      -webkit-transform: translateX(-100%);}
+    -webkit-transform: translateX(-100%);
+  }
 
   50% {
     transform: translateX(0%);
-      -webkit-transform: translateX(0%);}
+    -webkit-transform: translateX(0%);
+  }
 
   100% {
     transform: translateX(0%);
-      -webkit-transform: translateX(0%);}
-
+    -webkit-transform: translateX(0%);
+  }
 }
 .commonCardStyle {
   font-weight: 400;
@@ -235,27 +239,29 @@
 .hoverEffect {
   width: 100%;
   transform: translateX(0) scale(1.2);
-    -webkit-transform: translateX(0) scale(1.2);
+  -webkit-transform: translateX(0) scale(1.2);
   transition: all 0.4s linear;
 }
 .hoverEffect:hover {
   transform: translateX(-30px) scale(1.2);
-    -webkit-transform: translateX(-30px) scale(1.2);
+  -webkit-transform: translateX(-30px) scale(1.2);
   cursor: pointer;
 }
 @keyframes animate {
   0% {
     transform: translateX(0px);
-      -webkit-transform: translateX(0px);}
+    -webkit-transform: translateX(0px);
+  }
 
   50% {
     transform: translateX(-10px);
-      -webkit-transform: translateX(-10px);}
+    -webkit-transform: translateX(-10px);
+  }
 
   100% {
     transform: translateX(-10px);
-      -webkit-transform: translateX(-10px);}
-
+    -webkit-transform: translateX(-10px);
+  }
 }
 
 .display {
@@ -316,7 +322,7 @@
 }
 .softwareImageOverlay:hover .cardDiv h4 {
   transform: translateY(-50px);
-    -webkit-transform: translateY(-50px);
+  -webkit-transform: translateY(-50px);
   color: white;
 }
 .cardDiv p {
@@ -362,12 +368,13 @@
 
 .imgTagSoftware:hover {
   transform: translateX(-30px) scale(1.2);
-  -webkit-transform: translateX(-30px) scale(1.2);}
+  -webkit-transform: translateX(-30px) scale(1.2);
+}
 
 .imgTagSoftware {
   width: 100%;
   transform: translateX(0) scale(1.2);
-    -webkit-transform: translateX(0) scale(1.2);
+  -webkit-transform: translateX(0) scale(1.2);
   transition: all 0.4s linear;
 }
 
@@ -413,13 +420,14 @@
 }
 .imgTagSecurity:hover {
   transform: translateX(-30px) scale(1.2);
-  -webkit-transform: translateX(-30px) scale(1.2);}
+  -webkit-transform: translateX(-30px) scale(1.2);
+}
 
 .imgTagSecurity {
   width: 100%;
   height: 77vh;
   transform: translateX(0) scale(1.2);
-    -webkit-transform: translateX(0) scale(1.2);
+  -webkit-transform: translateX(0) scale(1.2);
   transition: all 0.4s linear;
 }
 .cardDivSecurity {
@@ -429,7 +437,7 @@
 }
 .securityOverlay:hover .headingMainDivSoftware h4 {
   transform: translateY(-80px);
-    -webkit-transform: translateY(-80px);
+  -webkit-transform: translateY(-80px);
   color: white;
 }
 .paraTextSecurity p {
@@ -480,18 +488,20 @@
   width: 100%;
   height: 100%;
   transform: translateX(0) scale(1.2);
-    -webkit-transform: translateX(0) scale(1.2);
+  -webkit-transform: translateX(0) scale(1.2);
   transition: all 0.4s linear;
 }
 .securityImgTag:hover {
   height: 100%;
   transform: translateX(-30px) scale(1.2);
-  -webkit-transform: translateX(-30px) scale(1.2);}
+  -webkit-transform: translateX(-30px) scale(1.2);
+}
 
 .securityImgTagHover {
   height: 100%;
   transform: translateX(-30px) scale(1.2);
-  -webkit-transform: translateX(-30px) scale(1.2);}
+  -webkit-transform: translateX(-30px) scale(1.2);
+}
 
 .topHeadingSecurity {
   position: absolute;
@@ -529,7 +539,7 @@
   margin: 0;
   transition: all 0.4s ease-in-out;
   transform: translateX(-100%);
-    -webkit-transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
   opacity: 0;
 }
 .paraDiv:focus {
@@ -537,7 +547,8 @@
   margin-bottom: 0.9375em;
   opacity: 1;
   transform: translateX(-100%);
-  -webkit-transform: translateX(-100%);}
+  -webkit-transform: translateX(-100%);
+}
 
 /* 320px — 480px: Mobile devices
 481px — 768px: iPads, Tablets
@@ -604,7 +615,8 @@
   }
   .overlay:hover .cardTextDiv h4 {
     transform: translateY(-50px);
-      -webkit-transform: translateY(-50px);}
+    -webkit-transform: translateY(-50px);
+  }
 
   .cardTextDiv p {
     padding: 0.5rem;
@@ -647,7 +659,7 @@
   }
   .softwareImageOverlay:hover .cardDiv h4 {
     transform: translateY(-2.5rem);
-        -webkit-transform: translateY(-2.5rem);
+    -webkit-transform: translateY(-2.5rem);
     color: white;
   }
   .softwareImageOverlay:hover .cardDiv .paraText p {

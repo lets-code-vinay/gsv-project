@@ -23,6 +23,9 @@
 @media screen and (min-width: 760px) and (max-width: 1023px) {
   .headBar {
     top: 9%;
+    background-position: top 9% left 0;
+    background-position-x: 9%;
+    background-position-y: 0%;
     height: 40px;
   }
 
@@ -53,6 +56,9 @@
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
   .headBar {
     top: 10%;
+    background-position: top 10% left 0;
+    background-position-x: 10%;
+    background-position-y: 0%;
     height: 9%;
     padding: 5px 0;
   }
@@ -84,6 +90,9 @@
 @media screen and (min-width: 1280px) and (max-width: 1919px) {
   .headBar {
     top: 10%;
+    background-position: top 10% left 0;
+    background-position-x: 10%;
+    background-position-y: 0%;
     min-height: 56px;
     padding: 5px 0;
   }
@@ -115,12 +124,18 @@
 @media screen and (min-width: 1920px) and (min-height: 1200px) {
   .headBar {
     top: 8% !important;
+    background-position: top 8% left 0 !important;
+    background-position-x: 8% !important;
+    background-position-y: 0% !important;
     min-height: 80px;
   }
 }
 @media screen and (min-width: 1920px) and (max-width: 2559px) {
   .headBar {
     top: 10%;
+    background-position: top 10% left 0;
+    background-position-x: 10%;
+    background-position-y: 0%;
     min-height: 80px;
   }
 
@@ -152,12 +167,18 @@
   .headBar {
     top: 9%;
     min-height: 80px;
+    background-position: top 9% left 0;
+    background-position-x: 9%;
+    background-position-y: 0%;
   }
 }
 
 @media screen and (min-width: 2560px) and (min-height: 1440px) {
   .headBar {
     top: 6%;
+    background-position: top 6% left 0;
+    background-position-x: 6%;
+    background-position-y: 0%;
     min-height: 80px;
   }
 }
