@@ -6,22 +6,22 @@ import "./styles.css";
 export const ProgressBar = ({ activeSlide, index, onChangeSlide }) => {
   const [progress, setProgress] = React.useState(0);
 
-  React.useEffect(() => {
-    const timer = setInterval(() => {
-      setProgress((oldProgress) => {
-        if (oldProgress === 100) {
-          return 0;
-        }
+  // React.useEffect(() => {
+  //   const timer = setInterval(() => {
+  //     setProgress((oldProgress) => {
+  //       if (oldProgress === 100) {
+  //         return 0;
+  //       }
 
-        return oldProgress + 20;
-      });
-    }, 1000);
+  //       return oldProgress + 20;
+  //     });
+  //   }, 1000);
 
-    return () => {
-      setProgress(0);
-      clearInterval(timer);
-    };
-  }, []);
+  //   return () => {
+  //     setProgress(0);
+  //     clearInterval(timer);
+  //   };
+  // }, []);
 
   /**
    * @description Get progress percentage as per slide
