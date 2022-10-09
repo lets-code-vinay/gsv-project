@@ -47,6 +47,8 @@
 
 .close-icon:hover {
   transform: rotate(15deg);
+  -webkit-transform: rotate(15deg);
+
   cursor: pointer;
 }
 

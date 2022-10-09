@@ -173,6 +173,12 @@ const PieChart = ({ fetchInsightDetails }) => {
                   style={{
                     color: slice == index ? text_color : "black",
                     transform: slice == index ? "scale(1.2)" : "scale(1)",
+                    "webkit-transform":
+                      slice == index ? "scale(1.2)" : "scale(1)",
+
+                    "-webkit-transform":
+                      slice == index ? "scale(1.2)" : "scale(1)",
+
                     cursor: "pointer",
                   }}
                   onMouseEnter={handleTextMouseEnter(index)}

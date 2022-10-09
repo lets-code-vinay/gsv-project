@@ -1,9 +1,11 @@
 @keyframes slider {
   0% {
     transform: translateX(0);
+    -webkit-transform: translateX(0);
   }
   100% {
     transform: translateX(calc(-25rem * 3));
+    -webkit-transform: translateX(calc(-25rem * 3));
   }
 }
 .slid {
