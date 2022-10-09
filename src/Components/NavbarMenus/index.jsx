@@ -213,12 +213,14 @@ const useStyles = makeStyles((theme) => ({
     overflow: "hidden",
     height: "100%",
   },
+
   //--------information bar-------------
   menuInformationBar: {
     position: "absolute",
   },
   menuInformationMSGContainer: {
     color: "#ffffff",
+    opacity: "0.9",
     padding: "2%",
     borderRadius: "0 60px 60px 0",
   },
@@ -231,6 +233,7 @@ const useStyles = makeStyles((theme) => ({
     padding: "2%",
     textShadow: "0px 0px 5px black",
   },
+
   //   ----------Menu block--------------
   menuBlock: {
     backgroundColor: "#ffffff",

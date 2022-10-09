@@ -73,6 +73,9 @@
   left: 40%;
   position: absolute;
   bottom: 1%;
+  background-position: bottom 1% left 0%;
+  background-position-x: -1%;
+  background-position-y: 0%;
 }
 
 /* 320px — 480px: Mobile devices

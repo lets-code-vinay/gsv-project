@@ -30,7 +30,7 @@ export const NAVBAR_MENUS = {
           test: "TEST-b",
           mobile_image: MOBILE_NETWORK,
           title: "NETWORK",
-          color: THEME_COLOR.color_4,
+          color: "#001AD9",
           subtitle: `Implement enterprise-class connectivity for wired and wireless.Multi-vendor technology and hardware's Satellite, deployment, monitoring and support`,
           menus: {
             // --LAN --
@@ -300,7 +300,7 @@ export const NAVBAR_MENUS = {
           image: SECURITY_MAIN_IMAGE,
           mobile_image: MOBILE_SECURITY_IMAGE,
           title: "SECURITY",
-          color: THEME_COLOR.security_red,
+          color: "#110F04",
           subtitle: `Security-Implement enterprise-class connectivity for wired and wireless. Multi-vendor technology and hardware's Satellite, deployment, monitoring and support`,
           menus: {
             // --SECURITY --
@@ -563,12 +563,12 @@ export const NAVBAR_MENUS = {
       DATA_CENTER: {
         label: "DATA CENTER",
         value: "DATA_CENTER",
-        color: THEME_COLOR.data_green,
+        color: "#554E46",
         menus: {
           image: DATA_CENTER_SECURITY_IMAGE,
           mobile_image: MOBILE_DATA_SECURITY_IMAGE,
           title: "Data Center Security",
-          color: THEME_COLOR.data_center_security,
+          color: "#554E46",
           subtitle: `Data Center Security-Implement enterprise-class connectivity for wired and wireless. Multi-vendor technology and hardware's Satellite, deployment, monitoring and support`,
           menus: {
             // --DATA_CENTER --
@@ -868,7 +868,7 @@ export const NAVBAR_MENUS = {
           image: COLLABORATION,
           mobile_image: MOBILE_SECURITY_IMAGE,
           title: "COLLABORATION",
-          color: THEME_COLOR.security_red,
+          color: "#5B616F",
           subtitle: `Security-Implement enterprise-class connectivity for wired and wireless. Multi-vendor technology and hardware's Satellite, deployment, monitoring and support`,
           menus: {
             // --SECURITY --
@@ -1205,7 +1205,7 @@ export const NAVBAR_MENUS = {
           image: CLOUD_IMAGE,
           mobile_image: MOBILE_SECURITY_IMAGE,
           title: "CLOUD AND COMPUTING",
-          color: THEME_COLOR.security_red,
+          color: "#2C5767",
           subtitle: `Security-Implement enterprise-class connectivity for wired and wireless. Multi-vendor technology and hardware's Satellite, deployment, monitoring and support`,
           menus: {
             CAndC1: {
@@ -1347,7 +1347,7 @@ export const NAVBAR_MENUS = {
           image: IOT_IMAGE,
           mobile_image: MOBILE_SECURITY_IMAGE,
           title: "IOT",
-          color: THEME_COLOR.security_red,
+          color: "#06292D",
           subtitle: `Security-Implement enterprise-class connectivity for wired and wireless. Multi-vendor technology and hardware's Satellite, deployment, monitoring and support`,
           menus: {
             // --SECURITY --
