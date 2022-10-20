@@ -86,9 +86,10 @@ h3 {
     text-overflow: ellipsis;
     overflow: hidden;
     word-break: break-all;
-    height: 10vh;
+    max-height: 8vh;
+    min-height: 12vh;
     display: -webkit-box !important;
-    -webkit-line-clamp: ;
+    -webkit-line-clamp: 5;
     -webkit-box-orient: vertical;
     white-space: normal;
   }
@@ -182,18 +183,16 @@ h3 {
     font-size: 50px !important;
   }
 
+  .testimonialImage {
+    margin: 10% auto;
+  }
+
   .hr {
     margin-bottom: 10px;
     background-color: #002446;
   }
 
   .clientGrid .makeStyles-clientCard-68 {
-    /* width: 80%;
-    margin: auto 16%;
-    padding: 1rem 1rem;
-    box-shadow: 0 0 14px 0px rgb(10 10 10 / 20%);
-    border-radius: 1rem; */
-
     width: 77% !important;
     margin: auto 13% !important;
     padding: 1rem 1.5rem !important;
@@ -202,9 +201,30 @@ h3 {
     max-height: 400px !important;
     min-height: 420px !important;
   }
+
+  .clientCard {
+    height: 30vh !important;
+    margin: 1rem auto !important;
+  }
+
+  .clientCard .testimonialCardMatter {
+    font-size: 0.8rem !important;
+    font-weight: 500;
+    margin: 0% 0% 7% 0 !important;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-break: break-all;
+    height: 11vh;
+
+    display: -webkit-box !important;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+  }
+
   svg.slick-arrow.slick-next {
     position: absolute;
-    right: 30%;
+    right: 28%;
     top: 24%;
     cursor: pointer;
   }
@@ -238,8 +258,7 @@ h3 {
   }
 
   .clientCard {
-    height: 20rem;
-    /* margin: auto 19% !important; */
+    height: 35vh !important;
     margin: 1rem auto !important;
   }
 
@@ -250,9 +269,10 @@ h3 {
     text-overflow: ellipsis;
     overflow: hidden;
     word-break: break-all;
-    height: 18vh;
+    height: 15vh;
+
     display: -webkit-box !important;
-    -webkit-line-clamp: 5;
+    -webkit-line-clamp: 7;
     -webkit-box-orient: vertical;
     white-space: normal;
   }
@@ -307,13 +327,23 @@ h3 {
   }
 
   .clientCard {
-    height: 27rem;
+    height: 30rem;
   }
 
   .clientCard .testimonialCardMatter {
     font-size: 1.2rem !important;
     font-weight: 500;
     margin: 10% 0% 13% 0 !important;
+
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-break: break-all;
+    max-height: 20vh;
+    min-height: 15vh;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
+    white-space: normal;
   }
   .testimonialCardUser {
     font-size: 1rem !important;
@@ -333,11 +363,11 @@ h3 {
 
   .containerClass .slick-prev {
     top: 15%;
-    left: 43%;
+    left: 41%;
   }
   .containerClass .slick-next {
     top: 15%;
-    right: 40%;
+    right: 39%;
   }
 
   .testimonialDomainClients svg.slick-arrow.slick-next {
@@ -379,6 +409,16 @@ h3 {
     font-size: 1.5rem !important;
     font-weight: 500;
     margin: 10% 0% 13% 0 !important;
+
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-break: break-all;
+    max-height: 20vh;
+    min-height: 16vh;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    white-space: normal;
   }
   .testimonialCardUser {
     font-size: 1.3rem !important;

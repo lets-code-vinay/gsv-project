@@ -1,235 +1,508 @@
-import AIRPORT from '../../Assets/airportAuthority.png'
+import AIRPORT from "../../Assets/airportAuthority.png";
+import AUMA from "../../Assets/auma.png";
 
 /**
  * @description constants for testimonial cards
  */
 export const TESTIMONIAL_CARD_DATA = {
-    health_care: {
-        label: "Health Care",
-        value: 'health_care',
-        testimonials: {
-            client_1: {
-                value: 'client_1',
-                about: " health_care client_1-Fortinate's solutions have allowed us to be able to put our patients first as always and focus on satisfying their needs.",
-                author: "-Mubaraka Ibrahim,",
-                designation: "IT Director MOHAPMministry of Health and Prevention",
-                image: AIRPORT,
-                client: 'health_care',
-            },
-            client_2: {
-                value: 'client_2',
-                about: "health_care client_2,Fortinate's solutions have allowed us to be able to put our patients first as always and focus on satisfying their needs.",
-                author: "-David Ibrahim,",
-                designation: "IT Director MOHAPMministry of Health and Prevention",
-                image: AIRPORT,
-                client: 'health_care',
-            },
-            client_3: {
-                value: 'client_3',
-                about: "health_care client_3 -Fortinate's solutions have allowed us to be able to put our patients first as always and focus on satisfying their needs.",
-                author: "-John Ibrahim,",
-                designation: "IT Director MOHAPMministry of Health and Prevention",
-                image: AIRPORT,
-                client: 'health_care',
-            },
-            client_4: {
-                value: 'client_4',
-                about: "health_care client_4-Fortinate's solutions have allowed us to be able to put our patients first as always and focus on satisfying their needs.",
-                author: "-Oliver Ibrahim,",
-                designation: "IT Director MOHAPMministry of Health and Prevention",
-                image: AIRPORT,
-                client: 'health_care',
-            }
-        }
+  health_and_education: {
+    label: "Health & Education",
+    value: "health_and_education",
+    testimonials: {
+      client_1: {
+        value: "client_1",
+        about: "---",
+        author: "-",
+        designation: "",
+        company: "Kailash Hospital",
+        image: AUMA,
+        client: "Health & Education",
+      },
+      client_2: {
+        value: "client_2",
+        about: "---",
+        author: "-",
+        designation: "",
+        company: "John Jay College of Criminal Justice",
+        image: AIRPORT,
+        client: "Health & Education",
+      },
+      client_3: {
+        value: "client_3",
+        about:
+          "Amazing communication, and technical knowledge. Will definitely recommend using GSV services in the future.",
+        author: "-Eric Davis",
+        designation: "Network Admin",
+        company: "Urology of Greater Atlanta",
+        image: AUMA,
+        client: "Health & Education",
+      },
     },
-    hospitality: {
-        label: "Hospitality",
-        value: 'hospitality',
-        testimonials: {
-            client_1: {
-                value: 'client_1',
-                about: " hospitality client_1-Fortinate's solutions have allowed us to be able to put our patients first as always and focus on satisfying their needs.",
-                author: "-Mubaraka Ibrahim,",
-                designation: "IT Director MOHAPMministry of Health and Prevention",
-                image: AIRPORT,
-                client: 'hospitality',
-            },
-            client_2: {
-                value: 'client_2',
-                about: "hospitality client_2,Fortinate's solutions have allowed us to be able to put our patients first as always and focus on satisfying their needs.",
-                author: "-David Ibrahim,",
-                designation: "IT Director MOHAPMministry of Health and Prevention",
-                image: AIRPORT,
-                client: 'hospitality',
-            },
-            client_3: {
-                value: 'client_3',
-                about: "hospitality client_3 -Fortinate's solutions have allowed us to be able to put our patients first as always and focus on satisfying their needs.",
-                author: "-John Ibrahim,",
-                designation: "IT Director MOHAPMministry of Health and Prevention",
-                image: AIRPORT,
-                client: 'hospitality',
-            },
-            client_4: {
-                value: 'client_4',
-                about: "hospitality client_4-Fortinate's solutions have allowed us to be able to put our patients first as always and focus on satisfying their needs.",
-                author: "-Oliver Ibrahim,",
-                designation: "IT Director MOHAPMministry of Health and Prevention",
-                image: AIRPORT,
-                client: 'hospitality',
-            }
-        }
-
+  },
+  hospitality: {
+    label: "Hospitality",
+    value: "hospitality",
+    testimonials: {
+      client_1: {
+        value: "client_1",
+        about:
+          "We were getting marked down by our customers for the sluggish wi-fi in our Resort. We were unsure of whom to reach out to get this fixed. One of our staff got in touch with the GSV Team and next morning they were here to assess the problem. After taking tour of the entire property, and doing signal testing, they shared a plan and budget to complete the entire task. Within 2 weeks, they laid fiber across the property and installed access points to cover entire resort. It's been few years now and we have never heard anyone complaining about internet speed or signal issue. I highly recommend their services.",
+        author: "-Roop Sodhi",
+        designation: "Executive Director",
+        company: "Best Western Resort Country Club",
+        image: AIRPORT,
+        client: "hospitality",
+      },
+      client_2: {
+        value: "client_2",
+        about: "   ",
+        author: "-",
+        designation: "",
+        company: "IHG Group",
+        image: AUMA,
+        client: "hospitality",
+      },
+      client_3: {
+        value: "client_3",
+        about:
+          " GSV helped us with a few brilliant resources for some IT operation issues that have been bothering us for quite a long time. Their engineers were patient enough to hear us and did not jump to conclusions immediately. They asked relevant questions that made us believe we had found the right partner to help us.",
+        author: "-Sunil Kumar",
+        designation: "IT Head",
+        company: "Oyo Rooms",
+        image: AIRPORT,
+        client: "hospitality",
+      },
     },
-    government: {
-        label: "Government",
-        value: 'government',
-        testimonials: {
-            client_1: {
-                value: 'client_1',
-                about: " government_1-Fortinate's solutions have allowed us to be able to put our patients first as always and focus on satisfying their needs.",
-                author: "-Mubaraka Ibrahim,",
-                designation: "IT Director MOHAPMministry of Health and Prevention",
-                image: AIRPORT,
-                client: 'government',
-            },
-            client_2: {
-                value: 'client_2',
-                about: " government_2,Fortinate's solutions have allowed us to be able to put our patients first as always and focus on satisfying their needs.",
-                author: "-David Ibrahim,",
-                designation: "IT Director MOHAPMministry of Health and Prevention",
-                image: AIRPORT,
-                client: 'government',
-            },
-            client_3: {
-                value: 'client_3',
-                about: " government_3 -Fortinate's solutions have allowed us to be able to put our patients first as always and focus on satisfying their needs.",
-                author: "-John Ibrahim,",
-                designation: "IT Director MOHAPMministry of Health and Prevention",
-                image: AIRPORT,
-                client: 'government',
-            },
-            client_4: {
-                value: 'client_4',
-                about: " government_4-Fortinate's solutions have allowed us to be able to put our patients first as always and focus on satisfying their needs.",
-                author: "-Oliver Ibrahim,",
-                designation: "IT Director MOHAPMministry of Health and Prevention",
-                image: AIRPORT,
-                client: 'government',
-            }
-        }
-
-
+  },
+  government: {
+    label: "Government",
+    value: "government",
+    testimonials: {
+      client_1: {
+        value: "client_1",
+        about: "    ",
+        author: "-",
+        designation: "",
+        company: "High Court of Himachal Pradesh",
+        image: AUMA,
+        client: "government",
+      },
+      client_2: {
+        value: "client_2",
+        about: "   ",
+        author: "-",
+        designation: "",
+        company: "High Court of Jammu & Kashmir",
+        image: AUMA,
+        client: "government",
+      },
+      client_3: {
+        value: "client_3",
+        about: "   ",
+        author: "-",
+        designation: "",
+        company: "High Court of Jharkhand",
+        image: AUMA,
+        client: "government",
+      },
+      client_4: {
+        value: "client_4",
+        about: "",
+        author: "-",
+        designation: "",
+        company: "Uttarakhand High Court",
+        image: AIRPORT,
+        client: "government",
+      },
+      client_5: {
+        value: "client_5",
+        about: "",
+        author: "-",
+        designation: "",
+        company: "National Company Law Appellate Tribunal",
+        image: AIRPORT,
+        client: "government",
+      },
+      client_6: {
+        value: "client_6",
+        about: "",
+        author: "-",
+        designation: "",
+        company: "Assam Police",
+        image: AIRPORT,
+        client: "government",
+      },
+      client_7: {
+        value: "client_7",
+        about: "",
+        author: "-",
+        designation: "",
+        company: "Delhi Police",
+        image: AIRPORT,
+        client: "government",
+      },
+      client_8: {
+        value: "client_8",
+        about: "",
+        author: "-",
+        designation: "",
+        company: "Indian Army",
+        image: AIRPORT,
+        client: "government",
+      },
+      client_9: {
+        value: "client_9",
+        about: "",
+        author: "-",
+        designation: "",
+        company: "Airport Authority Of India",
+        image: AIRPORT,
+        client: "government",
+      },
     },
-    financial_services: {
-        label: "Financial Services",
-        value: 'financial_services',
-        testimonials: {
-            client_1: {
-                value: 'client_1',
-                about: "Financial testimonials client_1-Fortinate's solutions have allowed us to be able to put our patients first as always and focus on satisfying their needs.",
-                author: "-Mubaraka Ibrahim,",
-                designation: "IT Director MOHAPMministry of Health and Prevention",
-                image: AIRPORT,
-                client: 'Financial',
-            },
-            client_2: {
-                value: 'client_2',
-                about: "Financial testimonials client_2,Fortinate's solutions have allowed us to be able to put our patients first as always and focus on satisfying their needs.",
-                author: "-David Ibrahim,",
-                designation: "IT Director MOHAPMministry of Health and Prevention",
-                image: AIRPORT,
-                client: 'Financial',
-            },
-            client_3: {
-                value: 'client_3',
-                about: " Financial testimonials client_3 -Fortinate's solutions have allowed us to be able to put our patients first as always and focus on satisfying their needs.",
-                author: "-John Ibrahim,",
-                designation: "IT Director MOHAPMministry of Health and Prevention",
-                image: AIRPORT,
-                client: 'Financial',
-            },
-            client_4: {
-                value: 'client_4',
-                about: "Financial testimonials client_4-Fortinate's solutions have allowed us to be able to put our patients first as always and focus on satisfying their needs.",
-                author: "-Oliver Ibrahim,",
-                designation: "IT Director MOHAPMministry of Health and Prevention",
-                image: AIRPORT,
-                client: 'Financial',
-            }
-        }
-
+  },
+  // ------ uncomment when required---
+  //   financial_services: {
+  //     label: "Financial Services",
+  //     value: "financial_services",
+  //     testimonials: {
+  //       client_1: {
+  //         value: "client_1",
+  //         about:
+  //           "Financial testimonials client_1-Fortinate's solutions have allowed us to be able to put our patients first as always and focus on satisfying their needs.",
+  //         author: "-Mubaraka Ibrahim,",
+  //         designation: "IT Director MOHAPMministry of Health and Prevention",
+  //         image: AIRPORT,
+  //         client: "Financial",
+  //       },
+  //       client_2: {
+  //         value: "client_2",
+  //         about:
+  //           "Financial testimonials client_2,Fortinate's solutions have allowed us to be able to put our patients first as always and focus on satisfying their needs.",
+  //         author: "-David Ibrahim,",
+  //         designation: "IT Director MOHAPMministry of Health and Prevention",
+  //         image: AIRPORT,
+  //         client: "Financial",
+  //       },
+  //       client_3: {
+  //         value: "client_3",
+  //         about:
+  //           " Financial testimonials client_3 -Fortinate's solutions have allowed us to be able to put our patients first as always and focus on satisfying their needs.",
+  //         author: "-John Ibrahim,",
+  //         designation: "IT Director MOHAPMministry of Health and Prevention",
+  //         image: AIRPORT,
+  //         client: "Financial",
+  //       },
+  //       client_4: {
+  //         value: "client_4",
+  //         about:
+  //           "Financial testimonials client_4-Fortinate's solutions have allowed us to be able to put our patients first as always and focus on satisfying their needs.",
+  //         author: "-Oliver Ibrahim,",
+  //         designation: "IT Director MOHAPMministry of Health and Prevention",
+  //         image: AIRPORT,
+  //         client: "Financial",
+  //       },
+  //     },
+  //   },
+  retail: {
+    label: "Retail",
+    value: "retail",
+    testimonials: {
+      client_1: {
+        value: "client_1",
+        about: "  ",
+        author: "-",
+        designation: "",
+        company: "LC Waikiki",
+        image: AUMA,
+        client: "Retail",
+      },
+      client_2: {
+        value: "client_2",
+        about:
+          "Fantastic vendor. Trustworthy, highly skilled and experienced team members. We've relied on them exclusively since 2013 and look forward to continuing that relationship. As IT Director of the company, I sleep better knowing GSV has got our backs 24/7/365.  ",
+        author: "-Nick Spann",
+        designation: "IT Director",
+        company: "7 Eleven",
+        image: AIRPORT,
+        client: "Retail",
+      },
+      client_3: {
+        value: "client_3",
+        about:
+          "We were having Internet speed and performance issues and server issues that were not getting resolved for quite a long time. Our need for a new managed service provider was inevitable, and GSV was the perfect answer. Kudos to the GSV Team for helping us focus on the future while they handle our day-to-day operations. ",
+        author: "-Rajesh",
+        designation: "Operations Head",
+        company: "Spar Hypermarket",
+        image: AIRPORT,
+        client: "Retail",
+      },
     },
-    retail: {
-        label: "Retail",
-        value: 'retail',
-        testimonials: {
-            client_1: {
-                value: 'client_1',
-                about: "retail testimonials client_1-Fortinate's solutions have allowed us to be able to put our patients first as always and focus on satisfying their needs.",
-                author: "-Mubaraka Ibrahim,",
-                designation: "IT Director MOHAPMministry of Health and Prevention",
-                image: AIRPORT,
-                client: 'Retail',
-            },
-            client_2: {
-                value: 'client_2',
-                about: "retail testimonials client_2,Fortinate's solutions have allowed us to be able to put our patients first as always and focus on satisfying their needs.",
-                author: "-David Ibrahim,",
-                designation: "IT Director MOHAPMministry of Health and Prevention",
-                image: AIRPORT,
-                client: 'Retail',
-            },
-            client_3: {
-                value: 'client_3',
-                about: " retail testimonials client_3 -Fortinate's solutions have allowed us to be able to put our patients first as always and focus on satisfying their needs.",
-                author: "-John Ibrahim,",
-                designation: "IT Director MOHAPMministry of Health and Prevention",
-                image: AIRPORT,
-                client: 'Retail',
-            },
-            client_4: {
-                value: 'client_4',
-                about: "retail testimonials client_4-Fortinate's solutions have allowed us to be able to put our patients first as always and focus on satisfying their needs.",
-                author: "-Oliver Ibrahim,",
-                designation: "IT Director MOHAPMministry of Health and Prevention",
-                image: AIRPORT,
-                client: 'Retail',
-            }
-        }
-
-
+  },
+  it_infrastructure: {
+    label: "IT & Infrastructure",
+    value: "it_infrastructure",
+    testimonials: {
+      client_1: {
+        value: "client_1",
+        about:
+          "I was connected to GSV thru a partner when we where having difficulties with our Cisco telephony environment. With the help of GSV, we were able to fix problems that were there for years that didn't seem that could be solved. They are so flexible, fast, thorough and looking for solutions. All work could be done remotely. The time difference was never a problem. If you need assistance on your Cisco environment (network/telephony) GSV Systems are the place to be!",
+        author: "-Dennis Van Steenbergen",
+        designation: "Product Developer",
+        company: "Intrum Justitia",
+        image: AUMA,
+        client: "IT",
+      },
+      client_2: {
+        value: "client_2",
+        about:
+          "I work with GSV engineers under dynamic and hectic circumstances. Despite the difficult circumstances they have never let me down. They are always available  always have focus on the results. They understands how business works and have been willing to invest heavily in the relationship between our companies. I would recommend GSV Systems without any doubt.",
+        author: "-Marcel Snieder",
+        designation: "Service Manager",
+        company: "Touchbase",
+        image: AIRPORT,
+        client: "IT",
+      },
+      client_3: {
+        value: "client_3",
+        about:
+          "I engaged GSV Systems to fulfill a client support requirement. They provided me with the resources to align with my requirements. They also recognized the strategic value of our partnership, which allowed me to present some very competitive pricing back to my client. On the back of this I was able to bring a valued support partner into the Touchbase portfolio who have constantly delivered value to our clients. I highly recommend GSV Systems.",
+        author: "-Hamish Macewan,",
+        designation: "Project Manager",
+        company: "Touchbase",
+        image: AIRPORT,
+        client: "IT",
+      },
+      client_4: {
+        value: "client_4",
+        about: "",
+        author: "-",
+        designation: "",
+        company: "Globalxpert",
+        image: AUMA,
+        client: "IT",
+      },
+      client_5: {
+        value: "client_5",
+        about: "",
+        author: "-",
+        designation: "",
+        company: "VGC IT",
+        image: AIRPORT,
+        client: "IT",
+      },
+      client_6: {
+        value: "client_6",
+        about: "",
+        author: "-",
+        designation: "",
+        company: "Hypershift",
+        image: AIRPORT,
+        client: "IT",
+      },
+      client_7: {
+        value: "client_7",
+        about: "Great job as always working with Vishnu and his team!",
+        author: "-Issac Sajjad",
+        designation: "Chief Technologist",
+        company: "Middleground Technologies",
+        image: AUMA,
+        client: "IT",
+      },
+      client_8: {
+        value: "client_8",
+        about: "",
+        author: "-",
+        designation: "",
+        company: "PCNC2000",
+        image: AIRPORT,
+        client: "IT",
+      },
+      client_9: {
+        value: "client_9",
+        about: "",
+        author: "-",
+        designation: "",
+        company: "Royal Haskoning DHV",
+        image: AIRPORT,
+        client: "IT",
+      },
+      client_10: {
+        value: "client_10",
+        about: "",
+        author: "-",
+        designation: "",
+        company: "Final Frame",
+        image: AIRPORT,
+        client: "IT",
+      },
+      client_11: {
+        value: "client_11",
+        about:
+          "GSV engages skilled resources that leave larger firms, which leads to a highly-qualified team. We got better results than expected.",
+        author: "-Julia Shacklock",
+        designation: "Head of Information Technology",
+        company: "Cloudreach",
+        image: AUMA,
+        client: "IT",
+      },
+      client_12: {
+        value: "client_12",
+        about: "",
+        author: "-",
+        designation: "",
+        company: "Gearhost",
+        image: AIRPORT,
+        client: "IT",
+      },
+      client_13: {
+        value: "client_13",
+        about:
+          "GSV Systems have provided outstanding Cisco expertise, and have been very dependable",
+        author: "-Lewis Quin",
+        designation: "Owner",
+        company: "LMQ Technologies",
+        image: AIRPORT,
+        client: "IT",
+      },
+      client_14: {
+        value: "client_14",
+        about: "",
+        author: "-",
+        designation: "",
+        company: "Virtuvent",
+        image: AIRPORT,
+        client: "IT",
+      },
+      client_15: {
+        value: "client_15",
+        about: "",
+        author: "-",
+        designation: "",
+        company: "Accutron Systems",
+        image: AIRPORT,
+        client: "IT",
+      },
+      client_16: {
+        value: "client_16",
+        about: "",
+        author: "-",
+        designation: "",
+        company: "Guardian Technology Group",
+        image: AIRPORT,
+        client: "IT",
+      },
+      client_17: {
+        value: "client_17",
+        about:
+          "Well worth the price. I had 11 contractors submit proposals and GSV's was the best. He executed as agreed.",
+        author: "-Jeremy Schwartz",
+        designation: "Executive Director",
+        company: "World Possible",
+        image: AUMA,
+        client: "IT",
+      },
+      client_18: {
+        value: "client_18",
+        about: "",
+        author: "-",
+        designation: "",
+        company: "Voiped Wholesale",
+        image: AIRPORT,
+        client: "IT",
+      },
+      client_19: {
+        value: "client_19",
+        about:
+          "GSV engineers are very professional. Very responsive and knows what they are doing. I highly recommend their services. They are always my favourites for any networking related projects.",
+        author: "-Maria",
+        designation: "Project Manager",
+        company: "Sonet Global Technology Limited",
+        image: AIRPORT,
+        client: "IT",
+      },
+      client_20: {
+        value: "client_20",
+        about: "",
+        author: "-",
+        designation: "",
+        company: "Enstal LLC",
+        image: AIRPORT,
+        client: "IT",
+      },
+      client_21: {
+        value: "client_21",
+        about: "",
+        author: "-",
+        designation: "",
+        company: "Atnis Pty Ltd",
+        image: AIRPORT,
+        client: "IT",
+      },
+      client_22: {
+        value: "client_22",
+        about: "",
+        author: "-",
+        designation: "",
+        company: "Stardata Pty Ltd",
+        image: AIRPORT,
+        client: "IT",
+      },
+      client_23: {
+        value: "client_23",
+        about:
+          "I found GSV engineers very knowledgeable, easily accessible and patient. Awesome people to work with. I highly recommend their services.",
+        author: "-Jag Barpagga",
+        designation: "Partner",
+        company: "Welcome Networks",
+        image: AUMA,
+        client: "IT",
+      },
+      client_24: {
+        value: "client_24",
+        about:
+          "GSV has always been a reliable partner for us. They have delivered beyond expectations not just once but everytime we have engaged them. They have the right team in the right time zone and most importantly in the right cost.",
+        author: "-Debbie Lane",
+        designation: "Product Manager",
+        company: "Blue Network Infrastructure (Pty) Ltd",
+        image: AIRPORT,
+        client: "IT",
+      },
     },
-    it_infrastructure: {
-        label: "IT & Infrastructure",
-        value: 'it_infrastructure',
-        testimonials: {
-            client_1: {
-                value: 'client_1',
-                about: "IT testimonials client_1-Fortinate's solutions have allowed us to be able to put our patients first as always and focus on satisfying their needs.",
-                author: "-Mubaraka Ibrahim,",
-                designation: "IT Director MOHAPMministry of Health and Prevention",
-                image: AIRPORT,
-                client: 'IT',
-            },
-            client_2: {
-                value: 'client_2',
-                about: "IT testimonials client_2,Fortinate's solutions have allowed us to be able to put our patients first as always and focus on satisfying their needs.",
-                author: "-David Ibrahim,",
-                designation: "IT Director MOHAPMministry of Health and Prevention",
-                image: AIRPORT,
-                client: 'IT',
-            },
-            client_3: {
-                value: 'client_3',
-                about: " IT testimonials client_3 -Fortinate's solutions have allowed us to be able to put our patients first as always and focus on satisfying their needs.",
-                author: "-John Ibrahim,",
-                designation: "IT Director MOHAPMministry of Health and Prevention",
-                image: AIRPORT,
-                client: 'IT',
-            },
-        }
-
-    }
-}
-
+  },
+  manufacturing: {
+    label: "Manufacturing",
+    value: "manufacturing",
+    testimonials: {
+      client_1: {
+        value: "client_1",
+        about:
+          "I hired GSV for an issue with my company's firewall. They had a very quick response time,very quick turn-around to get the work done, all at a very good value. I definitely will use their services in the future.",
+        author: "-Joseph Bartoli",
+        designation: "IT Director",
+        company: "Granitize",
+        image: AIRPORT,
+        client: "Manufacturing",
+      },
+      client_2: {
+        value: "client_2",
+        about: "  ",
+        author: "-",
+        designation: "",
+        company: "Balarampur Chini Mills Limited",
+        image: AUMA,
+        client: "Manufacturing",
+      },
+      client_3: {
+        value: "client_3",
+        about:
+          "Our requirement was quite complex and 3 companies we contacted earlier denied the possibility of getting that to work. With less hope, we reached out to GSV but on the very first call they captured entire requirement and by early next morning, I had an email from them with the solution. They made it look so so simple. What a great team they have! Highly recommended!",
+        author: "-Syed Umair",
+        designation: "Group Head of IT",
+        company: "The Color Company",
+        image: AIRPORT,
+        client: "Manufacturing",
+      },
+    },
+  },
+};

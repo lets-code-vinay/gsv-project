@@ -89,39 +89,43 @@ const Testimonials = () => {
                   author = "",
                   image = "",
                   designation = "",
+                  company = "",
                 },
                 index
-              ) => (
-                <Box
-                  item
-                  xs={12}
-                  sm={12}
-                  md={4}
-                  lg={4}
-                  key={`${value}-${index}`}
-                  className={`${classes.clientGrid} clientGrid`}
-                >
-                  <Box className={`${classes.clientCard} clientCard`}>
-                    <Typography
-                      variant="h5"
-                      className={`${classes.testimonialCardMatter} testimonialCardMatter`}
-                    >
-                      "{about}"
-                    </Typography>
-                    <Typography
-                      variant="body1"
-                      className={`${classes.testimonialCardUser} testimonialCardUser`}
-                    >
-                      <strong>{author},</strong> {designation}
-                    </Typography>
-                    <img
-                      className={`${classes.testimonialImage} testimonialImage`}
-                      src={image}
-                      alt={value}
-                    />
+              ) => {
+                if (about.length < 1) return true;
+                return (
+                  <Box
+                    item
+                    xs={12}
+                    sm={12}
+                    md={4}
+                    lg={4}
+                    key={`${value}-${index}`}
+                    className={`${classes.clientGrid} clientGrid`}
+                  >
+                    <Box className={`${classes.clientCard} clientCard`}>
+                      <Typography
+                        variant="h5"
+                        className={`${classes.testimonialCardMatter} testimonialCardMatter`}
+                      >
+                        "{about}"
+                      </Typography>
+                      <Typography
+                        variant="body1"
+                        className={`${classes.testimonialCardUser} testimonialCardUser`}
+                      >
+                        <strong>{author},</strong> {designation}-{company}
+                      </Typography>
+                      <img
+                        className={`${classes.testimonialImage} testimonialImage`}
+                        src={image}
+                        alt={value}
+                      />
+                    </Box>
                   </Box>
-                </Box>
-              )
+                );
+              }
             )}
           </Slider>
         </Box>
