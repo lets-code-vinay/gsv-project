@@ -41,7 +41,7 @@ const MainSlider = () => {
 
   return (
     <>
-      <span style={{ position: "relative" }}>
+      <div style={{ position: "relative" }} className="root-class">
         <Carousel
           onChange={setMovieKey}
           showThumbs={false}
@@ -135,7 +135,7 @@ const MainSlider = () => {
             </Box>
           </Box>
         </Box>
-      </span>
+      </div>
     </>
   );
 };

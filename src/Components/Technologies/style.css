@@ -475,8 +475,6 @@
 .divSecurity {
   overflow: hidden;
   border-radius: 15px;
-}
-.divSecurity {
   display: block;
   position: relative;
   margin: 0;
