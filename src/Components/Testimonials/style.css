@@ -99,6 +99,8 @@ h3 {
   }
   .clientCard .testimonialImage {
     margin: 9% auto;
+    min-height: 40px;
+    max-height: 70px;
   }
 
   .slick-initialized .slick-slide .slick-active .slick-center {
@@ -185,6 +187,8 @@ h3 {
 
   .testimonialImage {
     margin: 10% auto;
+    min-height: 60px;
+    max-height: 80px;
   }
 
   .hr {
@@ -284,6 +288,8 @@ h3 {
   .clientGrid .testimonialImage {
     width: 50%;
     margin: 10% auto;
+    min-height: 70px;
+    max-height: 90px;
   }
 
   .clientTitle {
@@ -353,6 +359,8 @@ h3 {
   .clientGrid .testimonialImage {
     width: 50%;
     margin: 10% auto;
+    min-height: 70px;
+    max-height: 100px;
   }
 
   .clientTitle {
@@ -428,6 +436,8 @@ h3 {
   .clientGrid .testimonialImage {
     width: 50%;
     margin: 10% auto;
+    min-height: 70px;
+    max-height: 100px;
   }
 
   .clientTitle {

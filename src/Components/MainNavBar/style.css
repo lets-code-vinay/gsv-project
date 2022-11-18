@@ -171,14 +171,14 @@
   .logo-1 {
     height: 2.5rem;
     width: 70%;
-    margin-top: 1px;
+    margin-top: 12px;
   }
 
   .navbar_text {
     font-size: 22px;
   }
   .display {
-    margin-left: 12%;
+    /* margin-left: 12%; */
   }
   .nav-bar-grow {
     display: none;
@@ -267,7 +267,7 @@
   .logo-1 {
     height: 35px;
     width: 20%;
-    margin-top: 1px;
+    margin-top: 10px;
   }
 
   .sectionDesktopMenus .navbar_text {
@@ -339,11 +339,14 @@
   }
   .logo-1 {
     height: 70px;
-    width: 25%;
+    width: 5% !important;
     margin-top: 2px;
   }
   .sectionDesktopMenus .navbar_text {
     font-size: 2rem;
+  }
+  .display {
+    display: flex;
   }
 }
 

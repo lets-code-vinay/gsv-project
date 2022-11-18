@@ -1,5 +1,57 @@
-import AIRPORT from "../../Assets/airportAuthority.png";
-import AUMA from "../../Assets/auma.png";
+// Government
+import AIRPORT from "../../Assets/Images/Testimonials/Government/airportAuthority.png";
+import DELHI_POLICE from "../../Assets/Images/Testimonials/Government/DelhiPolice.jpg";
+import ASSAM_POLICE from "../../Assets/Images/Testimonials/Government/AssamPolice.jpg";
+import AIR_FORCE from "../../Assets/Images/Testimonials/Government/airForce.png";
+import JKL from "../../Assets/Images/Testimonials/Government/JKL.jpg";
+import HP from "../../Assets/Images/Testimonials/Government/HP.png";
+import INDIAN_ARMY from "../../Assets/Images/Testimonials/Government/IndianArmy.png";
+import JHARKHAND from "../../Assets/Images/Testimonials/Government/Jharkhand.png";
+import UK from "../../Assets/Images/Testimonials/Government/UK.png";
+import LAW from "../../Assets/Images/Testimonials/Government/law.png";
+
+// IT
+import BLUE_NETWORK from "../../Assets/Images/Testimonials/IT/BNI.jpeg";
+import ATNIS from "../../Assets/Images/Testimonials/IT/atnis.png";
+import ENSTAL from "../../Assets/Images/Testimonials/IT/Enstal.png";
+import GLOBAL_XPERT from "../../Assets/Images/Testimonials/IT/Globalxperts.png";
+import GUARIDAN from "../../Assets/Images/Testimonials/IT/Guardian.jpeg";
+import HYPER_SHIFT from "../../Assets/Images/Testimonials/IT/HyperShift.png";
+import LMQ from "../../Assets/Images/Testimonials/IT/LMQ.png";
+import MIDDLE_GROUND from "../../Assets/Images/Testimonials/IT/Middleground.png";
+import TOUCH_BASE from "../../Assets/Images/Testimonials/IT/Touchbase.jpg";
+import PCNC from "../../Assets/Images/Testimonials/IT/PCNC.png";
+import INTRUM from "../../Assets/Images/Testimonials/IT/Intrum.png";
+import ROYAL from "../../Assets/Images/Testimonials/IT/Royal.png";
+import CLOUD_REACH from "../../Assets/Images/Testimonials/IT/cloudreach.png";
+import GEAR_HOST from "../../Assets/Images/Testimonials/IT/gearhost.png";
+import FINAL_FRAME from "../../Assets/Images/Testimonials/IT/final frame.png";
+import VIRTUVENT from "../../Assets/Images/Testimonials/IT/virtuvent.png";
+import WORLD_POSSIBLE from "../../Assets/Images/Testimonials/IT/worldPossible.png";
+import VOIPED from "../../Assets/Images/Testimonials/IT/voiped.png";
+import WELCOME from "../../Assets/Images/Testimonials/IT/welcome.png";
+import STAR_DATA from "../../Assets/Images/Testimonials/IT/stardata.jpg";
+import VGC from "../../Assets/Images/Testimonials/IT/VGC.png";
+
+// Health & Education
+import KAILASH_HOSPITAL from "../../Assets/Images/Testimonials/Health Education/KailashHospital.jpg";
+import JOHN_JAY from "../../Assets/Images/Testimonials/Health Education/JohnJay.jpg";
+import UROLOGY from "../../Assets/Images/Testimonials/Health Education/urology.png";
+
+// Hospitality
+import BEST_WESTERN from "../../Assets/Images/Testimonials/Hospitality/BestWestern.png";
+import IHG from "../../Assets/Images/Testimonials/Hospitality/IHG.png";
+import OYO from "../../Assets/Images/Testimonials/Hospitality/oyo.png";
+
+// Retail
+import LC from "../../Assets/Images/Testimonials/Retail/LC.png";
+import SPAR from "../../Assets/Images/Testimonials/Retail/spar.png";
+import SEVEN_Eleven from "../../Assets/Images/Testimonials/Retail/7Eleven.png";
+
+// Manufacturing
+import GRANITIZE from "../../Assets/Images/Testimonials/Manufacturing/granitize.png";
+import BALARAMPUR_CHINI_MILL from "../../Assets/Images/Testimonials/Manufacturing/balarampur.png";
+import COLOR from "../../Assets/Images/Testimonials/Manufacturing/color.jpg";
 
 /**
  * @description constants for testimonial cards
@@ -15,16 +67,16 @@ export const TESTIMONIAL_CARD_DATA = {
         author: "-",
         designation: "",
         company: "Kailash Hospital",
-        image: AUMA,
+        image: KAILASH_HOSPITAL,
         client: "Health & Education",
       },
       client_2: {
         value: "client_2",
-        about: "---",
-        author: "-",
-        designation: "",
+        about: "--- ",
+        author: "- ",
+        designation: " ",
         company: "John Jay College of Criminal Justice",
-        image: AIRPORT,
+        image: JOHN_JAY,
         client: "Health & Education",
       },
       client_3: {
@@ -34,7 +86,7 @@ export const TESTIMONIAL_CARD_DATA = {
         author: "-Eric Davis",
         designation: "Network Admin",
         company: "Urology of Greater Atlanta",
-        image: AUMA,
+        image: UROLOGY,
         client: "Health & Education",
       },
     },
@@ -50,7 +102,7 @@ export const TESTIMONIAL_CARD_DATA = {
         author: "-Roop Sodhi",
         designation: "Executive Director",
         company: "Best Western Resort Country Club",
-        image: AIRPORT,
+        image: BEST_WESTERN,
         client: "hospitality",
       },
       client_2: {
@@ -59,7 +111,7 @@ export const TESTIMONIAL_CARD_DATA = {
         author: "-",
         designation: "",
         company: "IHG Group",
-        image: AUMA,
+        image: IHG,
         client: "hospitality",
       },
       client_3: {
@@ -69,7 +121,7 @@ export const TESTIMONIAL_CARD_DATA = {
         author: "-Sunil Kumar",
         designation: "IT Head",
         company: "Oyo Rooms",
-        image: AIRPORT,
+        image: OYO,
         client: "hospitality",
       },
     },
@@ -84,7 +136,7 @@ export const TESTIMONIAL_CARD_DATA = {
         author: "-",
         designation: "",
         company: "High Court of Himachal Pradesh",
-        image: AUMA,
+        image: HP,
         client: "government",
       },
       client_2: {
@@ -93,7 +145,7 @@ export const TESTIMONIAL_CARD_DATA = {
         author: "-",
         designation: "",
         company: "High Court of Jammu & Kashmir",
-        image: AUMA,
+        image: JKL,
         client: "government",
       },
       client_3: {
@@ -102,61 +154,70 @@ export const TESTIMONIAL_CARD_DATA = {
         author: "-",
         designation: "",
         company: "High Court of Jharkhand",
-        image: AUMA,
+        image: JHARKHAND,
         client: "government",
       },
       client_4: {
         value: "client_4",
-        about: "",
-        author: "-",
-        designation: "",
+        about: " ",
+        author: "- ",
+        designation: " ",
         company: "Uttarakhand High Court",
-        image: AIRPORT,
+        image: UK,
         client: "government",
       },
       client_5: {
         value: "client_5",
-        about: "",
-        author: "-",
-        designation: "",
+        about: " ",
+        author: "- ",
+        designation: " ",
         company: "National Company Law Appellate Tribunal",
-        image: AIRPORT,
+        image: LAW,
         client: "government",
       },
       client_6: {
         value: "client_6",
-        about: "",
-        author: "-",
-        designation: "",
+        about: " ",
+        author: "- ",
+        designation: " ",
         company: "Assam Police",
-        image: AIRPORT,
+        image: ASSAM_POLICE,
         client: "government",
       },
       client_7: {
         value: "client_7",
-        about: "",
-        author: "-",
-        designation: "",
+        about: " ",
+        author: "- ",
+        designation: " ",
         company: "Delhi Police",
-        image: AIRPORT,
+        image: DELHI_POLICE,
         client: "government",
       },
       client_8: {
         value: "client_8",
-        about: "",
+        about: " ",
         author: "-",
         designation: "",
         company: "Indian Army",
-        image: AIRPORT,
+        image: INDIAN_ARMY,
         client: "government",
       },
       client_9: {
         value: "client_9",
-        about: "",
-        author: "-",
-        designation: "",
+        about: " ",
+        author: "- ",
+        designation: " ",
         company: "Airport Authority Of India",
         image: AIRPORT,
+        client: "government",
+      },
+      client_10: {
+        value: "client_10",
+        about: " ",
+        author: "- ",
+        designation: " ",
+        company: "Indian Air Force",
+        image: AIR_FORCE,
         client: "government",
       },
     },
@@ -214,7 +275,7 @@ export const TESTIMONIAL_CARD_DATA = {
         author: "-",
         designation: "",
         company: "LC Waikiki",
-        image: AUMA,
+        image: LC,
         client: "Retail",
       },
       client_2: {
@@ -224,7 +285,7 @@ export const TESTIMONIAL_CARD_DATA = {
         author: "-Nick Spann",
         designation: "IT Director",
         company: "7 Eleven",
-        image: AIRPORT,
+        image: SEVEN_Eleven,
         client: "Retail",
       },
       client_3: {
@@ -234,7 +295,7 @@ export const TESTIMONIAL_CARD_DATA = {
         author: "-Rajesh",
         designation: "Operations Head",
         company: "Spar Hypermarket",
-        image: AIRPORT,
+        image: SPAR,
         client: "Retail",
       },
     },
@@ -250,7 +311,7 @@ export const TESTIMONIAL_CARD_DATA = {
         author: "-Dennis Van Steenbergen",
         designation: "Product Developer",
         company: "Intrum Justitia",
-        image: AUMA,
+        image: INTRUM,
         client: "IT",
       },
       client_2: {
@@ -260,7 +321,7 @@ export const TESTIMONIAL_CARD_DATA = {
         author: "-Marcel Snieder",
         designation: "Service Manager",
         company: "Touchbase",
-        image: AIRPORT,
+        image: TOUCH_BASE,
         client: "IT",
       },
       client_3: {
@@ -270,7 +331,7 @@ export const TESTIMONIAL_CARD_DATA = {
         author: "-Hamish Macewan,",
         designation: "Project Manager",
         company: "Touchbase",
-        image: AIRPORT,
+        image: TOUCH_BASE,
         client: "IT",
       },
       client_4: {
@@ -279,7 +340,7 @@ export const TESTIMONIAL_CARD_DATA = {
         author: "-",
         designation: "",
         company: "Globalxpert",
-        image: AUMA,
+        image: GLOBAL_XPERT,
         client: "IT",
       },
       client_5: {
@@ -288,16 +349,16 @@ export const TESTIMONIAL_CARD_DATA = {
         author: "-",
         designation: "",
         company: "VGC IT",
-        image: AIRPORT,
+        image: VGC,
         client: "IT",
       },
       client_6: {
         value: "client_6",
-        about: "",
-        author: "-",
-        designation: "",
+        about: " ",
+        author: "- ",
+        designation: " ",
         company: "Hypershift",
-        image: AIRPORT,
+        image: HYPER_SHIFT,
         client: "IT",
       },
       client_7: {
@@ -306,25 +367,25 @@ export const TESTIMONIAL_CARD_DATA = {
         author: "-Issac Sajjad",
         designation: "Chief Technologist",
         company: "Middleground Technologies",
-        image: AUMA,
+        image: MIDDLE_GROUND,
         client: "IT",
       },
       client_8: {
         value: "client_8",
-        about: "",
-        author: "-",
-        designation: "",
+        about: " ",
+        author: " -",
+        designation: " ",
         company: "PCNC2000",
-        image: AIRPORT,
+        image: PCNC,
         client: "IT",
       },
       client_9: {
         value: "client_9",
-        about: "",
-        author: "-",
-        designation: "",
+        about: " ",
+        author: "- ",
+        designation: " ",
         company: "Royal Haskoning DHV",
-        image: AIRPORT,
+        image: ROYAL,
         client: "IT",
       },
       client_10: {
@@ -333,7 +394,7 @@ export const TESTIMONIAL_CARD_DATA = {
         author: "-",
         designation: "",
         company: "Final Frame",
-        image: AIRPORT,
+        image: FINAL_FRAME,
         client: "IT",
       },
       client_11: {
@@ -343,7 +404,7 @@ export const TESTIMONIAL_CARD_DATA = {
         author: "-Julia Shacklock",
         designation: "Head of Information Technology",
         company: "Cloudreach",
-        image: AUMA,
+        image: CLOUD_REACH,
         client: "IT",
       },
       client_12: {
@@ -352,7 +413,7 @@ export const TESTIMONIAL_CARD_DATA = {
         author: "-",
         designation: "",
         company: "Gearhost",
-        image: AIRPORT,
+        image: GEAR_HOST,
         client: "IT",
       },
       client_13: {
@@ -362,7 +423,7 @@ export const TESTIMONIAL_CARD_DATA = {
         author: "-Lewis Quin",
         designation: "Owner",
         company: "LMQ Technologies",
-        image: AIRPORT,
+        image: LMQ,
         client: "IT",
       },
       client_14: {
@@ -371,7 +432,7 @@ export const TESTIMONIAL_CARD_DATA = {
         author: "-",
         designation: "",
         company: "Virtuvent",
-        image: AIRPORT,
+        image: VIRTUVENT,
         client: "IT",
       },
       client_15: {
@@ -385,11 +446,11 @@ export const TESTIMONIAL_CARD_DATA = {
       },
       client_16: {
         value: "client_16",
-        about: "",
-        author: "-",
-        designation: "",
+        about: " ",
+        author: "- ",
+        designation: " ",
         company: "Guardian Technology Group",
-        image: AIRPORT,
+        image: GUARIDAN,
         client: "IT",
       },
       client_17: {
@@ -399,7 +460,7 @@ export const TESTIMONIAL_CARD_DATA = {
         author: "-Jeremy Schwartz",
         designation: "Executive Director",
         company: "World Possible",
-        image: AUMA,
+        image: WORLD_POSSIBLE,
         client: "IT",
       },
       client_18: {
@@ -408,7 +469,7 @@ export const TESTIMONIAL_CARD_DATA = {
         author: "-",
         designation: "",
         company: "Voiped Wholesale",
-        image: AIRPORT,
+        image: VOIPED,
         client: "IT",
       },
       client_19: {
@@ -423,29 +484,29 @@ export const TESTIMONIAL_CARD_DATA = {
       },
       client_20: {
         value: "client_20",
-        about: "",
-        author: "-",
-        designation: "",
+        about: "  ",
+        author: "-  ",
+        designation: "  ",
         company: "Enstal LLC",
-        image: AIRPORT,
+        image: ENSTAL,
         client: "IT",
       },
       client_21: {
         value: "client_21",
-        about: "",
-        author: "-",
-        designation: "",
+        about: "  ",
+        author: "-  ",
+        designation: "  ",
         company: "Atnis Pty Ltd",
-        image: AIRPORT,
+        image: ATNIS,
         client: "IT",
       },
       client_22: {
         value: "client_22",
-        about: "",
-        author: "-",
-        designation: "",
+        about: "  ",
+        author: "-  ",
+        designation: " ",
         company: "Stardata Pty Ltd",
-        image: AIRPORT,
+        image: STAR_DATA,
         client: "IT",
       },
       client_23: {
@@ -455,7 +516,7 @@ export const TESTIMONIAL_CARD_DATA = {
         author: "-Jag Barpagga",
         designation: "Partner",
         company: "Welcome Networks",
-        image: AUMA,
+        image: WELCOME,
         client: "IT",
       },
       client_24: {
@@ -465,7 +526,7 @@ export const TESTIMONIAL_CARD_DATA = {
         author: "-Debbie Lane",
         designation: "Product Manager",
         company: "Blue Network Infrastructure (Pty) Ltd",
-        image: AIRPORT,
+        image: BLUE_NETWORK,
         client: "IT",
       },
     },
@@ -481,7 +542,7 @@ export const TESTIMONIAL_CARD_DATA = {
         author: "-Joseph Bartoli",
         designation: "IT Director",
         company: "Granitize",
-        image: AIRPORT,
+        image: GRANITIZE,
         client: "Manufacturing",
       },
       client_2: {
@@ -490,7 +551,7 @@ export const TESTIMONIAL_CARD_DATA = {
         author: "-",
         designation: "",
         company: "Balarampur Chini Mills Limited",
-        image: AUMA,
+        image: BALARAMPUR_CHINI_MILL,
         client: "Manufacturing",
       },
       client_3: {
@@ -500,7 +561,7 @@ export const TESTIMONIAL_CARD_DATA = {
         author: "-Syed Umair",
         designation: "Group Head of IT",
         company: "The Color Company",
-        image: AIRPORT,
+        image: COLOR,
         client: "Manufacturing",
       },
     },
