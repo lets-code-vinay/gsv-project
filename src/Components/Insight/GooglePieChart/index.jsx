@@ -36,12 +36,13 @@ const PieChart = ({ fetchInsightDetails }) => {
    * @description :options for charts
    */
   const options = {
-    pieHole: 0.3,
-    fontSize: 15,
+    pieHole: 0.25,
+    fontSize: 20,
     is3D: false,
     pieSliceText: "label",
     pieSliceTextStyle: {
-      color: "transparent", // slice label color can be changed from here
+      color: slice === 0 || slice ? "black" : "white", // slice label color can be changed from here
+      // color: "transparent",
     },
     legend: "none",
     tooltip: {
@@ -49,19 +50,20 @@ const PieChart = ({ fetchInsightDetails }) => {
     },
     slices: {
       [slice ?? null]: {
-        offset: "0.04",
-        color: slice ? color[slice] : DEFAULT_SERVICES.color,
+        offset: "0.00",
+        color: slice || slice === 0 ? color[slice] : DEFAULT_SERVICES.color,
         textStyle: "roboto",
       },
     },
     width: "100%",
     height: "100%",
-    colors: slice || slice == 0 ? ["#EDF1F2"] : color, // Slice background color can be changed from here
+    colors: slice || slice === 0 ? ["#EDF1F2"] : color, // Slice background color can be changed from here
     chartArea: {
       left: "6%",
       top: "6%",
-      height: "90%",
-      width: "90%",
+      bottom: "6%",
+      height: "100%",
+      width: "100%",
     },
   };
 
@@ -118,8 +120,9 @@ const PieChart = ({ fetchInsightDetails }) => {
    * @param {Number} slice
    */
   const handleSliceHoverOut = () => {
-    setSlice(null);
-    fetchInsightDetails(null);
+    // ---  uncomment when remove detail of pie chart after mouse hover out
+    // setSlice(null);
+    // fetchInsightDetails(null);
   };
 
   return (
@@ -168,16 +171,16 @@ const PieChart = ({ fetchInsightDetails }) => {
           ({ button_text = "", label = "", text_color = "#000" }, index) => {
             return (
               <Box key={index + "-" + label}>
-                <Typography
+                {/* <Typography
                   className={`insight-text insight-text-${index}`}
                   style={{
-                    color: slice == index ? text_color : "black",
-                    transform: slice == index ? "scale(1.2)" : "scale(1)",
+                    color: slice === index ? text_color : "black",
+                    transform: slice === index ? "scale(1.2)" : "scale(1)",
                     "webkit-transform":
-                      slice == index ? "scale(1.2)" : "scale(1)",
+                      slice === index ? "scale(1.2)" : "scale(1)",
 
                     "-webkit-transform":
-                      slice == index ? "scale(1.2)" : "scale(1)",
+                      slice === index ? "scale(1.2)" : "scale(1)",
 
                     cursor: "pointer",
                   }}
@@ -186,13 +189,15 @@ const PieChart = ({ fetchInsightDetails }) => {
                   onMouseOver={handleTextMouseEnter(index)}
                 >
                   {label}
-                </Typography>
-                {slice == index && (
+                </Typography> */}
+
+                {slice === index && (
                   <Button
                     className={`button button-${index}`}
                     onClick={handleButtonClick(index)}
                     onMouseEnter={handleButtonMouseEnter(index)}
                     onMouseLeave={handleButtonMouseLeave(index)}
+                    onMouseOver={(e) => e.preventDefault()}
                   >
                     {button_text}
                   </Button>

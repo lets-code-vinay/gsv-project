@@ -2,6 +2,12 @@ svg {
   border-radius: 100px;
 }
 
+text {
+  font-size: 20px;
+  font-weight: 700;
+  word-break: break-all;
+}
+
 .pie {
   position: relative;
   z-index: 99;
@@ -28,8 +34,8 @@ svg {
   font-size: 0.6rem;
   padding: 6px 10px;
   border-radius: 2rem !important;
-  border: 1px double white !important;
-  color: white !important;
+  border: 1px double black !important;
+  color: black !important;
 }
 
 .pie .insight-text-6 {
@@ -172,8 +178,6 @@ svg {
     position: absolute;
     font-size: 0.45rem;
     border-radius: 2rem !important;
-    border: 1px double white !important;
-    color: white !important;
     width: 20% !important;
     padding: 1px 1px;
     height: 1.2rem !important;
@@ -326,8 +330,6 @@ svg {
     font-size: 0.6rem;
     padding: 6px 10px;
     border-radius: 2rem !important;
-    border: 1px double white !important;
-    color: white !important;
   }
 
   .pie .insight-text-6 {
@@ -469,8 +471,6 @@ svg {
     font-size: 0.6rem;
     padding: 6px 10px;
     border-radius: 2rem !important;
-    border: 1px double white !important;
-    color: white !important;
   }
 
   .pie .insight-text-6 {
@@ -621,8 +621,6 @@ svg {
     font-size: 0.6rem;
     padding: 6px 10px;
     border-radius: 2rem !important;
-    border: 1px double white !important;
-    color: white !important;
   }
 
   .pie .insight-text-6 {
@@ -772,8 +770,6 @@ svg {
     font-size: 0.6rem;
     padding: 6px 10px;
     border-radius: 2rem !important;
-    border: 1px double white !important;
-    color: white !important;
   }
 
   .pie .insight-text-6 {
@@ -924,8 +920,6 @@ svg {
     font-size: 0.6rem;
     padding: 6px 10px;
     border-radius: 2rem !important;
-    border: 1px double white !important;
-    color: white !important;
   }
 
   .pie .insight-text-6 {
@@ -1073,8 +1067,6 @@ svg {
     font-size: 0.6rem;
     padding: 6px 10px;
     border-radius: 2rem !important;
-    border: 1px double white !important;
-    color: white !important;
   }
 
   .pie .insight-text-6 {
@@ -1123,7 +1115,8 @@ svg {
     text-align: center;
   }
   .pie .button-4 {
-    top: 77%;
+    top: 100%;
+
     left: 34%;
     background-position: top 77% left 34%;
     background-position-x: 77%;
@@ -1131,8 +1124,8 @@ svg {
   }
 
   .pie .insight-text-3 {
-    top: 73%;
-    left: 45%;
+    top: 110%;
+    left: 47%;
     background-position: top 73% left 45%;
     background-position-x: 73%;
     background-position-y: 45%;
@@ -1204,10 +1197,11 @@ svg {
     height: 700px !important;
   }
   .logoInside {
-    min-width: 16% !important;
-    max-width: 18% !important;
+    min-width: 14% !important;
+    max-width: 16% !important;
     top: 62% !important;
-    left: 42.3% !important;
+    left: 44.7% !important;
+
     background-position: top 62% left 42.3%;
     background-position-x: 62%;
     background-position-y: 42.3%;
@@ -1228,8 +1222,6 @@ svg {
     font-size: 0.6rem;
     padding: 6px 10px;
     border-radius: 2rem !important;
-    border: 1px double white !important;
-    color: white !important;
   }
 
   .pie .insight-text-6 {
@@ -1244,7 +1236,7 @@ svg {
   }
 
   .pie .button-6 {
-    top: 34%;
+    top: 32%;
     left: 37%;
     background-position: top 34% left 37%;
     background-position-x: 34%;
@@ -1269,7 +1261,7 @@ svg {
     background-position: top 66% left 24% !important;
     background-position-x: 66% !important;
     background-position-y: 24% !important;
-    left: 24% !important;
+    left: 26% !important;
   }
 
   .pie .insight-text-4 {
@@ -1282,8 +1274,8 @@ svg {
     text-align: center;
   }
   .pie .button-4 {
-    top: 106%;
-    left: 27%;
+    top: 100%;
+    left: 31%;
     background-position: top 106% left 27%;
     background-position-x: 106%;
     background-position-y: 27%;
@@ -1298,8 +1290,8 @@ svg {
     width: 13%;
   }
   .pie .button-3 {
-    top: 122%;
-    left: 46%;
+    top: 110%;
+    left: 47%;
     background-position: top 122% left 46%;
     background-position-x: 122%;
     background-position-y: 46%;
@@ -1314,8 +1306,8 @@ svg {
     width: 16%;
   }
   .pie .button-2 {
-    top: 107%;
-    left: 62%;
+    top: 104%;
+    left: 63.5%;
     background-position: top 107% left 62%;
     background-position-x: 107%;
     background-position-y: 62%;
@@ -1346,8 +1338,8 @@ svg {
     width: 16%;
   }
   .pie .button-0 {
-    top: 35%;
-    left: 53.5%;
+    top: 32%;
+    left: 57%;
     background-position: top 35% left 53.5%;
     background-position-x: 35%;
     background-position-y: 53.5%;

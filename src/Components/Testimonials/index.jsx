@@ -10,18 +10,35 @@ import { TESTIMONIAL_CARD_DATA } from "../../Configs/Testimonials";
 import { responsive_client, responsive_slider } from "./configs";
 
 const Testimonials = () => {
-  const testimonialArr = Object.values(TESTIMONIAL_CARD_DATA);
+  const [testimonialArr] = useState(Object.values(TESTIMONIAL_CARD_DATA));
 
   const classes = useStyles();
 
   const [activeSlide, setActiveSlide] = useState(0);
   const [testimonialClient, setTestimonialClient] = useState({});
+  const [clientCount, setClientCount] = useState(3);
 
   useEffect(() => {
     setTestimonialClient(
       TESTIMONIAL_CARD_DATA[testimonialArr[activeSlide].value].testimonials
     );
+
+    const clientCounts = Object.values(
+      TESTIMONIAL_CARD_DATA[testimonialArr[activeSlide].value].testimonials
+    ).filter(({ about }) => about.length > 0 && about);
+
+    setClientCount(clientCounts.length);
   }, [activeSlide, testimonialArr]);
+
+  /**
+   * @description getting index on click on any client
+   *
+   * @param {Number} index
+   * @returns
+   */
+  const handleCurrentSlide = (index) => () => {
+    setActiveSlide(index);
+  };
 
   return (
     <Box className={`${classes.testimonials} testimonials`}>
@@ -33,12 +50,13 @@ const Testimonials = () => {
           What our customers are saying
         </Typography>
       </Box>
-      {/* <hr className={`${classes.hr} hr`} /> */}
 
       <Box className="container-fluid containerClass">
         <Slider
           className="sliderPadding"
-          afterChange={(current, next) => setActiveSlide(current)}
+          afterChange={(current, next) => {
+            setActiveSlide(current);
+          }}
           infinite={true}
           slidesToShow={5}
           slidesToScroll={1}
@@ -47,23 +65,25 @@ const Testimonials = () => {
           prevArrow={<ChevronLeft className="leftArrow" />}
           responsive={responsive_slider}
         >
-          {Object.values(TESTIMONIAL_CARD_DATA).map(
-            ({ value = "", label = "" }, index) => {
-              return (
-                <Box key={`${value}-${index}`}>
-                  <Typography variant="h6" className="clientTitle">
-                    {label}
-                  </Typography>
-                </Box>
-              );
-            }
-          )}
+          {testimonialArr.map(({ value = "", label = "" }, index) => {
+            return (
+              <Box key={`${value}-${index}`}>
+                <Typography
+                  variant="h6"
+                  className={`${classes.clientTitle} clientTitle`}
+                  onClick={handleCurrentSlide(index)}
+                >
+                  {label}
+                </Typography>
+              </Box>
+            );
+          })}
         </Slider>
         {/* --- second slider------- */}
         <Box className="testimonialDomainClientsSection">
           <Slider
             className="testimonialDomainClients"
-            slidesToShow={3}
+            slidesToShow={clientCount > 0 && clientCount < 3 ? clientCount : 3}
             swipeToSlide={true}
             focusOnSelect={true}
             slidesToScroll={1}
@@ -104,7 +124,13 @@ const Testimonials = () => {
                     key={`${value}-${index}`}
                     className={`${classes.clientGrid} clientGrid`}
                   >
-                    <Box className={`${classes.clientCard} clientCard`}>
+                    <Box
+                      className={`${classes.clientCard} clientCard`}
+                      style={{
+                        maxWidth:
+                          clientCount >= 1 && clientCount < 3 ? "60%" : "75%",
+                      }}
+                    >
                       <Typography
                         variant="h5"
                         className={`${classes.testimonialCardMatter} testimonialCardMatter`}
@@ -167,11 +193,14 @@ const useStyles = makeStyles((theme) => ({
     margin: "3rem auto",
   },
   clientCard: {
-    width: "70%",
-    margin: "auto 22%",
+    minWidth: "30%",
+    margin: "auto",
     borderRadius: "1rem ",
     boxShadow: "0 0 2rem 1.5rem rgb(10 10 10 / 12%)",
     padding: "1rem 2rem",
+  },
+  clientTitle: {
+    cursor: "pointer",
   },
   arrowRightClient: {
     left: "0",

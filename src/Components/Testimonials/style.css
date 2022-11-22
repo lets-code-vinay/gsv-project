@@ -416,15 +416,14 @@ h3 {
   .clientCard .testimonialCardMatter {
     font-size: 1.5rem !important;
     font-weight: 500;
-    margin: 10% 0% 13% 0 !important;
-
+    margin: 10% 0% 10% 0 !important;
     text-overflow: ellipsis;
     overflow: hidden;
     word-break: break-all;
-    max-height: 20vh;
-    min-height: 16vh;
+    max-height: 32vh;
+    min-height: 5vh;
     display: -webkit-box !important;
-    -webkit-line-clamp: 6;
+    -webkit-line-clamp: 8;
     -webkit-box-orient: vertical;
     white-space: normal;
   }
@@ -434,7 +433,7 @@ h3 {
   }
 
   .clientGrid .testimonialImage {
-    width: 50%;
+    width: 30%;
     margin: 10% auto;
     min-height: 70px;
     max-height: 100px;

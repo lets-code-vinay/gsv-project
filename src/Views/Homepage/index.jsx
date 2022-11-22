@@ -1,4 +1,5 @@
 import React from "react";
+import { useLocation } from "react-router-dom";
 
 import Trending from "../../Components/Trending";
 import OurClients from "../../Components/OurClient/OurClients";
@@ -11,6 +12,15 @@ import Technologies from "../../Components/Technologies";
 import Testimonials from "../../Components/Testimonials";
 
 const Homepage = () => {
+  const { pathname } = useLocation();
+
+  /**
+   * @description Rendering Page to the top
+   */
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   return (
     <>
       <MainSlider />

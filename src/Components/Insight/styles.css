@@ -112,7 +112,7 @@
     font-size: 2rem;
   }
   .piePaper {
-    height: 550px !important;
+    height: 70vh !important;
   }
   .pieBox {
     margin: 3% 0 2% 0 !important;
@@ -128,13 +128,13 @@
     margin-top: 10%;
   }
   .pieInfo .pieInfoList {
-    font-size: 1rem !important;
+    font-size: 1.5rem !important;
   }
   .pieTitle {
     font-size: 2rem;
   }
   .piePaper {
-    height: 600px !important;
+    height: 70vh !important;
   }
   .pieBox {
     margin: 3% 0 2% 0 !important;
@@ -152,17 +152,17 @@
   }
 
   .piePaper {
-    height: 816px !important;
+    height: 75vh !important;
     padding-top: 3%;
   }
   .pie {
-    top: -5% !important;
+    /* top: -5% !important; */
   }
   .pieDetail {
     margin-top: 10%;
   }
   .pieInfo .pieInfoList {
-    font-size: 1.5rem !important;
+    font-size: 1.8rem !important;
   }
   .pieTitle {
     font-size: 3rem !important;
@@ -179,7 +179,7 @@
   }
 
   .piePaper {
-    height: 816px !important;
+    height: 75vh !important;
     padding-top: 3%;
     margin-top: 5%;
   }
@@ -201,7 +201,7 @@
   }
 
   .piePaper {
-    height: 816px !important;
+    height: 75vh !important;
     padding-top: 3%;
     margin-top: 5%;
   }

@@ -7,6 +7,7 @@ import "./styles.css";
 export const DEFAULT_SERVICES = {
   id: "OUR_SERVICES",
   label: `Our Services`,
+  title: `Our Services`,
   value: 10,
   color: "#002446",
   button_text: "Know More",
@@ -29,7 +30,8 @@ export const DEFAULT_SERVICES = {
 export const INSIGHT_DATA = {
   PROFESSIONAL_SERVICES: {
     id: "PROFESSIONAL_SERVICES",
-    label: `Professional Services`,
+    label: `Professional`,
+    title: `Professional Services`,
     value: 10,
     color: "#002446",
     button_text: "Know More",
@@ -53,10 +55,36 @@ export const INSIGHT_DATA = {
       </>
     ),
   },
-
+  ADVISORY_CONSULTANCY: {
+    id: "ADVISORY_CONSULTANCY",
+    label: "Advisory & Consultancy",
+    title: "Advisory & Consultancy Services",
+    value: 10,
+    color: "#41d946",
+    button_text: "Know More",
+    text_color: "white",
+    info: (
+      <>
+        <Typography variant={"body1"} className={` pieInfoList`}>
+          Our clients operate in some of the world's most complex, technically
+          demanding and fast-paced industries. They rely on us for consulting
+          and advisory services that bring clarity, set the correct agenda and
+          ultimately deliver results.
+          <br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Our industry-renowned experts
+          thoroughly assess your IT environment and business processes to carve
+          an IT strategy capable of executing your business needs and furthering
+          your company's vision. Even if you are looking for a custom solution
+          for a one-off project or a temporary need, we will provide unlimited
+          resources to upgrade your IT world. 
+        </Typography>
+      </>
+    ),
+  },
   MANAGED_SERVICES: {
     id: "MANAGED_SERVICES",
-    label: "Managed Services",
+    label: "Managed",
+    title: "Managed Services",
     value: 10,
     color: "#46b6e6",
     button_text: "Know More",
@@ -82,85 +110,10 @@ export const INSIGHT_DATA = {
     ),
   },
 
-  DEVOPS: {
-    id: "DEVOPS",
-    label: "DevOps & DevSecOps Services ",
-    value: 10,
-    color: "#3c454a",
-    button_text: "Know More",
-    text_color: "white",
-    info: (
-      <>
-        <Typography variant={"body1"} className={` pieInfoList`}>
-          Application delivery has shifted from large-scale, project-based
-          implementations to continuous evolution. DevOps makes this possible by
-          bringing business, development and operation teams together and
-          applying automated processes to streamline IT.
-          <br />
-          <br />
-          We automate your cloud infrastructure and procedures while ensuring
-          continuous delivery and integration to get your product to the market
-          quickly. Our industry-leading DevOps services and market-validated
-          DevOps best practices bring a feature-rich product to the market in a
-          lower time frame and cost.
-        </Typography>
-      </>
-    ),
-  },
-  ADVISORY_CONSULTANCY: {
-    id: "ADVISORY_CONSULTANCY",
-    label: "Advisory & Consultancy Services",
-    value: 10,
-    color: "#41d946",
-    button_text: "Know More",
-    text_color: "white",
-    info: (
-      <>
-        <Typography variant={"body1"} className={` pieInfoList`}>
-          Our clients operate in some of the world's most complex, technically
-          demanding and fast-paced industries. They rely on us for consulting
-          and advisory services that bring clarity, set the correct agenda and
-          ultimately deliver results.
-          <br />
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Our industry-renowned experts
-          thoroughly assess your IT environment and business processes to carve
-          an IT strategy capable of executing your business needs and furthering
-          your company's vision. Even if you are looking for a custom solution
-          for a one-off project or a temporary need, we will provide unlimited
-          resources to upgrade your IT world. 
-        </Typography>
-      </>
-    ),
-  },
-  STAFF_AUGMENTATION: {
-    id: "STAFF_AUGMENTATION",
-    label: "Staff Augmentation Services ",
-    value: 10,
-    color: "#9d0402",
-    button_text: "Know More",
-    text_color: "white",
-
-    info: (
-      <>
-        <Typography variant={"body1"} className={` pieInfoList`}>
-          As your implementation evolves over time, you’ll periodically
-          encounter a situation where you’ve defined a strategic project but
-          don’t have all of the staff resources available to execute the
-          project. As most IT teams are managing multiple projects as a standard
-          practice, it can be very easy to miss a critical opportunity simply
-          because of a lack of workforce. Leverage our IT staff augmentation
-          services to access certified IT professionals, including skilled
-          Network Architects, Cloud Architects, DevOps Engineers, Business
-          Analysts, Scrum Masters, and QA specialists. We can help you scale up
-          on demand with the right pool of talented individuals without
-          stretching your budget.
-        </Typography>
-      </>
-    ),
-  },
   TRANSFORMATION_SERVICES: {
     id: "TRANSFORMATION_SERVICES",
-    label: "Transformation Services ",
+    label: "Transformation ",
+    title: "Transformation Services ",
     value: 10,
     color: "#cfd4db",
     button_text: "Know More",
@@ -184,9 +137,65 @@ export const INSIGHT_DATA = {
     ),
   },
 
+  STAFF_AUGMENTATION: {
+    id: "STAFF_AUGMENTATION",
+    title: "Staff Augmentation Services",
+    label: "Staff Augmentation ",
+    value: 10,
+    color: "#9d0402",
+    button_text: "Know More",
+    text_color: "white",
+
+    info: (
+      <>
+        <Typography variant={"body1"} className={` pieInfoList`}>
+          As your implementation evolves over time, you’ll periodically
+          encounter a situation where you’ve defined a strategic project but
+          don’t have all of the staff resources available to execute the
+          project. As most IT teams are managing multiple projects as a standard
+          practice, it can be very easy to miss a critical opportunity simply
+          because of a lack of workforce. Leverage our IT staff augmentation
+          services to access certified IT professionals, including skilled
+          Network Architects, Cloud Architects, DevOps Engineers, Business
+          Analysts, Scrum Masters, and QA specialists. We can help you scale up
+          on demand with the right pool of talented individuals without
+          stretching your budget.
+        </Typography>
+      </>
+    ),
+  },
+
+  DEVOPS: {
+    id: "DEVOPS",
+    label: `DevOps & DevSecOps`,
+    title: "DevOps & DevSecOps Services",
+    value: 10,
+    color: "#3c454a",
+    button_text: "Know More",
+    text_color: "white",
+    info: (
+      <>
+        <Typography variant={"body1"} className={` pieInfoList`}>
+          Application delivery has shifted from large-scale, project-based
+          implementations to continuous evolution. DevOps makes this possible by
+          bringing business, development and operation teams together and
+          applying automated processes to streamline IT.
+          <br />
+          <br />
+          We automate your cloud infrastructure and procedures while ensuring
+          continuous delivery and integration to get your product to the market
+          quickly. Our industry-leading DevOps services and market-validated
+          DevOps best practices bring a feature-rich product to the market in a
+          lower time frame and cost.
+        </Typography>
+      </>
+    ),
+  },
+
   NOC: {
     id: "NOC",
-    label: "NOC/SOC Services",
+    label: "   NOC/SOC    ",
+    title: "NOC/SOC Services",
     value: 10,
     color: "#2b5879",
     button_text: "Know More",

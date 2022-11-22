@@ -27,7 +27,7 @@ const Insight = () => {
   const {
     color = DEFAULT_SERVICES.color,
     info = DEFAULT_SERVICES.info,
-    label = DEFAULT_SERVICES.label,
+    title = DEFAULT_SERVICES.title,
   } = insightDetail || DEFAULT_SERVICES;
 
   return (
@@ -55,7 +55,7 @@ const Insight = () => {
                 className={`${classes.pieTitle} pieTitle`}
                 style={{ color: color }}
               >
-                {label}
+                {title}
               </Typography>
               <Typography
                 variant={"body1"}
