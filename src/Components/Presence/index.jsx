@@ -5,7 +5,10 @@ import { Box, Typography, makeStyles, Grid } from "@material-ui/core";
 // TODO: use it or remove it when required
 // import wave1 from "../../Assets/SVGs/wave1white.svg";
 // import wave2 from "../../Assets/SVGs/wave2grey.svg";
-import MapContainer from "./MapContainer.jsx";
+
+// DEPRECATED: deprecated previous chart
+// import MapContainer from "./MapContainer.jsx";
+import WorldMapWithIndia from "../WorldMapWithIndia";
 
 export default function OurPresence() {
   const classes = useStyles();
@@ -54,7 +57,7 @@ export default function OurPresence() {
           </Grid>
 
           <Grid item xs={12} sm={12} md={7} lg={7}>
-            <MapContainer />
+            <WorldMapWithIndia />
           </Grid>
         </Grid>
       </Box>

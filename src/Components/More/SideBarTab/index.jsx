@@ -16,7 +16,7 @@ import { SideMenu } from "../../../Configs/More";
 import ImageText from "./ImageText";
 import GridPage from "./GridPage/Index";
 import ImageTextList from "./ImageTextList";
-import MapContainer from "../../Presence/MapContainer";
+import WorldMapWithIndia from "../../WorldMapWithIndia";
 import ContactUs from "../../../Views/ContactUs";
 
 const SideBar = (props) => {
@@ -130,7 +130,8 @@ const SideBar = (props) => {
               <GridPage title={optionType.title} />
             )}
             {optionType.type === "map" && (
-              <MapContainer isMapTitleEnable={true} title={optionType.title} />
+              // <MapContainer isMapTitleEnable={true} title={optionType.title} /> // deprecated
+              <WorldMapWithIndia />
             )}
             {optionType.type === "image_text_list" && (
               <ImageTextList
