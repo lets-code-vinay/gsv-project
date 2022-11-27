@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Chart } from "react-google-charts";
-import { Button, Box, Typography } from "@material-ui/core";
+import { Button, Box } from "@material-ui/core";
 import "./style.css";
 
 import Logo from "../../../Assets/Images/blueLogo.png";
@@ -37,7 +37,7 @@ const PieChart = ({ fetchInsightDetails }) => {
    */
   const options = {
     pieHole: 0.25,
-    fontSize: 20,
+    // fontSize: 20, // CHANGE FONT SIZE HEREM, IT IS FIX IN SIZE
     is3D: false,
     pieSliceText: "label",
     pieSliceTextStyle: {
@@ -131,7 +131,7 @@ const PieChart = ({ fetchInsightDetails }) => {
         <Chart
           chartType="PieChart"
           width="100%"
-          height="500px"
+          // height="500px"
           className="pie-chart-height"
           data={insightData}
           options={options}

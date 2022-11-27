@@ -27,6 +27,9 @@
 1025px — 1200px: Desktops, large screens
 1201px and more —  Extra large screens, TV */
 @media screen and (min-width: 279px) and (max-width: 480px) {
+  .container-services {
+    padding: 8% 5%;
+  }
   .MuiPaper-root.makeStyles-piePaper-38.piePaper.MuiPaper-elevation24.MuiPaper-rounded {
     width: 90%;
     margin: 5% auto;
@@ -68,11 +71,16 @@
   }
 }
 @media screen and (min-width: 761px) and (max-width: 1024px) {
+  .container-services {
+    padding: 8%;
+  }
+
   .MuiBox-root.MuiBox-root-46.makeStyles-pieDetail-41.pieDetail {
     margin: -8% auto 8%;
   }
   .piePaper {
-    height: 70vh;
+    height: 90vh;
+    width: 100%;
   }
   .pieInfoList {
     text-overflow: ellipsis;
@@ -111,8 +119,9 @@
   .pieTitle {
     font-size: 2rem;
   }
-  .piePaper {
-    height: 70vh !important;
+  .piePaper,
+  #reactgooglegraph-1 {
+    height: 80vh !important;
   }
   .pieBox {
     margin: 3% 0 2% 0 !important;
@@ -120,6 +129,11 @@
 }
 
 @media screen and (min-width: 1281px) and (max-width: 1920px) {
+  .container-services {
+    display: flex;
+    align-items: center;
+    padding: 0 8% !important;
+  }
   .MuiBox-root.MuiBox-root-46.makeStyles-pieDetail-41.pieDetail {
     margin: 15% auto 8%;
   }
@@ -129,15 +143,26 @@
   }
   .pieInfo .pieInfoList {
     font-size: 1.5rem !important;
+
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-break: break-all;
+    max-height: 40vh;
+    min-height: 25vh;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 15;
+    -webkit-box-orient: vertical;
+    white-space: normal;
   }
   .pieTitle {
     font-size: 2rem;
   }
-  .piePaper {
-    height: 70vh !important;
+
+  .piePaper,
+  #reactgooglegraph-1 {
+    height: 80vh !important;
   }
   .pieBox {
-    margin: 3% 0 2% 0 !important;
   }
 }
 
@@ -152,11 +177,9 @@
   }
 
   .piePaper {
-    height: 75vh !important;
-    padding-top: 3%;
+    height: 85vh !important;
   }
   .pie {
-    /* top: -5% !important; */
   }
   .pieDetail {
     margin-top: 10%;

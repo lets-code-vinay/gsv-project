@@ -349,16 +349,12 @@
     width: 100% !important;
     height: 88vh !important;
   }
-  /* .menuImage,
-  .MuiGrid-root.undefined.menuImage.MuiGrid-item.MuiGrid-grid-md-3.MuiGrid-grid-lg-3 {
-    height: 88vh !important;
-  } */
+
   .menuInformationBar .menuInformationBarTitle {
     font-size: 5rem;
   }
   .MuiGrid-root.MuiGrid-item.MuiGrid-grid-xs-12.MuiGrid-grid-sm-12.MuiGrid-grid-md-4.MuiGrid-grid-lg-4 {
     background-color: rgb(243, 245, 248);
-    padding: 3% 6%;
   }
 }
 

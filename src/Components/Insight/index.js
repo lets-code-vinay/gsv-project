@@ -91,7 +91,6 @@ const useStyles = makeStyles((theme) => ({
 
   pieBox: {
     width: "100%",
-    margin: "1% 0 2% 0",
   },
   pieDetail: {
     width: "80%",

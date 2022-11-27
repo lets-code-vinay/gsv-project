@@ -132,8 +132,9 @@
   .informationMsgContainer .informationMSG {
     color: #ffffff !important;
     padding: 1% 2%;
-    font-size: 0.8rem;
+    font-size: 1rem;
     opacity: 1;
+    height: 8vh;
   }
   .sliderInformationBarTitle {
     color: #ffffff;

@@ -43,21 +43,21 @@ class WorldMapWithIndia extends Component {
     /**
      * @description mini map
      */
-    chart.smallMap = new am4maps.SmallMap();
-    chart.smallMap.series.push(polygonSeries);
+    // chart.smallMap = new am4maps.SmallMap();
+    // chart.smallMap.series.push(polygonSeries);
 
-    // rect box inside minimap
-    chart.smallMap.rectangle.stroke = am4core.color("blue");
-    chart.smallMap.rectangle.strokeWidth = 2;
+    // // rect box inside minimap
+    // chart.smallMap.rectangle.stroke = am4core.color("blue");
+    // chart.smallMap.rectangle.strokeWidth = 2;
 
-    // outer border
-    chart.smallMap.background.stroke = am4core.color("yellow");
-    chart.smallMap.background.strokeOpacity = 1;
-    chart.smallMap.background.fillOpacity = 1;
+    // // outer border
+    // chart.smallMap.background.stroke = am4core.color("yellow");
+    // chart.smallMap.background.strokeOpacity = 1;
+    // chart.smallMap.background.fillOpacity = 1;
 
-    // mini map location
-    chart.smallMap.align = "right";
-    chart.smallMap.valign = "top";
+    // // mini map location
+    // chart.smallMap.align = "right";
+    // chart.smallMap.valign = "top";
 
     /**
      * @description adding icons or images
@@ -145,17 +145,17 @@ class WorldMapWithIndia extends Component {
       <>
         <div id="chartdiv"></div>
         <div className="buttonContainer">
-          <Typography variant="h4">SELECT: </Typography>
-          <Typography variant="h5" id="select-us">
+          <Typography className="county-select">SELECT: </Typography>
+          <Typography className="county-name" id="select-us">
             United States
           </Typography>
-          <Typography variant="h5" id="select-brazil">
+          <Typography className="county-name" id="select-brazil">
             Brazil
           </Typography>
-          <Typography variant="h5" id="select-india">
+          <Typography className="county-name" id="select-india">
             India
           </Typography>
-          <Typography variant="h5" id="select-europe">
+          <Typography className="county-name" id="select-europe">
             Europe
           </Typography>
         </div>
