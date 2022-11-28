@@ -145,7 +145,6 @@ class WorldMapWithIndia extends Component {
       <>
         <div id="chartdiv"></div>
         <div className="buttonContainer">
-          <Typography className="county-select">SELECT: </Typography>
           <Typography className="county-name" id="select-us">
             United States
           </Typography>
