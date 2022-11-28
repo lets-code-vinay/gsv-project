@@ -65,6 +65,7 @@ const Technologies = () => {
             </div>
           </Grid>
         </Grid>
+
         <Grid container className="marginTop">
           <Grid item xs={12} sm={12} md={8} lg={8} className="bck1">
             <Card className="cardMenu">

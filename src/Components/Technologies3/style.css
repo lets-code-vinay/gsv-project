@@ -550,13 +550,6 @@
   -webkit-transform: translateX(-100%);
 }
 
-.technologies-container {
-  /* height: 90vh;
-  overflow-y: scroll;
-  width: 100%;
-  overflow-x: hidden; */
-}
-
 /* 320px — 480px: Mobile devices
 481px — 768px: iPads, Tablets
 769px — 1024px: Small screens, laptops

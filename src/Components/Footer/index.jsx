@@ -281,13 +281,23 @@ const Footer = () => {
 export default Footer;
 
 const useStyles = makeStyles((theme) => ({
+  // footer: {
+  //   backgroundColor: THEME_COLOR.main_color,
+  // },
+  // footerBody: {
+  //   padding: "2%",
+  //   width: "80%",
+  //   margin: "auto",
+  // },
+
+  // for fullpage scrolling
   footer: {
-    backgroundColor: THEME_COLOR.main_color,
+    paddingTop: "30%",
   },
   footerBody: {
+    width: "100%",
     padding: "2%",
-    width: "80%",
-    margin: "auto",
+    backgroundColor: THEME_COLOR.main_color,
   },
   footerLogo: {
     width: "250px",
