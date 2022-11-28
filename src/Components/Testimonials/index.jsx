@@ -79,27 +79,87 @@ const Testimonials = () => {
             );
           })}
         </Slider>
+
         {/* --- second slider------- */}
-        <Box className="testimonialDomainClientsSection">
-          <Slider
-            className="testimonialDomainClients"
-            slidesToShow={clientCount > 0 && clientCount < 3 ? clientCount : 3}
-            swipeToSlide={true}
-            focusOnSelect={true}
-            slidesToScroll={1}
-            infinite={true}
-            initialSlide={2}
-            nextArrow={
-              <ChevronRight
-                className={`${classes.arrowRightClient} arrowRightClient`}
-              />
-            }
-            prevArrow={
-              <ChevronLeft
-                className={`${classes.arrowLeftClient} arrowLeftClient`}
-              />
-            }
-            responsive={responsive_client}
+        {clientCount >= 3 ? (
+          <Box className="testimonialDomainClientsSection">
+            <Slider
+              className="testimonialDomainClients"
+              slidesToShow={3}
+              swipeToSlide={true}
+              focusOnSelect={true}
+              slidesToScroll={1}
+              infinite={true}
+              initialSlide={2}
+              nextArrow={
+                <ChevronRight
+                  className={`${classes.arrowRightClient} arrowRightClient`}
+                />
+              }
+              prevArrow={
+                <ChevronLeft
+                  className={`${classes.arrowLeftClient} arrowLeftClient`}
+                />
+              }
+              responsive={responsive_client}
+            >
+              {Object.values(testimonialClient).map(
+                (
+                  {
+                    value = "",
+                    about = "",
+                    author = "",
+                    image = "",
+                    designation = "",
+                    company = "",
+                  },
+                  index
+                ) => {
+                  if (about.length < 1) return true;
+                  return (
+                    <Box
+                      item
+                      xs={12}
+                      sm={12}
+                      md={4}
+                      lg={4}
+                      key={`${value}-${index}`}
+                      className={`${classes.clientGrid} clientGrid`}
+                    >
+                      <Box
+                        className={`${classes.clientCard} clientCard`}
+                        style={{
+                          maxWidth:
+                            clientCount >= 1 && clientCount < 3 ? "60%" : "75%",
+                        }}
+                      >
+                        <Typography
+                          variant="h5"
+                          className={`${classes.testimonialCardMatter} testimonialCardMatter`}
+                        >
+                          "{about}"
+                        </Typography>
+                        <Typography
+                          variant="body1"
+                          className={`${classes.testimonialCardUser} testimonialCardUser`}
+                        >
+                          <strong>{author},</strong> {designation}-{company}
+                        </Typography>
+                        <img
+                          className={`${classes.testimonialImage} testimonialImage`}
+                          src={image}
+                          alt={value}
+                        />
+                      </Box>
+                    </Box>
+                  );
+                }
+              )}
+            </Slider>
+          </Box>
+        ) : (
+          <Box
+            className={`${classes.testimonialDomainClientsSectionLessThan3} testimonialDomainClientsSectionLessThan3}`}
           >
             {Object.values(testimonialClient).map(
               (
@@ -122,10 +182,10 @@ const Testimonials = () => {
                     md={4}
                     lg={4}
                     key={`${value}-${index}`}
-                    className={`${classes.clientGrid} clientGrid`}
+                    className={`${classes.clientGridLessThan3} clientGridLessThan3`}
                   >
                     <Box
-                      className={`${classes.clientCard} clientCard`}
+                      className={`${classes.clientCardLessThan3} clientCardLessThan3`}
                       style={{
                         maxWidth:
                           clientCount >= 1 && clientCount < 3 ? "60%" : "75%",
@@ -133,28 +193,32 @@ const Testimonials = () => {
                     >
                       <Typography
                         variant="h5"
-                        className={`${classes.testimonialCardMatter} testimonialCardMatter`}
+                        className={`${classes.testimonialCardMatterLessThan3} testimonialCardMatterLessThan3`}
                       >
                         "{about}"
                       </Typography>
                       <Typography
                         variant="body1"
-                        className={`${classes.testimonialCardUser} testimonialCardUser`}
+                        className={`${classes.testimonialCardUserLessThan3} testimonialCardUserLessThan3`}
                       >
                         <strong>{author},</strong> {designation}-{company}
                       </Typography>
-                      <img
-                        className={`${classes.testimonialImage} testimonialImage`}
-                        src={image}
-                        alt={value}
-                      />
+                      <Box
+                        className={`${classes.lessThan3LogoContainer} lessThan3LogoContainer`}
+                      >
+                        <img
+                          className={`${classes.testimonialImageLessThan3} testimonialImageLessThan3`}
+                          src={image}
+                          alt={value}
+                        />
+                      </Box>
                     </Box>
                   </Box>
                 );
               }
             )}
-          </Slider>
-        </Box>
+          </Box>
+        )}
       </Box>
     </Box>
   );
@@ -189,9 +253,7 @@ const useStyles = makeStyles((theme) => ({
     padding: "0 3rem",
     margin: "2rem",
   },
-  clientGrid: {
-    margin: "3rem auto",
-  },
+
   clientCard: {
     minWidth: "30%",
     margin: "auto",
@@ -199,6 +261,11 @@ const useStyles = makeStyles((theme) => ({
     boxShadow: "0 0 2rem 1.5rem rgb(10 10 10 / 12%)",
     padding: "1rem 2rem",
   },
+
+  clientGrid: {
+    margin: "3rem auto",
+  },
+
   clientTitle: {
     cursor: "pointer",
   },
@@ -211,12 +278,47 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: "700",
     margin: "16% 0% 13% 0",
   },
+  testimonialCardMatterLessThan3: {
+    fontSize: "1rem",
+    fontWeight: "700",
+    margin: "16% 0% 13% 0",
+  },
   testimonialCardUser: {
-    textIndent: "10%",
     fontSize: "0.8rem",
+    textAlign: "center",
+  },
+  testimonialCardUserLessThan3: {
+    fontSize: "0.8rem",
+    textAlign: "center",
   },
   testimonialImage: {
     width: "100px",
     margin: "10% 26%",
+  },
+
+  lessThan3LogoContainer: {
+    width: "100%",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    margin: "5% 0",
+  },
+
+  testimonialImageLessThan3: {
+    width: "100px",
+  },
+
+  testimonialDomainClientsSectionLessThan3: {
+    display: "flex",
+  },
+  clientCardLessThan3: {
+    width: "40vw",
+    margin: "auto",
+    borderRadius: "1rem ",
+    boxShadow: "0 0 2rem 1.5rem rgb(10 10 10 / 12%)",
+    padding: "1rem 2rem",
+  },
+  clientGridLessThan3: {
+    margin: "3rem auto",
   },
 }));
