@@ -1,5 +1,6 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
+import { Box } from "@material-ui/core";
 
 import Trending from "../../Components/Trending";
 import OurClients from "../../Components/OurClient/OurClients";
@@ -10,6 +11,8 @@ import OurPresence from "../../Components/Presence";
 import Footer from "../../Components/Footer";
 import Technologies from "../../Components/Technologies";
 import Testimonials from "../../Components/Testimonials";
+
+import "./style.css";
 
 const Homepage = () => {
   const { pathname } = useLocation();
@@ -22,7 +25,7 @@ const Homepage = () => {
   }, [pathname]);
 
   return (
-    <>
+    <Box className="homepage-container">
       <MainSlider />
       <Trending />
       <Insight />
@@ -32,7 +35,7 @@ const Homepage = () => {
       <Testimonials />
       <OurClients />
       <Footer />
-    </>
+    </Box>
   );
 };
 

@@ -1,3 +1,7 @@
+.mainBody {
+  scroll-snap-align: start;
+  height: 100vh;
+}
 .mapTitle {
   font-family: "Inter";
   font-style: normal;

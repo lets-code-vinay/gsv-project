@@ -1,3 +1,8 @@
+.topContainer {
+  scroll-snap-align: start;
+  height: 100vh;
+}
+
 .ourClientHading {
   text-align: center;
   font-family: "Inter";
