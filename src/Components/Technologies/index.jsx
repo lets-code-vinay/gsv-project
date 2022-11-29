@@ -157,9 +157,6 @@ const Technologies = () => {
             );
           })}
         </Grid>
-        <Grid container spacing={0} className="">
-          <Grid item style={{ width: "100%" }} className="boxBelow"></Grid>
-        </Grid>
       </Box>
     </main>
   );

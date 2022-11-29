@@ -40,7 +40,7 @@ const MainSlider = () => {
   const { bg_color = "", heading = "", subtitle = "" } = currentSlideData || {};
 
   return (
-    <>
+    <div className="main-screen">
       <span style={{ position: "relative" }}>
         <Carousel
           onChange={setMovieKey}
@@ -136,7 +136,7 @@ const MainSlider = () => {
           </Box>
         </Box>
       </span>
-    </>
+    </div>
   );
 };
 

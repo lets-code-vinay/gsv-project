@@ -1,3 +1,8 @@
+.testimonials {
+  scroll-snap-align: start;
+  height: 100vh;
+}
+
 .containerClass {
   /* padding-right: 0%; */
   position: relative;
@@ -508,7 +513,7 @@ h3 {
     width: 95%;
   }
   .testimonialLogo {
-    margin: 8% auto 0;
+    margin: 4% auto 0;
   }
   .testimonials {
     height: 100vh;

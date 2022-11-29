@@ -290,7 +290,7 @@ const useStyles = makeStyles((theme) => ({
     margin: "auto",
   },
   footerLogo: {
-    width: "250px",
+    width: "70%",
   },
   menuListTitle: {
     fontSize: "1.6rem",
