@@ -17,15 +17,17 @@ import "./style.css";
 const Homepage = () => {
   const { pathname } = useLocation();
 
+  const mainRef = React.useRef(null)
+
   /**
    * @description Rendering Page to the top
    */
   React.useEffect(() => {
-    window.scrollTo(0, 0);
+    mainRef.current.scrollTo(0, 0)
   }, [pathname]);
 
   return (
-    <Box className="homepage-container">
+    <Box className="homepage-container" ref={mainRef}>
       <MainSlider />
       <Trending />
       <Insight />
