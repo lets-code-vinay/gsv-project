@@ -6,13 +6,7 @@ import { Box, makeStyles, Typography } from "@material-ui/core";
 import "slick-carousel/slick/slick.css";
 import "./OurClient.css";
 
-import IBM from "../../Assets/ibm.png";
-import Granitize from "../../Assets/Granitize.png";
-import TouchBase from "../../Assets/touchBase.png";
-import TechBserver from "../../Assets/techBserver.png";
-import BestWestern from "../../Assets/bestWestern.png";
-import EljayEngineering from "../../Assets/eljayEngineering.png";
-import AirportAuthority from "../../Assets/airportAuthority.png";
+import { IMAGES } from "../../Configs/Images";
 
 const OurClients = () => {
   const classes = useStyles();
@@ -91,130 +85,32 @@ const OurClients = () => {
           Our Clients
         </Typography>
       </Box>
-      {/* <hr className={`${classes.hr} hr`} /> */}
 
       <Slider
         className={`${classes.clientSlider} clientSlider`}
         {...settings}
         style={{ padding: "0 10%" }}
       >
-        <Box className={`${classes.imageBlock} firstImage imageBlock`}>
-          <img
-            src={Granitize}
-            className={`${classes.imageToResponsive} firstImage imageToResponsive`}
-            alt="Granitize"
-          />
-          <img
-            src={AirportAuthority}
-            className={`${classes.imageToResponsive} secondimage imageToResponsive bottomImage`}
-            alt="AirportAuthority"
-          />
-        </Box>
-        <Box className="secondImage"></Box>
-        <Box className={`${classes.imageBlock} thirdImage imageBlock`}>
-          <img
-            src={TouchBase}
-            className={`${classes.imageToResponsive} thirdimage imageToResponsive`}
-            alt="TouchBase"
-          />
-          <img
-            src={EljayEngineering}
-            className={`${classes.imageToResponsive} fourthimage imageToResponsive bottomImage`}
-            alt="EljayEngineering"
-          />
-        </Box>
-
-        <Box className="fourthImage imageStyle"></Box>
-
-        <Box className={`${classes.imageBlock} fifthImage imageBlock`}>
-          <img
-            src={BestWestern}
-            className={`${classes.imageToResponsive} fifthimage imageToResponsive`}
-            alt="BestWestern"
-          />
-          <img
-            src={IBM}
-            className={`${classes.imageToResponsive} sixthimage imageToResponsive bottomImage`}
-            alt="IBM"
-          />
-        </Box>
-
-        <Box className="sixthImage imageStyle"></Box>
-
-        <Box className={`${classes.imageBlock} sevenImage imageBlock`}>
-          <img
-            src={IBM}
-            className={`${classes.imageToResponsive} sevenimage imageToResponsive`}
-            alt="IBM"
-          />
-          <img
-            src={TechBserver}
-            className={`${classes.imageToResponsive} eightimage imageToResponsive bottomImage`}
-            alt="TechBserver"
-          />
-        </Box>
-
-        <Box className="eightImage"></Box>
-
-        <Box className={`${classes.imageBlock} firstImage imageBlock`}>
-          <img
-            src={Granitize}
-            className={`${classes.imageToResponsive} firstimage imageToResponsive`}
-            alt="Granitize"
-          />
-          <img
-            src={AirportAuthority}
-            className={`${classes.imageToResponsive} secondimage imageToResponsive bottomImage`}
-            alt="AirportAuthority"
-          />
-        </Box>
-
-        <Box className="secondImage"></Box>
-
-        <Box className={`${classes.imageBlock} thirdImage imageBlock`}>
-          <img
-            src={TouchBase}
-            className={`${classes.imageToResponsive} thirdimage imageToResponsive`}
-            alt="TouchBase"
-          />
-          <img
-            src={EljayEngineering}
-            className={`${classes.imageToResponsive} fourthimage imageToResponsive bottomImage`}
-            alt="EljayEngineering"
-          />
-        </Box>
-
-        <Box className="fourthImage imageStyle"></Box>
-
-        <Box className={`${classes.imageBlock} fifthImage imageBlock`}>
-          <img
-            src={BestWestern}
-            className={`${classes.imageToResponsive} fifthimage imageToResponsive`}
-            alt="BestWestern"
-          />
-          <img
-            src={IBM}
-            className={`${classes.imageToResponsive} sixthimage imageToResponsive bottomImage`}
-            alt="IBM"
-          />
-        </Box>
-
-        <Box className="sixthImage imageStyle"></Box>
-
-        <Box className={`${classes.imageBlock} sevenImage imageBlock`}>
-          <img
-            src={IBM}
-            className={`${classes.imageToResponsive} sevenimage imageToResponsive`}
-            alt="IBM"
-          />
-          <img
-            src={TechBserver}
-            className={`${classes.imageToResponsive} eightimage imageToResponsive bottomImage`}
-            alt="TechBserver"
-          />
-        </Box>
-
-        <Box className="eightImage"></Box>
+        {IMAGES.map(({ image = "", alt = "" }, index) => {
+          return index % 2 !== 0 ? (
+            <>
+              <img
+                src={image}
+                className={`${classes.imageToResponsive} imageToResponsive`}
+                alt={alt}
+              />
+            </>
+          ) : (
+            <>
+              <img
+                src={image}
+                className={`${classes.imageToResponsive} 
+                secondimage imageToResponsive bottomImage`}
+                alt={alt}
+              />
+            </>
+          );
+        })}
       </Slider>
     </Box>
   );
