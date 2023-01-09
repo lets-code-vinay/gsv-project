@@ -55,9 +55,9 @@ export const NAVBAR_MENUS = {
                   path: "/lan/switching",
                 },
                 SDN: {
-                  label: "Software Defied Networking",
+                  label: "Software Defined Networking",
                   value: "SDN",
-                  path: "/lan/software-denied-networking",
+                  path: "/lan/software-Defined-networking",
                 },
                 CMN: {
                   label: "Cloud Managed Network",
@@ -138,7 +138,7 @@ export const NAVBAR_MENUS = {
                   path: "/wireless-and-mobility/Location-Based-Services",
                 },
                 CMW: {
-                  label: "Cloud Managed wireless",
+                  label: "Cloud Managed Wireless",
                   value: "CMW",
                   path: "/wireless-and-mobility/Cloud-Managed-wireless",
                 },
@@ -226,12 +226,7 @@ export const NAVBAR_MENUS = {
                   value: "CISCO_SD_WAN",
                   path: "/Cisco-SD-WAN",
                 },
-                // -- Cisco meraki
-                CISCO_MERAKI: {
-                  label: "Cisco Meraki",
-                  value: "CISCO_MERAKI",
-                  path: "/Cisco-Meraki",
-                },
+
                 // -- Cisco Unified Wireless
                 CUWNS: {
                   label: "Cisco Unified Wireless Network Solution",
@@ -243,6 +238,12 @@ export const NAVBAR_MENUS = {
                   label: "Cisco Enterprise NSV Infrastructure-Software",
                   value: "CENIS",
                   path: "/Cisco-Enterprise-NSV-Infrastructure",
+                },
+                // -- Cisco meraki
+                CISCO_MERAKI: {
+                  label: "Cisco Meraki",
+                  value: "CISCO_MERAKI",
+                  path: "/Cisco-Meraki",
                 },
                 // -- Cisco Aruba Centra
                 ARUBA_CENTRAL: {
@@ -348,9 +349,9 @@ export const NAVBAR_MENUS = {
                   path: "/security/Remote-Access-VPN-Security",
                 },
                 IAMM: {
-                  label: "Identify and Access Management/MFA",
+                  label: "Identity and Access Management/MFA",
                   value: "IAMM",
-                  path: "/security/Identify-Access-Management",
+                  path: "/security/Identity-Access-Management",
                 },
                 DNS_SECURITY: {
                   label: "DNS Security",
@@ -485,7 +486,7 @@ export const NAVBAR_MENUS = {
                 },
                 // -- Cisco Secure Endpoint
                 CSE: {
-                  label: "Cisco Secure Endpoint(AMP for Endpoint)",
+                  label: "Cisco Secure Endpoint(AMP)",
                   value: "CSE",
                   path: "/Cisco-Secure-Endpoint",
                 },
@@ -586,7 +587,7 @@ export const NAVBAR_MENUS = {
                   path: "/data-center/assurance-insight",
                 },
                 HCI: {
-                  label: "Hyper Converged infrastructure",
+                  label: "Hyper Converged Infrastructure",
                   value: "HCI",
                   path: "/data-center/Hyper-Converged-infrastructure",
                 },
@@ -1008,9 +1009,9 @@ export const NAVBAR_MENUS = {
                   value: "WRP",
                   path: "/Webex-Room-Panorama",
                 },
-                // -- Webex Contatc Center Enterprise
+                // -- Webex Contact Center Enterprise
                 WCCE: {
-                  label: "Webex Contatc Center Enterprise",
+                  label: "Webex Contact Center Enterprise",
                   value: "WCCE",
                   path: "/Webex-Contatc-Center-Enterprise",
                 },
@@ -1177,9 +1178,9 @@ export const NAVBAR_MENUS = {
       //             value: "WRP",
       //             path: "/Webex-Room-Panorama",
       //           },
-      //           // -- Webex Contatc Center Enterprise
+      //           // -- Webex Contact Center Enterprise
       //           WCCE: {
-      //             label: "Webex Contatc Center Enterprise",
+      //             label: "Webex Contact Center Enterprise",
       //             value: "WCCE",
       //             path: "/Webex-Contatc-Center-Enterprise",
       //           },
@@ -1196,7 +1197,7 @@ export const NAVBAR_MENUS = {
       // },
 
       /**
-       * CLOUD AND COMPUTING
+       * CLOUD & COMPUTING
        */
       CAC: {
         label: "CLOUD & COMPUTING ",
@@ -1204,7 +1205,7 @@ export const NAVBAR_MENUS = {
         menus: {
           image: CLOUD_IMAGE,
           mobile_image: MOBILE_SECURITY_IMAGE,
-          title: "CLOUD AND COMPUTING",
+          title: "CLOUD & COMPUTING",
           color: "#2C5767",
           subtitle: `Security-Implement enterprise-class connectivity for wired and wireless. Multi-vendor technology and hardware's Satellite, deployment, monitoring and support`,
           menus: {
@@ -1289,51 +1290,52 @@ export const NAVBAR_MENUS = {
               },
             },
 
-            CAndC3: {
-              label: "",
-              value: "CAndC3",
-              shaded: false,
-              icon: MISC_ICON,
-              image: MISC_ICON,
-              mobile_image: "",
-              menus: {
-                HC: {
-                  label: "Hybrid Cloud",
-                  value: "HC",
-                  path: "/cloud-and-computing/Hybrid-Cloud",
-                },
-                CM: {
-                  label: "Cloud Migration",
-                  value: "CM",
-                  path: "/cloud-and-computing/Cloud-Migration",
-                },
-                CS: {
-                  label: "Cloud Strategy",
-                  value: "CS",
-                  path: "/cloud-and-computing/Cloud-Strategy ",
-                },
-                DM: {
-                  label: "Data Migration",
-                  value: "DM",
-                  path: "/cloud-and-computing/Data-Migration ",
-                },
-                EC: {
-                  label: "Edge Computing",
-                  value: "EC",
-                  path: "/cloud-and-computing/Edge-Computing ",
-                },
-                HCM: {
-                  label: "Hybrid Cloud Management",
-                  value: "HCM",
-                  path: "/cloud-and-computing/Hybrid-Cloud-Management ",
-                },
-                SAAS: {
-                  label: "Sass Integration",
-                  value: "SAAS",
-                  path: "/cloud-and-computing/Sass-Integration ",
-                },
-              },
-            },
+            // Commented as per feedback point on 2023-01-09
+            // CAndC3: {
+            //   label: "",
+            //   value: "CAndC3",
+            //   shaded: false,
+            //   icon: MISC_ICON,
+            //   image: MISC_ICON,
+            //   mobile_image: "",
+            //   menus: {
+            //     HC: {
+            //       label: "Hybrid Cloud",
+            //       value: "HC",
+            //       path: "/cloud-and-computing/Hybrid-Cloud",
+            //     },
+            //     CM: {
+            //       label: "Cloud Migration",
+            //       value: "CM",
+            //       path: "/cloud-and-computing/Cloud-Migration",
+            //     },
+            //     CS: {
+            //       label: "Cloud Strategy",
+            //       value: "CS",
+            //       path: "/cloud-and-computing/Cloud-Strategy ",
+            //     },
+            //     DM: {
+            //       label: "Data Migration",
+            //       value: "DM",
+            //       path: "/cloud-and-computing/Data-Migration ",
+            //     },
+            //     EC: {
+            //       label: "Edge Computing",
+            //       value: "EC",
+            //       path: "/cloud-and-computing/Edge-Computing ",
+            //     },
+            //     HCM: {
+            //       label: "Hybrid Cloud Management",
+            //       value: "HCM",
+            //       path: "/cloud-and-computing/Hybrid-Cloud-Management ",
+            //     },
+            //     SAAS: {
+            //       label: "Sass Integration",
+            //       value: "SAAS",
+            //       path: "/cloud-and-computing/Sass-Integration ",
+            //     },
+            //   },
+            // },
           },
         },
       },
@@ -1470,9 +1472,9 @@ export const NAVBAR_MENUS = {
                   path: "/lan/switching",
                 },
                 SDN: {
-                  label: "Software Denied Networking",
+                  label: "Software Defined Networking",
                   value: "SDN",
-                  path: "/lan/software-denied-networking",
+                  path: "/lan/software-Defined-networking",
                 },
                 CMN: {
                   label: "Cloud Managed Network",
@@ -1511,9 +1513,9 @@ export const NAVBAR_MENUS = {
                   path: "/wan/SASE",
                 },
                 SDN: {
-                  label: "Software Denied Networking",
+                  label: "Software Defined Networking",
                   value: "SDN",
-                  path: "/wan/software-denied-networking",
+                  path: "/wan/software-Defined-networking",
                 },
                 VPN: {
                   label: "Virtual Private Network",
@@ -1553,7 +1555,7 @@ export const NAVBAR_MENUS = {
                   path: "/wireless-and-mobility/Location-Based-Services",
                 },
                 CMW: {
-                  label: "Cloud Managed wireless",
+                  label: "Cloud Managed Wireless",
                   value: "CMW",
                   path: "/wireless-and-mobility/Cloud-Managed-wireless",
                 },
@@ -1612,12 +1614,7 @@ export const NAVBAR_MENUS = {
                   value: "CISCO_SD_WAN",
                   path: "/Cisco-SD-WAN",
                 },
-                // -- Cisco meraki
-                CISCO_MERAKI: {
-                  label: "Cisco Meraki",
-                  value: "CISCO_MERAKI",
-                  path: "/Cisco-Meraki",
-                },
+
                 // -- Cisco Cisco Unified Wireless
                 CUWNS: {
                   label: "Cisco Unified Wireless Network Solution",
@@ -1629,6 +1626,12 @@ export const NAVBAR_MENUS = {
                   label: "Cisco Enterprise NSV Infrastructure",
                   value: "CENIS",
                   path: "/Cisco-Enterprise-NSV-Infrastructure",
+                },
+                // -- Cisco meraki
+                CISCO_MERAKI: {
+                  label: "Cisco Meraki",
+                  value: "CISCO_MERAKI",
+                  path: "/Cisco-Meraki",
                 },
                 // -- Cisco Aruba Centra
                 ARUBA_CENTRAL: {
@@ -1661,12 +1664,7 @@ export const NAVBAR_MENUS = {
                   value: "CISCO_SD_WAN_2",
                   path: "/Cisco-SD-WAN",
                 },
-                // -- Cisco meraki
-                CISCO_MERAKI_2: {
-                  label: "Cisco Meraki",
-                  value: "CISCO_MERAKI_2",
-                  path: "/Cisco-Meraki",
-                },
+
                 // -- Cisco Cisco Unified Wireless
                 CUWNS_2: {
                   label: "Cisco Unified Wireless Network Solution",
@@ -1678,6 +1676,12 @@ export const NAVBAR_MENUS = {
                   label: "Cisco Enterprise NSV Infrastructure",
                   value: "CENIS_2",
                   path: "/Cisco-Enterprise-NSV-Infrastructure",
+                },
+                // -- Cisco meraki
+                CISCO_MERAKI_2: {
+                  label: "Cisco Meraki",
+                  value: "CISCO_MERAKI_2",
+                  path: "/Cisco-Meraki",
                 },
                 // -- Cisco Aruba Centra
                 ARUBA_CENTRAL_2: {
@@ -1757,9 +1761,9 @@ export const NAVBAR_MENUS = {
                   path: "/security/Remote-Access-VPN-Security",
                 },
                 IAMM: {
-                  label: "Identify and Access Management/MFA",
+                  label: "Identity and Access Management/MFA",
                   value: "IAMM",
-                  path: "/security/Identify-Access-Management",
+                  path: "/security/Identity-Access-Management",
                 },
                 DNS_SECURITY: {
                   label: "DNS Security",
@@ -1880,7 +1884,7 @@ export const NAVBAR_MENUS = {
                 },
                 // -- Cisco Secure Endpoint
                 CSE: {
-                  label: "Cisco Secure Endpoint(AMP for Endpoint)",
+                  label: "Cisco Secure Endpoint(AMP)",
                   value: "CSE",
                   path: "/Cisco-Secure-Endpoint",
                 },
@@ -1933,12 +1937,7 @@ export const NAVBAR_MENUS = {
                   value: "CISCO_SD_WAN",
                   path: "/Cisco-SD-WAN",
                 },
-                // -- Cisco meraki
-                CISCO_MERAKI: {
-                  label: "Cisco Meraki",
-                  value: "CISCO_MERAKI",
-                  path: "/Cisco-Meraki",
-                },
+
                 // -- Cisco Cisco Unified Wireless
                 CUWNS: {
                   label: "Cisco Unified Wireless Network Solution",
@@ -1950,6 +1949,12 @@ export const NAVBAR_MENUS = {
                   label: "Cisco Enterprise NSV Infrastructure",
                   value: "CENIS",
                   path: "/Cisco-Enterprise-NSV-Infrastructure",
+                },
+                // -- Cisco meraki
+                CISCO_MERAKI: {
+                  label: "Cisco Meraki",
+                  value: "CISCO_MERAKI",
+                  path: "/Cisco-Meraki",
                 },
                 // -- Cisco Aruba Centra
                 ARUBA_CENTRAL: {
@@ -2023,9 +2028,9 @@ export const NAVBAR_MENUS = {
                   path: "/security/Remote-Access-VPN-Security",
                 },
                 IAMM: {
-                  label: "Identify and Access Management/MFA",
+                  label: "Identity and Access Management/MFA",
                   value: "IAMM",
-                  path: "/security/Identify-Access-Management",
+                  path: "/security/Identity-Access-Management",
                 },
                 DNS_SECURITY: {
                   label: "DNS Security",
@@ -2137,7 +2142,7 @@ export const NAVBAR_MENUS = {
                 },
                 // -- Cisco Secure Endpoint
                 CSE: {
-                  label: "Cisco Secure Endpoint(AMP for Endpoint)",
+                  label: "Cisco Secure Endpoint(AMP)",
                   value: "CSE",
                   path: "/Cisco-Secure-Endpoint",
                 },
@@ -2280,9 +2285,9 @@ export const NAVBAR_MENUS = {
                   path: "/security/Remote-Access-VPN-Security",
                 },
                 IAMM: {
-                  label: "Identify and Access Management/MFA",
+                  label: "Identity and Access Management/MFA",
                   value: "IAMM",
-                  path: "/security/Identify-Access-Management",
+                  path: "/security/Identity-Access-Management",
                 },
                 DNS_SECURITY: {
                   label: "DNS Security",
@@ -2403,7 +2408,7 @@ export const NAVBAR_MENUS = {
                 },
                 // -- Cisco Secure Endpoint
                 CSE: {
-                  label: "Cisco Secure Endpoint(AMP for Endpoint)",
+                  label: "Cisco Secure Endpoint(AMP)",
                   value: "CSE",
                   path: "/Cisco-Secure-Endpoint",
                 },
@@ -2456,12 +2461,6 @@ export const NAVBAR_MENUS = {
                   value: "CISCO_SD_WAN",
                   path: "/Cisco-SD-WAN",
                 },
-                // -- Cisco meraki
-                CISCO_MERAKI: {
-                  label: "Cisco Meraki",
-                  value: "CISCO_MERAKI",
-                  path: "/Cisco-Meraki",
-                },
                 // -- Cisco Cisco Unified Wireless
                 CUWNS: {
                   label: "Cisco Unified Wireless Network Solution",
@@ -2473,6 +2472,12 @@ export const NAVBAR_MENUS = {
                   label: "Cisco Enterprise NSV Infrastructure",
                   value: "CENIS",
                   path: "/Cisco-Enterprise-NSV-Infrastructure",
+                },
+                // -- Cisco meraki
+                CISCO_MERAKI: {
+                  label: "Cisco Meraki",
+                  value: "CISCO_MERAKI",
+                  path: "/Cisco-Meraki",
                 },
                 // -- Cisco Aruba Centra
                 ARUBA_CENTRAL: {
@@ -2546,9 +2551,9 @@ export const NAVBAR_MENUS = {
                   path: "/security/Remote-Access-VPN-Security",
                 },
                 IAMM: {
-                  label: "Identify and Access Management/MFA",
+                  label: "Identity and Access Management/MFA",
                   value: "IAMM",
-                  path: "/security/Identify-Access-Management",
+                  path: "/security/Identity-Access-Management",
                 },
                 DNS_SECURITY: {
                   label: "DNS Security",
@@ -2669,7 +2674,7 @@ export const NAVBAR_MENUS = {
                 },
                 // -- Cisco Secure Endpoint
                 CSE: {
-                  label: "Cisco Secure Endpoint(AMP for Endpoint)",
+                  label: "Cisco Secure Endpoint(AMP)",
                   value: "CSE",
                   path: "/Cisco-Secure-Endpoint",
                 },
@@ -2722,12 +2727,7 @@ export const NAVBAR_MENUS = {
                   value: "CISCO_SD_WAN",
                   path: "/Cisco-SD-WAN",
                 },
-                // -- Cisco meraki
-                CISCO_MERAKI: {
-                  label: "Cisco Meraki",
-                  value: "CISCO_MERAKI",
-                  path: "/Cisco-Meraki",
-                },
+
                 // -- Cisco Cisco Unified Wireless
                 CUWNS: {
                   label: "Cisco Unified Wireless Network Solution",
@@ -2739,6 +2739,12 @@ export const NAVBAR_MENUS = {
                   label: "Cisco Enterprise NSV Infrastructure",
                   value: "CENIS",
                   path: "/Cisco-Enterprise-NSV-Infrastructure",
+                },
+                // -- Cisco meraki
+                CISCO_MERAKI: {
+                  label: "Cisco Meraki",
+                  value: "CISCO_MERAKI",
+                  path: "/Cisco-Meraki",
                 },
                 // -- Cisco Aruba Centra
                 ARUBA_CENTRAL: {
@@ -2759,10 +2765,10 @@ export const NAVBAR_MENUS = {
         },
       },
       /**
-       * CLOUD AND COMPUTING
+       * CLOUD & COMPUTING
        */
       CAC: {
-        label: "CLOUD AND COMPUTING",
+        label: "CLOUD & COMPUTING",
         value: "CAC",
         menus: {
           image: SECURITY_MAIN_IMAGE,
@@ -2811,9 +2817,9 @@ export const NAVBAR_MENUS = {
                   path: "/security/Remote-Access-VPN-Security",
                 },
                 IAMM: {
-                  label: "Identify and Access Management/MFA",
+                  label: "Identity and Access Management/MFA",
                   value: "IAMM",
-                  path: "/security/Identify-Access-Management",
+                  path: "/security/Identity-Access-Management",
                 },
                 DNS_SECURITY: {
                   label: "DNS Security",
@@ -2934,7 +2940,7 @@ export const NAVBAR_MENUS = {
                 },
                 // -- Cisco Secure Endpoint
                 CSE: {
-                  label: "Cisco Secure Endpoint(AMP for Endpoint)",
+                  label: "Cisco Secure Endpoint(AMP)",
                   value: "CSE",
                   path: "/Cisco-Secure-Endpoint",
                 },
@@ -2987,12 +2993,7 @@ export const NAVBAR_MENUS = {
                   value: "CISCO_SD_WAN",
                   path: "/Cisco-SD-WAN",
                 },
-                // -- Cisco meraki
-                CISCO_MERAKI: {
-                  label: "Cisco Meraki",
-                  value: "CISCO_MERAKI",
-                  path: "/Cisco-Meraki",
-                },
+
                 // -- Cisco Cisco Unified Wireless
                 CUWNS: {
                   label: "Cisco Unified Wireless Network Solution",
@@ -3004,6 +3005,12 @@ export const NAVBAR_MENUS = {
                   label: "Cisco Enterprise NSV Infrastructure",
                   value: "CENIS",
                   path: "/Cisco-Enterprise-NSV-Infrastructure",
+                },
+                // -- Cisco meraki
+                CISCO_MERAKI: {
+                  label: "Cisco Meraki",
+                  value: "CISCO_MERAKI",
+                  path: "/Cisco-Meraki",
                 },
                 // -- Cisco Aruba Centra
                 ARUBA_CENTRAL: {
@@ -3076,9 +3083,9 @@ export const NAVBAR_MENUS = {
                   path: "/security/Remote-Access-VPN-Security",
                 },
                 IAMM: {
-                  label: "Identify and Access Management/MFA",
+                  label: "Identity and Access Management/MFA",
                   value: "IAMM",
-                  path: "/security/Identify-Access-Management",
+                  path: "/security/Identity-Access-Management",
                 },
                 DNS_SECURITY: {
                   label: "DNS Security",
@@ -3199,7 +3206,7 @@ export const NAVBAR_MENUS = {
                 },
                 // -- Cisco Secure Endpoint
                 CSE: {
-                  label: "Cisco Secure Endpoint(AMP for Endpoint)",
+                  label: "Cisco Secure Endpoint(AMP)",
                   value: "CSE",
                   path: "/Cisco-Secure-Endpoint",
                 },
@@ -3252,12 +3259,7 @@ export const NAVBAR_MENUS = {
                   value: "CISCO_SD_WAN",
                   path: "/Cisco-SD-WAN",
                 },
-                // -- Cisco meraki
-                CISCO_MERAKI: {
-                  label: "Cisco Meraki",
-                  value: "CISCO_MERAKI",
-                  path: "/Cisco-Meraki",
-                },
+
                 // -- Cisco Cisco Unified Wireless
                 CUWNS: {
                   label: "Cisco Unified Wireless Network Solution",
@@ -3269,6 +3271,12 @@ export const NAVBAR_MENUS = {
                   label: "Cisco Enterprise NSV Infrastructure",
                   value: "CENIS",
                   path: "/Cisco-Enterprise-NSV-Infrastructure",
+                },
+                // -- Cisco meraki
+                CISCO_MERAKI: {
+                  label: "Cisco Meraki",
+                  value: "CISCO_MERAKI",
+                  path: "/Cisco-Meraki",
                 },
                 // -- Cisco Aruba Centra
                 ARUBA_CENTRAL: {
@@ -3325,9 +3333,9 @@ export const NAVBAR_MENUS = {
                   path: "/lan/switching",
                 },
                 SDN: {
-                  label: "Software Denied Networking",
+                  label: "Software Defined Networking",
                   value: "SDN",
-                  path: "/lan/software-denied-networking",
+                  path: "/lan/software-Defined-networking",
                 },
                 CMN: {
                   label: "Cloud Managed Network",
@@ -3366,9 +3374,9 @@ export const NAVBAR_MENUS = {
                   path: "/wan/SASE",
                 },
                 SDN: {
-                  label: "Software Denied Networking",
+                  label: "Software Defined Networking",
                   value: "SDN",
-                  path: "/wan/software-denied-networking",
+                  path: "/wan/software-Defined-networking",
                 },
                 VPN: {
                   label: "Virtual Private Network",
@@ -3408,7 +3416,7 @@ export const NAVBAR_MENUS = {
                   path: "/wireless-and-mobility/Location-Based-Services",
                 },
                 CMW: {
-                  label: "Cloud Managed wireless",
+                  label: "Cloud Managed Wireless",
                   value: "CMW",
                   path: "/wireless-and-mobility/Cloud-Managed-wireless",
                 },
@@ -3467,12 +3475,7 @@ export const NAVBAR_MENUS = {
                   value: "CISCO_SD_WAN",
                   path: "/Cisco-SD-WAN",
                 },
-                // -- Cisco meraki
-                CISCO_MERAKI: {
-                  label: "Cisco Meraki",
-                  value: "CISCO_MERAKI",
-                  path: "/Cisco-Meraki",
-                },
+
                 // -- Cisco Cisco Unified Wireless
                 CUWNS: {
                   label: "Cisco Unified Wireless Network Solution",
@@ -3484,6 +3487,12 @@ export const NAVBAR_MENUS = {
                   label: "Cisco Enterprise NSV Infrastructure",
                   value: "CENIS",
                   path: "/Cisco-Enterprise-NSV-Infrastructure",
+                },
+                // -- Cisco meraki
+                CISCO_MERAKI: {
+                  label: "Cisco Meraki",
+                  value: "CISCO_MERAKI",
+                  path: "/Cisco-Meraki",
                 },
                 // -- Cisco Aruba Centra
                 ARUBA_CENTRAL: {
@@ -3516,12 +3525,7 @@ export const NAVBAR_MENUS = {
                   value: "CISCO_SD_WAN_2",
                   path: "/Cisco-SD-WAN",
                 },
-                // -- Cisco meraki
-                CISCO_MERAKI_2: {
-                  label: "Cisco Meraki",
-                  value: "CISCO_MERAKI_2",
-                  path: "/Cisco-Meraki",
-                },
+
                 // -- Cisco Cisco Unified Wireless
                 CUWNS_2: {
                   label: "Cisco Unified Wireless Network Solution",
@@ -3533,6 +3537,12 @@ export const NAVBAR_MENUS = {
                   label: "Cisco Enterprise NSV Infrastructure",
                   value: "CENIS_2",
                   path: "/Cisco-Enterprise-NSV-Infrastructure",
+                },
+                // -- Cisco meraki
+                CISCO_MERAKI_2: {
+                  label: "Cisco Meraki",
+                  value: "CISCO_MERAKI_2",
+                  path: "/Cisco-Meraki",
                 },
                 // -- Cisco Aruba Centra
                 ARUBA_CENTRAL_2: {
@@ -3609,9 +3619,9 @@ export const NAVBAR_MENUS = {
                   path: "/security/Remote-Access-VPN-Security",
                 },
                 IAMM: {
-                  label: "Identify and Access Management/MFA",
+                  label: "Identity and Access Management/MFA",
                   value: "IAMM",
-                  path: "/security/Identify-Access-Management",
+                  path: "/security/Identity-Access-Management",
                 },
                 DNS_SECURITY: {
                   label: "DNS Security",
@@ -3732,7 +3742,7 @@ export const NAVBAR_MENUS = {
                 },
                 // -- Cisco Secure Endpoint
                 CSE: {
-                  label: "Cisco Secure Endpoint(AMP for Endpoint)",
+                  label: "Cisco Secure Endpoint(AMP)",
                   value: "CSE",
                   path: "/Cisco-Secure-Endpoint",
                 },
@@ -3785,12 +3795,7 @@ export const NAVBAR_MENUS = {
                   value: "CISCO_SD_WAN",
                   path: "/Cisco-SD-WAN",
                 },
-                // -- Cisco meraki
-                CISCO_MERAKI: {
-                  label: "Cisco Meraki",
-                  value: "CISCO_MERAKI",
-                  path: "/Cisco-Meraki",
-                },
+
                 // -- Cisco Cisco Unified Wireless
                 CUWNS: {
                   label: "Cisco Unified Wireless Network Solution",
@@ -3802,6 +3807,12 @@ export const NAVBAR_MENUS = {
                   label: "Cisco Enterprise NSV Infrastructure",
                   value: "CENIS",
                   path: "/Cisco-Enterprise-NSV-Infrastructure",
+                },
+                // -- Cisco meraki
+                CISCO_MERAKI: {
+                  label: "Cisco Meraki",
+                  value: "CISCO_MERAKI",
+                  path: "/Cisco-Meraki",
                 },
                 // -- Cisco Aruba Centra
                 ARUBA_CENTRAL: {
@@ -3872,9 +3883,9 @@ export const NAVBAR_MENUS = {
                   path: "/security/Remote-Access-VPN-Security",
                 },
                 IAMM: {
-                  label: "Identify and Access Management/MFA",
+                  label: "Identity and Access Management/MFA",
                   value: "IAMM",
-                  path: "/security/Identify-Access-Management",
+                  path: "/security/Identity-Access-Management",
                 },
                 DNS_SECURITY: {
                   label: "DNS Security",
@@ -3986,7 +3997,7 @@ export const NAVBAR_MENUS = {
                 },
                 // -- Cisco Secure Endpoint
                 CSE: {
-                  label: "Cisco Secure Endpoint(AMP for Endpoint)",
+                  label: "Cisco Secure Endpoint(AMP)",
                   value: "CSE",
                   path: "/Cisco-Secure-Endpoint",
                 },
@@ -4039,12 +4050,7 @@ export const NAVBAR_MENUS = {
                   value: "CISCO_SD_WAN",
                   path: "/Cisco-SD-WAN",
                 },
-                // -- Cisco meraki
-                CISCO_MERAKI: {
-                  label: "Cisco Meraki",
-                  value: "CISCO_MERAKI",
-                  path: "/Cisco-Meraki",
-                },
+
                 // -- Cisco Cisco Unified Wireless
                 CUWNS: {
                   label: "Cisco Unified Wireless Network Solution",
@@ -4056,6 +4062,12 @@ export const NAVBAR_MENUS = {
                   label: "Cisco Enterprise NSV Infrastructure",
                   value: "CENIS",
                   path: "/Cisco-Enterprise-NSV-Infrastructure",
+                },
+                // -- Cisco meraki
+                CISCO_MERAKI: {
+                  label: "Cisco Meraki",
+                  value: "CISCO_MERAKI",
+                  path: "/Cisco-Meraki",
                 },
                 // -- Cisco Aruba Centra
                 ARUBA_CENTRAL: {
@@ -4126,9 +4138,9 @@ export const NAVBAR_MENUS = {
                   path: "/security/Remote-Access-VPN-Security",
                 },
                 IAMM: {
-                  label: "Identify and Access Management/MFA",
+                  label: "Identity and Access Management/MFA",
                   value: "IAMM",
-                  path: "/security/Identify-Access-Management",
+                  path: "/security/Identity-Access-Management",
                 },
                 DNS_SECURITY: {
                   label: "DNS Security",
@@ -4249,7 +4261,7 @@ export const NAVBAR_MENUS = {
                 },
                 // -- Cisco Secure Endpoint
                 CSE: {
-                  label: "Cisco Secure Endpoint(AMP for Endpoint)",
+                  label: "Cisco Secure Endpoint(AMP)",
                   value: "CSE",
                   path: "/Cisco-Secure-Endpoint",
                 },
@@ -4302,12 +4314,7 @@ export const NAVBAR_MENUS = {
                   value: "CISCO_SD_WAN",
                   path: "/Cisco-SD-WAN",
                 },
-                // -- Cisco meraki
-                CISCO_MERAKI: {
-                  label: "Cisco Meraki",
-                  value: "CISCO_MERAKI",
-                  path: "/Cisco-Meraki",
-                },
+
                 // -- Cisco Cisco Unified Wireless
                 CUWNS: {
                   label: "Cisco Unified Wireless Network Solution",
@@ -4319,6 +4326,12 @@ export const NAVBAR_MENUS = {
                   label: "Cisco Enterprise NSV Infrastructure",
                   value: "CENIS",
                   path: "/Cisco-Enterprise-NSV-Infrastructure",
+                },
+                // -- Cisco meraki
+                CISCO_MERAKI: {
+                  label: "Cisco Meraki",
+                  value: "CISCO_MERAKI",
+                  path: "/Cisco-Meraki",
                 },
                 // -- Cisco Aruba Centra
                 ARUBA_CENTRAL: {
@@ -4389,9 +4402,9 @@ export const NAVBAR_MENUS = {
                   path: "/security/Remote-Access-VPN-Security",
                 },
                 IAMM: {
-                  label: "Identify and Access Management/MFA",
+                  label: "Identity and Access Management/MFA",
                   value: "IAMM",
-                  path: "/security/Identify-Access-Management",
+                  path: "/security/Identity-Access-Management",
                 },
                 DNS_SECURITY: {
                   label: "DNS Security",
@@ -4512,7 +4525,7 @@ export const NAVBAR_MENUS = {
                 },
                 // -- Cisco Secure Endpoint
                 CSE: {
-                  label: "Cisco Secure Endpoint(AMP for Endpoint)",
+                  label: "Cisco Secure Endpoint(AMP)",
                   value: "CSE",
                   path: "/Cisco-Secure-Endpoint",
                 },
@@ -4565,12 +4578,7 @@ export const NAVBAR_MENUS = {
                   value: "CISCO_SD_WAN",
                   path: "/Cisco-SD-WAN",
                 },
-                // -- Cisco meraki
-                CISCO_MERAKI: {
-                  label: "Cisco Meraki",
-                  value: "CISCO_MERAKI",
-                  path: "/Cisco-Meraki",
-                },
+
                 // -- Cisco Cisco Unified Wireless
                 CUWNS: {
                   label: "Cisco Unified Wireless Network Solution",
@@ -4582,6 +4590,12 @@ export const NAVBAR_MENUS = {
                   label: "Cisco Enterprise NSV Infrastructure",
                   value: "CENIS",
                   path: "/Cisco-Enterprise-NSV-Infrastructure",
+                },
+                // -- Cisco meraki
+                CISCO_MERAKI: {
+                  label: "Cisco Meraki",
+                  value: "CISCO_MERAKI",
+                  path: "/Cisco-Meraki",
                 },
                 // -- Cisco Aruba Centra
                 ARUBA_CENTRAL: {
@@ -4652,9 +4666,9 @@ export const NAVBAR_MENUS = {
                   path: "/security/Remote-Access-VPN-Security",
                 },
                 IAMM: {
-                  label: "Identify and Access Management/MFA",
+                  label: "Identity and Access Management/MFA",
                   value: "IAMM",
-                  path: "/security/Identify-Access-Management",
+                  path: "/security/Identity-Access-Management",
                 },
                 DNS_SECURITY: {
                   label: "DNS Security",
@@ -4775,7 +4789,7 @@ export const NAVBAR_MENUS = {
                 },
                 // -- Cisco Secure Endpoint
                 CSE: {
-                  label: "Cisco Secure Endpoint(AMP for Endpoint)",
+                  label: "Cisco Secure Endpoint(AMP)",
                   value: "CSE",
                   path: "/Cisco-Secure-Endpoint",
                 },
@@ -4828,12 +4842,7 @@ export const NAVBAR_MENUS = {
                   value: "CISCO_SD_WAN",
                   path: "/Cisco-SD-WAN",
                 },
-                // -- Cisco meraki
-                CISCO_MERAKI: {
-                  label: "Cisco Meraki",
-                  value: "CISCO_MERAKI",
-                  path: "/Cisco-Meraki",
-                },
+
                 // -- Cisco Cisco Unified Wireless
                 CUWNS: {
                   label: "Cisco Unified Wireless Network Solution",
@@ -4845,6 +4854,12 @@ export const NAVBAR_MENUS = {
                   label: "Cisco Enterprise NSV Infrastructure",
                   value: "CENIS",
                   path: "/Cisco-Enterprise-NSV-Infrastructure",
+                },
+                // -- Cisco meraki
+                CISCO_MERAKI: {
+                  label: "Cisco Meraki",
+                  value: "CISCO_MERAKI",
+                  path: "/Cisco-Meraki",
                 },
                 // -- Cisco Aruba Centra
                 ARUBA_CENTRAL: {
@@ -4915,9 +4930,9 @@ export const NAVBAR_MENUS = {
                   path: "/security/Remote-Access-VPN-Security",
                 },
                 IAMM: {
-                  label: "Identify and Access Management/MFA",
+                  label: "Identity and Access Management/MFA",
                   value: "IAMM",
-                  path: "/security/Identify-Access-Management",
+                  path: "/security/Identity-Access-Management",
                 },
                 DNS_SECURITY: {
                   label: "DNS Security",
@@ -5038,7 +5053,7 @@ export const NAVBAR_MENUS = {
                 },
                 // -- Cisco Secure Endpoint
                 CSE: {
-                  label: "Cisco Secure Endpoint(AMP for Endpoint)",
+                  label: "Cisco Secure Endpoint(AMP)",
                   value: "CSE",
                   path: "/Cisco-Secure-Endpoint",
                 },
@@ -5091,12 +5106,7 @@ export const NAVBAR_MENUS = {
                   value: "CISCO_SD_WAN",
                   path: "/Cisco-SD-WAN",
                 },
-                // -- Cisco meraki
-                CISCO_MERAKI: {
-                  label: "Cisco Meraki",
-                  value: "CISCO_MERAKI",
-                  path: "/Cisco-Meraki",
-                },
+
                 // -- Cisco Cisco Unified Wireless
                 CUWNS: {
                   label: "Cisco Unified Wireless Network Solution",
@@ -5108,6 +5118,12 @@ export const NAVBAR_MENUS = {
                   label: "Cisco Enterprise NSV Infrastructure",
                   value: "CENIS",
                   path: "/Cisco-Enterprise-NSV-Infrastructure",
+                },
+                // -- Cisco meraki
+                CISCO_MERAKI: {
+                  label: "Cisco Meraki",
+                  value: "CISCO_MERAKI",
+                  path: "/Cisco-Meraki",
                 },
                 // -- Cisco Aruba Centra
                 ARUBA_CENTRAL: {

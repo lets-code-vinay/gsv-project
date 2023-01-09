@@ -10,7 +10,7 @@ export const TRENDING_CONFIGS = Object.freeze({
     value: "SASE",
     title: "What Is Secure Access Service Edge (SASE)?",
     subtitle: `
-      SASE refers to the whole framework, not a specific technology.Gartner,
+      SASE refers to the whole framework, not a specific technology. Gartner,
       in its 2019 report "The Future of Network Security is in the Cloud,      defined the SASE framework as a cloud -
       based cybersecurity solution that offers comprehensive WAN capabilities with comprehensive network  security functions
         (such as SWG, CASB, FWaaS, and ZTNA) to support the dynamic secure access needs of digital enterprises.
@@ -26,7 +26,7 @@ export const TRENDING_CONFIGS = Object.freeze({
     value: "SDWAN",
     title: "What Is SDWAN-as-a-Service?",
     subtitle: `
-      Post- COVID, SD - WAN has become far more critical as businesses shut down offices, driving either a hybrid work environment or a complete work - from - home(WFH) strategy.WFH went from temporary to permanent for many companies, which redefined the network edge    
+      Post- COVID, SD - WAN has become far more critical as businesses shut down offices, driving either a hybrid work environment or a complete work - from - home(WFH) strategy. WFH went from temporary to permanent for many companies, which redefined the network edge    
       VPNs, often the point - to - point solution for remote workers, gave way to always - on SD - WAN appliances for many tasks as the network edge extended into employees' homes. With businesses becoming more distributed, they have accelerated their migration plans to SD-WAN because of the improved experience and security for their WFH workforce.
     `,
     icon: SDWAN,
@@ -50,7 +50,7 @@ export const TRENDING_CONFIGS = Object.freeze({
     value: "HYPER_CONVERGED",
     title: "What Is Hyper Converged Infrastructure?",
     subtitle: `
-      Hyper converged infrastructure (HCI) is a software-defined, unified system that combines a traditional data center's elements (Storage, Compute, Networking & Management) to increase efficiency and enable central management.   
+      Hyper Converged Infrastructure (HCI) is a software-defined, unified system that combines a traditional data center's elements (Storage, Compute, Networking & Management) to increase efficiency and enable central management.   
       Using this technology, we at GSV can help you with one-click automation, one-click upgrades and one management interface for your entire infrastructure. Implementation of HCI will dramatically reduce your time & effort for deploying & maintaining infrastructure, enabling IT teams to focus on needle-moving initiatives.
     `,
     icon: HYPER_CONVERGED,

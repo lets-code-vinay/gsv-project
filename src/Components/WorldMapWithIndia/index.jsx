@@ -91,7 +91,7 @@ class WorldMapWithIndia extends Component {
         lastSelected.isHover = false;
       }
 
-      //   // This is needed so that "un hovering" previous polygon does not hide tooltip
+    // This is needed so that "un hovering" previous polygon does not hide tooltip
       ev.target.isHover = false;
       ev.target.isHover = true;
     });
@@ -123,10 +123,6 @@ class WorldMapWithIndia extends Component {
       .getElementById("select-us")
       .addEventListener("click", (_) => zoomToCountry("US"));
     document
-      .getElementById("select-brazil")
-      .addEventListener("click", (_) => zoomToCountry("BR"));
-
-    document
       .getElementById("select-india")
       .addEventListener("click", (_) => zoomToCountry("IN"));
     document
@@ -148,9 +144,7 @@ class WorldMapWithIndia extends Component {
           <Typography className="county-name" id="select-us">
             United States
           </Typography>
-          <Typography className="county-name" id="select-brazil">
-            Brazil
-          </Typography>
+       
           <Typography className="county-name" id="select-india">
             India
           </Typography>

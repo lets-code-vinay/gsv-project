@@ -563,7 +563,7 @@ export const TESTIMONIAL_CARD_DATA = {
       client_3: {
         value: "client_3",
         about:
-          "Our requirement was quite complex and 3 companies we contacted earlier denied the possibility of getting that to work. With less hope, we reached out to GSV but on the very first call they captured entire requirement and by early next morning, I had an email from them with the solution. They made it look so so simple. What a great team they have! Highly recommended!",
+          "Our requirement was quite complex and 3 companies we contacted earlier Defined the possibility of getting that to work. With less hope, we reached out to GSV but on the very first call they captured entire requirement and by early next morning, I had an email from them with the solution. They made it look so so simple. What a great team they have! Highly recommended!",
         author: "Syed Umair",
         designation: "Group Head of IT",
         company: "The Color Company",
