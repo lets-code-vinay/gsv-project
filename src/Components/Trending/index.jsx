@@ -9,6 +9,7 @@ import TRENDING_LOGO from "../../Assets/Icons/trending.svg";
 
 import { TRENDING_CONFIGS } from "../../Configs/Trending";
 import { THEME_COLOR } from "../../Configs/Theme";
+import DialogComponent from "../Dialog";
 
 const Trending = () => {
   const classes = useStyles();
@@ -39,7 +40,7 @@ const Trending = () => {
   /**
    * @description Handle click tab button
    */
-  const handleTabClick = () => {};
+  const handleTabClick = () => { };
 
   return (
     <main className={`${classes.containerTrending} containerTrending`}>
@@ -130,13 +131,19 @@ const Trending = () => {
 
                         {link && (
                           <a
-                            href={link}
-                            target="_blank"
+                            // href={link}
+                            // target="_blank"
                             className="btn btn-outline-primary learn-link"
-                            rel="noreferrer"
+                            // rel="noreferrer"
                           >
                             <Typography className="learn-button">
-                              {`Learn More...`}
+                              {/* {`Learn More...`} */}
+
+                              <DialogComponent
+                                title="Learn More"
+                                heading={title}
+                                para={subtitle}
+                              />
                             </Typography>
                           </a>
                         )}
@@ -161,7 +168,7 @@ export default Trending;
 
 const useStyles = makeStyles((theme) => ({
   containerTrending: {
-    padding: "2% 4%",
+    padding: "0% 4%",
     backgroundColor: THEME_COLOR.light_sky,
   },
 

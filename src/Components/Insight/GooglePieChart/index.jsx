@@ -5,6 +5,7 @@ import "./style.css";
 
 import Logo from "../../../Assets/Images/blueLogo.png";
 import { DEFAULT_SERVICES, INSIGHT_DATA } from "../insightData";
+import DialogComponent from "../../Dialog";
 
 const PieChart = ({ fetchInsightDetails }) => {
   const [slice, setSlice] = useState(null);
@@ -199,7 +200,11 @@ const PieChart = ({ fetchInsightDetails }) => {
                     onMouseLeave={handleButtonMouseLeave(index)}
                     onMouseOver={(e) => e.preventDefault()}
                   >
-                    {button_text}
+                    <DialogComponent
+                      title={button_text}
+                      heading={label}
+                      para={insightData}
+                    />
                   </Button>
                 )}
               </Box>

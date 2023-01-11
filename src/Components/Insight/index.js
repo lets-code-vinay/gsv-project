@@ -10,6 +10,7 @@ import {
 import "./styles.css";
 import PieChart from "./GooglePieChart";
 import { DEFAULT_SERVICES, INSIGHT_DATA } from "./insightData";
+import DialogComponent from "../Dialog";
 
 const Insight = () => {
   const classes = useStyles();
@@ -71,7 +72,11 @@ const Insight = () => {
                   backgroundColor: color,
                 }}
               >
-                Know More
+                <DialogComponent
+                  title="Know More"
+                  heading={title}
+                  para={info}
+                />
               </Button>
             </Box>
           </Grid>
