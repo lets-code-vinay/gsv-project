@@ -1,0 +1,181 @@
+.MuiPopover-paper {
+  min-height: 65vh;
+  border-radius: 10px;
+}
+.clientCardTC {
+  min-height: 55vh;
+}
+
+@media screen and (max-width: 480px) {
+  .clientCardTC,
+  .MuiBox-root.MuiBox-root-270.makeStyles-clientGridTC-67 {
+    margin: auto 16% !important;
+    width: 70%;
+  }
+
+  .clientCardTC .testimonialCardMatterTC {
+    font-size: 0.8rem !important;
+    font-weight: 500;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-break: break-all;
+    height: 10.5vh;
+
+    display: -webkit-box !important;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+  }
+
+  .clientCardTC .testimonialCardUserTC {
+    font-size: 0.7rem;
+    font-weight: 400;
+  }
+  .clientCardTC .testimonialImageTC {
+    margin: 9% auto;
+    min-height: 40px;
+    max-height: 70px;
+  }
+
+  .makeStyles-clientCardTC-68 {
+    width: 80%;
+    margin: auto 16%;
+    padding: 1rem 1rem;
+    box-shadow: 0 0 14px 0px rgb(10 10 10 / 20%);
+    border-radius: 1rem;
+  }
+  .clientCardTC {
+    height: 30vh;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 760px) {
+  .makeStyles-clientCardTC-68 {
+    width: 80%;
+    margin: auto 16%;
+    padding: 1rem 1rem;
+    box-shadow: 0 0 14px 0px rgb(10 10 10 / 20%);
+    border-radius: 1rem;
+  }
+  .clientCardTC {
+    height: 30vh;
+  }
+  .testimonialImageTC {
+    width: 66%;
+    margin: 6% auto;
+    min-height: 80px;
+    max-height: 90px;
+  }
+  .clientCardTC .testimonialCardUserTC {
+    font-size: 0.7rem;
+    font-weight: 400;
+  }
+  .clientCardTC .testimonialImageTC {
+    margin: 9% auto;
+    min-height: 40px;
+    max-height: 70px;
+  }
+}
+
+@media screen and (min-width: 761px) and (max-width: 1024px) {
+  .clientCardTC {
+    height: 35vh !important;
+    margin: 1rem auto !important;
+  }
+
+  .makeStyles-clientCardTC-68 {
+    width: 77% !important;
+    margin: auto 13% !important;
+    padding: 1rem 1.5rem !important;
+    box-shadow: 0 0 14px 0px rgb(10 10 10 / 20%) !important;
+    border-radius: 1rem !important;
+    max-height: 400px !important;
+    min-height: 420px !important;
+  }
+
+  .clientCardTC .testimonialCardMatterTC {
+    font-size: 0.8rem !important;
+    font-weight: 500;
+    margin: 0% 0% 7% 0 !important;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-break: break-all;
+    height: 11vh;
+
+    display: -webkit-box !important;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+  }
+  .testimonialImageTC {
+    margin: 10% auto;
+    min-height: 60px;
+    max-height: 80px;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .clientCardTC {
+    /* height: 40vh !important; */
+    margin: 1rem auto !important;
+  }
+  .clientCardTC .testimonialCardMatterTC {
+    font-size: 1rem !important;
+    font-weight: 500;
+    margin: 0% 0% 7% 0 !important;
+    text-overflow: ellipsis;
+    overflow: scroll;
+  }
+  .clientCardTC .testimonialCardUserTC {
+    font-size: 0.7rem;
+    text-indent: 10%;
+  }
+  .clientCardTC .testimonialCardUserTC {
+    font-size: 0.7rem;
+    text-indent: 10%;
+  }
+
+  .testimonialImageTC {
+    width: 50%;
+    margin: 10% auto;
+    min-height: 70px;
+    max-height: 90px;
+  }
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1920px) {
+  .clientCardTC .testimonialCardMatterTC {
+    font-size: 1.2rem !important;
+    font-weight: 500;
+    margin: 10% 0% 13% 0 !important;
+  }
+  .testimonialCardUserTC {
+    font-size: 1rem !important;
+    text-indent: 10% !important;
+  }
+  .testimonialImageTC {
+    width: 50%;
+    margin: 10% auto;
+    min-height: 70px;
+    max-height: 100px;
+  }
+}
+
+@media screen and (min-width: 1921px) and (max-width: 2560px) {
+  .clientCardTC .testimonialCardMatterTC {
+    font-size: 1.5rem !important;
+    font-weight: 500;
+    margin: 10% 0% 10% 0 !important;
+  }
+
+  .testimonialCardUserTC {
+    font-size: 1.3rem !important;
+    text-indent: 10% !important;
+  }
+  .testimonialImageTC {
+    width: 30%;
+    margin: 10% auto;
+    min-height: 70px;
+    max-height: 100px;
+  }
+}

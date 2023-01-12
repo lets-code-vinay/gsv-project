@@ -8,6 +8,8 @@ import "slick-carousel/slick/slick.css";
 
 import { TESTIMONIAL_CARD_DATA } from "../../Configs/Testimonials";
 import { responsive_client, responsive_slider } from "./configs";
+import CustomPopOver from "../CustomPopOver";
+import TestimonialCard from "../TestimonialCard";
 
 const Testimonials = () => {
   const [testimonialArr] = useState(Object.values(TESTIMONIAL_CARD_DATA));
@@ -17,6 +19,18 @@ const Testimonials = () => {
   const [activeSlide, setActiveSlide] = useState(0);
   const [testimonialClient, setTestimonialClient] = useState({});
   const [clientCount, setClientCount] = useState(3);
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  const [testimonialCArdData, setTestimonialCardData] = useState({
+    clientCount: 0,
+    about: "",
+    author: "",
+    designation: "",
+    company: "",
+    image: "",
+    value: "",
+  });
+
+  const [openTestimonial, setOpenTestimonial] = useState(false);
 
   useEffect(() => {
     setTestimonialClient(
@@ -40,68 +54,190 @@ const Testimonials = () => {
     setActiveSlide(index);
   };
 
+  /**
+   * @description Open Popup to read large testimonial to read more
+   */
+  const handleReadTestimonial =
+    (clientCount, about, author, designation, company, image, value) =>
+    (event) => {
+      console.log("handleReadTestimonial", event.currentTarget);
+      setAnchorEl(event.currentTarget);
+      setOpenTestimonial(true);
+      setTestimonialCardData({
+        ...testimonialCArdData,
+        clientCount: clientCount,
+        about: about,
+        author: author,
+        designation: designation,
+        company: company,
+        image: image,
+        value: value,
+      });
+    };
+
+  /**
+   * @description Close Popup
+   */
+  const handleClose = () => {
+    setOpenTestimonial(!openTestimonial);
+  };
+
   return (
-    <Box className={`${classes.testimonials} testimonials`}>
-      <Box className={`${classes.testimonialLogo} testimonialLogo`}>
-        <Typography
-          variant="h4"
-          className={`${classes.testimonialTitle} testimonialTitle`}
-        >
-          What our customers are saying
-        </Typography>
-      </Box>
+    <>
+      <CustomPopOver
+        open={openTestimonial}
+        msg={
+          <TestimonialCard
+            clientCount={testimonialCArdData?.clientCount}
+            about={testimonialCArdData?.about}
+            author={testimonialCArdData?.author}
+            designation={testimonialCArdData?.designation}
+            company={testimonialCArdData?.company}
+            image={testimonialCArdData?.image}
+            value={testimonialCArdData?.value}
+          />
+        }
+        onClose={handleClose}
+        anchorEl={anchorEl}
+        clientCount={testimonialCArdData?.clientCount}
+      />
+      <Box className={`${classes.testimonials} testimonials`}>
+        <Box className={`${classes.testimonialLogo} testimonialLogo`}>
+          <Typography
+            variant="h4"
+            className={`${classes.testimonialTitle} testimonialTitle`}
+          >
+            What our customers are saying
+          </Typography>
+        </Box>
 
-      <Box className="container-fluid containerClass">
-        <Slider
-          className="sliderPadding"
-          afterChange={(current, next) => {
-            setActiveSlide(current);
-          }}
-          infinite={true}
-          slidesToShow={5}
-          slidesToScroll={1}
-          centerMode={true}
-          nextArrow={<ChevronRight className="rightArrow" />}
-          prevArrow={<ChevronLeft className="leftArrow" />}
-          responsive={responsive_slider}
-        >
-          {testimonialArr.map(({ value = "", label = "" }, index) => {
-            return (
-              <Box key={`${value}-${index}`}>
-                <Typography
-                  variant="h6"
-                  className={`${classes.clientTitle} clientTitle`}
-                  onClick={handleCurrentSlide(index)}
-                >
-                  {label}
-                </Typography>
-              </Box>
-            );
-          })}
-        </Slider>
+        <Box className="container-fluid containerClass">
+          <Slider
+            className="sliderPadding"
+            afterChange={(current, next) => {
+              setActiveSlide(current);
+            }}
+            infinite={true}
+            slidesToShow={5}
+            slidesToScroll={1}
+            centerMode={true}
+            nextArrow={
+              <ChevronRight className="rightArrow" onClick={handleClose} />
+            }
+            prevArrow={
+              <ChevronLeft className="leftArrow" onClick={handleClose} />
+            }
+            responsive={responsive_slider}
+          >
+            {testimonialArr.map(({ value = "", label = "" }, index) => {
+              return (
+                <Box key={`${value}-${index}`}>
+                  <Typography
+                    variant="h6"
+                    className={`${classes.clientTitle} clientTitle`}
+                    onClick={handleCurrentSlide(index)}
+                  >
+                    {label}
+                  </Typography>
+                </Box>
+              );
+            })}
+          </Slider>
 
-        {/* --- second slider------- */}
-        {clientCount >= 3 ? (
-          <Box className="testimonialDomainClientsSection">
-            <Slider
-              className="testimonialDomainClients"
-              slidesToShow={3}
-              swipeToSlide={true}
-              focusOnSelect={true}
-              slidesToScroll={1}
-              infinite={true}
-              initialSlide={2}
-              nextArrow={
-                <ChevronRight
-                  className={`${classes.arrowRightClient} arrowRightClient`}
-                />
-              }
-              prevArrow={
-                <ChevronLeft
-                  className={`${classes.arrowLeftClient} arrowLeftClient`}
-                />
-              }
-              responsive={responsive_client}
+          {/* --- second slider------- */}
+          {clientCount >= 3 ? (
+            <Box className="testimonialDomainClientsSection">
+              <Slider
+                className="testimonialDomainClients"
+                slidesToShow={3}
+                swipeToSlide={true}
+                focusOnSelect={true}
+                slidesToScroll={1}
+                infinite={true}
+                initialSlide={2}
+                nextArrow={
+                  <ChevronRight
+                    className={`${classes.arrowRightClient} arrowRightClient`}
+                    onClick={handleClose}
+                  />
+                }
+                prevArrow={
+                  <ChevronLeft
+                    className={`${classes.arrowLeftClient} arrowLeftClient`}
+                    onClick={handleClose}
+                  />
+                }
+                responsive={responsive_client}
+              >
+                {Object.values(testimonialClient).map(
+                  (
+                    {
+                      value = "",
+                      about = "",
+                      author = "",
+                      image = "",
+                      designation = "",
+                      company = "",
+                    },
+                    index
+                  ) => {
+                    if (about.length < 1) return true;
+                    return (
+                      <Box
+                        item
+                        xs={12}
+                        sm={12}
+                        md={4}
+                        lg={4}
+                        key={`${value}-${index}`}
+                        className={`${classes.clientGrid} clientGrid`}
+                        onMouseEnter={handleReadTestimonial(
+                          clientCount,
+                          about,
+                          author,
+                          designation,
+                          company,
+                          image,
+                          value
+                        )}
+                        onMouseLeave={handleClose}
+                      >
+                        <Box
+                          className={`${classes.clientCard} clientCard`}
+                          style={{
+                            maxWidth:
+                              clientCount >= 1 && clientCount < 3
+                                ? "60%"
+                                : "75%",
+                          }}
+                        >
+                          <Typography
+                            variant="h5"
+                            className={`${classes.testimonialCardMatter} testimonialCardMatter`}
+                          >
+                            "{about}"
+                          </Typography>
+                          <Typography
+                            variant="body1"
+                            className={`${classes.testimonialCardUser} testimonialCardUser`}
+                          >
+                            <strong>{author},</strong> {designation}-{company}
+                          </Typography>
+                          <img
+                            className={`${classes.testimonialImage} testimonialImage`}
+                            src={image}
+                            alt={value}
+                          />
+                        </Box>
+                      </Box>
+                    );
+                  }
+                )}
+              </Slider>
+            </Box>
+          ) : (
+            <Box
+              className={`${classes.testimonialDomainClientsSectionLessThan3} testimonialDomainClientsSectionLessThan3}`}
             >
               {Object.values(testimonialClient).map(
                 (
@@ -124,10 +260,20 @@ const Testimonials = () => {
                       md={4}
                       lg={4}
                       key={`${value}-${index}`}
-                      className={`${classes.clientGrid} clientGrid`}
+                      className={`${classes.clientGridLessThan3} clientGridLessThan3`}
+                      onMouseEnter={handleReadTestimonial(
+                        clientCount,
+                        about,
+                        author,
+                        designation,
+                        company,
+                        image,
+                        value
+                      )}
+                      onMouseLeave={handleClose}
                     >
                       <Box
-                        className={`${classes.clientCard} clientCard`}
+                        className={`${classes.clientCardLessThan3} clientCardLessThan3`}
                         style={{
                           maxWidth:
                             clientCount >= 1 && clientCount < 3 ? "60%" : "75%",
@@ -135,92 +281,35 @@ const Testimonials = () => {
                       >
                         <Typography
                           variant="h5"
-                          className={`${classes.testimonialCardMatter} testimonialCardMatter`}
+                          className={`${classes.testimonialCardMatterLessThan3} testimonialCardMatterLessThan3`}
                         >
                           "{about}"
                         </Typography>
                         <Typography
                           variant="body1"
-                          className={`${classes.testimonialCardUser} testimonialCardUser`}
+                          className={`${classes.testimonialCardUserLessThan3} testimonialCardUserLessThan3`}
                         >
                           <strong>{author},</strong> {designation}-{company}
                         </Typography>
-                        <img
-                          className={`${classes.testimonialImage} testimonialImage`}
-                          src={image}
-                          alt={value}
-                        />
+                        <Box
+                          className={`${classes.lessThan3LogoContainer} lessThan3LogoContainer`}
+                        >
+                          <img
+                            className={`${classes.testimonialImageLessThan3} testimonialImageLessThan3`}
+                            src={image}
+                            alt={value}
+                          />
+                        </Box>
                       </Box>
                     </Box>
                   );
                 }
               )}
-            </Slider>
-          </Box>
-        ) : (
-          <Box
-            className={`${classes.testimonialDomainClientsSectionLessThan3} testimonialDomainClientsSectionLessThan3}`}
-          >
-            {Object.values(testimonialClient).map(
-              (
-                {
-                  value = "",
-                  about = "",
-                  author = "",
-                  image = "",
-                  designation = "",
-                  company = "",
-                },
-                index
-              ) => {
-                if (about.length < 1) return true;
-                return (
-                  <Box
-                    item
-                    xs={12}
-                    sm={12}
-                    md={4}
-                    lg={4}
-                    key={`${value}-${index}`}
-                    className={`${classes.clientGridLessThan3} clientGridLessThan3`}
-                  >
-                    <Box
-                      className={`${classes.clientCardLessThan3} clientCardLessThan3`}
-                      style={{
-                        maxWidth:
-                          clientCount >= 1 && clientCount < 3 ? "60%" : "75%",
-                      }}
-                    >
-                      <Typography
-                        variant="h5"
-                        className={`${classes.testimonialCardMatterLessThan3} testimonialCardMatterLessThan3`}
-                      >
-                        "{about}"
-                      </Typography>
-                      <Typography
-                        variant="body1"
-                        className={`${classes.testimonialCardUserLessThan3} testimonialCardUserLessThan3`}
-                      >
-                        <strong>{author},</strong> {designation}-{company}
-                      </Typography>
-                      <Box
-                        className={`${classes.lessThan3LogoContainer} lessThan3LogoContainer`}
-                      >
-                        <img
-                          className={`${classes.testimonialImageLessThan3} testimonialImageLessThan3`}
-                          src={image}
-                          alt={value}
-                        />
-                      </Box>
-                    </Box>
-                  </Box>
-                );
-              }
-            )}
-          </Box>
-        )}
+            </Box>
+          )}
+        </Box>
       </Box>
-    </Box>
+    </>
   );
 };
 export default Testimonials;

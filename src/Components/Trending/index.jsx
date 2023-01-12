@@ -9,11 +9,15 @@ import TRENDING_LOGO from "../../Assets/Icons/trending.svg";
 
 import { TRENDING_CONFIGS } from "../../Configs/Trending";
 import { THEME_COLOR } from "../../Configs/Theme";
+import CustomizedDialogs from "../CustomizedDialogs";
 
 const Trending = () => {
   const classes = useStyles();
 
   const [tabIndex, setTabIndex] = useState(0);
+  const [dialogMSG, setDialogMSG] = useState("");
+  const [dialogTitle, setDialogTitle] = useState("");
+  const [openLearnMore, setOpenLearnMore] = useState(false);
 
   /**
    * @description Handling paragraph for trending
@@ -40,6 +44,22 @@ const Trending = () => {
    * @description Handle click tab button
    */
   const handleTabClick = () => {};
+
+  /**
+   * @description Open dialog to read more
+   */
+  const handleLearnMore = (title, subtitle) => () => {
+    setOpenLearnMore(true);
+    setDialogMSG(subtitle);
+    setDialogTitle(title);
+  };
+
+  /**
+   * @description Close dialog
+   */
+  const handleClose = () => {
+    setOpenLearnMore(!openLearnMore);
+  };
 
   return (
     <main className={`${classes.containerTrending} containerTrending`}>
@@ -129,16 +149,16 @@ const Trending = () => {
                         </Typography>
 
                         {link && (
-                          <a
-                            href={link}
-                            target="_blank"
+                          <Typography
                             className="btn btn-outline-primary learn-link"
                             rel="noreferrer"
+                            onClick={handleLearnMore(title, subtitle)}
+                            onMouseOver={handleLearnMore(title, subtitle)}
                           >
                             <Typography className="learn-button">
                               {`Learn More...`}
                             </Typography>
-                          </a>
+                          </Typography>
                         )}
 
                         {button && (
@@ -153,6 +173,12 @@ const Trending = () => {
           )}
         </Tabs>
       </Box>
+      <CustomizedDialogs
+        title={dialogTitle}
+        open={openLearnMore}
+        onClose={handleClose}
+        msg={dialogMSG}
+      />
     </main>
   );
 };

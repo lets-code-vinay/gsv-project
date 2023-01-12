@@ -103,9 +103,9 @@ const OurClients = () => {
           ) : (
             <>
               <img
-                src={image}
+                src={IMAGES[IMAGES.length - (index + 1)]?.image}
                 className={`${classes.imageToResponsive} 
-                secondimage imageToResponsive bottomImage`}
+                 imageToResponsive bottomImage`}
                 alt={alt}
               />
             </>

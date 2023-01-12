@@ -6,7 +6,7 @@ import "./style.css";
 import Logo from "../../../Assets/Images/blueLogo.png";
 import { DEFAULT_SERVICES, INSIGHT_DATA } from "../insightData";
 
-const PieChart = ({ fetchInsightDetails }) => {
+const PieChart = ({ fetchInsightDetails, onKnowMoreClick }) => {
   const [slice, setSlice] = useState(null);
   const [color, setColor] = useState(DEFAULT_SERVICES.color);
   const [insightData, setInsightData] = useState(
@@ -37,7 +37,7 @@ const PieChart = ({ fetchInsightDetails }) => {
    */
   const options = {
     pieHole: 0.25,
-    // fontSize: 20, // CHANGE FONT SIZE HEREM, IT IS FIX IN SIZE
+    // fontSize: 20, // CHANGE FONT SIZE HERE, IT IS FIX IN SIZE
     is3D: false,
     pieSliceText: "label",
     pieSliceTextStyle: {
@@ -72,21 +72,22 @@ const PieChart = ({ fetchInsightDetails }) => {
    */
   const handleButtonClick = (slice) => () => {
     fetchInsightDetails(slice);
+    onKnowMoreClick();
   };
 
   /**
    * @description handle Slice text mouse hover on pie chart slice Button
    */
-  const handleTextMouseEnter = (buttonNum) => () => {
-    fetchInsightDetails(buttonNum);
-  };
+  // const handleTextMouseEnter = (buttonNum) => () => {
+  //   fetchInsightDetails(buttonNum);
+  // };
 
   /**
    * @description handle Slice text mouse hover on pie chart slice Button
    */
-  const handleTextMouseLeave = (buttonNum) => () => {
-    fetchInsightDetails(buttonNum);
-  };
+  // const handleTextMouseLeave = (buttonNum) => () => {
+  //   fetchInsightDetails(buttonNum);
+  // };
 
   /**
    * @description handle button mouse hover on pie chart slice Button

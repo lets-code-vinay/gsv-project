@@ -10,6 +10,7 @@ import {
   DialogContentText,
   DialogTitle,
   IconButton,
+  Box,
 } from "@material-ui/core";
 
 import CloseIcon from "@material-ui/icons/Close";
@@ -38,9 +39,9 @@ export default function CustomizedDialogs({
         aria-labelledby="customized-dialog-title"
         open={open}
       >
-        <DialogTitle id="alert-dialog-title" onClose={handleClose}>
+        <DialogBoxTitle id="alert-dialog-title" onClose={handleClose}>
           {title && title}
-        </DialogTitle>
+        </DialogBoxTitle>
 
         <DialogContent>
           <DialogContentText id="alert-dialog-description">
@@ -93,24 +94,26 @@ CustomizedDialogs.defaultProps = {
 function DialogBoxTitle(props) {
   const { children, onClose, ...other } = props;
 
+  const classes = useStyles();
+
   return (
-    <DialogTitle sx={{ m: 0, p: 2 }} {...other}>
-      {children}
-      {onClose ? (
-        <IconButton
-          aria-label="close"
-          onClick={onClose}
-          sx={{
-            position: "absolute",
-            right: 8,
-            top: 5,
-            color: (theme) => theme.palette.grey[500],
-          }}
-        >
-          <CloseIcon />
-        </IconButton>
-      ) : null}
-    </DialogTitle>
+    <Box className={classes.DialogTitle}>
+      <DialogTitle sx={{ m: 0, p: 2 }} {...other}>
+        {children}
+        {onClose ? (
+          <IconButton
+            aria-label="close"
+            onClick={onClose}
+            className={classes.closeButton}
+            sx={{
+              color: (theme) => theme.palette.grey[500],
+            }}
+          >
+            <CloseIcon />
+          </IconButton>
+        ) : null}
+      </DialogTitle>
+    </Box>
   );
 }
 
@@ -125,4 +128,14 @@ DialogBoxTitle.propTypes = {
 /**
  * Styling of components
  */
-const useStyles = makeStyles((theme) => ({}));
+const useStyles = makeStyles((theme) => ({
+  DialogTitle: {
+    display: "flex",
+    justifyContent: "space-between",
+  },
+  closeButton: {
+    position: "absolute",
+    right: 8,
+    top: 5,
+  },
+}));
