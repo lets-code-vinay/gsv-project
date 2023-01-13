@@ -452,7 +452,7 @@ h3 {
 
   .clientGrid .testimonialImage {
     width: 50%;
-    margin: 10% auto;
+    margin: 7% auto;
     min-height: 70px;
     max-height: 90px;
   }
@@ -512,11 +512,11 @@ h3 {
   }
 
   .clientCard {
-    height: 30rem;
+    height: 27rem;
   }
 
   .clientCardLessThan3 {
-    height: 30rem;
+    min-height: 25rem;
   }
 
   .clientCard .testimonialCardMatter {
@@ -561,7 +561,7 @@ h3 {
 
   .clientGrid .testimonialImage {
     width: 50%;
-    margin: 10% auto;
+    margin: 7% auto;
     min-height: 70px;
     max-height: 100px;
   }
@@ -670,7 +670,7 @@ h3 {
 
   .clientGrid .testimonialImage {
     width: 30%;
-    margin: 10% auto;
+    margin: 7% auto;
     min-height: 70px;
     max-height: 100px;
   }

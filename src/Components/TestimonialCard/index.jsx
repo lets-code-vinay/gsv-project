@@ -109,8 +109,9 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
   },
   testimonialImageTC: {
-    width: "100px",
-    margin: "10% 26%",
+    width: "130px",
+    margin: "10% auto",
+    display: "flex",
   },
 
   lessThan3LogoContainer: {

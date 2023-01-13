@@ -144,8 +144,15 @@
 }
 
 @media screen and (min-width: 1281px) and (max-width: 1920px) {
+  .MuiPopover-paper,
+  .makeStyles-paper-143 {
+    min-height: 65vh;
+    border-radius: 10px;
+    margin-top: 0%;
+  }
+
   .clientCardTC .testimonialCardMatterTC {
-    font-size: 1.2rem !important;
+    font-size: 1rem !important;
     font-weight: 500;
     margin: 10% 0% 13% 0 !important;
   }

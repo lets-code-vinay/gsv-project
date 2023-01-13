@@ -60,7 +60,6 @@ const Testimonials = () => {
   const handleReadTestimonial =
     (clientCount, about, author, designation, company, image, value) =>
     (event) => {
-      console.log("handleReadTestimonial", event.currentTarget);
       setAnchorEl(event.currentTarget);
       setOpenTestimonial(true);
       setTestimonialCardData({
@@ -136,6 +135,13 @@ const Testimonials = () => {
                     variant="h6"
                     className={`${classes.clientTitle} clientTitle`}
                     onClick={handleCurrentSlide(index)}
+                    style={{
+                      padding: "0% 2%",
+                      borderRadius: "5px",
+                      background: activeSlide === index && "#EDEDED",
+                      textDecoration:
+                        activeSlide === index && "underline solid #000000 70%",
+                    }}
                   >
                     {label}
                   </Typography>

@@ -17,8 +17,6 @@ const pins = [
   PIN_BLUE,
   PIN_YELLOW,
 ];
-const getRandomPins = pins[(Math.random() * 10).toFixed(0)];
-console.log("getRandomPins", getRandomPins);
 
 export const GSV_LOCATIONS = [
   {
