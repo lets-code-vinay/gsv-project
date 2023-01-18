@@ -9,17 +9,16 @@ import InformationTechnology from "../../Assets/Images/informationTechnology.png
 import Pharmaceutical from "../../Assets/Images/pharmacueticals.png";
 
 // our clients images
-import AirportAuthority from "../../Assets/airportAuthority.png";
-import Auma from "../../Assets/auma.png";
-import BestWestern from "../../Assets/bestWestern.png";
-import EljayEngineering from "../../Assets/eljayEngineering.png";
-import Granitize from "../../Assets/Granitize.png";
-import IBM from "../../Assets/ibm.png";
-import PODAR from "../../Assets/podar_judicial.png";
-import TechBServer from "../../Assets/techBserver.png";
-import TouchBase from "../../Assets/touchBase.png";
-import UAE_Ministry from "../../Assets/uae_Ministry.png";
-
+import AirportAuthority from "../../Assets/Images/Testimonials/Government/airportAuthority.png";
+import IndianArmy from "../../Assets/Images/Testimonials/Government/IndianArmy.png";
+import BestWestern from "../../Assets/Images/Testimonials/Hospitality/BestWestern.png";
+import EljayEngineering from "../../Assets/Images/Testimonials/eljayEngineering.png";
+import Granitize from "../../Assets/Images/Testimonials/Manufacturing/granitize.png";
+import IBM from "../../Assets/Images/Testimonials/ibm.png";
+import PODAR from "../../Assets/Images/Testimonials/podar_judicial.png";
+import TechBServer from "../../Assets/Images/Testimonials/techBserver.png";
+import TouchBase from "../../Assets/Images/Testimonials/IT/Touchbase.jpg";
+import UAE_Ministry from "../../Assets/Images/Testimonials/uae_Ministry.png";
 
 export const IndustriesCardData = [
   {
@@ -51,7 +50,7 @@ export const OUR_CLIENTS_DATA = [
   },
   {
     id: 2,
-    img: Auma,
+    img: IndianArmy,
   },
   {
     id: 3,
@@ -194,6 +193,6 @@ export const SideMenu = {
     label: "Contact Us",
     title: "Contact Us",
     path: "/contact",
-    image: ContactImage
+    image: ContactImage,
   },
 };
