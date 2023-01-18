@@ -93,22 +93,24 @@ const OurClients = () => {
       >
         {IMAGES.map(({ image = "", alt = "" }, index) => {
           return index % 2 !== 0 ? (
-            <>
+            <div key={index}>
               <img
                 src={image}
                 className={`${classes.imageToResponsive} imageToResponsive`}
                 alt={alt}
+                key={index}
               />
-            </>
+            </div>
           ) : (
-            <>
+            <div key={index}>
               <img
                 src={IMAGES[IMAGES.length - (index + 1)]?.image}
                 className={`${classes.imageToResponsive} 
                  imageToResponsive bottomImage`}
                 alt={alt}
+                key={index}
               />
-            </>
+            </div>
           );
         })}
       </Slider>

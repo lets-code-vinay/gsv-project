@@ -125,15 +125,30 @@ const Technologies = () => {
           </Grid>
         </Grid>
         <Grid container spacing={2} className="cardGrid">
-          {cardBox.map((item, i) => {
+          {cardBox.map((itemData, i) => {
+            const {
+              img = "",
+              className = "",
+              heading = "",
+              text = "",
+              para = "",
+            } = itemData || {};
             return (
-              <Grid item xs={6} sm={6} md={4} lg={4} className="cardBody">
+              <Grid
+                item
+                xs={6}
+                sm={6}
+                md={4}
+                lg={4}
+                className="cardBody"
+                key={i}
+              >
                 <Card key={i} sx={{ minWidth: 275 }} className="cardMenu">
                   <CardContent className="cardContent position-relative">
                     <div className="overlay">
-                      <div className={item.className} src={item.img}>
+                      <div className={className} src={img}>
                         <img
-                          src={item.img}
+                          src={img}
                           width="100%"
                           height="100%"
                           alt="Master the digital landscape"
@@ -142,11 +157,11 @@ const Technologies = () => {
                       </div>
                       <span className="gradient"></span>
                       <div className="headingMainDiv">
-                        <h3 className="cardTopHeading">{item.heading}</h3>
+                        <h3 className="cardTopHeading">{heading}</h3>
                         <div className="cardTextDiv">
-                          <h4 className="cardText">{item.text}</h4>
+                          <h4 className="cardText">{text}</h4>
                           <div className="paragraph">
-                            <p>{item.para}</p>
+                            <p>{para}</p>
                           </div>
                         </div>
                       </div>

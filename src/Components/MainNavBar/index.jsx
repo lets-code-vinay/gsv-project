@@ -67,7 +67,7 @@ const MainNavBar = ({
 
   // --- Desktop Section ---
   return (
-    <div className={`${classes.Navbar} Navbar`} id="home" nodeRef={nodeRef}>
+    <div className={`${classes.Navbar} Navbar`} id="home" ref={nodeRef}>
       <AppBar
         position="static"
         className={`${classes.grow} appBar`}

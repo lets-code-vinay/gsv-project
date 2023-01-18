@@ -1,5 +1,5 @@
 import * as React from "react";
-import { string, node, func, bool, arrayOf } from "prop-types";
+import { string, node, func, bool, arrayOf, any } from "prop-types";
 
 import {
   makeStyles,
@@ -22,8 +22,6 @@ export default function CustomizedDialogs({
   actionType,
   msg,
 }) {
-  const classes = useStyles();
-
   /**
    * @description Closing Dialog box
    */
@@ -71,7 +69,7 @@ CustomizedDialogs.propTypes = {
   open: bool,
   onClose: func.isRequired,
   actionType: arrayOf(string),
-  msg: string.isRequired,
+  msg: any.isRequired,
 };
 
 /**
@@ -81,7 +79,7 @@ CustomizedDialogs.defaultProps = {
   title: "",
   open: false,
   onClose: () => {},
-  actionType: false,
+  actionType: [],
   msg: "",
 };
 

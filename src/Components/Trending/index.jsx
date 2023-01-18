@@ -155,9 +155,9 @@ const Trending = () => {
                             onClick={handleLearnMore(title, subtitle)}
                             onMouseOver={handleLearnMore(title, subtitle)}
                           >
-                            <Typography className="learn-button">
+                            <span className="learn-button">
                               {`Learn More...`}
-                            </Typography>
+                            </span>
                           </Typography>
                         )}
 
