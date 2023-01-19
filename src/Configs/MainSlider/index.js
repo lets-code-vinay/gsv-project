@@ -1,7 +1,7 @@
-import NETWORK from "../../Assets/Images/Slider-images/1-network.jpg";
-import SECURITY from "../../Assets/Images/Slider-images/2-security.jpg";
-import DATA from "../../Assets/Images/Slider-images/3-data.jpg";
-import SDWAN from "../../Assets/Images/Slider-images/4-sdwan.jpeg";
+import NETWORK from "../../Assets/Images/Slider-images/1-network.webp";
+import SECURITY from "../../Assets/Images/Slider-images/2-security.webp";
+import DATA from "../../Assets/Images/Slider-images/3-data.webp";
+import SDWAN from "../../Assets/Images/Slider-images/4-sdwan.webp";
 
 export const MAIN_SLIDER_DATA = {
   slider_1: {

@@ -8,13 +8,13 @@ import POPULAR_ICON from "../../Assets/Icons/popular.svg";
 
 import CLOUD_IMAGE from "../../Assets/Images/Menu-images/cloud.jpg";
 import IOT_IMAGE from "../../Assets/Images/Menu-images/IOt.jpg";
-import SECURITY_MAIN_IMAGE from "../../Assets/Images/Menu-images/security1.jpg";
-import COLLABORATION from "../../Assets/Images/Menu-images/collaboration.jpg";
-import DATA_CENTER_SECURITY_IMAGE from "../../Assets/Images/Menu-images/datacenter.jpg";
+import SECURITY_MAIN_IMAGE from "../../Assets/Images/Menu-images/security1.webp";
+import COLLABORATION from "../../Assets/Images/Menu-images/collaboration.webp";
+import DATA_CENTER_SECURITY_IMAGE from "../../Assets/Images/Menu-images/datacenter.webp";
 
 import MOBILE_SECURITY_IMAGE from "../../Assets/Images/Menu-images/mobile-cyber-security.png";
 import MOBILE_DATA_SECURITY_IMAGE from "../../Assets/Images/Menu-images/mobile-data-security.jpg";
-import MOBILE_NETWORK from "../../Assets/Images/Menu-images/mobile-network.jpg";
+import MOBILE_NETWORK from "../../Assets/Images/Menu-images/mobile-network.webp";
 
 export const NAVBAR_MENUS = {
   IT_INFRASTRUCTURE: {
