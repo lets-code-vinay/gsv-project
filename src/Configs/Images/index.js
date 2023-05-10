@@ -10,7 +10,7 @@ import JHARKHAND from "../../Assets/Images/Testimonials/Government/Jharkhand.png
 import UK from "../../Assets/Images/Testimonials/Government/UK.png";
 import LAW from "../../Assets/Images/Testimonials/Government/law.png";
 
-// IT
+// IT--
 import BLUE_NETWORK from "../../Assets/Images/Testimonials/IT/BNI.jpeg";
 import ATNIS from "../../Assets/Images/Testimonials/IT/atnis.png";
 import ENSTAL from "../../Assets/Images/Testimonials/IT/Enstal.png";
