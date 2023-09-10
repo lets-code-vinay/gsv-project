@@ -11,6 +11,7 @@ import "./styles.css";
 import PieChart from "./GooglePieChart";
 import { DEFAULT_SERVICES, INSIGHT_DATA } from "./insightData";
 import CustomizedDialogs from "../CustomizedDialogs";
+import Hexagon from "../Hexagonal";
 
 const Insight = () => {
   const classes = useStyles();
@@ -63,11 +64,12 @@ const Insight = () => {
               lg={6}
               className={`${classes.pieBox} pieBox`}
             >
-              <PieChart
+              {/* <PieChart
                 data={INSIGHT_DATA}
                 fetchInsightDetails={getInsightDetail}
                 onKnowMoreClick={handleKnowMore(info, title)}
-              />
+              /> */}
+              <Hexagon />
             </Grid>
 
             <Grid item xs={12} sm={12} md={5} lg={6}>

@@ -13,17 +13,18 @@ import Technologies from "../../Components/Technologies";
 import Testimonials from "../../Components/Testimonials";
 
 import "./style.css";
+import Hexagon from "../../Components/Hexagonal";
 
 const Homepage = () => {
   const { pathname } = useLocation();
 
-  const mainRef = React.useRef(null)
+  const mainRef = React.useRef(null);
 
   /**
    * @description Rendering Page to the top
    */
   React.useEffect(() => {
-    mainRef.current.scrollTo(0, 0)
+    mainRef.current.scrollTo(0, 0);
   }, [pathname]);
 
   return (

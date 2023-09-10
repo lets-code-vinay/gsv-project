@@ -86,10 +86,10 @@ const Technologies = () => {
                       Let us Help you to come in Future of SDN{" "}
                     </h4>
                     <div className="paraText">
-                      <p>
+                      <Typography>
                         Cisco-SDWAN, Cisco-DNA-C, Cisco ACI, Velo Cloud, Silver
                         light and many more
-                      </p>
+                      </Typography>
                     </div>
                   </div>
                 </div>
@@ -116,7 +116,9 @@ const Technologies = () => {
                   </h4>
                   <div className="cardDivSecurity">
                     <div className="paraTextSecurity">
-                      <p>Cybersecurity, AMP, Network and Cloud Security</p>
+                      <Typography>
+                        Cybersecurity, AMP, Network and Cloud Security
+                      </Typography>
                     </div>
                   </div>
                 </div>
@@ -161,7 +163,7 @@ const Technologies = () => {
                         <div className="cardTextDiv">
                           <h4 className="cardText">{text}</h4>
                           <div className="paragraph">
-                            <p>{para}</p>
+                            <Typography>{para}</Typography>
                           </div>
                         </div>
                       </div>
