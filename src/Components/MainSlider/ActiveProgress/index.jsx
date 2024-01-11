@@ -71,5 +71,7 @@ const useStyles = makeStyles((theme) => ({
   },
   progressText: {
     cursor: "pointer",
+    
+
   },
 }));
