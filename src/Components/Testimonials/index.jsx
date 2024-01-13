@@ -276,7 +276,7 @@ const Testimonials = () => {
                           />
                         </Box>
                         <Typography
-                          variant="h5"
+                          variant="body1"
                           className={`${classes.testimonialCardMatterLessThan3} testimonialCardMatterLessThan3`}
                         >
                           "{about}"
@@ -357,10 +357,11 @@ const useStyles = makeStyles((theme) => ({
     overflow: "auto",
   },
   testimonialCardMatterLessThan3: {
-    fontSize: "1rem",
-    fontWeight: "700",
+    fontSize: "0.80rem",
+    fontWeight: "500",
     margin: "16% 0% 13% 0",
     overflow: "auto",
+    padding: "0 5px",
   },
   testimonialCardUser: {
     fontSize: "0.8rem",

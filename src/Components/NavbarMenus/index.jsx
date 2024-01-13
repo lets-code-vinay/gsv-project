@@ -12,6 +12,7 @@ import { THEME_COLOR } from "../../Configs/Theme";
 const NavbarMenus = ({ navMenus = {}, onCloseMenu }) => {
   const classes = useStyles();
   const navigate = useNavigate();
+  // const scrollPosition = localStorage.getItem("scrollPosition");
 
   const [isPopularEnabled] = useState(
     Object.keys(navMenus?.menus).includes("POPULAR")
@@ -30,6 +31,13 @@ const NavbarMenus = ({ navMenus = {}, onCloseMenu }) => {
   const closeNavBar = () => {
     onCloseMenu(false);
   };
+
+  /**
+   * @description closing navbar when user scolls
+   */
+  // if (scrollPosition > 100) {
+  //   closeNavBar();
+  // }
 
   return (
     <>

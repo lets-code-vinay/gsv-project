@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
 import { Box } from "@material-ui/core";
 import "./style.css";
 
@@ -14,8 +13,6 @@ import Technologies from "../../Components/Technologies";
 import Testimonials from "../../Components/Testimonials";
 
 const Homepage = () => {
-  const { pathname } = useLocation();
-
   const mainRef = React.useRef(null);
 
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -36,6 +33,7 @@ const Homepage = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+  localStorage.setItem("scrollPosition", scrollPosition);
 
   return (
     <Box className="homepage-container" ref={mainRef}>

@@ -29,7 +29,7 @@ const TestimonialCard = ({
       <Typography
         variant="h5"
         className={`${classes.testimonialCardMatterTC} testimonialCardMatterTC`}
-        sx={{overflow: 'scroll', height: '100px'}}
+        sx={{ overflow: "scroll", height: "100px" }}
       >
         "{about}"
       </Typography>
@@ -39,7 +39,6 @@ const TestimonialCard = ({
       >
         <strong>{author},</strong> {designation}-{company}
       </Typography>
-
     </Box>
   );
 };
@@ -139,6 +138,6 @@ const useStyles = makeStyles((theme) => ({
     padding: "1rem 2rem",
   },
   clientGridLessThan3: {
-    margin: "3rem auto",
+    margin: "2rem auto",
   },
 }));

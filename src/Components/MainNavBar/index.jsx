@@ -67,6 +67,13 @@ const MainNavBar = ({
     onNavMenus(Object.values(menu?.menus)[0]);
   };
 
+  /**
+   * @description navigate to homepage
+   */
+  const redirectToHomepage = () => {
+    navigate("/");
+  };
+
   // --- Desktop Section ---
   return (
     <div className={`${classes.Navbar} Navbar`} id="home" ref={nodeRef}>
@@ -106,6 +113,7 @@ const MainNavBar = ({
               src={Logo}
               alt="main-logo"
               className={`${classes.logo} logo-1`}
+              onClick={redirectToHomepage}
             />
             <div className={`${classes.sectionDesktop} sectionDesktop`}>
               {Object.values(NAVBAR_MENUS).map((menu, i) => {

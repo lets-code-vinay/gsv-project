@@ -107,10 +107,9 @@
   }
   .pieInfo .pieInfoList {
     font-size: 1rem !important;
-
     text-overflow: ellipsis;
     overflow: hidden;
-    word-break: break-all;
+    word-break: break-word;
     max-height: 42vh;
     min-height: 39vh;
     display: -webkit-box !important;
@@ -145,7 +144,7 @@
 
     text-overflow: ellipsis;
     overflow: hidden;
-    word-break: break-all;
+    word-break: break-word;
     max-height: 40vh;
     min-height: 25vh;
     display: -webkit-box !important;

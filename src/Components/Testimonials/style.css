@@ -562,11 +562,11 @@ h3 {
   }
 
   .clientCard {
-    height: 27rem;
+    height: 22rem;
   }
 
   .clientCardLessThan3 {
-    min-height: 25rem;
+    min-height: 21rem;
   }
 
   .clientCard .testimonialCardMatter {
@@ -613,14 +613,12 @@ h3 {
   .clientGrid .testimonialImage {
     width: 50%;
     margin: 7% auto;
-    min-height: 70px;
-    max-height: 100px;
+    height: 70px;
   }
 
   .clientGridLessThan3 .testimonialImageLessThan3 {
     width: 50%;
-    min-height: 70px;
-    max-height: 100px;
+    height: 70px;
   }
 
   .clientTitle {
@@ -645,7 +643,7 @@ h3 {
 
   .sliderPadding {
     padding: 0% 0 1.5% 2%;
-    margin: 5% auto 0;
+    margin: 2% auto 0;
   }
 
   .testimonialLogo .testimonialTitle {
