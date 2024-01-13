@@ -178,7 +178,8 @@ const Footer = () => {
 
             <Box className={`${classes.socialMedia} socialMedia`}>
               <a
-                href="/contact-us"
+                href="https://www.facebook.com/gsvsystems/"
+                target="blank"
                 className={`${classes.socialIcon} socialIcon`}
               >
                 <RiFacebookBoxFill />
@@ -196,7 +197,8 @@ const Footer = () => {
                 <FaInstagram />
               </a>
               <a
-                href="/contact-us"
+                href="https://in.linkedin.com/company/gsv-systems-llp"
+                target="blank"
                 className={`${classes.socialIcon} socialIcon`}
               >
                 <FaLinkedin />
