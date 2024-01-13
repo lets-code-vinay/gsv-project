@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import { bool, func, number } from "prop-types";
 
 import { makeStyles } from "@material-ui/core/styles";
@@ -34,6 +34,7 @@ const MainNavBar = ({
 }) => {
   const classes = useStyles();
   const navigate = useNavigate();
+  const location = useLocation();
 
   const [isMobileNavbarOpened, setMobileNavbarOpen] = useState(false);
 
@@ -75,7 +76,10 @@ const MainNavBar = ({
         elevation={0}
         style={{
           backgroundColor:
-            scrollPosition > 100 || isSubSectionOpen || isMoreOpen
+            location.pathname.length > 1 ||
+            scrollPosition > 200 ||
+            isSubSectionOpen ||
+            isMoreOpen
               ? "#0D274D"
               : "transparent",
           boxShadow:
