@@ -1,5 +1,5 @@
 .multiVendor {
-  scroll-snap-align: start;
+  /* scroll-snap-align: start; */
   height: 100vh;
   padding: 15% 0;
 }

@@ -47,9 +47,9 @@ const SubNavBar = ({
   /**
    * @description Closing sub Nav bar and menus by calling CB
    */
-  // const handleClose = (_) => {
-  //   onCloseSubNavbar(true);
-  // };
+  const handleCloseMenu = (_) => {
+    onCloseSubNavbar(true);
+  };
 
   return (
     <ClickAwayListener
@@ -86,7 +86,7 @@ const SubNavBar = ({
 
         {/* --- Navbar menus ---- */}
         {isSubNavbarOpened && !subNavMenus.isMore && (
-          <NavbarMenus navMenus={navMenus} />
+          <NavbarMenus navMenus={navMenus} onCloseMenu={handleCloseMenu} />
         )}
       </Box>
     </ClickAwayListener>
@@ -111,10 +111,12 @@ export default memo(SubNavBar);
 
 const useStyles = makeStyles((theme) => ({
   headBar: {
-    position: "absolute",
+    position: "fixed",
     background: "white",
+    top: "10%",
+    left: "0",
     width: "100%",
-    zIndex: 10,
+    zIndex: 80,
   },
 
   subMenu: {

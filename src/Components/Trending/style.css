@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
 
-  scroll-snap-align: start;
+  /* scroll-snap-align: start; */
   height: 100vh;
 }
 

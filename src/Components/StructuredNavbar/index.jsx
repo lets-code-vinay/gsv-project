@@ -1,11 +1,12 @@
-import React, { useState, memo, useMemo, useEffect, useRef } from "react";
+import React, { useState, memo, useMemo, useEffect, useRef, lazy } from "react";
+import { number } from "prop-types";
 
 import SubNavBar from "../SubNavBar";
 import MainNavBar from "../MainNavBar";
 import SideBar from "../More/SideBarTab/index";
 import "./style.css";
 
-const StructuredNavbar = () => {
+const StructuredNavbar = ({ scrollPosition }) => {
   const [isSubNavbarOpened, setSubNavbarOpen] = useState(false);
   const [subNavMenus, setSubNavMenus] = useState({});
   const [isMoreOpen, setIsMoreOpen] = useState(false);
@@ -64,9 +65,9 @@ const StructuredNavbar = () => {
    *
    * @param {Boolean} closeSubNavbar
    */
-  // const closeSubNavbar = (closeSubNavbar) => {
-  //   setSubNavbarOpen(closeSubNavbar);
-  // };
+  const closeSubNavbar = (closeSubNavbar) => {
+    setSubNavbarOpen(false);
+  };
 
   return (
     <>
@@ -79,6 +80,7 @@ const StructuredNavbar = () => {
         isSubSectionOpen={isSubNavbarOpened}
         isMoreOpen={isMoreOpen}
         nodeRef={nodeRef}
+        scrollPosition={scrollPosition}
       />
 
       {/* ---- Sub nav bar --- */}
@@ -90,7 +92,7 @@ const StructuredNavbar = () => {
           navMenus={navMenus.menus}
           setSubNavbarOpen={setSubNavbarOpen}
           nodeRef={nodeRef}
-          // onCloseSubNavbar={closeSubNavbar}
+          onCloseSubNavbar={closeSubNavbar}
         />
       )}
 
@@ -99,6 +101,20 @@ const StructuredNavbar = () => {
       )}
     </>
   );
+};
+
+/**
+ * @description Prop validation
+ */
+StructuredNavbar.propTypes = {
+  scrollPosition: number,
+};
+
+/**
+ * @description Prop validation
+ */
+StructuredNavbar.defaultProps = {
+  scrollPosition: 0,
 };
 
 export default memo(StructuredNavbar);
