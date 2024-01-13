@@ -9,8 +9,9 @@ import { MAIN_SLIDER_DATA } from "../../Configs/MainSlider";
 
 import StructuredNavbar from "../StructuredNavbar";
 import ActiveProgress from "./ActiveProgress";
+import { number } from "prop-types";
 
-const MainSlider = () => {
+const MainSlider = ({ scrollPosition }) => {
   const classes = useStyles();
 
   const [currentSlideData, setCurrentSlideData] = useState({});
@@ -94,7 +95,7 @@ const MainSlider = () => {
           </div>
         </Carousel>
 
-        <StructuredNavbar />
+        <StructuredNavbar scrollPosition={scrollPosition} />
 
         <Typography
           variant={"body1"}
@@ -138,6 +139,20 @@ const MainSlider = () => {
       </main>
     </div>
   );
+};
+
+/**
+ * @description Prop validation
+ */
+MainSlider.propTypes = {
+  scrollPosition: number,
+};
+
+/**
+ * @description default Prop
+ */
+MainSlider.defaulProps = {
+  scrollPosition: 0,
 };
 
 export default memo(MainSlider);

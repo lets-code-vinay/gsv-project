@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
 import { ChevronLeft, ChevronRight } from "react-feather";
-import { Box, makeStyles, Typography } from "@material-ui/core";
+import { Box, Card, CardContent, makeStyles, Typography } from "@material-ui/core";
 
 import "./style.css";
 import "slick-carousel/slick/slick.css";
@@ -83,23 +83,6 @@ const Testimonials = () => {
 
   return (
     <>
-      {/* <CustomPopOver
-        open={openTestimonial}
-        msg={
-          <TestimonialCard
-            clientCount={testimonialCArdData?.clientCount}
-            about={testimonialCArdData?.about}
-            author={testimonialCArdData?.author}
-            designation={testimonialCArdData?.designation}
-            company={testimonialCArdData?.company}
-            image={testimonialCArdData?.image}
-            value={testimonialCArdData?.value}
-          />
-        }
-        onClose={handleClose}
-        anchorEl={anchorEl}
-        clientCount={testimonialCArdData?.clientCount}
-      /> */}
       <Box className={`${classes.testimonials} testimonials`}>
         <Box className={`${classes.testimonialLogo} testimonialLogo`}>
           <Typography
@@ -139,8 +122,8 @@ const Testimonials = () => {
                       padding: "0% 2%",
                       borderRadius: "5px",
                       background: activeSlide === index && "#EDEDED",
-                      textDecoration:
-                        activeSlide === index && "underline solid #000000 70%",
+                      // textDecoration:
+                      //   activeSlide === index && "underline solid #000000 70%",
                     }}
                   >
                     {label}
@@ -208,6 +191,11 @@ const Testimonials = () => {
                         )}
                         onMouseLeave={handleClose}
                       >
+                        <Card>
+                          <CardContent>
+                            <Typography>this is </Typography>
+                          </CardContent>
+                        </Card>
                         <Box
                           className={`${classes.clientCard} clientCard`}
                           style={{
@@ -217,15 +205,6 @@ const Testimonials = () => {
                                 : "75%",
                           }}
                         >
-                          {/* <TestimonialCard
-                            clientCount={testimonialCArdData?.clientCount}
-                            about={testimonialCArdData?.about}
-                            author={testimonialCArdData?.author}
-                            designation={testimonialCArdData?.designation}
-                            company={testimonialCArdData?.company}
-                            image={testimonialCArdData?.image}
-                            value={testimonialCArdData?.value}
-                          /> */}
                           <img
                             className={`${classes.testimonialImage} testimonialImage`}
                             src={image}
@@ -338,6 +317,7 @@ const useStyles = makeStyles((theme) => ({
   testimonials: {
     display: "flex",
     flexDirection: "column",
+    height:'100%'
   },
   testimonialLogo: {
     display: "flex",

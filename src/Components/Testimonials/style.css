@@ -1,5 +1,7 @@
+
+
 .testimonials {
-  scroll-snap-align: start;
+  /* scroll-snap-align: start; */
   height: 100vh;
 }
 
@@ -56,25 +58,7 @@ h3 {
   margin: auto !important;
 }
 
-/* width */
-::-webkit-scrollbar {
-  width: 2px;
-}
 
-/* Track */
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #c2bdbd;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
 
 /* 320px — 480px: Mobile devices
 481px — 768px: iPads, Tablets

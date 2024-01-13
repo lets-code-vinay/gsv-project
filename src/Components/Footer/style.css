@@ -1,5 +1,5 @@
 .footer {
-  scroll-snap-align: start;
+  /* scroll-snap-align: start; */
   height: fit-content;
 }
 .FooterBottom {
@@ -13,7 +13,7 @@
   font-weight: 600;
   color: #0d2d7d;
 
-  scroll-snap-align: start;
+  /* scroll-snap-align: start; */
   height: fit-content;
 }
 

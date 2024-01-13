@@ -1,3 +1,26 @@
+/* @import url('./Configs/Theme/index.js'); */
+
 .logo-1 {
   width: 20%;
+}
+
+/* Scrollbar Style---*/
+/* width */
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0D274D;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
