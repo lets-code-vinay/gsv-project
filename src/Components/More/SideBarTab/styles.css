@@ -2,6 +2,15 @@
   background-color: white;
 }
 
+.more {
+  position: fixed !important;
+}
+.more .closeNavBarBtn {
+  position: fixed;
+  bottom: 10%;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
 .menuListing * {
   padding-top: 2%;
 }
@@ -28,7 +37,7 @@
 .MuiGrid-root.MuiGrid-container.MuiGrid-spacing-xs-2.MuiGrid-item {
   width: 100%;
   position: absolute;
-  z-index: 10;
+  z-index: 99;
   margin: 0% auto;
   background: #fff;
   min-height: 90vh;
@@ -170,5 +179,6 @@
     background-position-x: 7%;
     background-position-y: 0%;
     height: 93vh;
+    position: fixed;
   }
 }

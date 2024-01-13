@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 // import emailjs from "@emailjs/browser";
 import {
   Box,
+  Button,
   ClickAwayListener,
   Grid,
   makeStyles,
@@ -18,6 +19,7 @@ import GridPage from "./GridPage/Index";
 import ImageTextList from "./ImageTextList";
 import WorldMapWithIndia from "../../WorldMapWithIndia";
 import ContactUs from "../../../Views/ContactUs";
+import HighlightOffIcon from "@material-ui/icons/HighlightOff";
 
 const SideBar = (props) => {
   const {
@@ -25,14 +27,8 @@ const SideBar = (props) => {
     onMoreClick = () => {},
     onCloseMenus = () => {},
   } = props || {};
-  const scrollPosition = localStorage.getItem("scrollPosition");
+  // const scrollPosition = localStorage.getItem("scrollPosition");
 
-  /**
-   * @description closing navbar when user scolls
-   */
-  if (scrollPosition > 100) {
-    onCloseMenus(false);
-  }
   const classes = useStyles();
   const [showArrow, setShowArrow] = useState("");
   const [optionType, setOptionType] = useState(SideMenu.about_us);
@@ -66,6 +62,17 @@ const SideBar = (props) => {
     setOptionType(menu);
   };
 
+  /**
+   * @description closing navbar when user scolls
+   */
+  // if (scrollPosition >= moreRef?.current?.offsetHeight) {
+  //   onCloseMenus(false);
+  // }
+
+  const closeNavBar = () => {
+    onCloseMenus(false);
+  };
+
   return (
     <ClickAwayListener onClickAway={handleClosePopover}>
       {isMoreOpen && (
@@ -78,38 +85,45 @@ const SideBar = (props) => {
             lg={2}
             className={`${classes.sideBar} sideBar`}
           >
-            <div>
-              <div className={`${classes.sideBarMenus} sideBarMenus`}>
-                {Object.values(SideMenu).map((menu, index) => {
-                  const { label = "", value = "" } = menu || {};
+            <div className={`${classes.sideBarMenus} sideBarMenus`}>
+              {Object.values(SideMenu).map((menu, index) => {
+                const { label = "", value = "" } = menu || {};
 
-                  return (
-                    <Box
-                      className={`${classes.menuListing} commonClass menuListing`}
-                      key={index}
-                      onMouseEnter={onShowArrow(value, menu)}
-                      onMouseLeave={onHideArrow(value, menu)}
-                      onClick={onClickOption(menu)}
+                return (
+                  <Box
+                    className={`${classes.menuListing} commonClass menuListing`}
+                    key={index}
+                    onMouseEnter={onShowArrow(value, menu)}
+                    onMouseLeave={onHideArrow(value, menu)}
+                    onClick={onClickOption(menu)}
+                  >
+                    <Typography
+                      variant={"body"}
+                      className={`${classes.sideBarOptions} sideBarOptions border-0 backgroundColorWhite`}
                     >
-                      <Typography
-                        variant={"body"}
-                        className={`${classes.sideBarOptions} sideBarOptions border-0 backgroundColorWhite`}
-                      >
-                        {label}
-                      </Typography>
-                      <Box className={`${classes.arrowBox} arrowBox `}>
-                        {Boolean(showArrow) && showArrow === value && (
-                          <img
-                            src={Arrow}
-                            alt="arrow-icon"
-                            className={`${classes.arrow} arrow `}
-                          />
-                        )}
-                      </Box>
+                      {label}
+                    </Typography>
+                    <Box className={`${classes.arrowBox} arrowBox `}>
+                      {Boolean(showArrow) && showArrow === value && (
+                        <img
+                          src={Arrow}
+                          alt="arrow-icon"
+                          className={`${classes.arrow} arrow `}
+                        />
+                      )}
                     </Box>
-                  );
-                })}
-              </div>
+                  </Box>
+                );
+              })}
+
+              <Button
+                className={`${classes.closeNavBarBtn} closeNavBarBtn`}
+                style={{ backgroundColor: "#0D274D", color: "white" }}
+                onClick={closeNavBar}
+                endIcon={<HighlightOffIcon />}
+              >
+                Close
+              </Button>
             </div>
           </Grid>
 
