@@ -1,24 +1,24 @@
-import React, { lazy } from "react";
+import React, { lazy, useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import { Box } from "@material-ui/core";
 import "./style.css";
 
-const Trending = lazy(() => import("../../Components/Trending"));
-const OurClients = lazy(() => import("../../Components/OurClient/OurClients"));
-const InfinitySliderContainer = lazy(() =>
-  import("../../Components/InfinitySliderContainers")
-);
-const MainSlider = lazy(() => import("../../Components/MainSlider"));
-const Insight = lazy(() => import("../../Components/Insight"));
-const OurPresence = lazy(() => import("../../Components/Presence"));
-const Footer = lazy(() => import("../../Components/Footer"));
-const Technologies = lazy(() => import("../../Components/Technologies"));
-const Testimonials = lazy(() => import("../../Components/Testimonials"));
+import Trending from "../../Components/Trending";
+import OurClients from "../../Components/OurClient/OurClients";
+import InfinitySliderContainer from "../../Components/InfinitySliderContainers";
+import MainSlider from "../../Components/MainSlider";
+import Insight from "../../Components/Insight";
+import OurPresence from "../../Components/Presence";
+import Footer from "../../Components/Footer";
+import Technologies from "../../Components/Technologies";
+import Testimonials from "../../Components/Testimonials";
 
 const Homepage = () => {
   const { pathname } = useLocation();
 
   const mainRef = React.useRef(null);
+
+  const [scrollPosition, setScrollPosition] = useState(0);
 
   /**
    * @description Rendering Page to the top
@@ -27,9 +27,17 @@ const Homepage = () => {
     mainRef.current.scrollTo(0, 0);
   }, [pathname]);
 
+  /**
+   * @description Getting Scroll Poition
+   * @param {object} event
+   */
+  const handleScroll = (e) => {
+    setScrollPosition(e.currentTarget.scrollTop);
+  };
+
   return (
-    <Box className="homepage-container" ref={mainRef}>
-      <MainSlider />
+    <Box className="homepage-container" ref={mainRef} onScroll={handleScroll}>
+      <MainSlider scrollPosition={scrollPosition} />
       <Trending />
       <Insight />
       <InfinitySliderContainer />

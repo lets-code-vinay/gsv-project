@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { bool, func } from "prop-types";
+import { bool, func, number } from "prop-types";
 
 import { makeStyles } from "@material-ui/core/styles";
 import { Menu as MenuIcon } from "@material-ui/icons";
@@ -30,6 +30,7 @@ const MainNavBar = ({
   isSubSectionOpen,
   isMoreOpen,
   nodeRef,
+  scrollPosition,
 }) => {
   const classes = useStyles();
   const navigate = useNavigate();
@@ -74,7 +75,12 @@ const MainNavBar = ({
         elevation={0}
         style={{
           backgroundColor:
-            isSubSectionOpen || isMoreOpen ? "#0D274D" : "transparent",
+            scrollPosition > 0 || isSubSectionOpen || isMoreOpen
+              ? "#0D274D"
+              : "transparent",
+          boxShadow:
+            (scrollPosition > 900 || isSubSectionOpen || isMoreOpen) &&
+            "1px 1px 14px 1px #66cff5",
         }}
       >
         <Toolbar className={`${classes.appBarChild} appBarChild`}>
@@ -147,6 +153,7 @@ MainNavBar.propsType = {
   onSubNavbarOpen: func.isRequired,
   onNavMenus: func,
   isSubSectionOpen: bool,
+  scrollPosition: number,
 };
 
 /**
@@ -156,13 +163,14 @@ MainNavBar.defaultProps = {
   onSubNavbarOpen: () => {},
   onNavMenus: () => {},
   isSubSectionOpen: false,
+  scrollPosition: 0,
 };
 
 export default MainNavBar;
 
 const useStyles = makeStyles((theme) => ({
   Navbar: {
-    position: "absolute",
+    position: "fixed",
     top: "0",
     width: "100%",
     background: "#1e44714d",
