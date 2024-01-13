@@ -31,12 +31,21 @@ const Homepage = () => {
    * @description Getting Scroll Poition
    * @param {object} event
    */
-  const handleScroll = (e) => {
-    setScrollPosition(e.currentTarget.scrollTop);
+  const handleScroll = () => {
+    const position = window.pageYOffset; // if not work use-- window.pageYOffset
+    setScrollPosition(position);
   };
 
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <Box className="homepage-container" ref={mainRef} onScroll={handleScroll}>
+    <Box className="homepage-container" ref={mainRef}>
       <MainSlider scrollPosition={scrollPosition} />
       <Trending />
       <Insight />
