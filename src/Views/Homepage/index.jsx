@@ -22,12 +22,15 @@ const Homepage = () => {
   /**
    * @description Rendering Page to the top
    */
-  React.useEffect(() => {
-    mainRef.current.scrollTo(0, 0)
-  }, [pathname]);
+  // React.useEffect(() => {
+  //   mainRef.current.scrollTo(0, 0)
+  // }, [pathname]);
 
   return (
-    <Box className="homepage-container" ref={mainRef}>
+    <Box 
+    className="homepage-container" 
+    // ref={mainRef}
+    >
       <MainSlider />
       <Trending />
       <Insight />
