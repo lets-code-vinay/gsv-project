@@ -1,15 +1,13 @@
 import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
 import { ChevronLeft, ChevronRight } from "react-feather";
-import { Box, Card, CardContent, makeStyles, Typography } from "@material-ui/core";
+import { Box, makeStyles, Typography } from "@material-ui/core";
 
 import "./style.css";
 import "slick-carousel/slick/slick.css";
 
 import { TESTIMONIAL_CARD_DATA } from "../../Configs/Testimonials";
 import { responsive_client, responsive_slider } from "./configs";
-import CustomPopOver from "../CustomPopOver";
-import TestimonialCard from "../TestimonialCard";
 
 const Testimonials = () => {
   const [testimonialArr] = useState(Object.values(TESTIMONIAL_CARD_DATA));
@@ -59,20 +57,20 @@ const Testimonials = () => {
    */
   const handleReadTestimonial =
     (clientCount, about, author, designation, company, image, value) =>
-      (event) => {
-        setAnchorEl(event.currentTarget);
-        setOpenTestimonial(true);
-        setTestimonialCardData({
-          ...testimonialCArdData,
-          clientCount: clientCount,
-          about: about,
-          author: author,
-          designation: designation,
-          company: company,
-          image: image,
-          value: value,
-        });
-      };
+    (event) => {
+      setAnchorEl(event.currentTarget);
+      setOpenTestimonial(true);
+      setTestimonialCardData({
+        ...testimonialCArdData,
+        clientCount: clientCount,
+        about: about,
+        author: author,
+        designation: designation,
+        company: company,
+        image: image,
+        value: value,
+      });
+    };
 
   /**
    * @description Close Popup
@@ -191,11 +189,6 @@ const Testimonials = () => {
                         )}
                         onMouseLeave={handleClose}
                       >
-                        <Card>
-                          <CardContent>
-                            <Typography>this is </Typography>
-                          </CardContent>
-                        </Card>
                         <Box
                           className={`${classes.clientCard} clientCard`}
                           style={{
@@ -222,7 +215,6 @@ const Testimonials = () => {
                           >
                             <strong>{author},</strong> {designation}-{company}
                           </Typography>
-
                         </Box>
                       </Box>
                     );
@@ -295,7 +287,6 @@ const Testimonials = () => {
                         >
                           <strong>{author},</strong> {designation}-{company}
                         </Typography>
-
                       </Box>
                     </Box>
                   );
@@ -317,7 +308,7 @@ const useStyles = makeStyles((theme) => ({
   testimonials: {
     display: "flex",
     flexDirection: "column",
-    height:'100%'
+    height: "100%",
   },
   testimonialLogo: {
     display: "flex",
@@ -363,14 +354,13 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "1rem",
     fontWeight: "700",
     margin: "16% 0% 13% 0",
-    overflow:'auto'
-
+    overflow: "auto",
   },
   testimonialCardMatterLessThan3: {
     fontSize: "1rem",
     fontWeight: "700",
     margin: "16% 0% 13% 0",
-    overflow:'auto'
+    overflow: "auto",
   },
   testimonialCardUser: {
     fontSize: "0.8rem",
