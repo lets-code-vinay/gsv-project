@@ -4,12 +4,14 @@ import { Box, Grid, makeStyles, Typography } from "@material-ui/core";
 import { RiFacebookBoxFill } from "react-icons/ri";
 import { FiYoutube } from "react-icons/fi";
 import { FaTwitterSquare, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { HiOutlineMail } from "react-icons/hi";
 
 import "./style.css";
 
 import Logo from "../../Assets/Images/white-logo.png";
-import { THEME_COLOR } from "../../Configs/Theme";
 import FooterBottom from "../FooterBottom";
+import { THEME_COLOR } from "../../Configs/Theme";
+import { SOCIAL_MEDIA_LINKS } from "../../Configs/SocialMedia";
 
 const Footer = () => {
   const classes = useStyles();
@@ -173,41 +175,47 @@ const Footer = () => {
               variant={"body1"}
               className={`${classes.menuListTextContact} menuListTextContact`}
             >
-              Email: info@gsvsystems.com
+              Email: {SOCIAL_MEDIA_LINKS?.email}
             </Typography>
 
             <Box className={`${classes.socialMedia} socialMedia`}>
               <a
-                href="https://www.facebook.com/gsvsystems/"
+                href={SOCIAL_MEDIA_LINKS?.facebook}
                 target="blank"
                 className={`${classes.socialIcon} socialIcon`}
               >
                 <RiFacebookBoxFill />
               </a>
               <a
-                href="/contact-us"
+                href={SOCIAL_MEDIA_LINKS?.twitter}
                 className={`${classes.socialIcon} socialIcon`}
               >
                 <FaTwitterSquare />
               </a>
               <a
-                href="/contact-us"
+                href={SOCIAL_MEDIA_LINKS?.instagram}
                 className={`${classes.socialIcon} socialIcon`}
               >
                 <FaInstagram />
               </a>
               <a
-                href="https://in.linkedin.com/company/gsv-systems-llp"
+                href={SOCIAL_MEDIA_LINKS?.linked_in}
                 target="blank"
                 className={`${classes.socialIcon} socialIcon`}
               >
                 <FaLinkedin />
               </a>
               <a
-                href="/contact-us"
+                href={SOCIAL_MEDIA_LINKS?.youtube}
                 className={`${classes.socialIcon} socialIcon`}
               >
                 <FiYoutube />
+              </a>
+              <a
+                href={`mailto:${SOCIAL_MEDIA_LINKS?.email}`}
+                className={`${classes.socialIcon} socialIcon`}
+              >
+                <HiOutlineMail />
               </a>
             </Box>
           </Grid>

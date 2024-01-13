@@ -355,6 +355,7 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: "700",
     margin: "16% 0% 13% 0",
     overflow: "auto",
+    paddingRight: '10px'
   },
   testimonialCardMatterLessThan3: {
     fontSize: "0.80rem",

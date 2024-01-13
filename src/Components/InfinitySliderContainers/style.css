@@ -1,6 +1,6 @@
 .multiVendor {
   /* scroll-snap-align: start; */
-  height: 100vh;
+  /* height: 100vh; */
   padding: 15% 0;
 }
 @media screen and (max-width: 480px) {
@@ -31,7 +31,7 @@
 @media screen and (min-width: 1281px) and (max-width: 1920px) {
   .multiVendor {
     padding: 0% 0 !important;
-    height: 60vh;
+    /* height: 60vh; */
   }
 }
 @media screen and (min-width: 1921px) and (max-width: 2560px) {
