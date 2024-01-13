@@ -20,8 +20,19 @@ import WorldMapWithIndia from "../../WorldMapWithIndia";
 import ContactUs from "../../../Views/ContactUs";
 
 const SideBar = (props) => {
-  const { isMoreOpen = false, onMoreClick = () => {} } = props || {};
+  const {
+    isMoreOpen = false,
+    onMoreClick = () => {},
+    onCloseMenus = () => {},
+  } = props || {};
+  const scrollPosition = localStorage.getItem("scrollPosition");
 
+  /**
+   * @description closing navbar when user scolls
+   */
+  if (scrollPosition > 100) {
+    onCloseMenus(false);
+  }
   const classes = useStyles();
   const [showArrow, setShowArrow] = useState("");
   const [optionType, setOptionType] = useState(SideMenu.about_us);

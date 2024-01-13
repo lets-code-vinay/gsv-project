@@ -97,7 +97,11 @@ const StructuredNavbar = ({ scrollPosition }) => {
       )}
 
       {isMoreOpen && isSubNavbarOpened && (
-        <SideBar isMoreOpen={isMoreOpen} onMoreClick={handleMoreClick} />
+        <SideBar
+          isMoreOpen={isMoreOpen}
+          onMoreClick={handleMoreClick}
+          onCloseMenus={closeSubNavbar}
+        />
       )}
     </>
   );

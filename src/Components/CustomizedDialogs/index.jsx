@@ -133,7 +133,7 @@ const useStyles = makeStyles((theme) => ({
   },
   closeButton: {
     position: "absolute",
-    right: 8,
-    top: 5,
+    right: "8",
+    top: "5",
   },
 }));
