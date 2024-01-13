@@ -135,7 +135,7 @@ const Trending = () => {
                     <Grid item xs={12} sm={7} md={8} lg={8}>
                       <Box className="content">
                         <Typography
-                          variant={"h2"}
+                          variant={"h4"}
                           className={`${classes.trendingTitle} trendingTitle`}
                         >
                           {title}
@@ -187,7 +187,7 @@ export default Trending;
 
 const useStyles = makeStyles((theme) => ({
   containerTrending: {
-    padding: "2% 4%",
+    padding: "0% 4%",
     backgroundColor: THEME_COLOR.light_sky,
   },
 

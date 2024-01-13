@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
 import { ChevronLeft, ChevronRight } from "react-feather";
-import { Box, makeStyles, Typography } from "@material-ui/core";
+import { Box, Card, CardContent, makeStyles, Typography } from "@material-ui/core";
 
 import "./style.css";
 import "slick-carousel/slick/slick.css";
@@ -59,20 +59,20 @@ const Testimonials = () => {
    */
   const handleReadTestimonial =
     (clientCount, about, author, designation, company, image, value) =>
-    (event) => {
-      setAnchorEl(event.currentTarget);
-      setOpenTestimonial(true);
-      setTestimonialCardData({
-        ...testimonialCArdData,
-        clientCount: clientCount,
-        about: about,
-        author: author,
-        designation: designation,
-        company: company,
-        image: image,
-        value: value,
-      });
-    };
+      (event) => {
+        setAnchorEl(event.currentTarget);
+        setOpenTestimonial(true);
+        setTestimonialCardData({
+          ...testimonialCArdData,
+          clientCount: clientCount,
+          about: about,
+          author: author,
+          designation: designation,
+          company: company,
+          image: image,
+          value: value,
+        });
+      };
 
   /**
    * @description Close Popup
@@ -83,23 +83,6 @@ const Testimonials = () => {
 
   return (
     <>
-      <CustomPopOver
-        open={openTestimonial}
-        msg={
-          <TestimonialCard
-            clientCount={testimonialCArdData?.clientCount}
-            about={testimonialCArdData?.about}
-            author={testimonialCArdData?.author}
-            designation={testimonialCArdData?.designation}
-            company={testimonialCArdData?.company}
-            image={testimonialCArdData?.image}
-            value={testimonialCArdData?.value}
-          />
-        }
-        onClose={handleClose}
-        anchorEl={anchorEl}
-        clientCount={testimonialCArdData?.clientCount}
-      />
       <Box className={`${classes.testimonials} testimonials`}>
         <Box className={`${classes.testimonialLogo} testimonialLogo`}>
           <Typography
@@ -139,8 +122,8 @@ const Testimonials = () => {
                       padding: "0% 2%",
                       borderRadius: "5px",
                       background: activeSlide === index && "#EDEDED",
-                      textDecoration:
-                        activeSlide === index && "underline solid #000000 70%",
+                      // textDecoration:
+                      //   activeSlide === index && "underline solid #000000 70%",
                     }}
                   >
                     {label}
@@ -208,6 +191,11 @@ const Testimonials = () => {
                         )}
                         onMouseLeave={handleClose}
                       >
+                        <Card>
+                          <CardContent>
+                            <Typography>this is </Typography>
+                          </CardContent>
+                        </Card>
                         <Box
                           className={`${classes.clientCard} clientCard`}
                           style={{
@@ -217,6 +205,11 @@ const Testimonials = () => {
                                 : "75%",
                           }}
                         >
+                          <img
+                            className={`${classes.testimonialImage} testimonialImage`}
+                            src={image}
+                            alt={value}
+                          />
                           <Typography
                             variant="h5"
                             className={`${classes.testimonialCardMatter} testimonialCardMatter`}
@@ -229,11 +222,7 @@ const Testimonials = () => {
                           >
                             <strong>{author},</strong> {designation}-{company}
                           </Typography>
-                          <img
-                            className={`${classes.testimonialImage} testimonialImage`}
-                            src={image}
-                            alt={value}
-                          />
+
                         </Box>
                       </Box>
                     );
@@ -285,6 +274,15 @@ const Testimonials = () => {
                             clientCount >= 1 && clientCount < 3 ? "60%" : "75%",
                         }}
                       >
+                        <Box
+                          className={`${classes.lessThan3LogoContainer} lessThan3LogoContainer`}
+                        >
+                          <img
+                            className={`${classes.testimonialImageLessThan3} testimonialImageLessThan3`}
+                            src={image}
+                            alt={value}
+                          />
+                        </Box>
                         <Typography
                           variant="h5"
                           className={`${classes.testimonialCardMatterLessThan3} testimonialCardMatterLessThan3`}
@@ -297,15 +295,7 @@ const Testimonials = () => {
                         >
                           <strong>{author},</strong> {designation}-{company}
                         </Typography>
-                        <Box
-                          className={`${classes.lessThan3LogoContainer} lessThan3LogoContainer`}
-                        >
-                          <img
-                            className={`${classes.testimonialImageLessThan3} testimonialImageLessThan3`}
-                            src={image}
-                            alt={value}
-                          />
-                        </Box>
+
                       </Box>
                     </Box>
                   );
@@ -327,6 +317,7 @@ const useStyles = makeStyles((theme) => ({
   testimonials: {
     display: "flex",
     flexDirection: "column",
+    height:'100%'
   },
   testimonialLogo: {
     display: "flex",
@@ -372,11 +363,14 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "1rem",
     fontWeight: "700",
     margin: "16% 0% 13% 0",
+    overflow:'auto'
+
   },
   testimonialCardMatterLessThan3: {
     fontSize: "1rem",
     fontWeight: "700",
     margin: "16% 0% 13% 0",
+    overflow:'auto'
   },
   testimonialCardUser: {
     fontSize: "0.8rem",

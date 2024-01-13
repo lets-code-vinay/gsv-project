@@ -75,7 +75,7 @@ const MainNavBar = ({
         elevation={0}
         style={{
           backgroundColor:
-            scrollPosition > 0 || isSubSectionOpen || isMoreOpen
+            scrollPosition > 100 || isSubSectionOpen || isMoreOpen
               ? "#0D274D"
               : "transparent",
           boxShadow:

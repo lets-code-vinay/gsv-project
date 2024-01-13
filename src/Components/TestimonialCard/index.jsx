@@ -21,9 +21,15 @@ const TestimonialCard = ({
         maxWidth: "90%",
       }}
     >
+      <img
+        className={`${classes.testimonialImageTC} testimonialImageTC`}
+        src={image}
+        alt={value}
+      />
       <Typography
         variant="h5"
         className={`${classes.testimonialCardMatterTC} testimonialCardMatterTC`}
+        sx={{overflow: 'scroll', height: '100px'}}
       >
         "{about}"
       </Typography>
@@ -33,11 +39,7 @@ const TestimonialCard = ({
       >
         <strong>{author},</strong> {designation}-{company}
       </Typography>
-      <img
-        className={`${classes.testimonialImageTC} testimonialImageTC`}
-        src={image}
-        alt={value}
-      />
+
     </Box>
   );
 };
