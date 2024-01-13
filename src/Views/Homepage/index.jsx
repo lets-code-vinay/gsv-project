@@ -1,4 +1,4 @@
-import React, { lazy, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import { Box } from "@material-ui/core";
 import "./style.css";
@@ -19,13 +19,6 @@ const Homepage = () => {
   const mainRef = React.useRef(null);
 
   const [scrollPosition, setScrollPosition] = useState(0);
-
-  /**
-   * @description Rendering Page to the top
-   */
-  React.useEffect(() => {
-    mainRef.current.scrollTo(0, 0);
-  }, [pathname]);
 
   /**
    * @description Getting Scroll Poition
