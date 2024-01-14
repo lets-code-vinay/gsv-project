@@ -36,8 +36,9 @@ export default function CustomizedDialogs({
         onClose={handleClose}
         aria-labelledby="customized-dialog-title"
         open={open}
+        justifyContent='space-between'
       >
-        <DialogBoxTitle id="alert-dialog-title" onClose={handleClose}>
+        <DialogBoxTitle id="alert-dialog-title" onClose={handleClose} >
           {title && title}
         </DialogBoxTitle>
 
@@ -95,7 +96,7 @@ function DialogBoxTitle(props) {
   const classes = useStyles();
 
   return (
-    <Box className={classes.DialogTitle}>
+    <Box className={classes.DialogTitle} sx={{justifyContent: 'space-between'}}>
       <DialogTitle sx={{ m: 0, p: 2 }} {...other}>
         {children}
         {onClose ? (
@@ -133,7 +134,7 @@ const useStyles = makeStyles((theme) => ({
   },
   closeButton: {
     position: "absolute",
-    right: "8",
-    top: "5",
+    right: "5px",
+    top: "3px",
   },
 }));

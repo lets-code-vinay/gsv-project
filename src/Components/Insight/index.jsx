@@ -130,6 +130,7 @@ const useStyles = makeStyles((theme) => ({
   pieInfo: {
     marginTop: "5%",
     color: "#0d274d",
+    // overflow:'auto'
   },
   pieButton: {
     color: "white",
