@@ -39,7 +39,7 @@ const Technologies = () => {
         <Grid container spacing={0} className={`${classes.grid1} grid1`}>
           <Grid item xs={12} sm={6} md={6}>
             <div className="column_first">
-              <h3 className="card_header">Enterprise Networking & Wireless</h3>
+              <h3 className="card_header">Enterprise Networking and wireless benefits for your organization</h3>
               <div>
                 <h3 className="card_heading">
                   End to End Wired and Wireless Services
@@ -47,8 +47,10 @@ const Technologies = () => {
               </div>
               <div>
                 <h4 className="card_text">
-                  Design, Deployment, Monitoring, Support, dsdasd, dasdasdsd
-                  dsdsdsd trtrtr wewewew ewewe wewewe wewewewewe wewewewew{" "}
+                  With Enterprise Networking & Wireless, connect your employees, customers,
+                  and partners across multiple locations and devices, enable seamless communication
+                  and data sharing, and leverage cloud-based applications and services to streamline
+                  your workflows and improve your efficiency.
                 </h4>
               </div>
             </div>
@@ -87,8 +89,8 @@ const Technologies = () => {
                     </h4>
                     <div className="paraText">
                       <p>
-                        Cisco-SDWAN, Cisco-DNA-C, Cisco ACI, Velo Cloud, Silver
-                        light and many more
+                        Software-defined networking (SDN) offers the ability to efficiently control and manipulate network resources in a dynamic and adaptable manner.
+                        Through the use of software applications, organizations can configure, monitor, and enhance network performance, security, and dependability.
                       </p>
                     </div>
                   </div>
@@ -116,7 +118,9 @@ const Technologies = () => {
                   </h4>
                   <div className="cardDivSecurity">
                     <div className="paraTextSecurity">
-                      <p>Cybersecurity, AMP, Network and Cloud Security</p>
+                      <p>If you are looking to safeguard your organization's data, networks, devices, or applications,
+                        GSV Solutions is here to assist you in bolstering your security measures.
+                        </p>
                     </div>
                   </div>
                 </div>
