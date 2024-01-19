@@ -129,7 +129,7 @@ const Trending = () => {
                       <img
                         src={icon}
                         alt={title}
-                        className={`${classes.trendingImage} trendingImage`}
+                        className={`${classes.trendingImage} trendingImage reciprocate`}
                       />
                     </Grid>
                     <Grid item xs={12} sm={7} md={8} lg={8}>
