@@ -182,7 +182,7 @@ const ContactUs = ({
 
         <Grid item xs={12} sm={12} md={6} lg={5}>
           <img
-            className={`${classes.contactImage} contactImage`}
+            className={`${classes.contactImage} contactImage reciprocate`}
             src={isComponent ? ContactImage : image}
             alt={alt}
             width="100%"
@@ -219,6 +219,7 @@ const useStyles = makeStyles(() => ({
   contactImage: {
     "webkit-transform": "scaleX(- 1)",
     transform: "scaleX(-1)",
+    paddingTop:'10%'
   },
 
   heading: {
