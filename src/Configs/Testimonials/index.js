@@ -1,56 +1,60 @@
 // Government
-import AIRPORT from "../../Assets/Images/Testimonials/Government/airportAuthority.png";
-import DELHI_POLICE from "../../Assets/Images/Testimonials/Government/DelhiPolice.jpg";
-import ASSAM_POLICE from "../../Assets/Images/Testimonials/Government/AssamPolice.jpg";
+import AIRPORT from "../../Assets/Images/Testimonials/Government/Airport Authority Of India.png";
+import DELHI_POLICE from "../../Assets/Images/Testimonials/Government/Delhi Police.png";
+import ASSAM_POLICE from "../../Assets/Images/Testimonials/Government/Assam Police.avif";
 import AIR_FORCE from "../../Assets/Images/Testimonials/Government/airForce.png";
 import JKL from "../../Assets/Images/Testimonials/Government/JKL.jpg";
-import HP from "../../Assets/Images/Testimonials/Government/HP.png";
-import INDIAN_ARMY from "../../Assets/Images/Testimonials/Government/IndianArmy.png";
-import JHARKHAND from "../../Assets/Images/Testimonials/Government/Jharkhand.png";
-import UK from "../../Assets/Images/Testimonials/Government/UK.png";
-import LAW from "../../Assets/Images/Testimonials/Government/law.png";
+import HP from "../../Assets/Images/Testimonials/Government/High Court of Himachal Pradesh.png";
+import INDIAN_ARMY from "../../Assets/Images/Testimonials/Government/Indian Army.jpg";
+import JHARKHAND from "../../Assets/Images/Testimonials/Government/High Court of Jharkhand.png";
+import UK from "../../Assets/Images/Testimonials/Government/Uttarakhand High Court.png";
+import LAW from "../../Assets/Images/Testimonials/Government/National Company Law Appellate Tribunal.png";
+// import High Court of Jammu & Kashmir  
 
-// IT
-import BLUE_NETWORK from "../../Assets/Images/Testimonials/IT/BNI.jpeg";
-import ATNIS from "../../Assets/Images/Testimonials/IT/atnis.png";
-import ENSTAL from "../../Assets/Images/Testimonials/IT/Enstal.png";
-import GLOBAL_XPERT from "../../Assets/Images/Testimonials/IT/Globalxperts.png";
-import GUARIDAN from "../../Assets/Images/Testimonials/IT/Guardian.jpeg";
-import HYPER_SHIFT from "../../Assets/Images/Testimonials/IT/HyperShift.png";
+// IT       
+// Stardata Pty Ltd  World Possible
+import BLUE_NETWORK from "../../Assets/Images/Testimonials/IT/Blue Network Infrastructure (Pty) Ltd.png";
+import ATNIS from "../../Assets/Images/Testimonials/IT/Atnis Pty Ltd.jpg";
+import ENSTAL from "../../Assets/Images/Testimonials/IT/Enstal LLC.png";
+import GLOBAL_XPERT from "../../Assets/Images/Testimonials/IT/Globalxpert.jpg";
+import GUARIDAN from "../../Assets/Images/Testimonials/IT/Guardian Technology Group.png";
+import HYPER_SHIFT from "../../Assets/Images/Testimonials/IT/Hypershift.jpg";
 import LMQ from "../../Assets/Images/Testimonials/IT/LMQ.png";
 import MIDDLE_GROUND from "../../Assets/Images/Testimonials/IT/Middleground.png";
-import TOUCH_BASE from "../../Assets/Images/Testimonials/IT/Touchbase.jpg";
-import PCNC from "../../Assets/Images/Testimonials/IT/PCNC.png";
+import TOUCH_BASE from "../../Assets/Images/Testimonials/IT/Touchbase.png";
+import PCNC from "../../Assets/Images/Testimonials/IT/PCNC2000.png";
 import INTRUM from "../../Assets/Images/Testimonials/IT/Intrum.png";
-import ROYAL from "../../Assets/Images/Testimonials/IT/Royal.png";
-import CLOUD_REACH from "../../Assets/Images/Testimonials/IT/cloudreach.png";
-import GEAR_HOST from "../../Assets/Images/Testimonials/IT/gearhost.png";
-import FINAL_FRAME from "../../Assets/Images/Testimonials/IT/final frame.png";
+import ROYAL from "../../Assets/Images/Testimonials/IT/Royal Haskoning DHV.svg";
+import CLOUD_REACH from "../../Assets/Images/Testimonials/IT/Cloudreach.webp";
+import GEAR_HOST from "../../Assets/Images/Testimonials/IT/Gearhost.svg";
+import FINAL_FRAME from "../../Assets/Images/Testimonials/IT/Final Frame.svg";
 import VIRTUVENT from "../../Assets/Images/Testimonials/IT/virtuvent.png";
 import WORLD_POSSIBLE from "../../Assets/Images/Testimonials/IT/worldPossible.png";
-import VOIPED from "../../Assets/Images/Testimonials/IT/voiped.png";
-import WELCOME from "../../Assets/Images/Testimonials/IT/welcome.png";
-import STAR_DATA from "../../Assets/Images/Testimonials/IT/stardata.jpg";
+import VOIPED from "../../Assets/Images/Testimonials/IT/Voiped Wholesale.jpg";
+import WELCOME from "../../Assets/Images/Testimonials/IT/Welcome Networks.jpg";
+import STAR_DATA from "../../Assets/Images/Testimonials/IT/Stardata Pty Ltd.jpg";
 import VGC from "../../Assets/Images/Testimonials/IT/VGC.png";
+import ACCUSYS from "../../Assets/Images/Testimonials/IT/Accutron Systems.png";
+import SONET_TECH from "../../Assets/Images/Testimonials/IT/Sonet Global Technology Limited.svg";
 
 // Health & Education
-import KAILASH_HOSPITAL from "../../Assets/Images/Testimonials/Health Education/KailashHospital.jpg";
-import JOHN_JAY from "../../Assets/Images/Testimonials/Health Education/JohnJay.jpg";
-import UROLOGY from "../../Assets/Images/Testimonials/Health Education/urology.png";
+import KAILASH_HOSPITAL from "../../Assets/Images/Testimonials/Health Education/Kailash Hospital.png";
+import JOHN_JAY from "../../Assets/Images/Testimonials/Health Education/John Jay College of Criminal Justice.svg";
+import UROLOGY from "../../Assets/Images/Testimonials/Health Education/Urology of Greater Atlanta.png";
 
 // Hospitality
 import BEST_WESTERN from "../../Assets/Images/Testimonials/Hospitality/BestWestern.png";
-import IHG from "../../Assets/Images/Testimonials/Hospitality/IHG.png";
-import OYO from "../../Assets/Images/Testimonials/Hospitality/oyo.png";
+import IHG from "../../Assets/Images/Testimonials/Hospitality/IHG Group.png";
+import OYO from "../../Assets/Images/Testimonials/Hospitality/Oyo Rooms.jpg";
 
 // Retail
-import LC from "../../Assets/Images/Testimonials/Retail/LC.png";
+import LC from "../../Assets/Images/Testimonials/Retail/LC Waikiki.png";
 import SPAR from "../../Assets/Images/Testimonials/Retail/spar.png";
-import SEVEN_Eleven from "../../Assets/Images/Testimonials/Retail/7Eleven.png";
+import SEVEN_Eleven from "../../Assets/Images/Testimonials/Retail/7_Eleven.svg";
 
 // Manufacturing
-import GRANITIZE from "../../Assets/Images/Testimonials/Manufacturing/granitize.png";
-import BALARAMPUR_CHINI_MILL from "../../Assets/Images/Testimonials/Manufacturing/balarampur.png";
+import GRANITIZE from "../../Assets/Images/Testimonials/Manufacturing/Granitize.jpg";
+import BALARAMPUR_CHINI_MILL from "../../Assets/Images/Testimonials/Manufacturing/Balarampur Chini Mills Limited.webp";
 import COLOR from "../../Assets/Images/Testimonials/Manufacturing/color.jpg";
 
 /**
@@ -109,9 +113,9 @@ export const TESTIMONIAL_CARD_DATA = {
       },
       client_2: {
         value: "client_2",
-        about: "",
-        author: "",
-        designation: " ",
+        about: ` We are very pleased with the service and quality of work that GSV Systems have delivered to us. They have demonstrated a high level of Cisco expertise and technical skills, as well as a strong commitment to meeting our deadlines and expectations. GSV Systems have been reliable, responsive and proactive in addressing our needs and solving any issues that arose during the project. We highly recommend GSV Systems to anyone looking for a professional and dependable Cisco partner.`,
+        author: "NItin Upadhyay",
+        designation: "Area Head",
         company: "IHG Group",
         image: IHG,
         client: "hospitality",
@@ -126,6 +130,25 @@ export const TESTIMONIAL_CARD_DATA = {
         image: OYO,
         client: "hospitality",
       },
+      client_4: {
+        value: "client_4",
+        about:
+          `I am very satisfied with the quality and value of the service I received from GSV. Out of 11 contractors who submitted proposals for my project, GSV's was the most competitive and detailed.He delivered the work on time and according to the specifications we agreed on.I highly recommend GSV for anyone looking for a reliable and professional contractor.`,
+        author: "Anjali tomar",
+        designation: "GM Sales",
+        company: "Best Western Resort Country Club",
+        image: BEST_WESTERN,
+        client: "hospitality",
+      },
+      client_5: {
+        value: "client_5",
+        about: "",
+        author: "",
+        designation: " ",
+        company: "IHG Group",
+        image: IHG,
+        client: "hospitality",
+      },
     },
   },
   government: {
@@ -135,8 +158,8 @@ export const TESTIMONIAL_CARD_DATA = {
     testimonials: {
       client_1: {
         value: "client_1",
-        about: "",
-        author: "",
+        about: `The team of engineers at GSV is highly skilled and experienced in their field. They provide excellent service and support to their clients, and they always deliver quality results.`,
+        author: "Mr. Justice Mamidanna Satya Ratna Sri Ramachandra Rao",
         designation: "",
         company: "High Court of Himachal Pradesh",
         image: HP,
@@ -162,8 +185,8 @@ export const TESTIMONIAL_CARD_DATA = {
       },
       client_4: {
         value: "client_4",
-        about: "",
-        author: "",
+        about: `I have worked with this vendor for several projects and I can attest to their fantastic performance. They are trustworthy, highly skilled, and experienced in their field of expertise. They deliver high-quality results on time and within budget. They are also easy to communicate with and responsive to feedback. I highly recommend this vendor for any project that requires their services.`,
+        author: "Manoj Kumar Tiwari",
         designation: "",
         company: "Uttarakhand High Court",
         image: UK,
@@ -180,9 +203,10 @@ export const TESTIMONIAL_CARD_DATA = {
       },
       client_6: {
         value: "client_6",
-        about: "",
-        author: "",
-        designation: "",
+        about: ` 
+        GSV services are highly recommended due to their exceptional communication skills and extensive technical knowledge. In the future, I would definitely suggest utilizing their services.`,
+        author: "Gyanendra Pratap Singh",
+        designation: "Director General",
         company: "Assam Police",
         image: ASSAM_POLICE,
         client: "government",
@@ -198,9 +222,10 @@ export const TESTIMONIAL_CARD_DATA = {
       },
       client_8: {
         value: "client_8",
-        about: "",
-        author: "",
-        designation: "",
+        about: `We were very satisfied with the quality and efficiency of the services that Gsv delivered to us. They demonstrated a high level of professionalism and expertise in solving our problems within the agreed timeframe.
+        `,
+        author: "Sameer Islam",
+        designation: "Commanding Officer",
         company: "Indian Army",
         image: INDIAN_ARMY,
         client: "government",
@@ -275,9 +300,9 @@ export const TESTIMONIAL_CARD_DATA = {
     testimonials: {
       client_1: {
         value: "client_1",
-        about: "",
-        author: "",
-        designation: "",
+        about: `Thanks to the expertise and efficiency of GSV, we managed to resolve long-standing issues that seemed impossible to overcome. They demonstrated great flexibility, speed, thoroughness and problem-solving skills in their work. We are very satisfied with their performance and highly recommend their services.`,
+        author: "VİZYON",
+        designation: "CEO",
         company: "LC Waikiki",
         image: LC,
         client: "Retail",
@@ -299,6 +324,16 @@ export const TESTIMONIAL_CARD_DATA = {
         author: "Rajesh",
         designation: "Operations Head",
         company: "Spar Hypermarket",
+        image: SPAR,
+        client: "Retail",
+      },
+      client_4: {
+        value: "client_4",
+        about:
+          `I was very impressed by the quality of service provided by GSV. They demonstrated amazing communication skills, as they listened to my needs and expectations, and delivered the project on time and within budget. They also showed technical knowledge and expertise, as they solved the challenges and issues that arose during the project. They were always responsive, courteous and professional. I will definitely recommend using GSV services in the future to anyone who needs reliable and efficient solutions.`,
+        author: "Angelo Swartz",
+        designation: "CEO",
+        company: "Spar",
         image: SPAR,
         client: "Retail",
       },
@@ -341,11 +376,12 @@ export const TESTIMONIAL_CARD_DATA = {
       },
       client_4: {
         value: "client_4",
-        about: "",
-        author: "",
-        designation: "",
-        company: "Globalxpert",
-        image: GLOBAL_XPERT,
+        about: `I found GSV engineers very knowledgeable, easily accessible and patient. Awesome people to work with. I highly recommend their services.
+        `,
+        author: "Jag Barpagga",
+        designation: "Partner",
+        company: "Welcome Networks",
+        image: WELCOME,
         client: "IT",
       },
       client_5: {
@@ -532,6 +568,26 @@ export const TESTIMONIAL_CARD_DATA = {
         designation: "Product Manager",
         company: "Blue Network Infrastructure (Pty) Ltd",
         image: BLUE_NETWORK,
+        client: "IT",
+      },
+      client_25: {
+        value: "client_25",
+        about:
+          "I hired GSV for an issue with my company's firewall. They had a very quick response time,very quick turn-around to get the work done, all at a very good value. I definitely will use their services in the future.",
+        author: "Joseph Bartoli",
+        designation: "IT Director",
+        company: "Granitize",
+        image: GRANITIZE,
+        client: "IT",
+      },
+      client_26: {
+        value: "client_26",
+        about:
+          `GSV have talented network engineers. They have a great technical understanding of firewalling and security`,
+        author: "Dale Rogerson",
+        designation: "Technical Lead",
+        company: "Server Space",
+        image: GRANITIZE,
         client: "IT",
       },
     },

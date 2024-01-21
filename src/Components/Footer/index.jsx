@@ -1,10 +1,11 @@
 import React from "react";
-import { Box, Grid, makeStyles, Typography } from "@material-ui/core";
+import { Box, Grid, makeStyles, Typography, Link } from "@material-ui/core";
 
 import { RiFacebookBoxFill } from "react-icons/ri";
 import { FiYoutube } from "react-icons/fi";
 import { FaTwitterSquare, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
+import { useNavigate } from "react-router-dom";
 
 import "./style.css";
 
@@ -15,6 +16,7 @@ import { SOCIAL_MEDIA_LINKS } from "../../Configs/SocialMedia";
 
 const Footer = () => {
   const classes = useStyles();
+  const Navigate = useNavigate()
   return (
     <>
       <Box className={`${classes.footer} footer`}>
@@ -230,9 +232,21 @@ const Footer = () => {
               <Typography
                 variant={"body1"}
                 className={`${classes.menuListTextContact} menuListTextContact`}
+              // onClick={() => Navigate('https://maps.app.goo.gl/ZaSy42Fshx8kx4sx5')}
               >
+                {/* <Link
+                  underLine={'none'}
+                  // sx={{  }}
+                  color='white'
+                  href={`https://www.google.com/maps/place/32%C2%B011'18.4%22N+77%C2%B036'44.3%22E/@34.288816,71.6011555,4.01z/data=!4m4!3m3!8m2!3d32.1884444!4d77.6123056?entry=ttu`}
+                  target="_blank"
+                  rel="noopener">
+                  Block #24, Set No. 549, Sector-3 New Shimla, Shimla, Himachal
+                  Pradesh 171009
+
+                </Link> */}
                 Block #24, Set No. 549, Sector-3 New Shimla, Shimla, Himachal
-                Pradesh 171009
+                  Pradesh 171009
               </Typography>
               <br />
             </Grid>
@@ -353,7 +367,7 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: "5px",
     fontSize: "1rem",
     width: "80%",
-    cursor: "default",
+    cursor: "pointer",
     color: THEME_COLOR.popular_color,
 
     "&:hover": {
