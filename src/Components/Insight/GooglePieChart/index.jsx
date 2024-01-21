@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Chart } from "react-google-charts";
-import { Button, Box } from "@material-ui/core";
+import { Box } from "@material-ui/core";
 import "./style.css";
 
 import Logo from "../../../Assets/Images/blueLogo.png";
@@ -126,6 +126,18 @@ const PieChart = ({ fetchInsightDetails, onKnowMoreClick }) => {
     // fetchInsightDetails(null);
   };
 
+  /**
+   * @description Handle click use
+   * @impact : slice split,
+   *
+   * @param {Number} slice
+   */
+  const handleSliceClick = (slice) => {
+    setSlice(slice);
+    fetchInsightDetails(slice);
+    onKnowMoreClick();
+  };
+
   return (
     <>
       <Box className="pie">
@@ -160,19 +172,19 @@ const PieChart = ({ fetchInsightDetails, onKnowMoreClick }) => {
                 );
 
                 google.visualization.events.addListener(chart, "click", (e) => {
-                  console.log("clicked on slice");
+                  const { targetID } = e;
+                  handleSliceClick(targetID.replace(/^\D+/g, ""));
                 });
               },
             },
           ]}
         />
         <img src={Logo} alt={"logo inside"} className={`logoInside`} />
-
-        {Object.values(INSIGHT_DATA).map(
+        {/* {Object.values(INSIGHT_DATA).map(
           ({ button_text = "", label = "", text_color = "#000" }, index) => {
             return (
               <Box key={index + "-" + label}>
-                {/* <Typography
+                <Typography
                   className={`insight-text insight-text-${index}`}
                   style={{
                     color: slice === index ? text_color : "black",
@@ -190,7 +202,7 @@ const PieChart = ({ fetchInsightDetails, onKnowMoreClick }) => {
                   onMouseOver={handleTextMouseEnter(index)}
                 >
                   {label}
-                </Typography> */}
+                </Typography> 
 
                 {slice === index && (
                   <Button
@@ -206,7 +218,7 @@ const PieChart = ({ fetchInsightDetails, onKnowMoreClick }) => {
               </Box>
             );
           }
-        )}
+        )} */}
       </Box>
     </>
   );
